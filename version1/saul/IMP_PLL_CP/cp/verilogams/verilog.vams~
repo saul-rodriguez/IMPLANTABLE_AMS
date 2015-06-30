@@ -1,0 +1,38 @@
+//Verilog-AMS HDL for "IMP_PLL_CP", "cp" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module cp ( CP_out, AN, B, vdda, vssa, vsub );
+
+  input vsub;
+  input vdda;
+  input vssa;
+  input B;
+  input AN;
+  output CP_out;
+
+  logic AN;
+  logic B;
+
+  electrical vdda, vssa, CP_out;
+
+  parameter real out_current = 1u;  
+
+  analog begin
+    // PMOS Current source, A is complemented logic!
+	if (AN == 0) begin
+		I(vdda,CP_out) <+ out_current;
+	end else begin
+		I(vdda,CP_out) <+ 0;
+    end
+
+    // NMOS Current source
+	if (B) begin
+		I(CP_out,vssa) <+ out_current;		
+	end else begin
+		I(CP_out,vssa) <+ 0;
+    end
+
+  end
+endmodule

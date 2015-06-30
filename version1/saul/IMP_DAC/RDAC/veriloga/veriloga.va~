@@ -1,0 +1,76 @@
+// VerilogA for IMP_DAC, RDAC, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module RDAC(P1, P2, P3, P4, P5, VON, VOP, bias, vdda, vssa, vsub);
+inout P1;
+electrical P1;
+inout P2;
+electrical P2;
+inout P3;
+electrical P3;
+inout P4;
+electrical P4;
+inout P5;
+electrical P5;
+inout VON;
+electrical VON;
+inout VOP;
+electrical VOP;
+inout bias;
+electrical bias;
+inout vdda;
+electrical vdda;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+
+parameter real td = 1e-09 ;
+parameter real vth = 0.5 ;
+parameter vh = 1.8;
+parameter vl = 0;
+
+parameter real vcm = 0.9;
+
+real vop,von; //Outputs 
+
+analog begin
+
+	@(cross(V(P1) - vth, 1) or initial_step) 
+	begin
+		vop = vcm;
+		von = vcm;
+	end
+
+	@(cross(V(P2) - vth, 1)) 
+	begin
+		vop = vcm + 35.355e-3;
+		von = vcm - 35.355e-3;
+	end
+
+	@(cross(V(P3) - vth, 1)) 
+	begin
+		vop = vcm + 50.0e-3;
+		von = vcm - 50.0e-3;
+	end
+	
+	@(cross(V(P4) - vth, 1)) 
+	begin
+		vop = vcm - 35.355e-3;
+		von = vcm + 35.355e-3;
+	end
+
+	@(cross(V(P5) - vth, 1)) 
+	begin
+		vop = vcm - 50.0e-3;
+		von = vcm + 50.0e-3;
+	end
+
+	V(VOP) <+ vop;
+	V(VON) <+ von;
+
+end
+
+endmodule

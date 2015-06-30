@@ -1,0 +1,20 @@
+// Library - IMP_DIG_COUNTER, Cell - counterEnable_schem_tb, View -
+//schematic
+// LAST TIME SAVED: May 28 16:39:06 2015
+// NETLIST TIME: May 28 17:03:08 2015
+`timescale 1ns / 1ps 
+
+module counterEnable_schem_tb ( IN, IP, P1, P2, P3, P4, P5, QN, QP,
+     Clk, CountEnable, Resetn );
+
+output  IN, IP, P1, P2, P3, P4, P5, QN, QP;
+
+input  Clk, CountEnable, Resetn;
+
+
+specify 
+    specparam CDS_LIBNAME  = "IMP_DIG_COUNTER";
+    specparam CDS_CELLNAME = "counterEnable_schem_tb";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

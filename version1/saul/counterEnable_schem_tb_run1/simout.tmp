@@ -1,0 +1,48 @@
+TOOL:	ncxlmode	14.20-p001: Started on May 28, 2015 at 17:05:24 CEST
+/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools/bin/64bit/ncxlmode
+	+delay_mode_path
+	+typdelays
+	-l
+	simout.tmp
+	/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/counterEnable_schem_tb_run1/testfixture.template
+	-f /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/counterEnable_schem_tb_run1/verilog.inpfiles
+		/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DIG_COUNTER/counterEnable/functional/verilog.v
+		ihnl/cds0/netlist
+	-f /afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/../verilog/h18a6/vxl.inc
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_CORELIB_HVT.v
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_CORELIB_HV.v
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_CORELIB_SHVT.v
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_CORELIB.v
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_IOLIB_HV.v
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_IOLIB.v
+		-v
+		/nobackup/saul/pdk/ams_inst/AMS/verilog/h18a6/h18_PHYSICAL.v
+		+sdf_nocheck_celltype
+	+nostdout
+	+nocopyright
+	+ncvlogargs+" -neverwarn -nostdout -nocopyright "
+	+ncelabargs+" -neg_tchk  -nonotifier  -sdf_NOCheck_celltype  -access +r  -pulse_e 100  -pulse_r 100  -neverwarn  -timescale 1ns/1ps -nostdout -nocopyright"
+	+ncsimargs+" -neverwarn  -nocopyright -gui -input /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/counterEnable_schem_tb_run1/.simTmpNCCmd "
+	+mpssession+virtuoso8082
+	+mpshost+subway.it.kth.se
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools/inca/files/ncsimrc
+ncsim> database -open shmWave -shm -default -into shm.db
+Created default SHM database shmWave
+ncsim> probe -create -shm test  -all   -depth 1
+Created probe 1
+ncsim> run
+Simulation complete via $finish(1) at time 354 NS + 0
+./testfixture.verilog:24     #50 $finish;
+ncsim> ^C
+ncsim> exit
+TOOL:	ncxlmode	14.20-p001: Exiting on May 28, 2015 at 17:06:29 CEST  (total: 00:01:05)

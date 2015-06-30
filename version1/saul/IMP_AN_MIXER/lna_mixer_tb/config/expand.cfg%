@@ -1,0 +1,21 @@
+//Revision 9
+config lna_mixer_tb;
+design IMP_AN_MIXER.lna_mixer_tb:schematic;
+liblist IMP_AN_MIXER;
+
+viewlist spectre, schematic, functinal, symbol;
+stoplist spectre, symbol;
+
+
+cell IMP_AN_BUFFER.buffer binding :verilogams;
+
+cell IMP_AN_LPF.lpf_gm1 binding :verilogams;
+
+cell IMP_AN_TIA.tia binding :verilogams;
+
+cell IMP_AN_MIXER.mixer binding :verilogams;
+
+cell IMP_AN_LNA.lna_gm binding :verilogams;
+
+
+endconfig

@@ -1,0 +1,70 @@
+*** Loading .simrc from ->
+/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/.simrc.
+
+Running netlist
+Begin Incremental Netlisting May 28 17:03:07 2015
+si: simSetDef().... hnlCapability is initialized to "nil".
+si: simSetDef().... hnlBusCapability is initialized to "nil".
+INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to
+set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with
+this option.
+Alternatively, you can set the hnlVerilogTermSyncUp variable as
+'mergeAll'. This helps in generating a pure explicit netlist.
+
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the
+
+"/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/counterEnable_schem_tb_run1/testfixture.verilog" file. To print the stimulus name mapped
+table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the
+.simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating
+instance ports. To prevent 
+them from being printed, set
+simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist
+Configuration list. 
+If you want to print only those cellviews that need to be
+re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either
+in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to
+"z". To get inout 
+pins with initial state of "0", set
+hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-117): Re-netlisting the entire design.
+
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all
+stopping and 
+non-stopping cells.
+ 
+INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_COUNTER', cell
+'counterEnable', view 'functional' will be
+ done using the user specified port
+order as follows:
+
+ => ("CountEnable" "Clk" "Resetn" "P1" "P2" "P3" "P4" "P5" "IP" "IN" "QP" "QN") 
+
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information
+----------
+
+
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+counterEnable               functional           *Stopping View*  
+counterEnable_schem_tb      schematic                             
+
+---------- End of netlist configuration information   ----------
+INFO (VLOGNET-80): The library 'IMP_DIG_COUNTER', cell 'counterEnable_schem_tb',
+and view 'schematic' has been netlisted successfully.
+
+End netlisting May 28 17:03:08 2015

@@ -1,0 +1,15 @@
+//Revision 21
+config RDAC_COUNT_TB;
+design IMP_DAC.RDAC_COUNT_TB:schematic;
+liblist IMP_DAC, CORELIB;
+
+viewlist spectre, schematic, functional, \module ;
+stoplist spectre;
+
+
+cell IMP_COUNTER_ENABLE.counterEnable binding :routed;
+
+cell IMP_DAC.RDAC binding :schematic;
+
+
+endconfig

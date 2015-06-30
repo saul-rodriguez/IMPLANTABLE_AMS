@@ -1,0 +1,101 @@
+// VerilogA for IMP_DAC, CE_FUNC, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module CE_FUNC(EN, IN, I_N, I_P, P1, P2, P3, P4, P5, Q_N, Q_P);
+inout EN;
+electrical EN;
+inout IN;
+electrical IN;
+inout I_N;
+electrical I_N;
+inout I_P;
+electrical I_P;
+inout P1;
+electrical P1;
+inout P2;
+electrical P2;
+inout P3;
+electrical P3;
+inout P4;
+electrical P4;
+inout P5;
+electrical P5;
+inout Q_N;
+electrical Q_N;
+inout Q_P;
+electrical Q_P;
+parameter real vl = 0 ;
+parameter real vh = 1.8 ;
+parameter real vth = 0.5 ;
+parameter real td = 1e-09 ;
+
+integer I0,I1,I2;
+integer value,aux,I,Q;
+integer enable;
+
+	analog begin
+			
+			
+		if (V(EN) >= vth) 
+			enable = 1;
+		else
+			enable = 0;
+
+		/*@(cross(V(EN)-vth)) begin
+			if (V(EN) >= vth) 
+				enable = 1;
+			else
+				enable = 0;
+		end*/	
+
+		@(cross(V(IN)-vth,1)) begin
+			value = value + 1;
+			if (value > 7)
+				value = 0;
+
+			if (value == 0)
+				I = 1;
+			
+			if (value == 4)
+				I = 0;
+ 
+			if (value == 2)
+				Q = 1;
+
+			if (value == 6)
+				Q = 0;
+
+			I0 = (value & 1)? 1:0;
+			I1 = (value & (1 << 1))? 1:0;
+			I2 = (value & (1 << 2))? 1:0;			
+			
+		end
+
+		aux = ((~I2 & 1) & (~I0 & 1)) & enable; // (X & 1) needed to get rid off the sign 
+		V(P2) <+ transition((aux*vh),0,td);
+
+		aux = (~I2 & ~I1 & I0) & enable;
+		V(P3) <+ transition((aux*vh),0,td);
+
+		aux = (I1 & I0) & enable;
+		V(P1) <+ transition((aux*vh),0,td);
+
+		aux = (I2 & ~I0) & enable;
+		V(P4) <+ transition((aux*vh),0,td);
+
+		aux = (I2 & ~I1 & I0) & enable;
+		V(P5) <+ transition((aux*vh),0,td);
+		
+		V(I_P) <+ transition((vh*I),0,td);
+		V(I_N) <+ transition(((1.0-I)*vh),0,td);
+
+		V(Q_P) <+ transition((Q*vh),0,td);
+		V(Q_N) <+ transition(((1.0-Q)*vh),0,td);
+		
+
+	end
+
+
+endmodule

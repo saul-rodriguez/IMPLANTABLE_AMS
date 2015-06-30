@@ -1,0 +1,26 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  Fout;
+
+reg  Fin, Resetn;
+
+reg [3:0]  Fsel;
+
+
+
+FreqDiv_tb top(.Fout(Fout), .Fin(Fin), .Fsel(Fsel), .Resetn(Resetn)
+     ); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/FreqDiv_tb_run1/testfixture.verilog file
+`include "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/FreqDiv_tb_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

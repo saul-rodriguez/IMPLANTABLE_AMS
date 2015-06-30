@@ -1,0 +1,25 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  IN, IP, P1, P2, P3, P4, P5, QN, QP;
+
+reg  Clk, CountEnable, Resetn;
+
+
+
+counterEnable_schem_tb top(.IN(IN), .IP(IP), .P1(P1), .P2(P2), .P3(P3)
+     , .P4(P4), .P5(P5), .QN(QN), .QP(QP), .Clk(Clk), 
+     .CountEnable(CountEnable), .Resetn(Resetn)); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/counterEnable_schem_tb_run1/testfixture.verilog file
+`include "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/counterEnable_schem_tb_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

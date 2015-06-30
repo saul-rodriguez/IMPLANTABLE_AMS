@@ -1,0 +1,20 @@
+// Library - IMP_DIG_DIV, Cell - FreqDiv_tb, View - schematic
+// LAST TIME SAVED: Jun 30 09:55:06 2015
+// NETLIST TIME: Jun 30 09:57:57 2015
+`timescale 1ns / 1ps 
+
+module FreqDiv_tb ( Fout, Fin, Fsel, Resetn );
+
+output  Fout;
+
+input  Fin, Resetn;
+
+input [3:0]  Fsel;
+
+
+specify 
+    specparam CDS_LIBNAME  = "IMP_DIG_DIV";
+    specparam CDS_CELLNAME = "FreqDiv_tb";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

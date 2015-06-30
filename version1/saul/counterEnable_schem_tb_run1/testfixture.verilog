@@ -1,0 +1,31 @@
+
+// Verilog stimulus file.
+// Please do not create a module in this file.
+
+
+// Default verilog stimulus. 
+
+
+initial
+begin 
+
+   //Clk = 1'b0;
+   //CountEnable = 1'b0;
+   //Resetn = 1'b0;
+
+    Clk = 0;
+    CountEnable = 0;
+    Resetn = 1;
+    
+    #2 Resetn = 0;
+    #2 Resetn = 1;
+    #50 CountEnable = 1;    
+    #250 CountEnable = 0;
+    #50 $finish;
+
+end 
+
+always begin
+    #5 Clk = ~Clk;
+end
+
