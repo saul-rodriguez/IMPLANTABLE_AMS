@@ -3,11 +3,12 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module cp ( CP_out, AN, B, vdda, vssa, vsub );
+module cp ( CP_out, AN, B, vdda, vssa, vsub, bias );
 
   input vsub;
   input vdda;
   input vssa;
+  input bias;
   input B;
   input AN;
   output CP_out;

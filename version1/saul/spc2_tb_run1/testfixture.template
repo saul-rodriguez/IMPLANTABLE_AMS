@@ -1,0 +1,28 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  CE, IQ;
+
+reg  Cfg_in, Clk, Resetn;
+
+wire [1:0]  GCP;
+wire [2:0]  G;
+wire [3:0]  F;
+
+
+
+spc2_tb top(.CE(CE), .F(F), .G(G), .GCP(GCP), .IQ(IQ), .Cfg_in(Cfg_in)
+     , .Clk(Clk), .Resetn(Resetn)); 
+ 
+
+`ifdef verilog
+
+ //please enter any additional verilog stimulus in the /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/spc2_tb_run1/testfixture.verilog file
+`include "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/spc2_tb_run1/testfixture.verilog"
+
+`endif
+
+endmodule 

@@ -1,0 +1,19 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  CE, IQ;
+
+reg  Cfg_in, Clk, Resetn;
+
+wire [1:0]  GCP;
+wire [2:0]  G;
+wire [3:0]  F;
+
+
+
+spc2_tb top(.CE(CE), .F(F), .G(G), .GCP(GCP), .IQ(IQ), .Cfg_in(Cfg_in)
+     , .Clk(Clk), .Resetn(Resetn)); 
+ 

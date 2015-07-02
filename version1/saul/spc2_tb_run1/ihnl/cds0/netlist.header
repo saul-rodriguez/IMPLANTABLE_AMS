@@ -1,0 +1,22 @@
+// Library - IMP_DIG_SPI, Cell - spc2_tb, View - schematic
+// LAST TIME SAVED: Jul  1 15:09:18 2015
+// NETLIST TIME: Jul  1 15:16:48 2015
+`timescale 1ns / 1ps 
+
+module spc2_tb ( CE, F, G, GCP, IQ, Cfg_in, Clk, Resetn );
+
+output  CE, IQ;
+
+input  Cfg_in, Clk, Resetn;
+
+output [1:0]  GCP;
+output [2:0]  G;
+output [3:0]  F;
+
+
+specify 
+    specparam CDS_LIBNAME  = "IMP_DIG_SPI";
+    specparam CDS_CELLNAME = "spc2_tb";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+

@@ -4,7 +4,7 @@
 module test;
 
 
-wire  Fout;
+wire  F_PFD, Fout;
 
 reg  Fin, Resetn;
 
@@ -12,8 +12,8 @@ reg [3:0]  Fsel;
 
 
 
-FreqDiv_tb top(.Fout(Fout), .Fin(Fin), .Fsel(Fsel), .Resetn(Resetn)
-     ); 
+FreqDiv_tb top(.F_PFD(F_PFD), .Fout(Fout), .Fin(Fin), .Fsel(Fsel), 
+     .Resetn(Resetn)); 
  
 
 `ifdef verilog

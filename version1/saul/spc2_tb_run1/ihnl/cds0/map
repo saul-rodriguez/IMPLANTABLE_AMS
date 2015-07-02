@@ -1,0 +1,39 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "functional schematic symbol"
+  stopList "symbol"
+  hierDelim "."
+  hierPrefix "test.top"
+  globalHierPrefix "cds_globals."
+  busRef   "ORDERED"
+  netType   "BUS"
+  leftStr  "["
+  rangeStr  ":"
+  rightStr  "]"
+ )
+( defbus
+( "F" 3 0  "F" 3 0  )
+( "G" 2 0  "G" 2 0  )
+( "GCP" 1 0  "GCP" 1 0  )
+ )
+( net
+( "GCP<1>" "GCP[1]" )
+( "G<2>" "G[2]" )
+( "F<3>" "F[3]" )
+( "G<1>" "G[1]" )
+( "F<0>" "F[0]" )
+( "G<0>" "G[0]" )
+( "GCP<0>" "GCP[0]" )
+( "F<1>" "F[1]" )
+( "F<2>" "F[2]" )
+ )
+( inst
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

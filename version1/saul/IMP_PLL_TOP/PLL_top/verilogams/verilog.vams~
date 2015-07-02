@@ -4,17 +4,19 @@
 `include "disciplines.vams"
 `timescale 1ns / 1ps
 
-module PLL_top ( Fout, Fin, Fsel, Resetn, vdda, vddd, vssa, vssd, vsub );
+module PLL_top ( Fout, Fref, Fsel, Resetn, vdda, vddd, vssa, vssd, vsub, bias_vco, bias_cp );
 
   input vsub;
   output reg Fout;
   input vssd;
   input vdda;
-  input Fin;
+  input Fref;
   input vssa;
   input vddd;
   input  [3:0] Fsel;
   input Resetn;
+  input bias_vco;
+  input bias_cp;
 
   parameter cycle = 62.5;
   reg vco_clk;
@@ -56,7 +58,7 @@ begin
         4'b1101: Fout <= count[12];
         4'b1110: Fout <= count[13];
         4'b1111: Fout <= count[14];
-        default: Fout <= Fin;
+        default: Fout <= Fref;
 	endcase
 end
 
