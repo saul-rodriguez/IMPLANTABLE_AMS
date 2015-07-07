@@ -1,0 +1,114 @@
+//Verilog-AMS HDL for "IMP_DIG_SPI", "bravo" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+`timescale 1ns / 1ps
+
+module bravo(SD,CD,Fref,Resetn);
+
+output SD; //serial data
+output CD; //clock data
+output Fref; //clock reference
+output Resetn; //Reset (L)
+
+parameter cycle = 2000; //2000ns -> 500 kHz
+
+reg SD;
+reg CD;
+reg Resetn;
+reg Fref;
+
+parameter [10:0] confWord  = 11'b10101100001; //0x561
+parameter [3:0] F = 4'b1101;
+parameter [0:0] IQ = 0;
+parameter [2:0] G = 3'b111;
+parameter [0:0] CE = 1;
+parameter [1:0] GCP = 2'b01;
+ 
+reg [10:0] mConf;
+
+reg [3:0] tF;
+reg [0:0] tIQ;
+reg [2:0] tG;
+reg [0:0] tCE;
+reg [1:0] tGCP;
+
+
+initial begin
+	//mConf = confWord;
+	tF = F;
+	tIQ = IQ;
+	tG = G;
+	tCE = CE;
+	tGCP = GCP;
+
+	mConf = {tF,tIQ,tG,tCE,tGCP};
+
+	SD = 0;
+	CD = 0;
+	Resetn = 0;
+	Fref = 0;
+
+    #50 Resetn = 1; 
+	#10 CD = 0; SD = mConf[0]; 
+	#10 CD = 1;	
+    #10 CD = 0; SD = mConf[1];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[2];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[3];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[4];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[5];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[6];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[7];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[8];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[9];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[10];
+	#10 CD = 1;
+    #10 CD = 0; 
+
+
+    #50 Resetn = 1; 
+	#10 CD = 0; SD = mConf[0]; 
+	#10 CD = 1;	
+    #10 CD = 0; SD = mConf[1];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[2];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[3];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[4];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[5];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[6];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[7];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[8];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[9];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[10];
+	#10 CD = 1;
+    #10 CD = 0; 
+
+
+end
+
+
+always #(cycle/2)
+begin
+	Fref = ~Fref;
+end
+
+
+endmodule
+
