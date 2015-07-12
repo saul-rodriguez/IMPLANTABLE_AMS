@@ -1,99 +1,43 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.5 - CAT32 05/06/2013 23:37 (cat91amd) $
 \o Sub version:		sub-version  s014 
-\o Arguments:		-cdslib /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib -mpssession virtuoso20861 -mpshost subway.it.kth.se 
-\o Working Directory:	subway.it.kth.se:/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul
+\o Arguments:		-cdslib /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib -mpssession virtuoso6239 -mpshost localhost.localdomain 
+\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		4.5.3
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 0 0)
-\o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(-10 14 500 400))
-\a nrResizeWindow(cdsLibEditor list(2262 107 500 400))
-\a nrResizeWindow(cdsLibEditor list(2262 107 783 841))
-\a nrListItemAction(cdsLibEditor->mainTable 51 1)
-\o Active cell: 51 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DIG_COUNTER"
-\o QUESTION (CLE-200): The directory "./IMPLANTABLE_AMS/version1/saul/IMP_DIG_COUNTER" \ndoesn't exist. If other tools use this file, \nan error will occur unless you either create \nthe directory you have specified or change the \npath to an existing directory. \n\nDo you want to create a new library? 
-\a nrSetWindowVisibility(needCreateDialog "show")
-\a nrSetCurrentWindow(needCreateDialog)
-\a nrResizeWindow(needCreateDialog list(2393 327 521 207))
-\a needCreateDialog->cancelButton->value = t
-\a nrListItemAction(cdsLibEditor->mainTable 52 0)
-\o Active cell: 52 0 "IMP_PLL_TOP"
-\a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 51 1)
-\o Active cell: 51 1 "./IMPLANTABLE_AMS/version1/saul/IMP_DIG_COUNTER"
-\a nrListItemAction(cdsLibEditor->mainTable 52 0)
-\o Active cell: 52 0 "IMP_PLL_TOP"
+\o Warning: (cds.lib parser): Can't open include file "$IUSDIR/tools/inca/files/cds.lib"
+\o Warning: 	Error occurs in file /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib and line 65
+\a nrResizeWindow(cdsLibEditor list(10 73 500 400))
+\a nrResizeWindow(cdsLibEditor list(10 73 872 626))
+\a nrResizeWindow(cdsLibEditor list(10 73 872 627))
 \a nrListItemAction(cdsLibEditor->mainTable 52 1)
-\o Active cell: 52 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP"
+\o Active cell: 52 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_LPF"
 \a nrListItemAction(cdsLibEditor->mainTable 53 0)
-\o Active cell: 53 0 "IMP_DAC"
+\o Active cell: 53 0 "IMP_DIG_DUMMY"
+\a nrListItemAction(cdsLibEditor->mainTable 53 1)
+\o Active cell: 53 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DIG_DUMMY"
+\a nrListItemAction(cdsLibEditor->mainTable 54 0)
+\o Active cell: 54 0 "IMP_DIG_SPI"
 \a nrListItemAction(cdsLibEditor->mainTable 54 1)
-\o Active cell: 54 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN"
+\o Active cell: 54 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DIG_SPI"
 \a nrListItemAction(cdsLibEditor->mainTable 55 0)
-\o Active cell: 55 0 "IMP_AN_SIGNAL_GEN_GM"
+\o Active cell: 55 0 "IMP_TOP"
 \a nrListItemAction(cdsLibEditor->mainTable 55 1)
-\o Active cell: 55 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM"
+\o Active cell: 55 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP"
 \a nrListItemAction(cdsLibEditor->mainTable 56 0)
-\o Active cell: 56 0 "avTech"
-\a nrSetCurrentWindow(cdsLibEditor)
+\o Active cell: 56 0 "IMP_CONFIG"
 \a nrListItemAction(cdsLibEditor->mainTable 56 1)
-\o Active cell: 56 1 "/afs/ict.kth.se/pkg/designkits/ekt/cdc/installs/ASSURA41/tools/assura/etc/avtech/avTech"
-\o QUESTION (CLE-200): The directory " ASSURAHOME/tools/assura/etc/avtech/avTech" \ndoesn't exist. If other tools use this file, \nan error will occur unless you either create \nthe directory you have specified or change the \npath to an existing directory. \n\nDo you want to create a new library? 
-\a nrSetWindowVisibility(needCreateDialog "show")
-\a nrSetCurrentWindow(needCreateDialog)
-\a nrResizeWindow(needCreateDialog list(2393 327 521 207))
-\a needCreateDialog->cancelButton->value = t
+\o Active cell: 56 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_CONFIG"
 \a nrListItemAction(cdsLibEditor->mainTable 57 0)
-\o Active cell: 57 0 "IMP_AN_LNA"
-\a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 56 1)
-\o Active cell: 56 1 " ASSURAHOME/tools/assura/etc/avtech/avTech"
-\a nrListItemAction(cdsLibEditor->mainTable 57 0)
-\o Active cell: 57 0 "IMP_AN_LNA"
+\o Active cell: 57 0 "IMP_POW_BANDGAP"
 \a nrListItemAction(cdsLibEditor->mainTable 57 1)
-\o Active cell: 57 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_LNA"
+\o Active cell: 57 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_BANDGAP"
 \a nrListItemAction(cdsLibEditor->mainTable 58 0)
-\o Active cell: 58 0 "IMP_AN_MIXER"
+\o Active cell: 58 0 "IMP_POW_LDO"
 \a nrListItemAction(cdsLibEditor->mainTable 58 1)
-\o Active cell: 58 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER"
+\o Active cell: 58 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_LDO"
 \a nrListItemAction(cdsLibEditor->mainTable 59 0)
-\o Active cell: 59 0 "IMP_AN_TIA"
-\a nrListItemAction(cdsLibEditor->mainTable 59 1)
-\o Active cell: 59 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_TIA"
-\a nrListItemAction(cdsLibEditor->mainTable 60 0)
-\o Active cell: 60 0 "IMP_AN_LPF"
-\a nrListItemAction(cdsLibEditor->mainTable 60 1)
-\o Active cell: 60 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_LPF"
-\a nrListItemAction(cdsLibEditor->mainTable 61 0)
-\o Active cell: 61 0 "IMP_AN_BUFFER"
-\a nrListItemAction(cdsLibEditor->mainTable 61 1)
-\o Active cell: 61 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER"
-\a nrListItemAction(cdsLibEditor->mainTable 62 0)
-\o Active cell: 62 0 "IMP_AN_DEMOD"
-\a nrListItemAction(cdsLibEditor->mainTable 62 1)
-\o Active cell: 62 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD"
-\a nrListItemAction(cdsLibEditor->mainTable 63 0)
-\o Active cell: 63 0 "IMP_PLL_VCO"
-\a nrListItemAction(cdsLibEditor->mainTable 63 1)
-\o Active cell: 63 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_VCO"
-\a nrListItemAction(cdsLibEditor->mainTable 64 0)
-\o Active cell: 64 0 "IMP_PLL_CP"
-\a nrResizeWindow(cdsLibEditor list(2262 1187 783 841))
-\a nrResizeWindow(cdsLibEditor list(2262 107 783 841))
-\a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 64 1)
-\o Active cell: 64 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_CP"
-\a nrListItemAction(cdsLibEditor->mainTable 65 0)
-\o Active cell: 65 0 "IMP_PLL_PFD"
-\a nrListItemAction(cdsLibEditor->mainTable 65 1)
-\o Active cell: 65 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_PFD"
-\a nrListItemAction(cdsLibEditor->mainTable 66 0)
-\o Active cell: 66 0 "IMP_DIG_DIV"
-\a nrListItemAction(cdsLibEditor->mainTable 66 1)
-\o Active cell: 66 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DIG_DIV"
-\a nrListItemAction(cdsLibEditor->mainTable 67 0)
-\o Active cell: 67 0 ""
+\o Active cell: 59 0 ""
 \a cdsLibEditor->fileSaveButton->value = t
 \a cdsLibEditor->fileExitButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
