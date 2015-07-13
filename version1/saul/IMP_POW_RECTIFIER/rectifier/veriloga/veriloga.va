@@ -1,0 +1,34 @@
+// VerilogA for IMP_POW_RECTIFIER, rectifier, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module rectifier(COIL_N, COIL_P, Tx_Data, VD, gnda, vsub);
+inout COIL_N;
+electrical COIL_N;
+inout COIL_P;
+electrical COIL_P;
+inout Tx_Data;
+electrical Tx_Data;
+inout VD;
+electrical VD;
+inout gnda;
+electrical gnda;
+inout vsub;
+electrical vsub;
+
+real Vin;
+
+analog begin
+	
+	Vin  = abs(V(COIL_P,COIL_N));
+	if (Vin > V(VD)) begin
+		I(VD) <+ -(Vin - V(VD))/10; //Internal forward-biased diode resistance 10 Ohm
+	end else begin
+		I(VD) <+ -(Vin - V(VD))/10e3; //Internal reverse-biased diode resistance 10kOhm
+	end
+	
+
+end
+
+endmodule

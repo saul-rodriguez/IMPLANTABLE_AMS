@@ -1,0 +1,34 @@
+// VerilogA for IMP_POW_CONSTANT_GM, constant_gm, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module constant_gm(VD, bias1, bias2, gnda, vsub);
+inout VD;
+electrical VD;
+inout bias1;
+electrical bias1;
+inout bias2;
+electrical bias2;
+inout gnda;
+electrical gnda;
+inout vsub;
+electrical vsub;
+
+analog begin
+
+if (V(VD) > 0.8) begin
+
+	I(bias1) <+ -250e-9;
+	I(bias2) <+ -250e-9;
+
+end else begin
+
+	I(bias1) <+ 0;
+	I(bias2) <+ 0;
+end
+
+
+end
+
+endmodule
