@@ -17,13 +17,16 @@ electrical vsub;
 
 analog begin
 
-if (V(vdda) > 1.25) begin
-	V(V_REF) <+ 1.25;
-end else begin 
-	V(V_REF) <+ V(vdda);
-end
+	if (V(vdda) > 1.25) begin
+		V(V_REF) <+ 1.25;
+	end else begin 
+		V(V_REF) <+ V(vdda);
+	end
+
+	V(bias) <+ I(bias)*1;
 
 end
+
 
 
 endmodule
