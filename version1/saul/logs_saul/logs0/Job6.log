@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.07.15 07:05:55.109
-\# Local time Wednesday 15 July 2015, 9:05 am
+\# Program start time UTC 2015.07.16 15:03:56.991
+\# Local time Thursday 16 July 2015, 5:03 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -15,18 +15,18 @@
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	512720896 (0x1e8f8000) bytes
-\# Available memory:	17381884 (0x10939fc) kilobytes
+\# Initial sbrk value:	523526144 (0x1f346000) bytes
+\# Available memory:	16841556 (0x100fb54) kilobytes
 \# System memory:	18405228 (0x118d76c) kilobytes
-\# Maximum memory size:	18391928832 (0x4483e9000) bytes
-\# Max mem available:	17856745472 (0x428585000) bytes
-\# Initial memory used:	57696256 (0x3706000) bytes
-\#        process size:	669065216 (0x27e12000) bytes
+\# Maximum memory size:	18381127680 (0x44799c000) bytes
+\# Max mem available:	17303453696 (0x4075dc000) bytes
+\# Initial memory used:	57700352 (0x3707000) bytes
+\#        process size:	669069312 (0x27e13000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		9447
+\# Process Id:		15783
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	17346464 (0x108afa0) kilobytes UTC 2015.07.15 07:05:55.242
-\# Memory report: Maximum memory size now 17828184064 (0x426a48000) bytes, UTC 2015.07.15 07:05:55.242
+\# Available memory:	16799092 (0x1005574) kilobytes UTC 2015.07.16 15:03:57.172
+\# Memory report: Maximum memory size now 17282981888 (0x406256000) bytes, UTC 2015.07.16 15:03:57.172
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,17 +95,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = current_mirror
-\o 	View         = schematic
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.1
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.1.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.1/1/ALL_TESTS:current_mirror:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.11
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.11.rdb
+\o 	Results Dir  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.11/5/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/simulation
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -115,7 +115,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 167874560 (0xa019000) bytes, process size 915288064 (0x368e3000) bytes at UTC 2015.07.15 07:05:57.123
+\# Memory report: now 165236736 (0x9d95000) bytes, process size 912650240 (0x3665f000) bytes at UTC 2015.07.16 15:03:58.498
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 65 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -134,172 +134,6 @@
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
 \o Loading devCheck.cxt 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 51) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var IDC = "1u"
-\o Setting var L = "1u"
-\o Setting var W = "50u"
-\o Loading monte.cxt 
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.1/51/ALL_TESTS:current_mirror:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.1/51/ALL_TESTS:current_mirror:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 51)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Loading seCore.cxt 
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:05:58 2015
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
-\o 
-\o End netlisting Jul 15 09:05:58 2015
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:    7
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:current_mirror:1 ] for Point ID (2 51).
-\o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.1/51/ALL_TESTS:current_mirror:1/psf.
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:05:58 2015
-\o End netlisting Jul 15 09:05:58 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\o Loading stats.cxt 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 51) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 52) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 53) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 54) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 55) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 56) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 57) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 58) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 59) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 17097981952 (0x3fb1e8000) bytes, UTC 2015.07.15 07:06:05.242
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -314,424 +148,357 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 60) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 61) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 62) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 63) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 64) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 65) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 66) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 67) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 68) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 69) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 70) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 71) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 72) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 73) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 74) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 75) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 76) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 77) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 78) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 79) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 80) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 81) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 82) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 83) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 84) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 85) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 86) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 87) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 88) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 89) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 90) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 91) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 92) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 93) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 94) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 95) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 96) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 97) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 98) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 99) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 100) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 17444204544 (0x40fc17000) bytes, UTC 2015.07.15 07:06:25.254
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 268529664 (0x10017000) bytes, process size 1015943168 (0x3c8e1000) bytes at UTC 2015.07.15 07:11:53.333
-\# Memory report: peak usage 268550144 (0x1001c000) bytes, process size 1015959552 (0x3c8e5000) bytes
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.12
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.12.rdb
+\o 	Results Dir  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.12/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/simulation
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 4) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "40p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "10M"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.12/4/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.12/4/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 4)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Loading seCore.cxt 
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:04:36 2015
+\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
+\o was generated using a previous IHNL version which is incompatible with the
+\o current IHNL version. Therefore re-netlisting the entire design using the
+\o current IHNL version.
+\o 
+\o End netlisting Jul 16 17:04:36 2015
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   20
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (12 4).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.12/4/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: Maximum memory size now 16915177472 (0x3f0392000) bytes, UTC 2015.07.16 15:04:37.264
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 4) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.13
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13.rdb
+\o 	Results Dir  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/simulation
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 1) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "1p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "100M"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "50m"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/1/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/1/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:07:03 2015
+\o End netlisting Jul 16 17:07:03 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (13 1).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/1/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 1) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 5) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "80p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/5/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/5/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 5)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:07:05 2015
+\o End netlisting Jul 16 17:07:05 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (13 5).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.13/5/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 5) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.14
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.14.rdb
+\o 	Results Dir  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.14/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/simulation
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 2) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "5p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "10M"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "50m"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.14/2/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.14/2/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 2)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:09:16 2015
+\o End netlisting Jul 16 17:09:16 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (14 2).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.14/2/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 2) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 191979520 (0xb716000) bytes, process size 939393024 (0x37fe0000) bytes at UTC 2015.07.16 15:14:21.176
+\# Memory report: peak usage 191995904 (0xb71a000) bytes, process size 939409408 (0x37fe4000) bytes

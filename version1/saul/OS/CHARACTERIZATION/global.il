@@ -30,9 +30,9 @@ W4 = W4T/8
 
 ; ** PMOS2 **
 VDS5 = 0.5
-IDS5 = 800u
-L5 = 1u
-W5T = 200u
+IDS5 = 0.2u
+L5 = 4u
+W5T = 50u
 W5 = W5T/8
 
 ; ** PMOS3 **

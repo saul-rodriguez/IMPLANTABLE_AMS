@@ -1,0 +1,749 @@
+'(nil version 1.0 bBox ((471 317) (1021 904)))
+(unless printInfoDpl
+printInfoDpl = (ncons nil)
+)
+(unless printInfoDpl->expTable
+printInfoDpl->expTable = (ncons nil)
+)
+printInfoDpl->expTable->waves = (let
+(tmp1)
+tmp1 = nil
+list(tmp1)
+)
+printInfoDpl->expTable->origWaves = (let
+(tmp1)
+tmp1 = nil
+list(tmp1)
+)
+printInfoDpl->expTable->expressions = (let
+(tmp1)
+tmp1 = "value(VNPP(\"/TN1\" \"??\") 1000.0)"
+list(tmp1)
+)
+printInfoDpl->expTable->aliases = (let
+(tmp1)
+tmp1 = "value(VNPP(\"/TN1\" \"??\") 1000.0)"
+list(tmp1)
+)
+(unless printInfoDpl->optionDpl
+printInfoDpl->optionDpl = (ncons nil)
+)
+printInfoDpl->optionDpl->format = 'engineering
+printInfoDpl->optionDpl->numSigDigits = 6
+printInfoDpl->optionDpl->linLog = "Linear"
+printInfoDpl->optionDpl->from = nil
+printInfoDpl->optionDpl->to = nil
+printInfoDpl->optionDpl->step = nil
+(unless printInfoDpl->printOptions
+printInfoDpl->printOptions = (ncons nil)
+)
+printInfoDpl->printType = "noise"
+printInfoDpl->origStrList = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15)
+tmp1 = "sweep             value(VNPP(\"/TN1\" \"??\") 1000.0) (V^2/Hz)"
+tmp2 = "Djnoise             231.146e-24     "
+tmp3 = "Rbulknoise            0             "
+tmp4 = "Rgatenoise            0             "
+tmp5 = "Rjundnoise            0             "
+tmp6 = "Rjunsnoise            0             "
+tmp7 = "Rwellnoise            0             "
+tmp8 = "Sfl                   5.2314e-15    "
+tmp9 = "Shotgd                0             "
+tmp10 = "Shotgs                0             "
+tmp11 = "Sig                  25.687e-33     "
+tmp12 = "Sigth                -7.2802e-24    "
+tmp13 = "Sjnoise              29.4275e-42    "
+tmp14 = "Sth                   1.9488e-15    "
+tmp15 = "total                 7.1803e-15    "
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15)
+)
+printInfoDpl->title = nil
+printInfoDpl->xCol = nil
+printInfoDpl->width = 14
+printInfoDpl->numSpaces = 4
+printInfoDpl->noMerge = nil
+printInfoDpl->resultsDir = nil
+printInfoDpl->resultName = nil
+printInfoDpl->unitList = (let
+(tmp1 tmp2)
+tmp1 = ""
+tmp2 = "V^2/Hz"
+list(tmp1 tmp2)
+)
+printInfoDpl->waveNameList = (let
+(tmp1 tmp2)
+tmp1 = "sweep"
+tmp2 = "value(VNPP(\"/TN1\" \"??\") 1000.0) (V^2/Hz)"
+list(tmp1 tmp2)
+)
+(unless printInfoDpl->context
+printInfoDpl->context = (ncons nil)
+)
+printInfoDpl->context->runObjFile = "runObjFile"
+printInfoDpl->context->netlistDir = "/home/saul/simulation/s2_2/spectre/schematic/netlist"
+printInfoDpl->context->relativeDir = "/home/saul/simulation/s2_2/spectre"
+printInfoDpl->context->dataDir = "/home/saul/simulation/s2_2/spectre/schematic"
+(unless printInfoDpl->context->cache
+printInfoDpl->context->cache = (ncons nil)
+)
+(unless printInfoDpl->context->simData
+printInfoDpl->context->simData = (ncons nil)
+)
+printInfoDpl->context->simData->drl = nil
+(unless printInfoDpl->context->simData->instData
+printInfoDpl->context->simData->instData = (ncons nil)
+)
+printInfoDpl->context->simData->dataDir = "/home/saul/simulation/s2_2/spectre/schematic"
+printInfoDpl->context->simData->simulator = "spectre"
+printInfoDpl->context->simData->aliasList = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'subckts
+list(tmp1)
+)
+tmp2 = "subckts-info.subckts"
+list(tmp1 tmp2)
+)
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'primitives
+list(tmp1)
+)
+tmp2 = "primitives-info.primitives"
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'designParamVals
+list(tmp1)
+)
+tmp2 = "designParamVals-info"
+list(tmp1 tmp2)
+)
+tmp4 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'noise
+list(tmp1)
+)
+tmp2 = "noise-noise"
+list(tmp1 tmp2)
+)
+tmp5 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'pz
+list(tmp1)
+)
+tmp2 = "pz-pz"
+list(tmp1 tmp2)
+)
+tmp6 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'ac
+list(tmp1)
+)
+tmp2 = "ac-ac"
+list(tmp1 tmp2)
+)
+tmp7 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'dcOpInfo
+list(tmp1)
+)
+tmp2 = "dcOpInfo-info"
+list(tmp1 tmp2)
+)
+tmp8 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'dcOp
+list(tmp1)
+)
+tmp2 = "dcOp-dc"
+list(tmp1 tmp2)
+)
+tmp9 = (let
+(tmp1 tmp2)
+tmp1 = (let
+(tmp1)
+tmp1 = 'variables
+list(tmp1)
+)
+tmp2 = "variables"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
+)
+printInfoDpl->context->simulator = nil
+printInfoDpl->realExpList = nil
+(unless printInfoDpl->noiseOptions
+printInfoDpl->noiseOptions = (ncons nil)
+)
+printInfoDpl->noiseOptions->type = 'integrated
+printInfoDpl->noiseOptions->dataDir = "/home/saul/simulation/s2_2/spectre/schematic"
+printInfoDpl->noiseOptions->dataName = 'noise\-noise
+printInfoDpl->noiseOptions->frequency = nil
+printInfoDpl->noiseOptions->weight = 1.0000000000000000e+00
+printInfoDpl->noiseOptions->output = nil
+printInfoDpl->noiseOptions->include = 'all
+printInfoDpl->noiseOptions->xclude = 'none
+printInfoDpl->noiseOptions->devTypes = (let
+(tmp1 tmp2 tmp3)
+tmp1 = "resistor"
+tmp2 = "psp102"
+tmp3 = "diode"
+list(tmp1 tmp2 tmp3)
+)
+printInfoDpl->noiseOptions->noiseUnit = "V"
+printInfoDpl->noiseOptions->truncateType = 'byNumber
+printInfoDpl->noiseOptions->truncateData = 10
+printInfoDpl->noiseOptions->sort = (let
+(tmp1)
+tmp1 = 'individual
+list(tmp1)
+)
+printInfoDpl->noiseOptions->digits = 6
+printInfoDpl->noiseOptions->percentDecimals = 2
+printInfoDpl->noiseOptions->from = 1.0000000000000000e-03
+printInfoDpl->noiseOptions->to = 5.0000000000000000e+04
+printInfoDpl->noiseOptions->vnppbyindex = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'lambda
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'index
+tmp2 = 'inst
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3 tmp4)
+tmp1 = 'let
+tmp2 = (let
+(tmp1)
+tmp1 = 'wave
+list(tmp1)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'inst
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "inst"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'when
+tmp2 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2 tmp3 tmp4)
+tmp1 = '_drlGetNoiseDataByIndex
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'famiOpen
+tmp2 = 'inst
+list(tmp1 tmp2)
+)
+tmp3 = 'index
+tmp4 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3 tmp4)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'awviNormalizeIndexedVnpp
+tmp2 = 'inst
+tmp3 = 'wave
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3 tmp4)
+)
+list(tmp1 tmp2 tmp3)
+)
+printInfoDpl->noiseOptions->vn2 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'lambda
+tmp2 = (let
+(tmp1)
+tmp1 = 'dataDir
+list(tmp1)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = 'let
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
+tmp1 = 'dataName
+tmp2 = 'dataFile
+tmp3 = 'inst
+tmp4 = 'fam
+tmp5 = 'wave
+tmp6 = 'units
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'dataName
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'noise\-noise
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'dataFile
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'famOpen
+tmp2 = 'dataDir
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'inst
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'famGetAnalysis
+tmp2 = 'dataFile
+tmp3 = 'dataName
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'fam
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'famRead
+tmp2 = 'inst
+tmp3 = "out"
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5)
+tmp1 = 'when
+tmp2 = 'fam
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = 'if
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'drIsWaveform
+tmp2 = 'wave
+list(tmp1 tmp2)
+)
+tmp3 = 'then
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'units
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'get
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'drGetWaveformYVec
+tmp2 = 'wave
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'units
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = 'else
+tmp6 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'units
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'get
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'drGetWaveformYVec
+tmp2 = 'fam
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'units
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3 tmp4)
+tmp1 = 'and
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'rexMatchp
+tmp2 = "[AVrads^2]/[sqrt(Hz)]"
+tmp3 = 'units
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'expt
+tmp2 = 'wave
+tmp3 = 2
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3 tmp4)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+list(tmp1 tmp2 tmp3)
+)
+printInfoDpl->noiseOptions->vnin = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'lambda
+tmp2 = (let
+(tmp1)
+tmp1 = 'dataDir
+list(tmp1)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = 'let
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5)
+tmp1 = 'dataName
+tmp2 = 'dataFile
+tmp3 = 'inst
+tmp4 = 'fam
+tmp5 = 'wave
+list(tmp1 tmp2 tmp3 tmp4 tmp5)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'dataName
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'noise\-noise
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'dataFile
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'famOpen
+tmp2 = 'dataDir
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'inst
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'famGetAnalysis
+tmp2 = 'dataFile
+tmp3 = 'dataName
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'fam
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'famRead
+tmp2 = 'inst
+tmp3 = "in"
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
+tmp1 = 'when
+tmp2 = 'fam
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'unless
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'drIsWaveform
+tmp2 = 'wave
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'unless
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = 'wave
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+list(tmp1 tmp2 tmp3)
+)
+printInfoDpl->noiseOptions->ng = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'lambda
+tmp2 = (let
+(tmp1)
+tmp1 = 'dataDir
+list(tmp1)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = 'let
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5)
+tmp1 = 'dataName
+tmp2 = 'dataFile
+tmp3 = 'inst
+tmp4 = 'fam
+tmp5 = 'wave
+list(tmp1 tmp2 tmp3 tmp4 tmp5)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'dataName
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'noise\-noise
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'dataFile
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'famOpen
+tmp2 = 'dataDir
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'inst
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'famGetAnalysis
+tmp2 = 'dataFile
+tmp3 = 'dataName
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'fam
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'famRead
+tmp2 = 'inst
+tmp3 = "gain"
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
+tmp1 = 'when
+tmp2 = 'fam
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'unless
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'drIsWaveform
+tmp2 = 'wave
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'unless
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'setq
+tmp2 = 'wave
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'evalstring
+tmp2 = "fam"
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = 'wave
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+list(tmp1 tmp2 tmp3)
+)
+printInfoDpl->noiseOptions->mapFun = 'spectreiMapInstanceSimToSchName
+printInfoDpl->noiseOptions->filterFun = 'asiiNoiseFilterParametersWrapper
+printInfoDpl->noiseOptions->preprocessFun = 'asiiPreProcessNoiseWrapper
+printInfoDpl->noiseOptions->hierLevel = ""
+printInfoDpl->saveLoadFile = "/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/s2_2/spectre_state1/printSetup.state"
+printInfoDpl->saveNeeded = nil

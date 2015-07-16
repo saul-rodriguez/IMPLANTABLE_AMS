@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.07.15 07:15:03.493
-\# Local time Wednesday 15 July 2015, 9:15 am
+\# Program start time UTC 2015.07.16 15:38:22.187
+\# Local time Thursday 16 July 2015, 5:38 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -15,18 +15,18 @@
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	361443328 (0x158b3000) bytes
-\# Available memory:	17266812 (0x107787c) kilobytes
+\# Initial sbrk value:	324186112 (0x1352b000) bytes
+\# Available memory:	16728028 (0xff3fdc) kilobytes
 \# System memory:	18405228 (0x118d76c) kilobytes
-\# Maximum memory size:	18543210496 (0x45142f000) bytes
-\# Max mem available:	17738915840 (0x421526000) bytes
-\# Initial memory used:	57700352 (0x3707000) bytes
-\#        process size:	669069312 (0x27e13000) bytes
+\# Maximum memory size:	18580471808 (0x4537b8000) bytes
+\# Max mem available:	17187205120 (0x4006ff000) bytes
+\# Initial memory used:	57704448 (0x3708000) bytes
+\#        process size:	669073408 (0x27e14000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		14466
+\# Process Id:		22212
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	17218024 (0x106b9e8) kilobytes UTC 2015.07.15 07:15:03.670
-\# Memory report: Maximum memory size now 17711968256 (0x41fb73000) bytes, UTC 2015.07.15 07:15:03.670
+\# Available memory:	16653516 (0xfe1ccc) kilobytes UTC 2015.07.16 15:38:22.397
+\# Memory report: Maximum memory size now 17133907968 (0x3fd42b000) bytes, UTC 2015.07.16 15:38:22.397
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,17 +95,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = current_mirror
-\o 	View         = schematic
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.2
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.2.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.2/1/ALL_TESTS:current_mirror:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.18
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18.rdb
+\o 	Results Dir  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/simulation
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -115,7 +115,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 167956480 (0xa02d000) bytes, process size 915369984 (0x368f7000) bytes at UTC 2015.07.15 07:15:05.483
+\# Memory report: now 167931904 (0xa027000) bytes, process size 915345408 (0x368f1000) bytes at UTC 2015.07.16 15:38:24.566
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 65 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -139,44 +139,50 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (3 51) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Run start for Point ID (18 11) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var IDC = "1u"
-\o Setting var L = "1u"
-\o Setting var W = "50u"
-\o Loading monte.cxt 
+\o Setting var CL = "1p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "10M"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "50m"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.2/51/ALL_TESTS:current_mirror:1/netlist
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/11/IMP_AN_BUFFER:buffer_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.2/51/ALL_TESTS:current_mirror:1
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/11/IMP_AN_BUFFER:buffer_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (3 51)
+\o *Info*    Creating Netlist for Point ID (18 11)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:15:06 2015
+\o Begin Incremental Netlisting Jul 16 17:38:25 2015
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Jul 15 09:15:06 2015
+\o End netlisting Jul 16 17:38:25 2015
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:    7
+\o 	Number of components:   20
 \o 
 \o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
@@ -184,21 +190,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:current_mirror:1 ] for Point ID (3 51).
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 11).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.2/51/ALL_TESTS:current_mirror:1/psf.
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:15:06 2015
-\o End netlisting Jul 15 09:15:06 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/11/IMP_AN_BUFFER:buffer_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -208,78 +203,187 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o Loading stats.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 51) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Run complete for Point ID (18 11) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 16) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/16/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/16/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 16)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:27 2015
+\o End netlisting Jul 16 17:38:27 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 16).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/16/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 52) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Run complete for Point ID (18 16) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/6/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/6/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 6)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:29 2015
+\o End netlisting Jul 16 17:38:29 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 6).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/6/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 53) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Run complete for Point ID (18 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 54) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Client has finished evaluating ... 
+\o *Info*    Run start for Point ID (18 10) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 55) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/10/IMP_AN_BUFFER:buffer_tb:1/netlist
 \o 
 \o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/10/IMP_AN_BUFFER:buffer_tb:1
 \o 
 \o 
+\o *Info*    Creating Netlist for Point ID (18 10)
 \o 
-\o *Info*    Client has finished evaluating ... 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:31 2015
+\o End netlisting Jul 16 17:38:31 2015
 \o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
 \o 
-\o *Info*    Run complete for Point ID (3 56) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 10).
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 57) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 16923045888 (0x3f0b13000) bytes, UTC 2015.07.15 07:15:13.672
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/10/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16698486784 (0x3e34eb000) bytes, UTC 2015.07.16 15:38:32.398
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -294,497 +398,48 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 58) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 59) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 60) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 61) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 62) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 63) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 64) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 65) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 66) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 67) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 68) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 69) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 70) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 71) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 72) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 73) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 74) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 75) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 76) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 77) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 78) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 79) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 80) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 81) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 82) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 83) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 84) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 85) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 86) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 87) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 88) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 89) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 90) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 91) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 92) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 93) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 94) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 95) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 96) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 97) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 98) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (3 99) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 100) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 17280569344 (0x406009000) bytes, UTC 2015.07.15 07:15:33.672
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = current_mirror
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.3
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.3.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.3/1/ALL_TESTS:current_mirror:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
+\o *Info*    Run complete for Point ID (18 10) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (4 101) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 27) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var IDC = "0.1u"
-\o Setting var L = "1u"
-\o Setting var W = "50u"
-\o Setting temp(T) = 27
+\o Setting var CL = "5p"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.3/101/ALL_TESTS:current_mirror:1/netlist
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/27/IMP_AN_BUFFER:buffer_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.3/101/ALL_TESTS:current_mirror:1
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/27/IMP_AN_BUFFER:buffer_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (4 101)
+\o *Info*    Creating Netlist for Point ID (18 27)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:18:19 2015
-\o End netlisting Jul 15 09:18:19 2015
+\o Begin Incremental Netlisting Jul 16 17:38:33 2015
+\o End netlisting Jul 16 17:38:33 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -792,21 +447,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:current_mirror:1 ] for Point ID (4 101).
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 27).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.3/101/ALL_TESTS:current_mirror:1/psf.
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:18:19 2015
-\o End netlisting Jul 15 09:18:19 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/27/IMP_AN_BUFFER:buffer_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -815,569 +459,47 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16724541440 (0x3e4dc4000) bytes, UTC 2015.07.15 07:18:23.675
-\# Memory report: now 279552000 (0x10a9a000) bytes, process size 1026965504 (0x3d364000) bytes at UTC 2015.07.15 07:18:24.027
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 101) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 102) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 103) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 104) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 105) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 106) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 107) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 108) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 109) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 110) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 111) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 112) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 113) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 114) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 115) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 116) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 117) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 118) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 119) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 120) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 121) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 122) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 123) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 124) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 125) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 126) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 127) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 128) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 129) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 130) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 131) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 132) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 133) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 134) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 135) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 136) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 137) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 138) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 139) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 140) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 141) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 142) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 143) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 144) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 145) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 146) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 147) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 148) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 149) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (4 150) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 17143508992 (0x3fdd53000) bytes, UTC 2015.07.15 07:18:43.786
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = current_mirror
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.4
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.4.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.4/1/ALL_TESTS:current_mirror:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
+\o *Info*    Run complete for Point ID (18 27) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (5 101) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 31) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var IDC = "0.01u"
-\o Setting var L = "1u"
-\o Setting var W = "50u"
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.4/101/ALL_TESTS:current_mirror:1/netlist
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/31/IMP_AN_BUFFER:buffer_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.4/101/ALL_TESTS:current_mirror:1
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/31/IMP_AN_BUFFER:buffer_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (5 101)
+\o *Info*    Creating Netlist for Point ID (18 31)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:21:30 2015
-\o End netlisting Jul 15 09:21:30 2015
+\o Begin Incremental Netlisting Jul 16 17:38:35 2015
+\o End netlisting Jul 16 17:38:35 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1385,21 +507,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:current_mirror:1 ] for Point ID (5 101).
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 31).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.4/101/ALL_TESTS:current_mirror:1/psf.
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 15 09:21:30 2015
-\o End netlisting Jul 15 09:21:30 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/31/IMP_AN_BUFFER:buffer_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1408,518 +519,864 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16671559680 (0x3e1b3d000) bytes, UTC 2015.07.15 07:21:33.789
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 101) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 102) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 103) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 104) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 105) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 106) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 107) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 108) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 109) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 110) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 111) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 112) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 113) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 114) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 115) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 116) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 117) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 118) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 119) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 120) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 121) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 122) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 123) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 124) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 125) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 126) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 127) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 128) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 129) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 130) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 131) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 132) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 133) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 134) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 135) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 136) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 137) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 138) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 139) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 140) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 141) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 142) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 143) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 144) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 145) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 146) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 147) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 148) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 149) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (5 150) on testbench [
-\o           ALL_TESTS:current_mirror:1 ].
+\o *Info*    Run complete for Point ID (18 31) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 17026453504 (0x3f6db1000) bytes, UTC 2015.07.15 07:21:53.844
-\o Job timed out after no activity in 300 seconds.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 21) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/21/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/21/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 21)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:37 2015
+\o End netlisting Jul 16 17:38:37 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 21).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/21/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 21) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 24) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/24/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/24/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 24)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:39 2015
+\o End netlisting Jul 16 17:38:39 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 24).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/24/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 24) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 34) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "10p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/34/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/34/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 34)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:41 2015
+\o End netlisting Jul 16 17:38:41 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 34).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/34/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 34) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 48) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/48/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/48/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 48)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:43 2015
+\o End netlisting Jul 16 17:38:43 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 48).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/48/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 48) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 35) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/35/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/35/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 35)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:44 2015
+\o End netlisting Jul 16 17:38:44 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 35).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/35/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 35) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 39) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/39/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/39/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 39)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:46 2015
+\o End netlisting Jul 16 17:38:46 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 39).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/39/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 39) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 49) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "40p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/49/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/49/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 49)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:48 2015
+\o End netlisting Jul 16 17:38:48 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 49).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/49/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 49) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 61) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/61/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/61/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 61)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:50 2015
+\o End netlisting Jul 16 17:38:50 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 61).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/61/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 61) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 52) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/52/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/52/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 52)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:52 2015
+\o End netlisting Jul 16 17:38:52 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 52).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/52/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 52) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 58) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/58/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/58/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 58)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:54 2015
+\o End netlisting Jul 16 17:38:54 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 58).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/58/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 58) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 76) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "80p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/76/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/76/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 76)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:56 2015
+\o End netlisting Jul 16 17:38:56 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 76).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/76/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 76) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 77) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/77/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/77/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 77)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:38:58 2015
+\o End netlisting Jul 16 17:38:58 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 77).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/77/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 77) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 69) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/69/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/69/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 69)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:39:00 2015
+\o End netlisting Jul 16 17:39:00 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 69).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/69/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 69) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 71) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/71/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/71/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 71)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 16 17:39:01 2015
+\o End netlisting Jul 16 17:39:01 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (18 71).
+\o 
+\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/71/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 71) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Memory report: on exit 192471040 (0xb78e000) bytes, process size 939884544 (0x38058000) bytes at UTC 2015.07.16 15:44:09.412
+\# Memory report: peak usage 192487424 (0xb792000) bytes, process size 939900928 (0x3805c000) bytes
