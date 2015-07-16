@@ -2,9 +2,9 @@
 
 ; ** NMOS1 **
 VDS1 = 0.5
-IDS1 = 1.0m
-L1 = 0.18u
-W1T = 49.92u
+IDS1 = 0.2u
+L1 = 1u
+W1T = 50u
 W1 = W1T/8
 
 ; ** NMOS2 **
@@ -23,9 +23,9 @@ W3 = W3T/8
 
 ; ** PMOS1 **
 VDS4 = 0.5
-IDS4 = 1.0m
-L4 = 0.18u
-W4T = 49.92u
+IDS4 = 4u
+L4 = 1u
+W4T = 100u
 W4 = W4T/8
 
 ; ** PMOS2 **

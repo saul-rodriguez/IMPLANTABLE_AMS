@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.07.14 20:01:53.252
-\# Local time Tuesday 14 July 2015, 10:01 pm
+\# Program start time UTC 2015.07.15 07:34:40.513
+\# Local time Wednesday 15 July 2015, 9:34 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	442806272 (0x1a64b000) bytes
-\# Available memory:	17472732 (0x10a9cdc) kilobytes
+\# Initial sbrk value:	323211264 (0x1343d000) bytes
+\# Available memory:	16746444 (0xff87cc) kilobytes
 \# System memory:	18405228 (0x118d76c) kilobytes
-\# Maximum memory size:	18461839360 (0x44c695000) bytes
-\# Max mem available:	17949769728 (0x42de3c000) bytes
-\# Initial memory used:	57692160 (0x3705000) bytes
-\#        process size:	669061120 (0x27e11000) bytes
+\# Maximum memory size:	18581446656 (0x4538a6000) bytes
+\# Max mem available:	17206063104 (0x4018fb000) bytes
+\# Initial memory used:	57704448 (0x3708000) bytes
+\#        process size:	669073408 (0x27e14000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		10665
+\# Process Id:		29148
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	17347148 (0x108b24c) kilobytes UTC 2015.07.14 20:01:53.975
-\# Memory report: Maximum memory size now 17823932416 (0x42663a000) bytes, UTC 2015.07.14 20:01:53.975
+\# Available memory:	16710196 (0xfefa34) kilobytes UTC 2015.07.15 07:34:40.654
+\# Memory report: Maximum memory size now 17176653824 (0x3ffcef000) bytes, UTC 2015.07.15 07:34:40.654
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -91,27 +91,32 @@
 \o *Info*    Client has finished starting ... 
 \o 
 \p hitkit: ams_4.11  Tech: h18a6am  User: saul 
-\o Loading simui.cxt 
 \o 
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = CHARACTERIZATION
-\o 	Cell         = DCBIAS
+\o 	Library      = ALL_TESTS
+\o 	Cell         = current_mirror
 \o 	View         = schematic
-\o 	Netlist  	  = nil
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = CHARACTERIZATION:DCBIAS:1_CHARACTERIZATION:DCBIAS:1_Jul_14_22_01_48_2015_Ocean.50
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.50.rdb
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/CHARACTERIZATION/DCBIAS/adexl
+\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.5
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.5.rdb
+\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.5/1/ALL_TESTS:current_mirror:1
+\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
+\o 	File Encoding = 0
 \o 
 \o 
-\o *Info*    Spectre "controlMode" is being set to "batch".
+\o Loading simui.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
+\# Memory report: now 167903232 (0xa020000) bytes, process size 915316736 (0x368ea000) bytes at UTC 2015.07.15 07:34:42.638
 \o Loading relXpert.cxt 
-\# Memory report: now 162938880 (0x9b64000) bytes, process size 910352384 (0x3642e000) bytes at UTC 2015.07.14 20:01:57.061
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 65 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -122,52 +127,56 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\o Loading awv.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading devCheck.cxt 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 4) on testbench [
-\o           CHARACTERIZATION:DCBIAS:1 ].
+\o *Info*    Run start for Point ID (6 51) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var L = "1.8e-07"
-\o Setting var VDS = "1"
-\o Setting var VGS = "0.3"
-\o Setting var W = "6.24e-06"
+\o Setting var IDC = "1u"
+\o Setting var L = "5u"
+\o Setting var W = "10u"
+\o Loading monte.cxt 
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.50/4/CHARACTERIZATION:DCBIAS:1/netlist
+\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.5/51/ALL_TESTS:current_mirror:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.50/4/CHARACTERIZATION:DCBIAS:1
+\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.5/51/ALL_TESTS:current_mirror:1
 \o 
-\o Loading devCheck.cxt 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 4)
+\o *Info*    Creating Netlist for Point ID (6 51)
 \o 
 \o generate netlist...
-\o Loading spectreinl.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 14 22:01:57 2015
+\o Begin Incremental Netlisting Jul 15 09:34:43 2015
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Jul 14 22:01:57 2015
+\o End netlisting Jul 15 09:34:43 2015
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:    3
+\o 	Number of components:    7
 \o 
 \o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
@@ -175,11 +184,122 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ CHARACTERIZATION:DCBIAS:1
-\o           ] for Point ID (0 4).
+\o *Info*    Running simulation on testbench [
+\o           ALL_TESTS:current_mirror:1 ] for Point ID (6 51).
 \o 
-\o Delete psf data in /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.50/4/CHARACTERIZATION:DCBIAS:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.5/51/ALL_TESTS:current_mirror:1/psf.
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 15 09:34:44 2015
+\o End netlisting Jul 15 09:34:44 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
 \o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o Loading stats.cxt 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 51) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 52) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 53) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 54) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 55) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 56) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 57) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 58) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 59) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 16440889344 (0x3d3f41000) bytes, UTC 2015.07.15 07:34:50.655
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -194,673 +314,477 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
-\o Version 14.1.0.664.isr9 64bit -- 6 Jun 2015
-\o Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved
-\o         worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
-\o         Cadence Design Systems, Inc. All others are the property of their
-\o         respective holders.
-\o 
-\o Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
-\o         Security, Inc.
-\o 
-\o User: saul   Host: localhost.localdomain   HostID: 7F0100   PID: 11227
-\o Memory  available: 5.7799 GB  physical: 8.3779 GB
-\o CPU Type: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-\o           Processor PhysicalID CoreID Frequency Load
-\o               0         0        0     3999.2     1.4
-\o               1         0        1     3999.2     1.4
-\o               2         0        2     3999.2     2.2
-\o               3         0        3     3999.2     1.8
-\o 
-\o 
-\o Simulating `input.scs' on localhost.localdomain at 10:01:57 PM, Tue Jul 14,
-\o         2015 (process id: 11227).
-\o Current working directory:
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.50/4/CHARACTERIZATION:DCBIAS:1/netlist
-\o Command line:
-\o     /pkg/Cadence/installs/MMSIM141/tools/bin/spectre -64 input.scs  \
-\o         +escchars +log ../psf/spectre.out -format psfbin +rtsf -raw  \
-\o         ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 +param  \
-\o         /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o Reading file: 
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.50/4/CHARACTERIZATION:DCBIAS:1/netlist/input.scs
-\o Reading file:  /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o Warning from spectre during read of parameter soft limits file
-\o         `/pkg/AMS/spectre/ams_range.lmts', during circuit read-in.
-\o     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
-\o         Further occurrences of this warning will be suppressed.
-\o 
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
-\o Reading file:  /pkg/AMS/spectre/h18/soac/mcparams.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/soac.va
-\o Reading link: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.h
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
-\o Reading link: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/ahdl/discipline.h
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
-\o 
-\o Reading file:  /pkg/AMS/spectre/h18/soac/design.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/res.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/fixed_corner_hv.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/passive_corner_lv.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/cap.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/bip.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/esddi.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/cmos53.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/fixed_corner_lv.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/process_lv.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/process_hv.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/models.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esd_modules.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdnsh_base_va.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdnsh_base_va_dn.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdpsh_base_va.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdpsh_base_va_dn.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/mvcap.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pcap.va
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/bondpad.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/cmim.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/cmimhd.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/coupledwires.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/diodednsx.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/diodendpw.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/diodenwx.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/diodenx.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/diodepnw.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/diodepwdn.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/dipdnw.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/divpnp.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/dualcmim.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/dualcmimhd.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/efuse.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdndsx.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdndidn.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdnsh_base.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdnsh_base_dn.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdpdidn.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdpsh_base.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdpsh_base_dn.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/esdvpnpnw.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/hvnwres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/hvpwres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/k1res.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/mosvarm.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/mosvart.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfet.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfet_rf.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfethvt.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti4.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti4_rf.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti_rf.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfetihvt.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfetihvt4.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfetim.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfetim4.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfetm.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfetshvt.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti20t.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti50t.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfet20mh.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti25m.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti50m.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfeti20h.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfet20hs.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soa
-\o c/LV_DEV/nfeti50h.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/nfet50hs.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/opndires.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/opndres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/opnpcres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/oppdires.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/oppdres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/opppcres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/oprppres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/oprrpres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pcapc.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pcapi.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pcapim.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pcdcap.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet_rf.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfethvt.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfeti.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfeti4.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfeti4_rf.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfeti_rf.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfetihvt.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfetihvt4.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfetim.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfetim4.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfetm.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfetshvt.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet20t.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet50t.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet25m.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet50m.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet20h.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet20hs.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet50h.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pfet50hs.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/pjfet.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/sbdi.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/sblkndres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/sblkndires.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/sblkpdres.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/sblkpdires.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/subc.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/vncap.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/vncap_hv.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/vnpn.scs
-\o Reading file:  /pkg/AMS/spectre/h18/soac/LV_DEV/vpnp.scs
-\o Time for NDB Parsing: CPU = 316.952 ms, elapsed = 1.11218 s.
-\o Time accumulated: CPU = 330.948 ms, elapsed = 1.11219 s.
-\o Peak resident memory used = 73.8 Mbytes.
 \o 
+\o *Info*    Run complete for Point ID (6 60) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o Warning from spectre during circuit read-in.
-\o     WARNING (SFE-2654): VerilogA module `nfet_ahdl' override
-\o         primitive/(verilogA module) `nfet_ahdl'.
-\o     WARNING (SFE-2654): VerilogA module `nfethvt_ahdl' override
-\o         primitive/(verilogA module) `nfethvt_ahdl'.
-\o     WARNING (SFE-2654): VerilogA module `nfetshvt_ahdl' override
-\o         primitive/(verilogA module) `nfetshvt_ahdl'.
-\o     WARNING (SFE-2654): VerilogA module `pfet_ahdl' override
-\o         primitive/(verilogA module) `pfet_ahdl'.
-\o     WARNING (SFE-2654): VerilogA module `pfethvt_ahdl' override
-\o         primitive/(verilogA module) `pfethvt_ahdl'.
-\o         Further occurrences of this warning will be suppressed.
-\o Compiling ahdlcmi module library.
 \o 
-\o Finished compilation in 1.56 s (elapsed).
 \o 
-\o Installed compiled interface for nfet_ahdl.
 \o 
-\o Time for Elaboration: CPU = 247.963 ms, elapsed = 1.81473 s.
 \o 
-\o Time accumulated: CPU = 578.911 ms, elapsed = 2.92701 s.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Peak resident memory used = 88.2 Mbytes.
 \o 
+\o *Info*    Run complete for Point ID (6 61) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
-\o Notice from spectre during hierarchy flattening.
 \o 
-\o     TN0.ndio: `rs' has the unusually small value of 120 pOhm.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Notice from spectre in `nfet':`TN0', during hierarchy flattening.
 \o 
-\o     TN0.rddb of nfet: `r' has the unusually large value of 155.589 TOhm.
+\o *Info*    Run complete for Point ID (6 62) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     TN0.rdsb of nfet: `r' has the unusually large value of 133.729 TOhm.
 \o 
 \o 
 \o 
-\o Time for EDB Visiting: CPU = 1 ms, elapsed = 1.26314 ms.
 \o 
-\o Time accumulated: CPU = 580.911 ms, elapsed = 2.92849 s.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Peak resident memory used = 88.7 Mbytes.
 \o 
+\o *Info*    Run complete for Point ID (6 63) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
-\o Warning from spectre during initial setup.
 \o 
-\o     WARNING (CMI-2732): TN0.rdsb:  Resistance= 1.337292e+14 has exceeded
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
-\o     WARNING (CMI-2732): TN0.rddb:  Resistance= 1.555887e+14 has exceeded
+\o *Info*    Run complete for Point ID (6 64) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
-\o Notice from spectre during initial setup.
 \o 
-\o     Multithreading is disabled due to the size of the design being too small.
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Global user options:
 \o 
-\o              reltol = 0.0001
+\o *Info*    Run complete for Point ID (6 65) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o             vabstol = 1e-06
 \o 
-\o             iabstol = 1e-12
 \o 
-\o                temp = 27
 \o 
-\o                tnom = 27
 \o 
-\o            homotopy = 7
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o               limit = delta
 \o 
-\o              scalem = 1
+\o *Info*    Run complete for Point ID (6 66) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o               scale = 1
 \o 
-\o          compatible = spice2
 \o 
-\o                gmin = 1e-12
 \o 
-\o              rforce = 1
 \o 
-\o            maxnotes = 5
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o            maxwarns = 5
 \o 
-\o              digits = 5
+\o *Info*    Run complete for Point ID (6 67) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o                cols = 80
 \o 
-\o              pivrel = 0.001
 \o 
-\o            sensfile = ../psf/sens.output
 \o 
-\o      checklimitdest = psf
 \o 
-\o                save = allpub
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o                tnom = 27
 \o 
-\o              scalem = 1
+\o *Info*    Run complete for Point ID (6 68) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o               scale = 1
 \o 
 \o 
 \o 
-\o Circuit inventory:
 \o 
-\o               nodes 4
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o               diode 2     
 \o 
-\o           nfet_ahdl 1     
+\o *Info*    Run complete for Point ID (6 69) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o             psp1020 1     
 \o 
-\o            resistor 4     
 \o 
-\o             vsource 2     
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Analysis and control statement inventory:
 \o 
-\o                  dc 2     
+\o *Info*    Run complete for Point ID (6 70) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o                info 4     
 \o 
 \o 
 \o 
-\o Output statements:
 \o 
-\o              .probe 0     
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o            .measure 0     
 \o 
-\o                save 1     
+\o *Info*    Run complete for Point ID (6 71) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Notice from spectre during initial setup.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     APS Enabled.
 \o 
-\o     147 warnings suppressed.
+\o *Info*    Run complete for Point ID (6 72) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
-\o Time for parsing: CPU = 2.999 ms, elapsed = 4.86398 ms.
 \o 
-\o Time accumulated: CPU = 583.91 ms, elapsed = 2.93351 s.
 \o 
-\o Peak resident memory used = 89.6 Mbytes.
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
+\o *Info*    Run complete for Point ID (6 73) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
 \o 
-\o Pre-Simulation Summary
 \o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
 \o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o ******************
+\o *Info*    Run complete for Point ID (6 74) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o DC Analysis `dcOp'
 \o 
-\o ******************
 \o 
-\o Important parameter values:
 \o 
-\o     reltol = 100e-06
 \o 
-\o     abstol(V) = 1 uV
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     abstol(I) = 1 pA
 \o 
-\o     temp = 27 C
+\o *Info*    Run complete for Point ID (6 75) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     tnom = 27 C
 \o 
-\o     tempeffects = all
 \o 
-\o     gmindc = 1 pS
 \o 
-\o     rabsshort = 1 mOhm
 \o 
-\o Convergence achieved in 5 iterations.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Total time required for dc analysis `dcOp': CPU = 2 ms, elapsed = 1.66202 ms.
 \o 
-\o Time accumulated: CPU = 586.91 ms, elapsed = 2.94827 s.
+\o *Info*    Run complete for Point ID (6 76) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o Peak resident memory used = 90.5 Mbytes.
 \o 
-\o dcOpInfo: writing operating point information to rawfile.
 \o 
 \o 
 \o 
-\o Notice from spectre during DC analysis `dc'.
-\o     TN0.ndio: `rs' has the unusually small value of 120 pOhm.
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o Notice from spectre in `nfet':`TN0', during DC analysis `dc'.
-\o     TN0.rddb of nfet: `r' has the unusually large value of 155.589 TOhm.
+\o *Info*    Run complete for Point ID (6 77) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     TN0.rdsb of nfet: `r' has the unusually large value of 133.729 TOhm.
 \o 
 \o 
 \o 
-\o **********************************
-\o DC Analysis `dc': VDS = (0 -> 1.8)
-\o **********************************
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o Warning from spectre during DC analysis `dc'.
+\o *Info*    Run complete for Point ID (6 78) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     WARNING (CMI-2732): TN0.rdsb:  Resistance= 1.337292e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
-\o     WARNING (CMI-2732): TN0.rddb:  Resistance= 1.555887e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
 \o 
-\o Important parameter values:
 \o 
-\o     reltol = 100e-06
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     abstol(V) = 1 uV
 \o 
-\o     abstol(I) = 1 pA
+\o *Info*    Run complete for Point ID (6 79) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     temp = 27 C
 \o 
-\o     tnom = 27 C
 \o 
-\o     tempeffects = all
 \o 
-\o     gmindc = 1 pS
 \o 
-\o     rabsshort = 1 mOhm
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
+\o *Info*    Run complete for Point ID (6 80) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o Notice from spectre at VDS = 50e-03 during DC analysis `dc'.
 \o 
-\o     TN0.ndio: `rs' has the unusually small value of 120 pOhm.
 \o 
-\o Notice from spectre at VDS = 50e-03 in `nfet':`TN0', during DC analysis `dc'.
 \o 
-\o     TN0.rddb of nfet: `r' has the unusually large value of 155.589 TOhm.
-\o     TN0.rdsb of nfet: `r' has the unusually large value of 133.729 TOhm.
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Warning from spectre at VDS = 50e-03 during DC analysis `dc'.
-\o     WARNING (CMI-2732): TN0.rdsb:  Resistance= 1.337292e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
-\o     WARNING (CMI-2732): TN0.rddb:  Resistance= 1.555887e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
+\o *Info*    Run complete for Point ID (6 81) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
-\o     dc: VDS = 50e-03      (2.78 %), step = 50e-03       (2.78 %)
 \o 
 \o 
 \o 
-\o Notice from spectre at VDS = 100e-03 during DC analysis `dc'.
-\o     TN0.ndio: `rs' has the unusually small value of 120 pOhm.
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o Notice from spectre at VDS = 100e-03 in `nfet':`TN0', during DC analysis `dc'.
-\o     TN0.rddb of nfet: `r' has the unusually large value of 155.589 TOhm.
+\o *Info*    Run complete for Point ID (6 82) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
-\o         Further occurrences of this notice will be suppressed (except in log
-\o         file).
 \o 
-\o Warning from spectre at VDS = 100e-03 during DC analysis `dc'.
-\o     WARNING (CMI-2732): TN0.rdsb:  Resistance= 1.337292e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
-\o         Further occurrences of this warning will be suppressed.
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     dc: VDS = 100e-03     (5.56 %), step = 50e-03       (2.78 %)
 \o 
+\o *Info*    Run complete for Point ID (6 83) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
-\o Notice from spectre at VDS = 150e-03 during DC analysis `dc'.
-\o     TN0.ndio: `rs' has the unusually small value of 120 pOhm.
 \o 
 \o 
-\o     dc: VDS = 150e-03     (8.33 %), step = 50e-03       (2.78 %)
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Notice from spectre at VDS = 200e-03 during DC analysis `dc'.
-\o     TN0.ndio: `rs' has the unusually small value of 120 pOhm.
-\o         Further occurrences of this notice will be suppressed (except in log
-\o         file).
 \o 
+\o *Info*    Run complete for Point ID (6 84) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     dc: VDS = 200e-03     (11.1 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 250e-03     (13.9 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 300e-03     (16.7 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 350e-03     (19.4 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 400e-03     (22.2 %), step = 50e-03       (2.78 %)
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     dc: VDS = 450e-03       (25 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 500e-03     (27.8 %), step = 50e-03       (2.78 %)
+\o *Info*    Run complete for Point ID (6 85) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     dc: VDS = 550e-03     (30.6 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 600e-03     (33.3 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 650e-03     (36.1 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 700e-03     (38.9 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 750e-03     (41.7 %), step = 50e-03       (2.78 %)
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     dc: VDS = 800e-03     (44.4 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 850e-03     (47.2 %), step = 50e-03       (2.78 %)
+\o *Info*    Run complete for Point ID (6 86) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     dc: VDS = 900e-03       (50 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 950e-03     (52.8 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1           (55.6 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.05        (58.3 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.1         (61.1 %), step = 50e-03       (2.78 %)
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     dc: VDS = 1.15        (63.9 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.2         (66.7 %), step = 50e-03       (2.78 %)
+\o *Info*    Run complete for Point ID (6 87) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     dc: VDS = 1.25        (69.4 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.3         (72.2 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.35          (75 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.4         (77.8 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.45        (80.6 %), step = 50e-03       (2.78 %)
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o     dc: VDS = 1.5         (83.3 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.55        (86.1 %), step = 50e-03       (2.78 %)
+\o *Info*    Run complete for Point ID (6 88) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o     dc: VDS = 1.6         (88.9 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.65        (91.7 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.7         (94.4 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.75        (97.2 %), step = 50e-03       (2.78 %)
 \o 
-\o     dc: VDS = 1.8          (100 %), step = 50e-03       (2.78 %)
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Total time required for dc analysis `dc': CPU = 26.996 ms, elapsed = 28.6739
-\o         ms.
 \o 
-\o Time accumulated: CPU = 616.905 ms, elapsed = 2.98592 s.
+\o *Info*    Run complete for Point ID (6 89) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o Peak resident memory used = 91 Mbytes.
 \o 
 \o 
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Notice from spectre.
-\o     104 notices suppressed.
 \o 
-\o     69 warnings suppressed.
+\o *Info*    Run complete for Point ID (6 90) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
-\o Warning from spectre.
-\o     WARNING (CMI-2732): TN0.rdsb:  Resistance= 1.337292e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
-\o     WARNING (CMI-2732): TN0.rddb:  Resistance= 1.555887e+14 has exceeded
-\o         rcut=1.000000e+12 and will be cut to 1.000000e+12. 
 \o 
 \o 
 \o 
-\o designParamVals: writing netlist parameters to rawfile.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o primitives: writing primitives to rawfile.
 \o 
-\o subckts: writing subcircuits to rawfile.
+\o *Info*    Run complete for Point ID (6 91) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
-\o Aggregate audit (10:02:00 PM, Tue Jul 14, 2015):
 \o 
-\o Time used: CPU = 658 ms, elapsed = 3.07 s, util. = 21.4%.
 \o 
-\o Time spent in licensing: elapsed = 594 ms, percentage of total = 19.3%.
 \o 
-\o Peak memory used = 91.1 Mbytes.
-\o Simulation started at: 10:01:57 PM, Tue Jul 14, 2015, ended at: 10:02:00 PM,
-\o         Tue Jul 14, 2015, with elapsed time (wall clock): 3.07 s.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o spectre completes with 0 errors, 19 warnings, and 18 notices.
+\o 
+\o *Info*    Run complete for Point ID (6 92) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 93) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 94) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 95) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 96) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 97) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 98) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 99) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
 \o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (0 4) on testbench [
-\o           CHARACTERIZATION:DCBIAS:1 ].
+\o *Info*    Run complete for Point ID (6 100) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 17107378176 (0x3fbade000) bytes, UTC 2015.07.14 20:02:03.976
+\# Memory report: Maximum memory size now 16791392256 (0x3e8d85000) bytes, UTC 2015.07.15 07:35:10.656
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
 \o 
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = CHARACTERIZATION
-\o 	Cell         = DCBIAS
+\o 	Library      = ALL_TESTS
+\o 	Cell         = current_mirror
 \o 	View         = schematic
-\o 	Netlist  	  = nil
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = CHARACTERIZATION:DCBIAS:1_CHARACTERIZATION:DCBIAS:1_Jul_14_22_01_48_2015_Ocean.51
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51.rdb
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/CHARACTERIZATION/DCBIAS/adexl
+\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.6
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.6.rdb
+\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.6/1/ALL_TESTS:current_mirror:1
+\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
+\o 	File Encoding = 0
 \o 
 \o 
-\o *Info*    Spectre "controlMode" is being set to "batch".
+\o *Info*    Spectre controlMode is set "batch".
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (1 3) on testbench [
-\o           CHARACTERIZATION:DCBIAS:1 ].
+\o *Info*    Run start for Point ID (7 51) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var L = "1.8e-07"
-\o Setting var VDS = "0.2"
-\o Setting var VGS = "1"
-\o Setting var W = "6.24e-06"
+\o Setting var IDC = "0.1u"
+\o Setting var L = "5u"
+\o Setting var W = "10u"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/netlist
+\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.6/51/ALL_TESTS:current_mirror:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1
+\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.6/51/ALL_TESTS:current_mirror:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (1 3)
+\o *Info*    Creating Netlist for Point ID (7 51)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 14 22:02:04 2015
-\o End netlisting Jul 14 22:02:04 2015
+\o Begin Incremental Netlisting Jul 15 09:37:08 2015
+\o End netlisting Jul 15 09:37:08 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -868,184 +792,590 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ CHARACTERIZATION:DCBIAS:1
-\o           ] for Point ID (1 3).
+\o *Info*    Running simulation on testbench [
+\o           ALL_TESTS:current_mirror:1 ] for Point ID (7 51).
 \o 
-\o Delete psf data in /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.6/51/ALL_TESTS:current_mirror:1/psf.
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Jul 15 09:37:08 2015
+\o End netlisting Jul 15 09:37:08 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
 \o simulate...
-\o 
-\o Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
-\o Version 14.1.0.664.isr9 64bit -- 6 Jun 2015
-\o Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved
-\o         worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
-\o         Cadence Design Systems, Inc. All others are the property of their
-\o         respective holders.
-\o 
-\o Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
-\o         Security, Inc.
-\o 
-\o User: saul   Host: localhost.localdomain   HostID: 7F0100   PID: 14759
-\o Memory  available: 5.6842 GB  physical: 8.3779 GB
-\o CPU Type: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-\o           Processor PhysicalID CoreID Frequency Load
-\o               0         0        0     3999.2     1.7
-\o               1         0        1     3999.2     1.7
-\o               2         0        2     3999.2     2.5
-\o               3         0        3     3999.2     2.1
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 16409804800 (0x3d219c000) bytes, UTC 2015.07.15 07:37:10.658
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o Simulating `input.scs' on localhost.localdomain at 10:02:04 PM, Tue Jul 14,
-\o         2015 (process id: 14759).
-\o Current working directory:
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/netlist
-\o Command line:
-\o     /pkg/Cadence/installs/MMSIM141/tools/bin/spectre -64 input.scs  \
-\o         +escchars +log ../psf/spectre.out -format psfbin +rtsf -raw  \
-\o         ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 +param  \
-\o         /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o Reading file: 
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/netlist/input.scs
-\o 
-\o Reading file:  /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o 
-\o Warning from spectre during read of parameter soft limits file
-\o         `/pkg/AMS/spectre/ams_range.lmts', during circuit read-in.
-\o     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
-\o 
-\o         Further occurrences of this warning will be suppressed.
-\o 
-\o 
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
-\o 
-\o 
-\o Error found by spectre during circuit read-in.
-\o     ERROR (SFE-868): "input.scs" 8: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 10: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 11: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 12: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 13: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 14: Unable to open input file
-\o 
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
-\o         No such file or directory.
-\o 
-\o 
-\o 
-\o Time for NDB Parsing: CPU = 48.993 ms, elapsed = 422.866 ms.
-\o 
-\o Time accumulated: CPU = 61.99 ms, elapsed = 422.879 ms.
-\o 
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o 
-\o Time for parsing: CPU = 0 s, elapsed = 9.05991 us.
-\o 
-\o Time accumulated: CPU = 61.99 ms, elapsed = 423.063 ms.
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o Pre-Simulation Summary
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o 
-\o 
-\o 
-\o Aggregate audit (10:02:04 PM, Tue Jul 14, 2015):
-\o 
-\o Time used: CPU = 65 ms, elapsed = 426 ms, util. = 15.2%.
-\o Time spent in licensing: elapsed = 381 ms, percentage of total = 89.4%.
-\o 
-\o Peak memory used = 38.4 Mbytes.
-\o Simulation started at: 10:02:04 PM, Tue Jul 14, 2015, ended at: 10:02:04 PM,
-\o         Tue Jul 14, 2015, with elapsed time (wall clock): 426 ms.
-\o spectre completes with 7 errors, 75 warnings, and 0 notices.
-\o 
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre during circuit read-in.
-\o Error found
-\o           by spectre during circuit read-in.
-\o ERROR (SFE-868):
-\o           "input.scs" 8: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o ERROR (SFE-868): "input.scs" 10: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o ERROR (SFE-868): "input.scs" 11: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o ERROR (SFE-868): "input.scs" 12: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o ERROR (SFE-868): "input.scs" 13: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o ERROR (SFE-868): "input.scs" 14: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
+\o *Info*    Run complete for Point ID (7 51) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 52) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (1 3) on testbench [
-\o           CHARACTERIZATION:DCBIAS:1 ].
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 53) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 54) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 55) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 56) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 57) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 58) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 59) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 60) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 61) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 62) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 63) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 64) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 65) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 66) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 67) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 68) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 69) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 70) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 71) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 72) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 73) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 74) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 75) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 76) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 77) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 78) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 79) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 80) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 81) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 82) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 83) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 84) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 85) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 86) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 87) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 88) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 89) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 90) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 91) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 92) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 93) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 94) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 95) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 96) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 97) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 98) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 99) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 100) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ALL_TESTS
+\o 	Cell         = current_mirror
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ALL_TESTS:current_mirror:1_none_MonteCarlo.7
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.7.rdb
+\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.7/1/ALL_TESTS:current_mirror:1
+\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 51) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var L = "1.8e-07"
-\o Setting var VDS = "0.2"
-\o Setting var VGS = "1"
-\o Setting var W = "6.24e-06"
+\o Setting var IDC = "0.01u"
+\o Setting var L = "5u"
+\o Setting var W = "10u"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/netlist
+\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.7/51/ALL_TESTS:current_mirror:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1
+\o           /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.7/51/ALL_TESTS:current_mirror:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (1 3)
+\o *Info*    Creating Netlist for Point ID (8 51)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 14 22:02:05 2015
-\o End netlisting Jul 14 22:02:05 2015
+\o Begin Incremental Netlisting Jul 15 09:40:23 2015
+\o End netlisting Jul 15 09:40:23 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -1053,532 +1383,536 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ CHARACTERIZATION:DCBIAS:1
-\o           ] for Point ID (1 3).
+\o *Info*    Running simulation on testbench [
+\o           ALL_TESTS:current_mirror:1 ] for Point ID (8 51).
 \o 
-\o Delete psf data in /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/psf.
-\o simulate...
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
 \o 
-\o Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
-\o Version 14.1.0.664.isr9 64bit -- 6 Jun 2015
-\o Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved
-\o         worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
-\o         Cadence Design Systems, Inc. All others are the property of their
-\o         respective holders.
-\o 
-\o Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
-\o         Security, Inc.
-\o 
-\o User: saul   Host: localhost.localdomain   HostID: 7F0100   PID: 15122
-\o Memory  available: 5.7186 GB  physical: 8.3779 GB
-\o CPU Type: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-\o           Processor PhysicalID CoreID Frequency Load
-\o               0         0        0     3999.2     1.7
-\o               1         0        1     3999.2     1.7
-\o               2         0        2     3999.2     2.5
-\o               3         0        3     3999.2     2.1
-\o 
-\o 
-\o Simulating `input.scs' on localhost.localdomain at 10:02:05 PM, Tue Jul 14,
-\o         2015 (process id: 15122).
-\o Current working directory:
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/netlist
-\o Command line:
-\o     /pkg/Cadence/installs/MMSIM141/tools/bin/spectre -64 input.scs  \
-\o         +escchars +log ../psf/spectre.out -format psfbin +rtsf -raw  \
-\o         ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 +param  \
-\o         /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o Reading file: 
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/3/CHARACTERIZATION:DCBIAS:1/netlist/input.scs
-\o 
-\o Reading file:  /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o 
-\o Warning from spectre during read of parameter soft limits file
-\o         `/pkg/AMS/spectre/ams_range.lmts', during circuit read-in.
-\o     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
-\o         Further occurrences of this warning will be suppressed.
-\o 
-\o 
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
-\o 
-\o 
-\o Error found by spectre during circuit read-in.
-\o     ERROR (SFE-868): "input.scs" 8: Unable to open input file
-\o 
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 10: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 11: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 12: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 13: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 14: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
-\o         No such file or directory.
-\o 
-\o 
-\o 
-\o Time for NDB Parsing: CPU = 44.993 ms, elapsed = 458.181 ms.
-\o 
-\o Time accumulated: CPU = 58.99 ms, elapsed = 458.186 ms.
-\o 
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o Time for parsing: CPU = 0 s, elapsed = 9.05991 us.
-\o Time accumulated: CPU = 59.99 ms, elapsed = 458.358 ms.
-\o 
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o Pre-Simulation Summary
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o 
-\o 
-\o Aggregate audit (10:02:05 PM, Tue Jul 14, 2015):
-\o 
-\o Time used: CPU = 61 ms, elapsed = 460 ms, util. = 13.3%.
-\o Time spent in licensing: elapsed = 401 ms, percentage of total = 87.2%.
-\o 
-\o Peak memory used = 38.4 Mbytes.
-\o Simulation started at: 10:02:05 PM, Tue Jul 14, 2015, ended at: 10:02:05 PM,
-\o         Tue Jul 14, 2015, with elapsed time (wall clock): 460 ms.
-\o 
-\o spectre completes with 7 errors, 75 warnings, and 0 notices.
-\o 
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre during circuit read-in.
-\o Error found
-\o           by spectre during circuit read-in.
-\o ERROR (SFE-868):
-\o           "input.scs" 8: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o ERROR (SFE-868): "input.scs" 10: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o ERROR (SFE-868): "input.scs" 11: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o ERROR (SFE-868): "input.scs" 12: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o ERROR (SFE-868): "input.scs" 13: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o ERROR (SFE-868): "input.scs" 14: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 11) on testbench [
-\o           CHARACTERIZATION:DCBIAS:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var L = "1.8e-07"
-\o Setting var VDS = "1"
-\o Setting var VGS = "1"
-\o Setting var W = "6.24e-06"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 11)
-\o 
+\o Delete psf data in /home/saul/Sim/ALL_TESTS/current_mirror/adexl/results/data/MonteCarlo.7/51/ALL_TESTS:current_mirror:1/psf.
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 14 22:02:06 2015
-\o End netlisting Jul 14 22:02:06 2015
+\o Begin Incremental Netlisting Jul 15 09:40:23 2015
+\o End netlisting Jul 15 09:40:23 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ CHARACTERIZATION:DCBIAS:1
-\o           ] for Point ID (1 11).
-\o 
-\o Delete psf data in /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/psf.
-\o simulate...
-\o 
-\o 
-\o Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
-\o Version 14.1.0.664.isr9 64bit -- 6 Jun 2015
-\o 
-\o Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved
-\o 
-\o         worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
-\o         Cadence Design Systems, Inc. All others are the property of their
-\o         respective holders.
-\o 
-\o 
-\o 
-\o Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
-\o         Security, Inc.
-\o 
-\o 
-\o User: saul   Host: localhost.localdomain   HostID: 7F0100   PID: 15625
-\o Memory  available: 5.7149 GB  physical: 8.3779 GB
-\o 
-\o CPU Type: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-\o           Processor PhysicalID CoreID Frequency Load
-\o               0         0        0     3999.2     1.8
-\o               1         0        1     3999.2     1.8
-\o               2         0        2     3999.2     2.5
-\o               3         0        3     3999.2     2.1
-\o 
-\o 
-\o Simulating `input.scs' on localhost.localdomain at 10:02:06 PM, Tue Jul 14,
-\o         2015 (process id: 15625).
-\o Current working directory:
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/netlist
-\o Command line:
-\o     /pkg/Cadence/installs/MMSIM141/tools/bin/spectre -64 input.scs  \
-\o         +escchars +log ../psf/spectre.out -format psfbin +rtsf -raw  \
-\o         ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 +param  \
-\o         /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o Reading file: 
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/netlist/input.scs
-\o 
-\o Reading file:  /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o 
-\o Warning from spectre during read of parameter soft limits file
-\o         `/pkg/AMS/spectre/ams_range.lmts', during circuit read-in.
-\o     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
-\o 
-\o         Further occurrences of this warning will be suppressed.
-\o 
-\o 
-\o 
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
-\o 
-\o 
-\o Error found by spectre during circuit read-in.
-\o     ERROR (SFE-868): "input.scs" 8: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 10: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 11: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 12: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 13: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 14: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
-\o         No such file or directory.
-\o 
-\o 
-\o Time for NDB Parsing: CPU = 50.993 ms, elapsed = 419.345 ms.
-\o 
-\o Time accumulated: CPU = 62.99 ms, elapsed = 419.35 ms.
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o 
-\o Time for parsing: CPU = 0 s, elapsed = 7.86781 us.
-\o Time accumulated: CPU = 62.99 ms, elapsed = 419.47 ms.
-\o 
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o Pre-Simulation Summary
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o 
-\o 
-\o Aggregate audit (10:02:06 PM, Tue Jul 14, 2015):
-\o 
-\o Time used: CPU = 65 ms, elapsed = 421 ms, util. = 15.4%.
-\o Time spent in licensing: elapsed = 380 ms, percentage of total = 90.2%.
-\o 
-\o Peak memory used = 38.4 Mbytes.
-\o Simulation started at: 10:02:06 PM, Tue Jul 14, 2015, ended at: 10:02:06 PM,
-\o         Tue Jul 14, 2015, with elapsed time (wall clock): 421 ms.
-\o 
-\o spectre completes with 7 errors, 75 warnings, and 0 notices.
-\o 
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre during circuit read-in.
-\o Error found
-\o           by spectre during circuit read-in.
-\o ERROR (SFE-868):
-\o           "input.scs" 8: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o ERROR (SFE-868): "input.scs" 10: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o ERROR (SFE-868): "input.scs" 11: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o ERROR (SFE-868): "input.scs" 12: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o ERROR (SFE-868): "input.scs" 13: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o ERROR (SFE-868): "input.scs" 14: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 11) on testbench [
-\o           CHARACTERIZATION:DCBIAS:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var L = "1.8e-07"
-\o Setting var VDS = "1"
-\o Setting var VGS = "1"
-\o Setting var W = "6.24e-06"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 11)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 14 22:02:06 2015
-\o End netlisting Jul 14 22:02:06 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o start simulator if needed...
 \o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ CHARACTERIZATION:DCBIAS:1
-\o           ] for Point ID (1 11).
-\o 
-\o Delete psf data in /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/psf.
 \o simulate...
-\o 
-\o Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
-\o Version 14.1.0.664.isr9 64bit -- 6 Jun 2015
-\o Copyright (C) 1989-2015 Cadence Design Systems, Inc. All rights reserved
-\o         worldwide. Cadence, Virtuoso and Spectre are registered trademarks of
-\o         Cadence Design Systems, Inc. All others are the property of their
-\o         respective holders.
-\o 
-\o Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA
-\o         Security, Inc.
-\o 
-\o User: saul   Host: localhost.localdomain   HostID: 7F0100   PID: 15897
-\o Memory  available: 5.7136 GB  physical: 8.3779 GB
-\o 
-\o CPU Type: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
-\o           Processor PhysicalID CoreID Frequency Load
-\o               0         0        0     3999.2     1.8
-\o               1         0        1     3999.2     1.8
-\o               2         0        2     3999.2     2.5
-\o               3         0        3     3999.2     2.1
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o 
-\o Simulating `input.scs' on localhost.localdomain at 10:02:06 PM, Tue Jul 14,
-\o         2015 (process id: 15897).
-\o 
-\o Current working directory:
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/netlist
-\o 
-\o Command line:
-\o     /pkg/Cadence/installs/MMSIM141/tools/bin/spectre -64 input.scs  \
-\o         +escchars +log ../psf/spectre.out -format psfbin +rtsf -raw  \
-\o         ../psf +aps +lqtimeout 900 -maxw 5 -maxn 5 +param  \
-\o         /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o Reading file: 
-\o         /home/saul/Sim/CHARACTERIZATION/DCBIAS/adexl/results/data/Ocean.51/11/CHARACTERIZATION:DCBIAS:1/netlist/input.scs
-\o 
-\o Reading file:  /pkg/AMS/spectre/ams_range.lmts
-\o 
-\o 
-\o Warning from spectre during read of parameter soft limits file
-\o         `/pkg/AMS/spectre/ams_range.lmts', during circuit read-in.
-\o     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device.
-\o     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device.
-\o 
-\o     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
-\o 
-\o         Further occurrences of this warning will be suppressed.
-\o 
-\o 
-\o Reading file: 
-\o         /pkg/Cadence/installs/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
-\o 
-\o 
-\o Error found by spectre during circuit read-in.
-\o     ERROR (SFE-868): "input.scs" 8: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 10: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 11: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 12: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 13: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 14: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o         No such file or directory.
-\o 
-\o     ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o         `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
-\o         No such file or directory.
-\o 
-\o 
-\o Time for NDB Parsing: CPU = 46.993 ms, elapsed = 429.158 ms.
-\o 
-\o Time accumulated: CPU = 59.99 ms, elapsed = 429.163 ms.
-\o 
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o 
-\o Time for parsing: CPU = 0 s, elapsed = 8.10623 us.
-\o Time accumulated: CPU = 59.99 ms, elapsed = 429.282 ms.
-\o 
-\o Peak resident memory used = 38.4 Mbytes.
-\o 
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o Pre-Simulation Summary
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o 
-\o ~~~~~~~~~~~~~~~~~~~~~~
-\o 
-\o 
-\o Aggregate audit (10:02:07 PM, Tue Jul 14, 2015):
-\o 
-\o Time used: CPU = 62 ms, elapsed = 431 ms, util. = 14.4%.
-\o Time spent in licensing: elapsed = 392 ms, percentage of total = 91%.
-\o 
-\o Peak memory used = 38.4 Mbytes.
-\o Simulation started at: 10:02:06 PM, Tue Jul 14, 2015, ended at: 10:02:07 PM,
-\o         Tue Jul 14, 2015, with elapsed time (wall clock): 431 ms.
-\o spectre completes with 7 errors, 75 warnings, and 0 notices.
-\o 
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre during circuit read-in.
-\o Error found
-\o           by spectre during circuit read-in.
-\o ERROR (SFE-868):
-\o           "input.scs" 8: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs'.
-\o ERROR (SFE-868): "input.scs" 10: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs'.
-\o ERROR (SFE-868): "input.scs" 11: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs'.
-\o ERROR (SFE-868): "input.scs" 12: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs'.
-\o ERROR (SFE-868): "input.scs" 13: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs'.
-\o ERROR (SFE-868): "input.scs" 14: Unable to open input file `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs'.
-\o ERROR (SFE-868): "input.scs" 15: Unable to open input file
-\o           `/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs'.
+\o *Info*    Run complete for Point ID (8 51) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Loading viva.cxt 
-\o 
-\o *Info*    Received signal SIGINT.
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\# Memory report: on exit 176537600 (0xa85c000) bytes, process size 923951104 (0x37126000) bytes at UTC 2015.07.14 20:02:50.121
-\# Memory report: peak usage 176545792 (0xa85e000) bytes, process size 923951104 (0x37126000) bytes
+\o *Info*    Run complete for Point ID (8 52) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 53) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 54) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 55) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 56) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 57) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 58) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 59) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 60) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 61) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 62) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 63) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 64) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 65) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 66) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 67) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 68) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 69) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 70) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 71) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 72) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 73) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 74) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 75) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 76) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 77) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 78) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 79) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 80) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 81) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 82) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 83) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 84) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 85) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 86) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 87) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 88) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 89) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 90) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 91) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 92) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 93) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 94) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 95) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 96) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 97) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 98) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 99) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 100) on testbench [
+\o           ALL_TESTS:current_mirror:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 272613376 (0x103fc000) bytes, process size 1020026880 (0x3ccc6000) bytes at UTC 2015.07.15 07:46:05.637
+\# Memory report: peak usage 272625664 (0x103ff000) bytes, process size 1020039168 (0x3ccc9000) bytes

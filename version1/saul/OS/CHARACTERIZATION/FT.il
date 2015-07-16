@@ -64,7 +64,7 @@ ocnxlOutputTerminal( "/TN1/D" ?plot t ?save t)
 ocnxlEndTest() ; "CHARACTERIZATION:FT:1"
 
 ;====================== Sweeps setup ===========================================
-ocnxlSweepVar("IDC" "{Inclusion List}1m{Inclusion List}{From/To}Decade:1u:10:15m{From/To}")
+ocnxlSweepVar("IDC" "{Inclusion List}1u{Inclusion List}{From/To}Decade:.01u:10:1u{From/To}")
 ocnxlSweepVar("L" "L1")
 ocnxlSweepVar("VDS" "VDS1")
 ocnxlSweepVar("W" "W1")

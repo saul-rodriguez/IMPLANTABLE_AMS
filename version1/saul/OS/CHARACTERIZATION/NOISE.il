@@ -5,8 +5,8 @@
 ; *   PDK: AMS 0.18um           *
 ; *******************************
 
-FLOW = 10.0;
-FHIGH = 100e9;
+FLOW = 1.0;
+FHIGH = 100.0M;
 
 
 simulator( 'spectre )
