@@ -1,36 +1,16 @@
-; *******************************
-; *   NOISE_NMOS TEST BENCH     *
-; *   Author: Saul Rodriguez    *
-; *   Date: 2015-2-2            *
-; *   PDK: AMS 0.18um           *
-; *******************************
+simulator( 'spectre )
+
 
 FLOW = 1.0;
 FHIGH = 100.0M;
 
 
-simulator( 'spectre )
-
-design(	 "CHARACTERIZATION" "NOISE" "schematic")
-resultsDir( "./SimVM/NOISE/spectre/schematic" )
+design(	 "CHARACTERIZATION" "NOISE_PMOS" "schematic")
+resultsDir( "/afs/kth.se/home/s/a/saul/Sim/NOISE_PMOS/spectre/schematic" )
 
 createNetlist
 
 load("OS/CHARACTERIZATION/global.il")
-
-/*
-modelFile( 
-    '("/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/design.scs" "noitm")
-    '("/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/res.scs" "restm")
-    '("/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cap.scs" "captm")
-    '("/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/bip.scs" "biptm")
-    '("/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/esddi.scs" "esdditm")
-    '("/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/cmos53.scs" "cmostm")
-)
-definitionFile(
-    "/afs/ict.kth.se/proj/ektlab/PDK/AMS411/spectre/c18/mcparams.scs"
-)
-*/
 
 modelFile( 
     '("$AMS_DIR/spectre/h18/soac/mcparams.scs" "")
@@ -42,19 +22,17 @@ modelFile(
     '("$AMS_DIR/spectre/h18/soac/cmos53.scs" "cmostm")
 )
 
-
-
 ;*********************************
 ;* Input refferred noise current *
 ;*********************************
 
 analysis('noise ?start FLOW  ?stop FHIGH  ?dec "10"  
-		?oprobe "/IPRB0"  ?iprobe "/I3"  )
+		?oprobe "/IPRB1"  ?iprobe "/I55"  )
 
-desVar(	  "IDC" IDS1	)
-desVar(	  "L" L1	)
-desVar(	  "VDS" VDS1	)
-desVar(	  "W" W1	)
+desVar(	  "IDS" IDS4	)
+desVar(	  "L" L4	)
+desVar(	  "VDS" VDS4	)
+desVar(	  "W" W4	)
 envOption(
 	'analysisOrder  list("noise") 
 )
@@ -65,9 +43,9 @@ in_in = getData("in" ?result "noise")
 in_in_dB = dB20(in_in)
 
 newWindow()
-plot( in_in ?expr '( "Input noise I NMOS"))
+plot( in_in ?expr '( "Input noise Current A"))
 addSubwindow()
-plot( in_in_dB ?expr '( "Input noise I NMOS dB"))
+plot( in_in_dB ?expr '( "Input noise Current dB"))
 
 ;noiseSummary( 'integrated ?result "noise" ?noiseUnit "V" ?from FLOW ?to FHIGH )
 
@@ -76,7 +54,7 @@ plot( in_in_dB ?expr '( "Input noise I NMOS dB"))
 ;*********************************
 
 analysis('noise ?start FLOW  ?stop FHIGH  ?dec "10"  
-		?oprobe "/IPRB1"  ?iprobe "/V2"  )
+		?oprobe "/IPRB0"  ?iprobe "/V2"  )
 run()
 
 vn_in = getData("in" ?result "noise")
@@ -87,13 +65,13 @@ vn_out_dB = dB20(vn_out)
 
 newWindow()
 ;clearAll()
-plot( vn_in ?expr '( "input noise V NMOS"))
+plot( vn_in ?expr '( "input noise V PMOS"))
 
 addSubwindow()
-plot( vn_in_dB ?expr '( "input noise V dB NMOS"))
+plot( vn_in_dB ?expr '( "input noise V PMOS dB"))
 
 addSubwindow()
-plot( vn_out_dB ?expr '( "Output noise I dB NMOS"))
+plot( vn_out_dB ?expr '( "Output noise I PMOS dB"))
 
 
 noiseSummary( 'integrated ?result "noise" ?noiseUnit "V" ?from FLOW ?to FHIGH )
@@ -108,3 +86,5 @@ printf("From: %4.2eHz to %4.2eHz" FLOW FHIGH)
 
 ;input\ noise\;\ A\ \/\ sqrt\(Hz\) = getData("in" ?result "noise")
 ;plot( input\ noise\;\ A\ \/\ sqrt\(Hz\) ?expr '( "input noise; A / sqrt(Hz)" ) )
+
+

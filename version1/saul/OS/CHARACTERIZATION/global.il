@@ -23,9 +23,9 @@ W3 = W3T/8
 
 ; ** PMOS1 **
 VDS4 = 0.5
-IDS4 = 4u
+IDS4 = 0.2u
 L4 = 1u
-W4T = 100u
+W4T = 50u
 W4 = W4T/8
 
 ; ** PMOS2 **
