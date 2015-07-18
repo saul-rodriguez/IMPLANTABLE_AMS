@@ -5,8 +5,8 @@
 ; *   PDK: AMS 0.18um           *
 ; *******************************
 
-FLOW = 1.0;
-FHIGH = 100.0M;
+FLOW = 0.1;
+FHIGH = 100.0;
 
 
 simulator( 'spectre )
@@ -100,10 +100,15 @@ noiseSummary( 'integrated ?result "noise" ?noiseUnit "V" ?from FLOW ?to FHIGH )
 
 vn_in_2 = pow(vn_in,2)
 NBand = FHIGH - FLOW
-IN_Noise_2 = integ( vn_in_2, FLOW, FHIGH)/NBand
+IN_Noise_2 = integ( vn_in_2, FLOW, FHIGH)
 IN_Noise = sqrt(IN_Noise_2)
 
-printf("AVERAGE INPUT REFERRED NOISE VOLTAGE = %4.2e V/sqrt(Hz) \n" IN_Noise)
+IN_Noise_2_aver = IN_Noise_2/NBand
+IN_Noise_aver = sqrt(IN_Noise_2_aver)
+
+printf("INPUT REFERRED NOISE VOLTAGE = %4.2e V(Hz) \n" IN_Noise)
+
+printf("AVERAGE INPUT REFERRED NOISE VOLTAGE = %4.2e V/sqrt(Hz) \n" IN_Noise_aver)
 printf("From: %4.2eHz to %4.2eHz" FLOW FHIGH)
 
 ;input\ noise\;\ A\ \/\ sqrt\(Hz\) = getData("in" ?result "noise")

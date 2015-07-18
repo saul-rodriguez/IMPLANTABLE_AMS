@@ -12,7 +12,7 @@ simulator( 'spectre )
 design(	 "CHARACTERIZATION" "FASTBIAS2" "schematic")
 resultsDir( "./SimVM/FASTBIAS2/spectre/schematic" )
 
-createNetlist
+;createNetlist
 
 load("OS/CHARACTERIZATION/global.il")
 
