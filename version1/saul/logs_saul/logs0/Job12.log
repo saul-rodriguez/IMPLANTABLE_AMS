@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.07.16 15:38:21.941
-\# Local time Thursday 16 July 2015, 5:38 pm
+\# Program start time UTC 2015.07.19 15:11:37.801
+\# Local time Sunday 19 July 2015, 5:11 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1c00000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	364191744 (0x15b52000) bytes
-\# Available memory:	16791052 (0x100360c) kilobytes
+\# Initial sbrk value:	275865600 (0x10716000) bytes
+\# Available memory:	16118412 (0xf5f28c) kilobytes
 \# System memory:	18405228 (0x118d76c) kilobytes
-\# Maximum memory size:	18540466176 (0x451191000) bytes
-\# Max mem available:	17251741696 (0x40448b000) bytes
+\# Maximum memory size:	18628792320 (0x4565cd000) bytes
+\# Max mem available:	16562958336 (0x3db3ab000) bytes
 \# Initial memory used:	57704448 (0x3708000) bytes
 \#        process size:	669073408 (0x27e14000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		22241
+\# Process Id:		25601
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	16742148 (0xff7704) kilobytes UTC 2015.07.16 15:38:22.136
-\# Memory report: Maximum memory size now 17224675328 (0x402abb000) bytes, UTC 2015.07.16 15:38:22.136
+\# Available memory:	16072752 (0xf54030) kilobytes UTC 2015.07.19 15:11:37.939
+\# Memory report: Maximum memory size now 16539205632 (0x3d9d04000) bytes, UTC 2015.07.19 15:11:37.939
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -63,7 +63,7 @@
 \o Loading alvs.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
-\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 65 redefines
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
@@ -95,17 +95,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_BUFFER
-\o 	Cell         = buffer_tb
+\o 	Library      = IMP_AN_LPF
+\o 	Cell         = lpf_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.18
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18.rdb
-\o 	Results Dir  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/1/IMP_AN_BUFFER:buffer_tb:1
-\o 	Results Loc  = /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/simulation
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	State Name   = IMP_AN_LPF:lpf_tb:1_state1_Interactive.21
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/2/IMP_AN_LPF:lpf_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_LPF/lpf_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -115,9 +115,9 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 168013824 (0xa03b000) bytes, process size 915427328 (0x36905000) bytes at UTC 2015.07.16 15:38:23.895
+\# Memory report: now 167972864 (0xa031000) bytes, process size 915386368 (0x368fb000) bytes at UTC 2015.07.19 15:11:39.814
 \o Loading relXpert.cxt 
-\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 65 redefines
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
@@ -139,61 +139,66 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 1) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o *Info*    Run start for Point ID (23 2) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CL = "1p"
-\o Setting var IBIAS_STEP = "0"
-\o Setting var RL = "10M"
-\o Setting var VDD_AC = "0"
-\o Setting var VDD_STEP = "0"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_DC = "900m"
-\o Setting var VIN_STEP = "50m"
-\o Setting var Vsupply = "1.8"
-\o Setting temp(T) = 27
+\o Setting var DC_IN = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var Vsupply = "1.62"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/1/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/2/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/1/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/2/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 1)
+\o *Info*    Creating Netlist for Point ID (23 2)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:25 2015
+\o Begin Incremental Netlisting Jul 19 17:11:41 2015
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Jul 16 17:38:25 2015
+\o WARNING (ADE-6003): Terminal "IOUTN", specified in the CDF termOrder, does not exist
+\o            in the cell-view "IMP_AN_LPF" "s1_gm1_block" "schematic"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o End netlisting Jul 19 17:11:41 2015
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   20
+\o 	Number of components:   93
 \o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o 	Elapsed time:          1.0s (93.00/s)
+\o Errors: 0	Warnings: 2
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 1).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 2).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/1/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/2/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -203,187 +208,7 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 1) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 13) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/13/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/13/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 13)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:27 2015
-\o End netlisting Jul 16 17:38:27 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 13).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/13/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 13) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 3) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/3/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/3/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 3)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:28 2015
-\o End netlisting Jul 16 17:38:28 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 3).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/3/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 3) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 7) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/7/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/7/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 7)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:31 2015
-\o End netlisting Jul 16 17:38:31 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 7).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/7/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 16710549504 (0x3e406c000) bytes, UTC 2015.07.16 15:38:32.137
+\# Memory report: Maximum memory size now 16114204672 (0x3c07b4000) bytes, UTC 2015.07.19 15:11:47.940
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -403,43 +228,46 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 7) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 2) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 18) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 15) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CL = "5p"
+\o Setting var Vsupply = "1.98"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/18/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/15/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/18/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/15/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 18)
+\o *Info*    Creating Netlist for Point ID (23 15)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:33 2015
-\o End netlisting Jul 16 17:38:33 2015
+\o Begin Incremental Netlisting Jul 19 17:11:53 2015
+\o End netlisting Jul 19 17:11:53 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -447,10 +275,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 18).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 15).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/18/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/15/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -464,21 +292,24 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 18) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 15) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 32) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 19) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -486,20 +317,20 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/32/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/19/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/32/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/19/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 32)
+\o *Info*    Creating Netlist for Point ID (23 19)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:35 2015
-\o End netlisting Jul 16 17:38:35 2015
+\o Begin Incremental Netlisting Jul 19 17:11:58 2015
+\o End netlisting Jul 19 17:11:58 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -507,10 +338,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 32).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 19).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/32/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/19/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -524,42 +355,46 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 32) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 19) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 22) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 22) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var Vsupply = "1.62"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/22/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/22/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/22/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/22/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 22)
+\o *Info*    Creating Netlist for Point ID (23 22)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:37 2015
-\o End netlisting Jul 16 17:38:37 2015
+\o Begin Incremental Netlisting Jul 19 17:12:03 2015
+\o End netlisting Jul 19 17:12:03 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -567,10 +402,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 22).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 22).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/22/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/22/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -584,42 +419,46 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 22) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 22) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 26) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 25) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var Vsupply = "1.98"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/26/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/25/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/26/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/25/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 26)
+\o *Info*    Creating Netlist for Point ID (23 25)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:39 2015
-\o End netlisting Jul 16 17:38:39 2015
+\o Begin Incremental Netlisting Jul 19 17:12:08 2015
+\o End netlisting Jul 19 17:12:08 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -627,10 +466,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 26).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 25).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/26/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/25/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -644,43 +483,45 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 26) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 25) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 44) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 29) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CL = "10p"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/44/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/29/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/44/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/29/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 44)
+\o *Info*    Creating Netlist for Point ID (23 29)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:41 2015
-\o End netlisting Jul 16 17:38:41 2015
+\o Begin Incremental Netlisting Jul 19 17:12:13 2015
+\o End netlisting Jul 19 17:12:13 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -688,10 +529,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 44).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 29).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/44/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/29/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -705,42 +546,46 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 44) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 29) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 45) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 32) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var Vsupply = "1.62"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/45/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/32/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/45/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/32/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 45)
+\o *Info*    Creating Netlist for Point ID (23 32)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:43 2015
-\o End netlisting Jul 16 17:38:43 2015
+\o Begin Incremental Netlisting Jul 19 17:12:19 2015
+\o End netlisting Jul 19 17:12:19 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -748,10 +593,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 45).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 32).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/45/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/32/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -765,21 +610,24 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 45) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\o *Info*    Run complete for Point ID (23 32) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 36) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 8) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -787,20 +635,20 @@
 \o 
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/36/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/8/IMP_AN_LPF:lpf_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/36/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/8/IMP_AN_LPF:lpf_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 36)
+\o *Info*    Creating Netlist for Point ID (23 8)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:44 2015
-\o End netlisting Jul 16 17:38:44 2015
+\o Begin Incremental Netlisting Jul 19 17:12:25 2015
+\o End netlisting Jul 19 17:12:25 2015
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -808,10 +656,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 36).
+\o *Info*    Running simulation on testbench [ IMP_AN_LPF:lpf_tb:1 ] for
+\o           Point ID (23 8).
 \o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/36/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_AN_LPF/lpf_tb/adexl/results/data/Interactive.21/8/IMP_AN_LPF:lpf_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -825,561 +673,19 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* rms: can't handle rms(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (18 36) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o *Info*    Run complete for Point ID (23 8) on testbench [
+\o           IMP_AN_LPF:lpf_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 40) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/40/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/40/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 40)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:46 2015
-\o End netlisting Jul 16 17:38:46 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 40).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/40/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 40) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 60) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CL = "40p"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/60/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/60/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 60)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:48 2015
-\o End netlisting Jul 16 17:38:48 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 60).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/60/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 60) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 62) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/62/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/62/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 62)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:50 2015
-\o End netlisting Jul 16 17:38:50 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 62).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/62/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 62) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 51) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/51/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/51/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 51)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:52 2015
-\o End netlisting Jul 16 17:38:52 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 51).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/51/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 51) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 56) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/56/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/56/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 56)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:54 2015
-\o End netlisting Jul 16 17:38:54 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 56).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/56/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 56) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 65) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CL = "80p"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/65/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/65/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 65)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:56 2015
-\o End netlisting Jul 16 17:38:56 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 65).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/65/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 65) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 80) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/80/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/80/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 80)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:38:58 2015
-\o End netlisting Jul 16 17:38:58 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 80).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/80/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 80) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 70) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/70/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/70/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 70)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:39:00 2015
-\o End netlisting Jul 16 17:39:00 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 70).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/70/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 70) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (18 74) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/74/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/74/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (18 74)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Jul 16 17:39:02 2015
-\o End netlisting Jul 16 17:39:02 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (18 74).
-\o 
-\o Delete psf data in /home/saul/simulation/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.18/74/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (18 74) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Job timed out after no activity in 300 seconds.
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Memory report: on exit 193163264 (0xb837000) bytes, process size 940576768 (0x38101000) bytes at UTC 2015.07.19 15:17:35.512
+\# Memory report: peak usage 193179648 (0xb83b000) bytes, process size 940593152 (0x38105000) bytes
