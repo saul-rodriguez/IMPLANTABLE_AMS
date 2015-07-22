@@ -1,4 +1,4 @@
-'(nil version 1.0 bBox ((201 131) (751 718)))
+'(nil version 1.0 bBox ((63 17) (613 710)))
 (unless printInfoDpl
 printInfoDpl = (ncons nil)
 )
@@ -19,7 +19,7 @@ printInfoDpl->printType = "noise"
 printInfoDpl->noiseOptions = (ncons nil)
 )
 printInfoDpl->noiseOptions->type = 'integrated
-printInfoDpl->noiseOptions->dataDir = "/home/saul/Sim/bandgap_tb/spectre/schematic"
+printInfoDpl->noiseOptions->dataDir = "/afs/kth.se/home/s/a/saul/Sim/bandgap_tb/spectre/schematic"
 printInfoDpl->noiseOptions->dataName = 'noise\-noise
 printInfoDpl->noiseOptions->frequency = nil
 printInfoDpl->noiseOptions->weight = 1.0000000000000000e+00
@@ -27,11 +27,13 @@ printInfoDpl->noiseOptions->output = nil
 printInfoDpl->noiseOptions->include = 'all
 printInfoDpl->noiseOptions->xclude = 'none
 printInfoDpl->noiseOptions->devTypes = (let
-(tmp1 tmp2 tmp3)
-tmp1 = "diode"
+(tmp1 tmp2 tmp3 tmp4 tmp5)
+tmp1 = "inductor"
 tmp2 = "resistor"
-tmp3 = "psp102"
-list(tmp1 tmp2 tmp3)
+tmp3 = "diode"
+tmp4 = "bsource_8b0c5f"
+tmp5 = "psp102"
+list(tmp1 tmp2 tmp3 tmp4 tmp5)
 )
 printInfoDpl->noiseOptions->noiseUnit = "V"
 printInfoDpl->noiseOptions->truncateType = 'byNumber
@@ -44,7 +46,7 @@ list(tmp1)
 printInfoDpl->noiseOptions->digits = 6
 printInfoDpl->noiseOptions->percentDecimals = 2
 printInfoDpl->noiseOptions->from = 1.0000000000000000e-02
-printInfoDpl->noiseOptions->to = 1.0000000000000000e+08
+printInfoDpl->noiseOptions->to = 1.0000000000000000e+06
 printInfoDpl->noiseOptions->vnppbyindex = (let
 (tmp1 tmp2 tmp3)
 tmp1 = 'lambda
@@ -569,5 +571,4 @@ printInfoDpl->noiseOptions->mapFun = 'spectreiMapInstanceSimToSchName
 printInfoDpl->noiseOptions->filterFun = 'asiiNoiseFilterParametersWrapper
 printInfoDpl->noiseOptions->preprocessFun = 'asiiPreProcessNoiseWrapper
 printInfoDpl->noiseOptions->hierLevel = ""
-printInfoDpl->saveLoadFile = "/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_BANDGAP/bandgap_tb/spectre_state1/printSetup.state"
-printInfoDpl->saveNeeded = nil
+printInfoDpl->saveLoadFile = "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_BANDGAP/bandgap_tb/spectre_state1/printSetup.state"
