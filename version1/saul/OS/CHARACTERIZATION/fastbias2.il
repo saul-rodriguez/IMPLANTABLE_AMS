@@ -10,7 +10,7 @@ simulator( 'spectre )
 ;resultsDir( "/afs/ict.kth.se/home/s/a/saul/projects/AMS_IL3601/Sim/FASTBIAS/spectre/schematic" )
 
 design(	 "CHARACTERIZATION" "FASTBIAS2" "schematic")
-resultsDir( "./SimVM/FASTBIAS2/spectre/schematic" )
+resultsDir( "./Sim/FASTBIAS2/spectre/schematic" )
 
 ;createNetlist
 
@@ -165,7 +165,7 @@ Ft6g = gm6/(2*3.1415927*cgg6)*1e15/1e6 ;Ft in MHz
 ;****** Printing Results on the CIW log ********
 
 printf("\n\n\n***********************\n")
-printf("* FAST BIASING RESULTS *  \n")
+printf("* FAST BIASING RESULTS 1.8V*  \n")
 printf("***********************\n\n")
 
 printf("NMOS1: W1_tot = %4.2fum  L1 = %4.2fum  IDS1 = %4.4fmA  VDS1 = %4.2fV\n" 1e6*W1T 1e6*L1 1e3*IDS1 VDS1)

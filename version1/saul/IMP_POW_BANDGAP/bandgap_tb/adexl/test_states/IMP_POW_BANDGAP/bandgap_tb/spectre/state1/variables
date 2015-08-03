@@ -6,8 +6,8 @@ tmp1 = make_sevVariableStruct()
 (unless tmp1
 tmp1 = (ncons nil)
 )
-tmp1->name = "VD_PULSE"
-tmp1->expression = "0"
+tmp1->name = "VD_RISE"
+tmp1->expression = "1p"
 tmp1->index = 1
 (unless tmp2
 tmp2 = make_sevVariableStruct()
@@ -15,8 +15,8 @@ tmp2 = make_sevVariableStruct()
 (unless tmp2
 tmp2 = (ncons nil)
 )
-tmp2->name = "Vsupply"
-tmp2->expression = "1.8"
+tmp2->name = "IBIAS_STEP"
+tmp2->expression = "0"
 tmp2->index = 2
 (unless tmp3
 tmp3 = make_sevVariableStruct()
@@ -24,8 +24,8 @@ tmp3 = make_sevVariableStruct()
 (unless tmp3
 tmp3 = (ncons nil)
 )
-tmp3->name = "VIN_AC"
-tmp3->expression = "1"
+tmp3->name = "CL"
+tmp3->expression = "1p"
 tmp3->index = 3
 (unless tmp4
 tmp4 = make_sevVariableStruct()
@@ -42,8 +42,8 @@ tmp5 = make_sevVariableStruct()
 (unless tmp5
 tmp5 = (ncons nil)
 )
-tmp5->name = "VD_AC"
-tmp5->expression = "0"
+tmp5->name = "RL"
+tmp5->expression = "10M"
 tmp5->index = 5
 (unless tmp6
 tmp6 = make_sevVariableStruct()
@@ -51,8 +51,8 @@ tmp6 = make_sevVariableStruct()
 (unless tmp6
 tmp6 = (ncons nil)
 )
-tmp6->name = "R1"
-tmp6->expression = "250k"
+tmp6->name = "VD_AC"
+tmp6->expression = "0"
 tmp6->index = 6
 (unless tmp7
 tmp7 = make_sevVariableStruct()
@@ -60,8 +60,8 @@ tmp7 = make_sevVariableStruct()
 (unless tmp7
 tmp7 = (ncons nil)
 )
-tmp7->name = "R3"
-tmp7->expression = "30K"
+tmp7->name = "VD_PULSE"
+tmp7->expression = "0"
 tmp7->index = 7
 (unless tmp8
 tmp8 = make_sevVariableStruct()
@@ -69,8 +69,8 @@ tmp8 = make_sevVariableStruct()
 (unless tmp8
 tmp8 = (ncons nil)
 )
-tmp8->name = "CL"
-tmp8->expression = "0.1p"
+tmp8->name = "VIN_AC"
+tmp8->expression = "1"
 tmp8->index = 8
 (unless tmp9
 tmp9 = make_sevVariableStruct()
@@ -78,8 +78,8 @@ tmp9 = make_sevVariableStruct()
 (unless tmp9
 tmp9 = (ncons nil)
 )
-tmp9->name = "RL"
-tmp9->expression = "100M"
+tmp9->name = "Vsupply"
+tmp9->expression = "1.8"
 tmp9->index = 9
 list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
 )
