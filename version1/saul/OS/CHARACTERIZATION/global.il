@@ -10,7 +10,7 @@ W1 = W1T/8
 ; ** NMOS2 **
 VDS2 = 0.5
 IDS2 = 0.2u
-L2 = 1u
+L2 = 4u
 W2T = 100u
 W2 = W2T/8
 
@@ -23,9 +23,9 @@ W3 = W3T/8
 
 ; ** PMOS1 **
 VDS4 = 0.5
-IDS4 = 100u
-L4 = 1u
-W4T = 120u
+IDS4 = 1u
+L4 = 2u
+W4T = 60u
 W4 = W4T/8
 
 ; ** PMOS2 **
