@@ -1,4 +1,4 @@
-//Revision 3
+//Revision 11
 config lpf_tb;
 design IMP_AN_LPF.lpf_tb:schematic;
 liblist IMP_AN_LPF;
@@ -7,7 +7,9 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_AN_LPF.lpf_gm1 binding :verilogams;
+cell IMP_AN_LPF.s1_gm1_block binding :schematic;
+cell IMP_AN_LPF.lpf_cmfb binding :schematic_dummy;
+cell IMP_AN_LPF.lpf_gm1 binding :schematic;
 
 
 endconfig

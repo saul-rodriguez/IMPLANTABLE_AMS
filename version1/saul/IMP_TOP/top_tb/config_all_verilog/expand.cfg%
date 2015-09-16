@@ -1,4 +1,4 @@
-//Revision 14
+//Revision 17
 config top_tb;
 design IMP_TOP.top_tb:schematic;
 liblist IMP_DIG_DUMMY;
@@ -7,27 +7,29 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_PLL_VCO.vco binding :verilogams;
-
-cell IMP_PLL_CP.cp binding :verilogams;
-
-cell IMP_DIG_SPI.bravo binding :verilogams;
-
-cell IMP_AN_BUFFER.buffer binding :verilogams;
-
-cell IMP_AN_LPF.lpf_gm1 binding :verilogams;
-
-cell IMP_AN_TIA.tia binding :verilogams;
-
-cell IMP_AN_MIXER.mixer binding :verilogams;
-
-cell IMP_AN_LNA.lna_gm binding :verilogams;
-
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :verilogams;
+cell IMP_PLL_TOP.PLL_top binding :verilogams;
 
 cell IMP_DAC.RDAC binding :veriloga;
 
-cell IMP_PLL_TOP.PLL_top binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :verilogams;
+
+cell IMP_AN_LNA.lna_gm binding :verilogams;
+
+cell IMP_AN_MIXER.mixer binding :verilogams;
+
+cell IMP_AN_TIA.tia binding :verilogams;
+
+cell IMP_AN_LPF.lpf_cmfb binding :veriloga;
+cell IMP_AN_LPF.s1_gm1_block binding :verilogams;
+cell IMP_AN_LPF.lpf_gm1 binding :verilogams;
+
+cell IMP_AN_BUFFER.buffer binding :verilogams;
+
+cell IMP_DIG_SPI.bravo binding :verilogams;
+
+cell IMP_PLL_CP.cp binding :verilogams;
+
+cell IMP_PLL_VCO.vco binding :verilogams;
 
 
 endconfig

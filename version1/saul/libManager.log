@@ -1,13 +1,13 @@
 \o Program:		@(#)$CDS: libManager version 6.1.5 - CAT32 05/06/2013 23:35 (cat91amd) $
 \o Sub version:		sub-version  s014 
-\o Arguments:		-mpssession virtuoso3802 -mpshost localhost.localdomain 
+\o Arguments:		-mpssession virtuoso3711 -mpshost localhost.localdomain 
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
 \o 64-bit offsets
 \o Qt version: 		4.5.3
 \o Log file is "/home/saul/projects/IMPLANTABLE_AMS/version1/saul/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1279 122 600 773))
+\a nrResizeWindow(cdsLibManager list(934 269 600 773))
 \o changeWorkingDir("/home/saul/projects/IMPLANTABLE_AMS/version1/saul") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
@@ -23,25 +23,23 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(969 125 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(969 1205 600 773))
-\a nrResizeWindow(cdsLibManager list(969 2285 600 773))
-\a nrResizeWindow(cdsLibManager list(969 -955 600 773))
-\a nrResizeWindow(cdsLibManager list(969 125 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_POW_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_TOP"
-\a cdsLibManager->cellListBox->value = "pow_top_tb"
-\a cdsLibManager->cellListBox->value = "pow_top"
-\a cdsLibManager->cellLineEdit->value = "pow_top"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->cellListBox->value = "top"
+\a cdsLibManager->cellListBox->value = "top_tb"
+\a cdsLibManager->cellLineEdit->value = "top_tb"
+\a cdsLibManager->viewListBox->value = "config_all_verilog"
+\a cdsLibManager->viewLineEdit->value = "config_all_verilog"
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config_all_verilog"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(934 1349 600 773))
+\a nrResizeWindow(cdsLibManager list(934 269 600 773))
+\a nrResizeWindow(cdsLibManager list(934 1349 600 773))
+\a nrResizeWindow(cdsLibManager list(934 269 600 773))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -58,63 +56,374 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_POW_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_TOP"
-\a cdsLibManager->cellListBox->value = "pow_top"
-\a cdsLibManager->cellLineEdit->value = "pow_top"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_tb"
+\a cdsLibManager->cellLineEdit->value = "top_tb"
+\a cdsLibManager->viewListBox->value = "config_all_verilog"
+\a cdsLibManager->viewLineEdit->value = "config_all_verilog"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(969 1205 600 773))
-\a nrResizeWindow(cdsLibManager list(969 2285 600 773))
-\a nrResizeWindow(cdsLibManager list(969 1205 600 773))
-\a nrResizeWindow(cdsLibManager list(969 125 600 773))
+\a cdsLibManager->viewListBox->value = "config_all_verilog"
+\a cdsLibManager->viewLineEdit->value = "config_all_verilog"
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a cdsLibManager->libListBox->value = "IMP_POW_BANDGAP"
+\a nrResizeWindow(cdsLibManager list(1082 269 600 773))
+\a nrResizeWindow(cdsLibManager list(514 372 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(514 -708 600 773))
+\a nrResizeWindow(cdsLibManager list(514 372 600 773))
+\a nrResizeWindow(cdsLibManager list(514 1452 600 773))
+\a nrResizeWindow(cdsLibManager list(514 372 600 773))
+\a nrResizeWindow(cdsLibManager list(514 1452 600 773))
+\a nrResizeWindow(cdsLibManager list(514 372 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(514 371 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "IMP_POW_BANDGAP"
-\a cdsLibManager->cellListBox->value = "bandgap_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "bandgap_s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "bandgap"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "bandgap_s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "bandgap_s1"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "bandgap"
+\a nrResizeWindow(cdsLibManager list(679 378 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_POW_TOP"
+\a cdsLibManager->libLineEdit->value = "IMP_POW_TOP"
+\a cdsLibManager->cellListBox->value = "pow_top_tb"
+\a cdsLibManager->cellListBox->value = "pow_top"
+\a cdsLibManager->cellLineEdit->value = "pow_top"
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->cellListBox->value = "top"
+\a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->cellListBox->value = "top_tb"
+\a cdsLibManager->viewListBox->value = "config_all_verilog"
+\a cdsLibManager->viewLineEdit->value = "config_all_verilog"
+\a cdsLibManager->cellLineEdit->value = "top_tb"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_DIG_SPI"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_DIG_SPI"
+\a cdsLibManager->cellListBox->value = "bravo"
+\a cdsLibManager->cellLineEdit->value = "bravo"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "config_stimulus"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = "config_stimulus"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "bravo"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = "bravo"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "spc2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "spc2_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "spc2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "opin"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "spc2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "spc2_tb"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "bandgap_s1"
+\a cdsLibManager->cellListBox->value = "bravo"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "bravo"
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "iq_demod_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "iq_demod_tb"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_POW_CONSTANT_GM"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "lpf_gm1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a lmgrLogShowPopup("mainListPopup1" 37 33 2 "bandgap_s1")
-\a cdsLibManager->cellLineEdit->value = "bandgap_s1"
+\a lmgrLogShowPopup("mainListPopup1" 119 43 2 "lpf_cmfb")
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "lpf_gm1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "lpf_gm1"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_PLL_TOP"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_PLL_TOP"
+\a cdsLibManager->cellListBox->value = "PLL_top_stimulus"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = "PLL_top_stimulus"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_DIG_DIV"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_DIG_DIV"
+\a cdsLibManager->cellListBox->value = "FreqDiv_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "FreqDiv"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "FreqDiv"
+\a cdsLibManager->viewListBox->value = "functional"
+\a cdsLibManager->viewLineEdit->value = "functional"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(679 -702 600 773))
+\a nrResizeWindow(cdsLibManager list(679 1458 600 773))
+\a nrResizeWindow(cdsLibManager list(679 378 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_MIXER"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_MIXER"
+\a cdsLibManager->cellListBox->value = "lna_mixer_tb"
+\a cdsLibManager->cellLineEdit->value = "lna_mixer_tb"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "mixer"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "mixer"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->cellListBox->value = "Signal_Generator"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_Amplifier"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "Signal_Generator_TB"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_Amplifier"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_Amplifier"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "verilogams_bk"
+\a cdsLibManager->viewLineEdit->value = "verilogams_bk"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_LNA"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LNA"
+\a cdsLibManager->cellListBox->value = "lna"
+\a cdsLibManager->cellListBox->value = "lna_gm"
+\a cdsLibManager->cellLineEdit->value = "lna_gm"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrResizeWindow(cdsLibManager list(679 1458 600 773))
+\a nrResizeWindow(cdsLibManager list(679 378 600 773))
+\a nrResizeWindow(cdsLibManager list(679 1458 600 773))
+\a nrResizeWindow(cdsLibManager list(679 378 600 773))
+\a nrResizeWindow(cdsLibManager list(679 1458 600 773))
+\a nrResizeWindow(cdsLibManager list(679 378 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1210 372 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_TIA"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_TIA"
+\a cdsLibManager->cellListBox->value = "tia"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellLineEdit->value = "tia"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_TIA"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_TIA"
+\a cdsLibManager->cellListBox->value = "tia"
+\a cdsLibManager->cellLineEdit->value = "tia"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_tb"
+\a cdsLibManager->cellLineEdit->value = "lpf_tb"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a lmgrLogShowPopup("mainListPopup2" 54 8 2 "schematic")
 \a cdsLibManager->copySimpleButton->value = t
 \a basicCopyForm->CategoryCellsEdit->value = "*"
 \a basicCopyForm->CellsSkipLibraries->value = t
@@ -124,61 +433,35 @@
 \a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
 \a basicCopyForm->CopyFromLibrary->value = "ALL_TESTS"
 \a basicCopyForm->CopyToLibrary->value = "ALL_TESTS"
-\a basicCopyForm->CopyFromLibrary->value = "IMP_POW_BANDGAP"
-\a basicCopyForm->CopyFromCell->value = "bandgap_s1"
-\a basicCopyForm->CopyToLibrary->value = "IMP_POW_BANDGAP"
-\a basicCopyForm->CopyToCell->value = "bandgap_s1"
-\a basicCopyForm->CellsViewsToCopy->value = "schematic symbol veriloga"
+\a basicCopyForm->CopyFromLibrary->value = "IMP_AN_LPF"
+\a basicCopyForm->CopyFromCell->value = "lpf_cmfb"
+\a basicCopyForm->CopyFromView->value = "schematic"
+\a basicCopyForm->CopyToLibrary->value = "IMP_AN_LPF"
+\a basicCopyForm->CopyToCell->value = "lpf_cmfb"
+\a basicCopyForm->CopyToView->value = "schematic"
+\a basicCopyForm->ViewsViewsToCopy->value = "schematic"
 \a basicCopyForm->CellsSkipLibrariesEdit->value = ""
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
-\a basicCopyForm->ViewsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
 \a nrSetWindowVisibility(basicCopyForm "show")
 \a nrSetCurrentWindow(basicCopyForm)
-\a nrResizeWindow(basicCopyForm list(1087 168 444 715))
-\a basicCopyForm->CopyToCell->value = "bandgap"
-\a nrDialogAccept(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(1292 263 444 779))
+\a basicCopyForm->CopyToView->value = "schematic2"
 \a basicCopyForm->OK->value = t
-\o Beginning simple copy to library "IMP_POW_BANDGAP".
+\o Beginning simple copy to library "IMP_AN_LPF".
 \o Processing files to be copied...
 \a nrSetWindowVisibility(workingDialogForm "show")
 \a nrSetCurrentWindow(workingDialogForm)
-\a basicCopyForm->CopyToCell->value = "bandgap"
-\o ERROR (CLM-173): One or more of the following problems have occurred:\n      1. The source file doesn't exist.\n      2. A destination file will be overwritten.\n      3. A destination file is checked out.\n      4. A destination file is opened for edit.\n      5. A destination file conflicts with another.\n      6. A source OpenAccess cellview master file has zero size.
-\a nrSetWindowVisibility(copyProblemsDialog "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a nrResizeWindow(workingDialogForm list(1167 388 304 134))
-\a nrResizeWindow(copyProblemsDialog list(891 268 837 441))
-\a copyProblemsDialog->OK->value = t
-\a nrSetCurrentWindow(basicCopyForm)
-\o ERROR (CLM-160): There is nothing to copy.\nCopy exited.
-\a nrSetWindowVisibility(errorDialog "show")
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
-\a nrSetCurrentWindow(errorDialog)
-\a nrResizeWindow(errorDialog list(1239 354 228 126))
-\a errorDialog->errorOkButton->value = t
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(basicCopyForm)
-\a basicCopyForm->OK->value = t
-\o Beginning simple copy to library "IMP_POW_BANDGAP".
-\o Processing files to be copied...
-\a nrSetWindowVisibility(workingDialogForm "show")
-\a nrSetCurrentWindow(workingDialogForm)
-\a nrSetWindowVisibility(copyProblemsDialog "show")
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(copyProblemsDialog)
-\a nrResizeWindow(workingDialogForm list(1167 360 304 134))
-\a nrResizeWindow(copyProblemsDialog list(891 268 837 441))
-\a copyProblemsDialog->overwriteAll->value = t
-\a copyProblemsDialog->OK->value = t
-\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(workingDialogForm list(1362 565 304 134))
 \a nrSetWindowVisibility(workingDialogForm "show")
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(workingDialogForm)
-\a nrResizeWindow(workingDialogForm list(1157 350 304 134))
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(1362 565 304 134))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
 \w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
@@ -191,353 +474,51 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_POW_BANDGAP"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_BANDGAP"
-\a cdsLibManager->cellListBox->value = "bandgap_s1"
-\a cdsLibManager->cellLineEdit->value = "bandgap_s1"
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
 \a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
-\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "bandgap"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(1009 -952 600 773))
-\a cdsLibManager->cellLineEdit->value = "bandgap"
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1009 1208 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1009 1208 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 -952 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1009 1208 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "bandgap_s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "bandgap_s1"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_POW_LDO"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "IMP_POW_LDO"
-\a cdsLibManager->cellListBox->value = "ldo_s1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ldo_tb"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ldo_s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ldo"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "ldo"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DUMMY IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4\nTECH_H18A6 US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a cdsLibManager->viewListBox->value = "schematic2"
+\a cdsLibManager->viewLineEdit->value = "schematic2"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrResizeWindow(cdsLibManager list(1009 1208 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 1208 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 1208 600 773))
-\a nrResizeWindow(cdsLibManager list(1009 128 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ldo_s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(-10 -14 1920 1056))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a cdsLibManager->cellLineEdit->value = "s1"
-\a cdsLibManager->libListBox->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "IMP_POW_REF_BIAS"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->FileNewCVButton->value = t
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = "IMP_POW_REF_BIASs1"
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_POW_LDO"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_LDO"
-\a cdsLibManager->cellListBox->value = "s1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "s1"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ldo"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ldo_s1"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "ldo"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "ldo"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a cdsLibManager->libListBox->value = "IMP_POW_RECTIFIER"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->cellListBox->value = "ref_bias"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\a cdsLibManager->cellListBox->value = "ref_bias"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "ref_bias"
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ref_bias_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "ref_bias_tb"
-\a cdsLibManager->libListBox->value = "IMP_POW_RECTIFIER"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "IMP_POW_LDO"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_LDO"
-\a cdsLibManager->cellListBox->value = "ldo_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "ldo_tb"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->cellListBox->value = "ref_bias_tb"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "ref_bias_tb"
-\a cdsLibManager->viewListBox->value = "spectre_state1"
-\a cdsLibManager->viewLineEdit->value = "spectre_state1"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ref_bias"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "ref_bias"
 \a cdsLibManager->viewListBox->value = "veriloga"
 \a cdsLibManager->viewLineEdit->value = "veriloga"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "ref_bias_tb"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = "ref_bias_tb"
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
+\a lmgrLogShowPopup("mainListPopup2" 51 69 2 "veriloga")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteBothRadioButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(1201 468 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(1312 542 405 299))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "veriloga" from cell "lpf_cmfb" in library "IMP_AN_LPF".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(deleteForm)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -929 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 -2009 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 1231 600 773))
-\a nrResizeWindow(cdsLibManager list(1019 151 600 773))
+\o Deleted cellview 'IMP_AN_LPF/lpf_cmfb/veriloga'.
+\o Deletion of 1 view done.
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a nrResizeWindow(workingDialogForm list(1372 565 298 134))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
@@ -552,26 +533,27 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->libLineEdit->value = "IMP_POW_REF_BIAS"
-\a cdsLibManager->cellListBox->value = "ref_bias_tb"
-\a cdsLibManager->cellLineEdit->value = "ref_bias_tb"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_AN_BUFFER"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = "IMP_AN_BUFFER"
-\a cdsLibManager->cellListBox->value = "buffer"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellLineEdit->value = "buffer"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
+\a cdsLibManager->viewListBox->value = "schematic2"
+\a cdsLibManager->viewLineEdit->value = "schematic2"
+\a lmgrLogShowPopup("mainListPopup2" 69 27 2 "schematic2")
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "schematic2"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "schematic2"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(1343 545 343 194))
+\a basicRenameForm->basicRenameToEdit->value = "schematic_dummy"
+\a nrDialogAccept(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\o Renaming View "schematic2" to "schematic_dummy" in library "IMP_AN_LPF".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a basicRenameForm->basicRenameToEdit->value = "schematic_dummy"
+\a nrResizeWindow(workingDialogForm list(1365 565 298 134))
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
@@ -589,20 +571,530 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_BUFFER"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_BUFFER"
-\a cdsLibManager->cellListBox->value = "buffer"
-\a cdsLibManager->cellLineEdit->value = "buffer"
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_LPF"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_LPF"
+\a cdsLibManager->cellListBox->value = "lpf_cmfb"
+\a cdsLibManager->cellLineEdit->value = "lpf_cmfb"
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "IMP_AN_TIA"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_TIA"
+\a cdsLibManager->cellListBox->value = "tia"
+\a cdsLibManager->cellLineEdit->value = "tia"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = "verilogams"
+\a cdsLibManager->viewLineEdit->value = "verilogams"
+\a cdsLibManager->cellListBox->value = "tia_tb"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "tia_tb"
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(982 123 600 773))
-\a nrResizeWindow(cdsLibManager list(872 135 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_TIA"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_TIA"
+\a cdsLibManager->cellListBox->value = "tia_tb"
+\a cdsLibManager->cellLineEdit->value = "tia_tb"
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 1423 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 2503 600 773))
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1214 -737 600 773))
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(cdsLibManager list(1214 343 600 773))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
 \a exit(0)
+\a basicRenameForm->basicRenameFromEdit->value = "foo"

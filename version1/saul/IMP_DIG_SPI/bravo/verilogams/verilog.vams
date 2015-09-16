@@ -1,5 +1,58 @@
 //Verilog-AMS HDL for "IMP_DIG_SPI", "bravo" "verilogams"
 
+/*
+Author: Saul Rodriguez
+Date: 2015-09-16
+
+Parameters:
+F: Frequency selection, 4 bits
+
+	Frequency Table
+	-----------------
+	4'b0000 = 16 MHz
+	4'b0001 = 8 MHz
+	4'b0010 = 4 MHz
+	4'b0011 = 2 MHz
+	4'b0100 = 1 MHz
+	4'b0101 = 500 kHz
+	4'b0110 = 250 kHz
+	4'b0111 = 125 kHz
+	4'b1000 = 62.5 kHz
+	4'b1001 = 31.25 kHz
+	4'b1010 = 15.625 kHz
+	4'b1011 = 7.8125 kHz
+	4'b1100 = 3.90625 kHz
+	4'b1101 = 1.953125 kHz
+	4'b1110 = 0.9765625 kHz
+
+IQ: selects either the I or Q reference
+
+	IQ = 0  selects the I reference
+	IQ = 1  selects the Q reference
+
+G: selects the variable gain, 3 bits
+
+	G[1:0] controls the variable GM gain of the Signal generator
+		00 = 11.11 uS (1.13 uA signal amplitude)
+		01 = 33.33 uS (3.33 uA signal amplitude)
+		11 = 100 uS	 (10 uA signal amplitude)
+
+	G[2] controls the variable GM gain of the LNA
+		0 = 6.66 uS
+		1 = 20 uS
+
+CE: Current Signal Generator Enable bit
+		0 = disabled signal generator
+		1 = enabled signal generator
+
+GCP: Gain charge pump PLL 2 bits (not used anymore
+	 and reserved for new functionality)
+		
+		
+
+*/
+
+
 `include "constants.vams"
 `include "disciplines.vams"
 `timescale 1ns / 1ps
