@@ -1,0 +1,772 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="1">corner
+				<vars>
+					<var>temperature
+						<value>27</value>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">design.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/design.scs</modelfile>
+						<modelsection>"noitm"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+					<model enabled="1">cap.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cap.scs</modelfile>
+						<modelsection>"captm"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+					<model enabled="1">esddi.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/esddi.scs</modelfile>
+						<modelsection>"esdditm"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+					<model enabled="1">bip.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+					<model enabled="1">res.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/res.scs</modelfile>
+						<modelsection>"restm"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+					<model enabled="0">mcparams.scs
+						<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/mcparams.scs</modelfile>
+						<modelsection></modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<overwritehistory>0</overwritehistory>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value>                            </value>
+			</plottingoption>
+		</plottingoptions>
+		<tests>
+			<test enabled="1">ALL_TESTS:current_mirror:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>current_mirror</value>
+					</option>
+					<option>lib
+						<value>ALL_TESTS</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ALL_TESTS:current_mirror:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>current_mirror</value>
+					</option>
+					<option>lib
+						<value>ALL_TESTS</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>IDC
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>L
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>W
+				<value>10u</value>
+				<dependentTests>
+					<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+	</active>
+	<history>History
+		<historyentry>Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>1.8</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<overwritehistory>0</overwritehistory>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<tests>
+					<test>ALL_TESTS:current_mirror:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:current_mirror:1_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>IDC
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Sep 18 12:49:35 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_124935877</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="0">_default</corner>
+					<corner enabled="1">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>1.8</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<overwritehistory>0</overwritehistory>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<tests>
+					<test>ALL_TESTS:current_mirror:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:current_mirror:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>IDC
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Sep 18 12:51:31 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_125131994</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>1.8</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<overwritehistory>0</overwritehistory>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<tests>
+					<test enabled="1">ALL_TESTS:current_mirror:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:current_mirror:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>IDC
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Sep 18 12:54:14 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_125414409</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>1.8</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<overwritehistory>0</overwritehistory>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<tests>
+					<test enabled="1">ALL_TESTS:current_mirror:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:current_mirror:1_none_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>current_mirror</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>IDC
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>L
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>W
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:current_mirror:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Sep 18 12:54:29 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_125429429</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/current_mirror/adexl_test/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>
