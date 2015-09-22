@@ -57,7 +57,7 @@
 				<icontype></icontype>
 			</extension>
 		</extensions>
-		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<currentmode>Monte Carlo Sampling</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
 			<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
@@ -106,13 +106,13 @@
 		</tests>
 		<vars>
 			<var>Vsupply
-				<value>4</value>
+				<value>0</value>
 				<dependentTests>
 					<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VD_PULSE
-				<value>10m</value>
+				<value>1.8</value>
 				<dependentTests>
 					<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
 				</dependentTests>
@@ -127,10 +127,57 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
+		<allcornersenabled>0</allcornersenabled>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>200</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcYieldTarget
+					<value>99.73</value>
+				</runoption>
+				<runoption>mcYieldAlphaLimit
+					<value>0.05</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>random</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>1</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>1</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>1</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value></value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+			</mode>
+		</runoptions>
 	</active>
 	<history>History
 		<historyentry>Interactive.0
@@ -255,13 +302,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Sep 21 15:33:09 2015
-</timestamp>
+			<timestamp>Mon Sep 21 15:33:09 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -404,13 +450,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Sep 21 16:53:54 2015
-</timestamp>
+			<timestamp>Mon Sep 21 16:53:54 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -422,6 +467,1037 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.1.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state2</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Vsupply
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Sep 22 12:08:34 2015</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_120834633</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state2</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Vsupply
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>2</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Sep 22 12:22:04 2015</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_122204636</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state2</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Vsupply
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Sep 22 12:24:05 2015</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_122405163</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>MonteCarlo.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_MonteCarlo.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state2</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Vsupply
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Sep 22 13:22:47 2015</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_132247869</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state2</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Vsupply
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Sep 22 15:41:15 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_154115104</localpsfdir>
+			<psfdir>/nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>MonteCarlo.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="1">C0
+						<models>
+							<model enabled="1">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_POW_CONSTANT_GM:constant_gm_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_MonteCarlo.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>constant_gm_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_POW_CONSTANT_GM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>spectre_state2</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>Vsupply
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_PULSE
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_POW_CONSTANT_GM:constant_gm_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Sep 22 15:55:29 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/subway.it.kth.se_saul_155529341</localpsfdir>
+			<psfdir>/nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

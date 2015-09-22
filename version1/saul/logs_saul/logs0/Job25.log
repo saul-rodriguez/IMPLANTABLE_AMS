@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.09.21 09:38:01.753
-\# Local time Monday 21 September 2015, 11:38 am
+\# Program start time UTC 2015.09.22 14:43:50.457
+\# Local time Tuesday 22 September 2015, 4:43 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/afs/kth.se/pkg/designkits/ekt/cdc/installs/IC615_500_171/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x5800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	306716672 (0x12482000) bytes
-\# Available memory:	70474468 (0x4335ae4) kilobytes
+\# Initial sbrk value:	404172800 (0x18173000) bytes
+\# Available memory:	73759708 (0x4657bdc) kilobytes
 \# System memory:	98765660 (0x5e30b5c) kilobytes
-\# Maximum memory size:	100894429184 (0x177dc6d000) bytes
-\# Max mem available:	72230965248 (0x10d14d1000) bytes
+\# Maximum memory size:	100796973056 (0x1777f7c000) bytes
+\# Max mem available:	75595051008 (0x1199d0f000) bytes
 \# Initial memory used:	65110016 (0x3e18000) bytes
 \#        process size:	680611840 (0x28915000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	subway.it.kth.se:/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		21750
+\# Process Id:		13355
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	70468192 (0x4334260) kilobytes UTC 2015.09.21 09:38:02.222
-\# Memory report: Maximum memory size now 72232239104 (0x10d1608000) bytes, UTC 2015.09.21 09:38:02.222
+\# Available memory:	73648288 (0x463c8a0) kilobytes UTC 2015.09.22 14:43:52.800
+\# Memory report: Maximum memory size now 75488591872 (0x1193788000) bytes, UTC 2015.09.22 14:43:52.801
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -109,17 +109,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_POW_REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = schematic
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb
+\o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_POW_REF_BIAS:ref_bias_tb:1_none_Interactive.11
-\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.11.rdb
-\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.11/1/IMP_POW_REF_BIAS:ref_bias_tb:1
-\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data
-\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
-\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_REF_BIAS/ref_bias_tb/adexl
+\o 	State Name   = IMP_POW_TOP:pow_top_tb:1_spectre_state2_MonteCarlo.1
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1.rdb
+\o 	Results Dir  = /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/1/IMP_POW_TOP:pow_top_tb:1
+\o 	Results Loc  = /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data
+\o 	Project Dir  = /nobackup/saul/simulation
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -129,7 +129,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 173453312 (0xa56b000) bytes, process size 920707072 (0x36e0e000) bytes at UTC 2015.09.21 09:38:07.001
+\# Memory report: now 173072384 (0xa50e000) bytes, process size 920326144 (0x36db1000) bytes at UTC 2015.09.22 14:44:13.056
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -153,56 +153,67 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (4 1) on testbench [
-\o           IMP_POW_REF_BIAS:ref_bias_tb:1 ].
+\o *Info*    Run start for Point ID (0 14) on testbench [
+\o           IMP_POW_TOP:pow_top_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VD_AC = "1"
-\o Setting var VD_PULSE = "50m"
-\o Setting var VREF_PULSE = "0"
-\o Setting var V_REF = "1.25"
-\o Setting var V_REF_AC = "0"
-\o Setting var Vsupply = "1.8"
+\o Setting var TX_DATA = "0"
+\o Setting var VAM = "2.2"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_PULSE = "5"
+\o Loading monte.cxt 
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.11/1/IMP_POW_REF_BIAS:ref_bias_tb:1/netlist
+\o           /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/14/IMP_POW_TOP:pow_top_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.11/1/IMP_POW_REF_BIAS:ref_bias_tb:1
+\o           /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/14/IMP_POW_TOP:pow_top_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (4 1)
+\o *Info*    Creating Netlist for Point ID (0 14)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Sep 21 11:38:11 2015
+\o Begin Incremental Netlisting Sep 22 16:44:34 2015
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Sep 21 11:38:11 2015
+\o End netlisting Sep 22 16:44:35 2015
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   30
+\o 	Number of components:  124
 \o 
-\o 	Elapsed time:          1.0s (30.00/s)
+\o 	Elapsed time:          4.0s (31.00/s)
 \o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_POW_REF_BIAS:ref_bias_tb:1 ] for Point ID (4 1).
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:1
+\o           ] for Point ID (0 14).
 \o 
-\o Delete psf data in /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.11/1/IMP_POW_REF_BIAS:ref_bias_tb:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/14/IMP_POW_TOP:pow_top_tb:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Sep 22 16:44:45 2015
+\o End netlisting Sep 22 16:44:46 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   2.0s
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -211,16 +222,32 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 73923411968 (0x11362dc000) bytes, UTC 2015.09.22 14:44:55.222
 \o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o *Info*    Monte Carlo Simulation unsuccessful...
+\o *Info*    See simulation output log for more information.
+\o 
+\o *Error*   Error ID  = 5052
+\o *Error*   Error Msg = 
+\o Nominal simulation might have failed. Either
+\o           fix the problem in the test setup or disable the test and
+\o           re-run.
+\o 
+\o To view the simulator output, right-click on the
+\o           test name, result name, or any corner column in the
+\o           "Detail" view 
+\o of the "Results" tab and choose "Output Log"
+\o           menu option.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (4 1) on testbench [
-\o           IMP_POW_REF_BIAS:ref_bias_tb:1 ].
 \o 
+\o 
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o  
 \o 
 \o 
 \o 
@@ -232,17 +259,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_POW_REF_BIAS
-\o 	Cell         = ref_bias_tb
-\o 	View         = schematic
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb
+\o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_POW_REF_BIAS:ref_bias_tb:1_none_Interactive.12
-\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.12.rdb
-\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.12/1/IMP_POW_REF_BIAS:ref_bias_tb:1
-\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data
-\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
-\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_REF_BIAS/ref_bias_tb/adexl
+\o 	State Name   = IMP_POW_TOP:pow_top_tb:1_spectre_state2_Interactive.1
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.1/1/IMP_POW_TOP:pow_top_tb:1
+\o 	Results Loc  = /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data
+\o 	Project Dir  = /nobackup/saul/simulation
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -253,47 +280,46 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (5 1) on testbench [
-\o           IMP_POW_REF_BIAS:ref_bias_tb:1 ].
+\o *Info*    Run start for Point ID (1 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VD_AC = "0"
-\o Setting var VD_PULSE = "0"
-\o Setting var VREF_PULSE = "0"
-\o Setting var V_REF = "1.25"
-\o Setting var V_REF_AC = "1"
-\o Setting var Vsupply = "1.8"
+\o Setting var TX_DATA = "0"
+\o Setting var VAM = "2.2"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_PULSE = "5"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.12/1/IMP_POW_REF_BIAS:ref_bias_tb:1/netlist
+\o           /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.1/3/IMP_POW_TOP:pow_top_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.12/1/IMP_POW_REF_BIAS:ref_bias_tb:1
+\o           /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.1/3/IMP_POW_TOP:pow_top_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (5 1)
+\o *Info*    Creating Netlist for Point ID (1 3)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Sep 21 11:38:29 2015
-\o End netlisting Sep 21 11:38:29 2015
+\o Begin Incremental Netlisting Sep 22 16:45:56 2015
+\o End netlisting Sep 22 16:45:56 2015
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o 	Time taken to compare the design with netlist:   1.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_POW_REF_BIAS:ref_bias_tb:1 ] for Point ID (5 1).
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:1
+\o           ] for Point ID (1 3).
 \o 
-\o Delete psf data in /afs/kth.se/home/s/a/saul/Sim/IMP_POW_REF_BIAS/ref_bias_tb/adexl/results/data/Interactive.12/1/IMP_POW_REF_BIAS:ref_bias_tb:1/psf.
+\o Delete psf data in /nobackup/saul/simulation/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.1/3/IMP_POW_TOP:pow_top_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -302,24 +328,27 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre during AHDL read-in.
+\o Error found by
+\o           spectre during AHDL read-in.
+\o ERROR (SPECTRE-25): Killed by
+\o           user.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (5 1) on testbench [
-\o           IMP_POW_REF_BIAS:ref_bias_tb:1 ].
 \o 
 \o 
 \o 
 \o 
+\o *Info*    Received signal SIGINT.
 \o 
-\o Job timed out after no activity in 300 seconds.
+\o 
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables1".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Memory report: on exit 201797632 (0xc073000) bytes, process size 949051392 (0x38916000) bytes at UTC 2015.09.22 14:57:11.758
+\# Memory report: peak usage 201805824 (0xc075000) bytes, process size 949059584 (0x38918000) bytes
