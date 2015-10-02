@@ -1,0 +1,47 @@
+//Verilog-AMS HDL for "IMP_DIG_SIGGEN", "stimulus_block" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+`timescale 1ns / 1ps
+
+module stimulus_block(CountEnable,Clk,Resetn,StepNum);
+
+output CountEnable;
+output Clk;
+output Resetn;
+output StepNum;
+
+//Nets to drive
+reg CountEnable;
+reg Clk;
+reg Resetn;
+reg StepNum;
+
+parameter STEP_NUM = 0; // 0 for 32 steps, 1 for 16 steps
+parameter CLOCK_WIDTH = 5; // clock width in ns
+
+initial begin
+//    $dumpfile("DacCtrl.vcd");
+//    $dumpvars(0,my_DacCtrl);
+    Clk = 0;
+    CountEnable = 0;
+    Resetn = 1;
+       
+    #2 Resetn = 0;
+       StepNum = STEP_NUM; // 32 steps 
+    #20 Resetn = 1;
+    #30 CountEnable = 1; 
+    //#4500 StepNum = 1; // 16 steps   
+    //#4500 CountEnable = 0;
+   // #50 $finish;
+    
+end
+
+
+always begin
+    #CLOCK_WIDTH Clk = ~Clk;
+end
+
+
+
+endmodule

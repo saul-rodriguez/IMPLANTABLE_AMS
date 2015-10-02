@@ -1,0 +1,25 @@
+// Library - IMP_DIG_SIGGEN, Cell - DacCtrl_tb, View - schematic
+// LAST TIME SAVED: Sep 30 10:34:41 2015
+// NETLIST TIME: Sep 30 10:44:20 2015
+`timescale 1ns / 1ps 
+
+module DacCtrl_tb ( IN, IP, P, QN, QP, Clk, CountEnable, Resetn,
+     StepNum );
+
+output  IN, IP, QN, QP;
+
+input  Clk, CountEnable, Resetn, StepNum;
+
+output [16:0]  P;
+
+
+specify 
+    specparam CDS_LIBNAME  = "IMP_DIG_SIGGEN";
+    specparam CDS_CELLNAME = "DacCtrl_tb";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+DacCtrl I1 ( CountEnable, Clk, Resetn, StepNum, P[16:0], IP, IN, QP,
+     QN);
+
+endmodule

@@ -1,11 +1,11 @@
-\# Program start time UTC 2015.09.22 13:55:39.712
-\# Local time Tuesday 22 September 2015, 3:55 pm
+\# Program start time UTC 2015.09.30 14:45:33.366
+\# Local time Wednesday 30 September 2015, 4:45 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/afs/kth.se/pkg/designkits/ekt/cdc/installs/IC615_500_171/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
-\# Host name (type):	subway.it.kth.se (x86_64)
-\# Operating system:	Linux 2.6.18-406.el5 #1 SMP Fri May 1 10:37:57 EDT 2015
-\# X display name (WxH):	subway.it.kth.se:80.0 (1024x868)
+\# Host name (type):	atlantis.it.kth.se (x86_64)
+\# Operating system:	Linux 2.6.18-402.el5 #1 SMP Thu Jan 8 06:22:34 EST 2015
+\# X display name (WxH):	atlantis.it.kth.se:80.0 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			RealVNC Ltd (VNC nograph server)
 \# Depth of Visual (Root):	16 (16)
@@ -15,18 +15,18 @@
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	488165376 (0x1d18d000) bytes
-\# Available memory:	74730140 (0x4744a9c) kilobytes
+\# Initial sbrk value:	499261440 (0x1dc22000) bytes
+\# Available memory:	61300440 (0x3a75ed8) kilobytes
 \# System memory:	98765660 (0x5e30b5c) kilobytes
-\# Maximum memory size:	100712980480 (0x1772f62000) bytes
-\# Max mem available:	76588773376 (0x11d50bf000) bytes
+\# Maximum memory size:	100701884416 (0x17724cd000) bytes
+\# Max mem available:	62836760576 (0xea15ce000) bytes
 \# Initial memory used:	65110016 (0x3e18000) bytes
 \#        process size:	680611840 (0x28915000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
-\o Working Directory:	subway.it.kth.se:/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		3672
+\o Working Directory:	atlantis.it.kth.se:/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		6657
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	74673644 (0x4736dec) kilobytes UTC 2015.09.22 13:55:42.778
-\# Memory report: Maximum memory size now 76538621952 (0x11d20eb000) bytes, UTC 2015.09.22 13:55:42.779
+\# Available memory:	61294492 (0x3a7479c) kilobytes UTC 2015.09.30 14:45:33.785
+\# Memory report: Maximum memory size now 62838366208 (0xea1756000) bytes, UTC 2015.09.30 14:45:33.785
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -109,28 +109,32 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_POW_CONSTANT_GM
-\o 	Cell         = constant_gm_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb
+\o 	View         = config
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_POW_CONSTANT_GM:constant_gm_tb:1_spectre_state2_MonteCarlo.1
-\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1.rdb
-\o 	Results Dir  = /nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/1/IMP_POW_CONSTANT_GM:constant_gm_tb:1
-\o 	Results Loc  = /nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data
-\o 	Project Dir  = /nobackup/saul/simulation
-\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl
+\o 	State Name   = IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.0
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0.rdb
+\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0/1/IMP_DAC:RDAC32_tb:1
+\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data
+\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 173047808 (0xa508000) bytes, process size 920301568 (0x36dab000) bytes at UTC 2015.09.22 13:56:02.123
+\# Memory report: now 173228032 (0xa534000) bytes, process size 920481792 (0x36dd7000) bytes at UTC 2015.09.30 14:45:38.646
 \o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 67 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -141,265 +145,933 @@
 \w 	but was defined in libFile '/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (1 1) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VD_PULSE = "1.8"
-\o Setting var Vsupply = "0"
-\o Loading monte.cxt 
+\o Setting var CLOCKWIDTH = "50"
+\o Setting var STEPNUM = "1"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/1/IMP_POW_CONSTANT_GM:constant_gm_tb:1/netlist
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0/1/IMP_DAC:RDAC32_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/1/IMP_POW_CONSTANT_GM:constant_gm_tb:1
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0/1/IMP_DAC:RDAC32_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (1 1)
+\o *Info*    Creating Netlist for Point ID (0 1)
 \o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Sep 22 15:56:12 2015
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
+\o Loading verilogI.cxt 
+\o Initializing the control file using cp:
+\o     cp /afs/kth.se/pkg/designkits/ekt/cdc/installs/IC615_500_171/tools.lnx86/dfII/etc/si/control.ver /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0/1/IMP_DAC:RDAC32_tb:1/netlist/control
+\o Begin Incremental Netlisting Sep 30 16:45:43 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o End netlisting Sep 22 15:56:13 2015
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0/1/IMP_DAC:RDAC32_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:   25
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o 	Elapsed time:          4.0s (6.25/s)
-\o Errors: 0	Warnings: 0
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o RDAC32                      veriloga             *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o RDAC32_tb                   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Sep 30 16:45:44 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ] for Point ID (1 1).
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb:1 ] for
+\o           Point ID (0 1).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /nobackup/saul/simulation/IMP_POW_CONSTANT_GM/constant_gm_tb/adexl/results/data/MonteCarlo.1/1/IMP_POW_CONSTANT_GM:constant_gm_tb:1/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Sep 22 15:56:22 2015
-\o End netlisting Sep 22 15:56:23 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
+\o Delete simulation data in /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0/1/IMP_DAC:RDAC32_tb:1/psf.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 74972545024 (0x1174b64000) bytes, UTC 2015.09.22 13:56:28.429
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o Loading stats.cxt 
-\# Memory report: Maximum memory size now 73368399872 (0x111518f000) bytes, UTC 2015.09.22 14:06:58.451
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 1) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 2) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 3) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 4) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 5) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 6) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 7) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 8) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 9) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 10) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 11) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 12) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 13) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 14) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 15) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 16) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 17) on testbench [
-\o           IMP_POW_CONSTANT_GM:constant_gm_tb:1 ].
+\o *Info*    Run complete for Point ID (0 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
 \o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables1".
+\o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 277204992 (0x1085d000) bytes, process size 1024458752 (0x3d100000) bytes at UTC 2015.09.22 14:17:23.905
-\# Memory report: peak usage 277229568 (0x10863000) bytes, process size 1024483328 (0x3d106000) bytes
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.1
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1/1/IMP_DAC:RDAC32_tb:1
+\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data
+\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "50"
+\o Setting var STEPNUM = "1"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1/1/IMP_DAC:RDAC32_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1/1/IMP_DAC:RDAC32_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Sep 30 16:46:46 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1/1/IMP_DAC:RDAC32_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o RDAC32_tb                   schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Sep 30 16:46:47 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb:1 ] for
+\o           Point ID (1 1).
+\o 
+\o Delete simulation data in /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1/1/IMP_DAC:RDAC32_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.2
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2.rdb
+\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2/1/IMP_DAC:RDAC32_tb:1
+\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data
+\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "50"
+\o Setting var STEPNUM = "1"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2/1/IMP_DAC:RDAC32_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2/1/IMP_DAC:RDAC32_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Sep 30 16:47:52 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2/1/IMP_DAC:RDAC32_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o RDAC32                      veriloga             *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o RDAC32_tb                   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Sep 30 16:47:53 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb:1 ] for
+\o           Point ID (2 1).
+\o 
+\o Delete simulation data in /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2/1/IMP_DAC:RDAC32_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.3
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3.rdb
+\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3/1/IMP_DAC:RDAC32_tb:1
+\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data
+\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "5"
+\o Setting var STEPNUM = "1"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3/1/IMP_DAC:RDAC32_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3/1/IMP_DAC:RDAC32_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Sep 30 16:49:01 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3/1/IMP_DAC:RDAC32_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o RDAC32                      veriloga             *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o RDAC32_tb                   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Sep 30 16:49:02 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb:1 ] for
+\o           Point ID (3 1).
+\o 
+\o Delete simulation data in /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3/1/IMP_DAC:RDAC32_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.4
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4.rdb
+\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4/1/IMP_DAC:RDAC32_tb:1
+\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data
+\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams4'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "5"
+\o Setting var STEPNUM = "1"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4/1/IMP_DAC:RDAC32_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4/1/IMP_DAC:RDAC32_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Sep 30 16:50:34 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4/1/IMP_DAC:RDAC32_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o RDAC32_tb                   schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Sep 30 16:50:35 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb:1 ] for
+\o           Point ID (4 1).
+\o 
+\o Delete simulation data in /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4/1/IMP_DAC:RDAC32_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.5
+\o 	Results DB   = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5.rdb
+\o 	Results Dir  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb:1
+\o 	Results Loc  = /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data
+\o 	Project Dir  = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/Sim
+\o 	Setup DB loc = /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams5'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "5"
+\o Setting var STEPNUM = "1"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Sep 30 16:51:47 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o RDAC32                      veriloga             *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o RDAC32_tb                   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Sep 30 16:51:48 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb:1 ] for
+\o           Point ID (5 1).
+\o 
+\o Delete simulation data in /afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           IMP_DAC:RDAC32_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGINT.
+\o 
+\o 
