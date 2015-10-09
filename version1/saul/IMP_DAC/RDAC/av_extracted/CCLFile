@@ -3,7 +3,7 @@
 #
 capacitance \
 	 -decoupling_factor 1.0 \
-	 -ground_net "vsub"
+	 -ground_net "dummy"
 extract \
 	 -selection "all" \
 	 -type "rc_coupled"
@@ -24,11 +24,11 @@ filter_res \
 	 -min_res 0.001
 input_db -type assura \
 	 -design_cell_name "RDAC layout IMP_DAC" \
-	 -directory_name "/afs/kth.se/home/s/a/saul/projects/AMS_MIX_TEST/ASSURA_LVS/RDAC" \
+	 -directory_name "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ASSURA_LVS/RDAC" \
 	 -format "DFII" \
-	 -run_name "RDAC"
+	 -run_name "test"
 log_file \
-	 -file_name "/afs/kth.se/home/s/a/saul/projects/AMS_MIX_TEST/ASSURA_LVS/RDAC/qrc.RDAC.log"
+	 -file_name "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ASSURA_LVS/RDAC/qrc.test.log"
 output_db -type extracted_view \
 	 -cap_component "pcapacitor auLvs cmhv7sf" \
 	 -cap_property_name "c" \
@@ -41,12 +41,14 @@ output_db -type extracted_view \
 	 -res_property_name "r" \
 	 -view_name "av_extracted"
 output_setup \
-	 -directory_name "/afs/kth.se/home/s/a/saul/projects/AMS_MIX_TEST/ASSURA_LVS/RDAC" \
-	 -temporary_directory_name "RDAC"
+	 -directory_name "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ASSURA_LVS/RDAC" \
+	 -temporary_directory_name "test"
 process_technology \
 	 -technology_corner \
 		"Typical" \
-	 -technology_library_file "/afs/kth.se/home/s/a/saul/projects/AMS_MIX_TEST/assura_tech.lib" \
-	 -technology_name "h18a6am"
+	 -technology_library_file "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/assura_tech.lib" \
+	 -technology_name "h18a6am" \
+	 -temperature \
+		25.0
 
 
