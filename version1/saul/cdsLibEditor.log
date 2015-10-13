@@ -1,44 +1,29 @@
 \o Program:		@(#)$CDS: cdsLibEditor version 6.1.5 - CAT32 05/06/2013 23:37 (cat91amd) $
 \o Sub version:		sub-version  s014 
-\o Arguments:		-cdslib /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib -mpssession virtuoso8119 -mpshost subway.it.kth.se 
-\o Working Directory:	subway.it.kth.se:/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul
+\o Arguments:		-cdslib /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib -mpssession virtuoso3829 -mpshost localhost.localdomain 
+\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
 \a nrSetWindowVisibility(cdsLibEditor "show")
 \o Qt version: 		4.5.3
 \a nrSetCurrentWindow(cdsLibEditor)
 \a nrListItemAction(cdsLibEditor->mainTable 0 0)
 \o Active cell: 0 0 "analogLib"
-\a nrResizeWindow(cdsLibEditor list(-10 642 500 400))
-\a nrResizeWindow(cdsLibEditor list(-10 419 1452 623))
-\a nrResizeWindow(cdsLibEditor list(-10 245 1452 801))
-\a nrResizeWindow(cdsLibEditor list(273 184 1452 801))
-\a nrResizeWindow(cdsLibEditor list(-88 221 1452 801))
+\a nrResizeWindow(cdsLibEditor list(1910 642 500 400))
+\a nrResizeWindow(cdsLibEditor list(1910 205 500 837))
+\a nrListItemAction(cdsLibEditor->mainTable 81 1)
+\o Active cell: 81 1 "/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DIG_SIGGEN"
+\o QUESTION (CLE-200): The directory ".l/IMP_DIG_SIGGEN" \ndoesn't exist. If other tools use this file, \nan error will occur unless you either create \nthe directory you have specified or change the \npath to an existing directory. \n\nDo you want to create a new library? 
+\a nrSetWindowVisibility(needCreateDialog "show")
+\a nrSetCurrentWindow(needCreateDialog)
+\a nrResizeWindow(needCreateDialog list(1985 433 350 180))
+\a needCreateDialog->cancelButton->value = t
+\a nrListItemAction(cdsLibEditor->mainTable 82 0)
+\o Active cell: 82 0 ""
 \a nrSetCurrentWindow(cdsLibEditor)
-\a nrListItemAction(cdsLibEditor->mainTable 49 1)
-\o Active cell: 49 1 "./connectLib"
-\a cdsLibEditor->libInfoPopupButton->value = t
-\a cdsLibEditor->viewLibInfoButton->value = t
-\a libInfoDialog->libInfoText->value = ""
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n\n\n------------\n| Includes |\n------------\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n\n\n------------\n| Includes |\n------------\n\nIncluded /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools/inca/files/cds.lib	At line 10\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n\n\n------------\n| Includes |\n------------\n\nIncluded /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools/inca/files/cds.lib	At line 10\n\nIncluded /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib	At line 73\n"
-\a nrSetWindowVisibility(libInfoDialog "show")
-\a nrSetCurrentWindow(libInfoDialog)
-\a nrResizeWindow(libInfoDialog list(488 447 300 150))
-\a nrResizeWindow(libInfoDialog list(488 447 514 223))
-\a nrResizeWindow(libInfoDialog list(488 447 833 256))
-\a nrSetCurrentWindow(libInfoDialog)
-\a libInfoDialog->closeButton->value = t
-\a cdsLibEditor->viewLibInfoButton->value = nil
-\a nrSetCurrentWindow(cdsLibEditor)
-\a libInfoDialog->libInfoText->value = ""
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n\n\n------------\n| Includes |\n------------\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n\n\n------------\n| Includes |\n------------\n\nIncluded /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools/inca/files/cds.lib	At line 10\n"
-\a libInfoDialog->libInfoText->value = "Library:	connectLib\nPath:		./connectLib\nFull Path:	/afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/./connectLib\nPath is valid?	Yes\n\nDefined at line	1 in file /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools.lnx86/affirma_ams/etc/connect_lib/cds.lib\n\n\n------------\n| Includes |\n------------\n\nIncluded /afs/kth.se/pkg/designkits/ekt/cdc/installs/INCISIVE142/tools/inca/files/cds.lib	At line 10\n\nIncluded /afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib	At line 73\n"
-\a nrResizeWindow(cdsLibEditor list(116 117 1452 801))
+\a nrListItemAction(cdsLibEditor->mainTable 81 1)
+\o Active cell: 81 1 ".l/IMP_DIG_SIGGEN"
+\a nrListItemAction(cdsLibEditor->mainTable 82 0)
+\o Active cell: 82 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
 \a cdsLibEditor->fileExitButton->value = t
 \a nrSetWindowVisibility(cdsLibEditor "hide")
 \a exit(0)

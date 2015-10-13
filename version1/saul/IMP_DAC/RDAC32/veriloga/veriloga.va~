@@ -46,18 +46,18 @@ input [16:0] P;
 electrical [16:0] P;
 
 
-parameter real td = 1e-09 ;
-parameter real vth = 0.5 ;
-parameter vh = 1.8;
-parameter vl = 0;
+real td = 1e-09 ;
+real vth = 0.5 ;
+vh = 1.8;
+vl = 0;
 
-parameter real vcm = 0.9;
+vcm = 0.9;
 
 real vop,von; //Outputs 
 real bias_cur_factor;
 	
 analog begin
-	bias_cur_factor = I(bias)/1.98e-6;
+	bias_cur_factor = I(bias)/2.0e-6;
 
 	@(cross(V(P[0]) - vth, 1) or initial_step) 
 	begin
