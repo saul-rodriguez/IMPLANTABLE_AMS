@@ -60,15 +60,21 @@
 		</tests>
 		<vars>
 			<var>CLOCKWIDTH
-				<value>5</value>
+				<value>50</value>
 				<dependentTests>
-					<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>STEPNUM
-				<value>1</value>
+				<value>0</value>
 				<dependentTests>
-					<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>I_BIAS
+				<value>0.2222u</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -81,217 +87,11 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.0
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_DAC:RDAC32_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>RDAC32_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_DAC</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.0</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>RDAC32_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_DAC</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>50</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Sep 30 16:45:36 2015
-</timestamp>
-			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/atlantis.it.kth.se_saul_164536410</localpsfdir>
-			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.0.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.1
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_DAC:RDAC32_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>RDAC32_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_DAC</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.1</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>RDAC32_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_DAC</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>50</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>1</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Sep 30 16:46:43 2015
-</timestamp>
-			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/atlantis.it.kth.se_saul_164643907</localpsfdir>
-			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.1.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry>Interactive.2
 			<checkpoint>
 				<corners>
@@ -374,13 +174,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep 30 16:47:50 2015
-</timestamp>
+			<timestamp>Wed Sep 30 16:47:50 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.2.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -477,13 +276,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep 30 16:48:59 2015
-</timestamp>
+			<timestamp>Wed Sep 30 16:48:59 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.3.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -580,13 +378,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep 30 16:50:32 2015
-</timestamp>
+			<timestamp>Wed Sep 30 16:50:32 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.4.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -683,13 +480,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep 30 16:51:45 2015
-</timestamp>
+			<timestamp>Wed Sep 30 16:51:45 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -701,6 +497,660 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.5.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_DAC:RDAC32_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_BIAS
+						<value>1.9</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Oct 13 16:01:22 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/atlantis.it.kth.se_saul_160122258</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_DAC:RDAC32_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_BIAS
+						<value>0.2222u</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Oct 13 16:03:40 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/atlantis.it.kth.se_saul_160340910</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_DAC:RDAC32_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_BIAS
+						<value>0.2222u</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Oct 13 16:05:44 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/atlantis.it.kth.se_saul_160544051</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_DAC:RDAC32_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_BIAS
+						<value>0.2222u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Oct 13 16:11:51 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/atlantis.it.kth.se_saul_161151449</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_DAC:RDAC32_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_BIAS
+						<value>0.2222u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Oct 13 16:14:36 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/atlantis.it.kth.se_saul_161436360</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_DAC:RDAC32_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_DAC:RDAC32_tb:1_ams_state1_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>RDAC32_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_DAC</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>I_BIAS
+						<value>0.2222u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_DAC:RDAC32_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Oct 13 16:19:00 2015
+</timestamp>
+			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/atlantis.it.kth.se_saul_161900062</localpsfdir>
+			<psfdir>/afs/kth.se/home/s/a/saul/Sim/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

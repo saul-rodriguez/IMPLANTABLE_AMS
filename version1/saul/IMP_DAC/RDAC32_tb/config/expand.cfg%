@@ -1,4 +1,4 @@
-//Revision 23
+//Revision 25
 config RDAC32_tb;
 design IMP_DAC.RDAC32_tb:schematic;
 liblist IMP_DAC;
@@ -7,9 +7,9 @@ viewlist spectre, schematic, veriloga, verilogams, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_DAC.RDAC32 binding :schematic;
-
 cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
+
+cell IMP_DAC.RDAC32 binding :schematic;
 
 
 endconfig

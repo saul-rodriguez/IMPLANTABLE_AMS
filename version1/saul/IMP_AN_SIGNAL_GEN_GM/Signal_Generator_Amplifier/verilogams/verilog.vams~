@@ -1,4 +1,6 @@
 //Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_Amplifier" "verilogams"
+
+//Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_Amplifier" "verilogams"
 /*
  *  Variable gain Transconductance Amplifier  
  *  Author: Saul Rodriguez
@@ -13,13 +15,10 @@
  *   1  1  100 uS  
  */
 
-
-
-`timescale 1ns/1ps
 `include "constants.vams"
 `include "disciplines.vams"
 
-module Signal_Generator_Amplifier ( bias_CMFB, bias_DAC, bias_in, G0, G1, IoutN,
+module Signal_Generator_Amplifier ( bias_in, G0_NEG, G1_NEG, G0, G1, IoutN,
 IoutP, VIN_N, VIN_P, vdda, vddd, vssa, vssd, vsub );
 
   input vsub;
@@ -32,10 +31,23 @@ IoutP, VIN_N, VIN_P, vdda, vddd, vssa, vssd, vsub );
   input vdda;
   input IoutN;
   output bias_in;
+  inout G1_NEG;
+  inout G0_NEG;
   input vssa;
   input vddd;
-  output bias_DAC;
-  output bias_CMFB;
+
+/*
+parameter real gm = 0.001 ;
+parameter real vcm = 0.9 ;
+parameter real GM = 0.001 ;
+parameter real I_bias_DAC = 2e-06 ;
+parameter real I_bias_CMFB = 5e-07 ;
+parameter real Av = 20000 ;
+parameter real GM0 = 1.11111e-05 ;
+parameter real alfa = 2 ;
+
+*/
+
 
   logic G0,G1;
   electrical VIN_P, VIN_N, IoutN, IoutP, vssa;
@@ -44,8 +56,8 @@ IoutP, VIN_N, VIN_P, vdda, vddd, vssa, vssd, vsub );
 //  parameter real GM = 1.0m; //Transconductance
   parameter real vcm = 0.9; //Common mode voltage
   parameter real Av = 20000; //DC voltage Gain
-  parameter real I_bias_DAC = 2u;
-  parameter real I_bias_CMFB = 0.5u;
+  //parameter real I_bias_DAC = 2u;
+  //parameter real I_bias_CMFB = 0.5u;
   parameter real GM0 = 11.11111u;
   real GM; //Transconductance
   real Gout, Gout_se, vodif; 
@@ -85,11 +97,12 @@ IoutP, VIN_N, VIN_P, vdda, vddd, vssa, vssd, vsub );
 	I(IoutN,vssa) <+ (V(IoutN,vssa)-(vcm-vodif/2))*Gout_se;
 	
 	//Biasing for other stages
-	I(bias_DAC) <+ -I_bias_DAC;
-    I(bias_CMFB) <+ -I_bias_CMFB;
+	//I(bias_DAC) <+ -I_bias_DAC;
+    //I(bias_CMFB) <+ -I_bias_CMFB;
 
   end 
 
   
+
 
 endmodule
