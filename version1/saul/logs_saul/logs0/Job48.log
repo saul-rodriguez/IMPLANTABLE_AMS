@@ -1,0 +1,1456 @@
+\# Program start time UTC 2015.10.16 15:20:41.641
+\# Local time Friday 16 October 2015, 5:20 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
+\o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
+\# Host name (type):	localhost.localdomain (x86_64)
+\# Operating system:	Linux 2.6.18-406.el5 #1 SMP Tue Jun 2 17:25:57 EDT 2015
+\# X display name (WxH):	localhost.localdomain:80.0 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x1800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x31, current max 0x3ffffa (4194298)
+\# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Initial sbrk value:	486170624 (0x1cfa6000) bytes
+\# Available memory:	21413856 (0x146bfe0) kilobytes
+\# System memory:	24046944 (0x16eed60) kilobytes
+\# Maximum memory size:	24194301952 (0x5a217c000) bytes
+\# Max mem available:	21984190464 (0x51e5c2000) bytes
+\# Initial memory used:	56401920 (0x35ca000) bytes
+\#        process size:	667676672 (0x27cbf000) bytes
+\# Qt version:		4.5.3
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		23449
+\o 
+\o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:	21395468 (0x146780c) kilobytes UTC 2015.10.16 15:20:41.722
+\# Memory report: Maximum memory size now 21970227200 (0x51d871000) bytes, UTC 2015.10.16 15:20:41.722
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dcm.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexl.cxt 
+\o Loading oasis.cxt 
+\o Loading asimenv.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading socket.cxt 
+\o Loading alvs.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o ......................................................................................
+\o            ams AG hitkit v.ams_4.11
+\o ......................................................................................
+\o COPYRIGHT (c) 2013 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This hitkit and attached documentation are confidential information and may 
+\o only be used as authorized by the hitkit license agreement.
+\o ......................................................................................
+\o Loading simulator default settings.
+\o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
+\o No mx check
+\o  
+\o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
+\o ...IBM PDK cmhv7sf procedures loaded.
+\o  
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\p hitkit: ams_4.11  Tech: h18a6am  User: saul 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_MonteCarlo.0
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.0.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.0/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o Loading spectrei.cxt 
+\# Memory report: now 163966976 (0x9c5f000) bytes, process size 911286272 (0x36512000) bytes at UTC 2015.10.16 15:20:44.838
+\o Loading relXpert.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading devCheck.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (69 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "3p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1000"
+\o Setting var VAC_CM = "1"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "10m"
+\o Loading monte.cxt 
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.0/151/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.0/151/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (69 151)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Loading seCore.cxt 
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 16 17:20:49 2015
+\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
+\o was generated using a previous IHNL version which is incompatible with the
+\o current IHNL version. Therefore re-netlisting the entire design using the
+\o current IHNL version.
+\o 
+\o End netlisting Oct 16 17:20:49 2015
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:  137
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (69 151).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.0/151/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 16 17:20:50 2015
+\o End netlisting Oct 16 17:20:50 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: Maximum memory size now 21301665792 (0x4f5ada000) bytes, UTC 2015.10.16 15:20:51.722
+\o Initializing IBM_PDK functions
+\o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
+\o Licensed Materials - Property of IBM - All Rights Reserved 
+\o Copyright: International Business Machines Corporation, 2015
+\o This Material may not be copied without the written consent of 
+\o Semiconductor Research and Development Center, IBM Corp., Essex Junction, VT 05452-4299.
+\o  Default set for Left & Right WindowCoordIBM
+\o System hardware set for Linux IBM_PDK procedures
+\o Setting calibre env variable table for cmhv7sf 
+\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.2847588"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1185839"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o Loading stats.cxt 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.330784"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.118054"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.237509"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182623"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 152) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.199141"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181514"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 153) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.345524"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182437"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 154) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.6619152"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182705"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 155) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.378861"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.118047"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 156) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 20844949504 (0x4da74b000) bytes, UTC 2015.10.16 15:21:41.883
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.058603"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181131"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 157) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.398048"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182376"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 158) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.202401"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181236"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 159) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.8438344"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1180354"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 160) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.3280485"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1184239"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 161) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.267726"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1180833"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 162) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.205266"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182137"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 163) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.340531"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182466"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 164) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.351621"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181775"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 165) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.275757"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1180431"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 166) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.171244"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182824"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 167) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.4056"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181556"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 168) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 20417413120 (0x4c0f90000) bytes, UTC 2015.10.16 15:22:53.394
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.336094"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.118148"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 169) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.243412"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181283"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 170) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.4973526"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1183398"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 171) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.370407"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181463"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 172) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.196768"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181999"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 173) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.240054"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181074"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 174) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.6019755"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1184184"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 175) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.269002"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181536"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 176) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.04467945"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1185872"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 177) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:	19387008 (0x127d280) kilobytes UTC 2015.10.16 15:23:44.450
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.179191"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181934"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 178) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.051915"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182057"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 179) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19995525120 (0x4a7d38000) bytes, UTC 2015.10.16 15:23:54.450
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.261307"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.118211"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 180) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.6336931"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182808"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 181) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.268763"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181837"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 182) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.9544612"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181303"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 183) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.263888"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1183105"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 184) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.296752"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182026"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 185) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.235235"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1191598"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 186) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.406407"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181511"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 187) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.417555"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181539"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 188) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.32342"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1180601"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 189) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.259562"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181469"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 190) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19570257920 (0x48e7a7000) bytes, UTC 2015.10.16 15:25:04.540
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.178607"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181701"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 191) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.4312018"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1188284"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 192) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.476768"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181331"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 193) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.195854"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1181249"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 194) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.033791"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182806"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 195) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.4814732"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182882"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 196) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.9469062"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1182419"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 197) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -1.254404"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1180715"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 198) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.158355"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.1186188"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 199) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (69 200) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 20516794368 (0x4c6e57000) bytes, UTC 2015.10.16 15:26:04.661
+\# Memory report: Maximum memory size now 20946735104 (0x4e085d000) bytes, UTC 2015.10.16 15:26:14.662
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 234180608 (0xdf55000) bytes, process size 981499904 (0x3a808000) bytes at UTC 2015.10.16 15:31:10.745
+\# Memory report: peak usage 234201088 (0xdf5a000) bytes, process size 981516288 (0x3a80c000) bytes
