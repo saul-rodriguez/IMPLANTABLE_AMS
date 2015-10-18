@@ -1,0 +1,43 @@
+//Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_bias" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Signal_Generator_bias ( bias_CMFB, bias_DAC, bias_gm, vdda, vssa, vsub,
+G2, G3, bias_in );
+
+  inout vsub;
+  input G3;
+  input bias_in;
+  inout vdda;
+  inout bias_gm;
+  input G2;
+  inout vssa;
+  inout bias_DAC;
+  inout bias_CMFB;
+
+  logic G2,G3;
+  electrical bias_CMFB, bias_DAC, bias_gm;
+
+  real DAC_current;
+
+  always @(G2,G3)
+  begin
+	DAC_current = 0.22222u;
+	if (G2 == 1) begin
+		DAC_current = DAC_current + 0.44444u;
+	end
+
+	if (G3 == 1) begin
+		DAC_current = DAC_current + 1.33333u;
+	end
+
+  end
+
+  analog begin
+
+  	I(bias_CMFB) <+ -0.1u;
+
+  end
+
+endmodule
