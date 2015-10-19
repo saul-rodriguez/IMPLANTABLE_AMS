@@ -66,10 +66,10 @@ end
 
   // Analog block
 analog begin
-	bias_i = I(bias)/2e-6;
+	bias_i = -I(bias)/2e-6;
   	
-	vop = vcm + amp*bias;
-    von = vcm - amp;	
+	vop = vcm + amp*bias_i;
+    von = vcm - amp*bias_i;	
 
 
 

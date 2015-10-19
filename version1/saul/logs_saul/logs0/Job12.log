@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.10.19 09:53:18.421
-\# Local time Monday 19 October 2015, 11:53 am
+\# Program start time UTC 2015.10.19 20:49:07.444
+\# Local time Monday 19 October 2015, 10:49 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	461541376 (0x1b829000) bytes
-\# Available memory:	21739948 (0x14bb9ac) kilobytes
-\# System memory:	24046944 (0x16eed60) kilobytes
-\# Maximum memory size:	24218931200 (0x5a38f9000) bytes
-\# Max mem available:	22318108672 (0x532435000) bytes
-\# Initial memory used:	56401920 (0x35ca000) bytes
-\#        process size:	667676672 (0x27cbf000) bytes
+\# Initial sbrk value:	536059904 (0x1ff3a000) bytes
+\# Available memory:	16596604 (0xfd3e7c) kilobytes
+\# System memory:	18405228 (0x118d76c) kilobytes
+\# Maximum memory size:	18368606208 (0x446dab000) bytes
+\# Max mem available:	17052635136 (0x3f86a9000) bytes
+\# Initial memory used:	57712640 (0x370a000) bytes
+\#        process size:	669081600 (0x27e16000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		18501
+\# Process Id:		8732
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	21667316 (0x14a9df4) kilobytes UTC 2015.10.19 09:53:18.722
-\# Memory report: Maximum memory size now 22266724352 (0x52f334000) bytes, UTC 2015.10.19 09:53:18.722
+\# Available memory:	16584424 (0xfd0ee8) kilobytes UTC 2015.10.19 20:49:07.615
+\# Memory report: Maximum memory size now 17063186432 (0x3f90b9000) bytes, UTC 2015.10.19 20:49:07.615
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -65,13 +65,13 @@
 \o 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o ......................................................................................
 \o            ams AG hitkit v.ams_4.11
@@ -95,133 +95,200 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_MonteCarlo.2
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.2.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.2/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.37
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 166408192 (0x9eb3000) bytes, process size 913727488 (0x36766000) bytes at UTC 2015.10.19 09:53:21.494
+\# Memory report: now 165310464 (0x9da7000) bytes, process size 912723968 (0x36671000) bytes at UTC 2015.10.19 20:49:08.871
 \o Loading relXpert.cxt 
-\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading msgHandler.cxt 
 \o Loading UltraSim.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (19 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run start for Point ID (8 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var CLOCKWIDTH = "15.625"
 \o Setting var CMFB_VAC = "0"
-\o Setting var CPAD = "4p"
-\o Setting var DC_IN = "0"
+\o Setting var CPAD = "3p"
 \o Setting var G0 = "1.8"
 \o Setting var G1 = "1.8"
 \o Setting var G2 = "1.8"
 \o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
 \o Setting var PULSE_CMFB = "0"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "1"
-\o Setting var VCM_PULSE = "10m"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Loading monte.cxt 
+\o Setting var RL = "1k"
+\o Setting var STEPNUM = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.2/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.2/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (19 1)
+\o *Info*    Creating Netlist for Point ID (8 1)
 \o 
 \o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 19 11:53:23 2015
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Oct 19 22:49:10 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o End netlisting Oct 19 11:53:23 2015
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:  140
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 19 22:49:10 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (19 1).
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (8
+\o           1).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.2/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 19 11:53:23 2015
-\o End netlisting Oct 19 11:53:23 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 21608460288 (0x507f6f000) bytes, UTC 2015.10.19 09:53:28.723
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -231,1226 +298,591 @@
 \o  Default set for Left & Right WindowCoordIBM
 \o System hardware set for Linux IBM_PDK procedures
 \o Setting calibre env variable table for cmhv7sf 
-\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o Using menu definition file: /pkg/AMS/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -143.4515"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.654508e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o Loading stats.cxt 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 35.8065"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 4.491264e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 38.21994"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.060754e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -146.1583"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.799781e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 3) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 133.418"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.874162e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 4) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -141.6936"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.334544e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 5) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -121.7396"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 5.598057e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 6) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 21116649472 (0x4eaa68000) bytes, UTC 2015.10.19 09:54:38.778
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -143.7176"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.015022e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 7) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 32.62286"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.479604e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 8) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 32.71129"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 5.31079e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -153.9146"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.272736e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 10) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 22.18952"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.208098e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 11) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 43.07952"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.422663e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 12) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 24.23521"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.876535e-06"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 13) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -4.09248"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.0001266472"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 14) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 32.93509"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 4.276405e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 15) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -130.5625"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.0001290182"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 16) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 34.90933"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.646207e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 17) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -143.3196"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.969884e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 18) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 20656586752 (0x4cf3a8000) bytes, UTC 2015.10.19 09:55:59.496
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -148.813"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.95294e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 19) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 28.99189"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.077387e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 20) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -145.1355"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.423487e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 21) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -143.9071"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.364287e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 22) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.331088"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.164936e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 23) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -45.35013"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.059581e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 24) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:	19682508 (0x12c54cc) kilobytes UTC 2015.10.19 09:56:50.450
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -146.2085"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.0002525271"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 25) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 37.052"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.820328e-06"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 26) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -153.0807"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.00010907"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 27) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -146.8304"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.766259e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 28) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 20222615552 (0x4b55ca000) bytes, UTC 2015.10.19 09:57:20.487
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 34.19434"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.328225e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 29) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 116.1811"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.0001182811"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 30) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -150.5792"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 5.251482e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 31) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -142.7891"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.654696e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 32) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 133.3313"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.336684e-06"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 33) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 47.22756"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.776995e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 34) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -7.639196"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.0001321127"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 35) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 24.51149"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.375989e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 36) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 18.29531"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 5.991379e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 37) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 33.8317"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.022009e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 38) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -155.2656"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.449047e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 39) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 19786285056 (0x49b5ac000) bytes, UTC 2015.10.19 09:58:50.679
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -39.91178"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.802904e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 40) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -0.04623148"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.51014e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 41) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -120.8917"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.431072e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 42) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -150.8941"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.008326e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 43) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 38.45621"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.869446e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 44) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 38.43239"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.620709e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 45) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 74.46512"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 4.00693e-06"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 46) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 42.17677"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.500675e-06"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 47) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object -140.4879"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.290722e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 48) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 20337238016 (0x4bc31a000) bytes, UTC 2015.10.19 10:00:00.799
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 30.72323"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.819747e-05"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (19 49) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (19 50) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (8 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 21211463680 (0x4f04d4000) bytes, UTC 2015.10.19 10:00:10.799
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 234110976 (0xdf44000) bytes, process size 981430272 (0x3a7f7000) bytes at UTC 2015.10.19 10:05:09.045
-\# Memory report: peak usage 234135552 (0xdf4a000) bytes, process size 981442560 (0x3a7fa000) bytes
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.38
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "3p"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1k"
+\o Setting var STEPNUM = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 19 22:52:07 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o RDAC32                      verilogams           *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 19 22:52:07 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (9
+\o           1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (9 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.39
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (10 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "3p"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1k"
+\o Setting var STEPNUM = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (10 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 19 22:54:33 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o RDAC32                      verilogams           *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 19 22:54:33 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (10
+\o           1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (10 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.40
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "3p"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1k"
+\o Setting var STEPNUM = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 19 22:55:35 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 19 22:55:35 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (11
+\o           1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGINT.
+\o 
+\o 

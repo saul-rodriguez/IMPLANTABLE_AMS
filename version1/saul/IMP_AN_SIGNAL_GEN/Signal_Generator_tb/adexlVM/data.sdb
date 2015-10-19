@@ -59,7 +59,7 @@
 		</tests>
 		<vars>
 			<var>CLOCKWIDTH
-				<value>1000</value>
+				<value>15.625</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
 				</dependentTests>
@@ -83,9 +83,39 @@
 				</dependentTests>
 			</var>
 			<var>RL
-				<value>1M</value>
+				<value>1k</value>
 				<dependentTests>
-					<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>CPAD
+				<value>3p</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>G0
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>G1
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>G2
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>G3
+				<value>1.8</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -98,12 +128,12 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.19
+		<historyentry>Interactive.31
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -137,1045 +167,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.19</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:50:09 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.19.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.19.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225009655</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.19</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.19</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.19.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.19.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.20
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.20</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:51:09 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.20.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.20.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225109165</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.20</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.20</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.20.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.20.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.21
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.21</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:52:44 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.21.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225244659</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.21</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.21</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.21.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.22
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:54:40 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.22.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225440256</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.22</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.22</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.22.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.23
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:55:48 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.23.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225548098</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.23</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.23</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.23.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.24
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:57:36 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.24.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225736489</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.24</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.24</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.24.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.25
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 22:58:58 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.25.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_225858339</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.25</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.25</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.25.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.26
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>1M</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 23:14:10 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.26.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_231410729</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.26</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.26</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.26.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.27
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CLOCKWIDTH
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>1M</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Oct 13 23:15:10 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.27.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_231510101</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.27</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.27</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.27.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.28
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.28</value>
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.31</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1227,6 +219,36 @@
 					<var>RL
 						<value>1M</value>
 						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
 							<dependentTest omitted="0">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
 						</dependentTests>
 					</var>
@@ -1240,24 +262,1374 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Oct 13 23:17:32 2015
+			<timestamp>Mon Oct 19 22:20:22 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.28.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.31.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_231732520</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.28</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.28</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_222022149</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.31</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.31</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.28.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.31.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.32
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.32</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:24:04 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.32.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.32.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_222404222</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.32</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.32</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.32.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.32.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.33
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.33</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:25:59 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.33.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.33.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_222559277</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.33</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.33</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.33.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.33.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.34
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.34</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:27:11 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.34.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_222711748</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.34</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.34</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.34.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.35
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.35</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:35:50 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.35.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.35.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_223550273</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.35</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.35</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.35.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.35.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.36
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.36</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:42:42 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.36.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.36.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_224242280</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.36</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.36</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.36.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.36.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.37
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.37</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:49:03 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_224903399</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.37.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.37.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.38
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.38</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:52:07 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.38.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_225207097</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.38.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.38.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.39
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.39</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:54:33 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.39.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_225433255</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.39.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.39.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.40
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.40</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUT_P") - VT("/VOUT_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>3p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Oct 19 22:55:34 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.40.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_225534682</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.40.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.40.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
