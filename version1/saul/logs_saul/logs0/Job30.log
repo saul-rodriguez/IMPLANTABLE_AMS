@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.10.16 11:41:34.547
-\# Local time Friday 16 October 2015, 1:41 pm
+\# Program start time UTC 2015.10.19 12:44:23.682
+\# Local time Monday 19 October 2015, 2:44 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	413585408 (0x18a6d000) bytes
-\# Available memory:	21332816 (0x1458350) kilobytes
+\# Initial sbrk value:	483946496 (0x1cd87000) bytes
+\# Available memory:	17848124 (0x110573c) kilobytes
 \# System memory:	24046944 (0x16eed60) kilobytes
-\# Maximum memory size:	24266883072 (0x5a66b4000) bytes
-\# Max mem available:	21901201408 (0x51969d000) bytes
+\# Maximum memory size:	24196521984 (0x5a239a000) bytes
+\# Max mem available:	18332876800 (0x444b98000) bytes
 \# Initial memory used:	56397824 (0x35c9000) bytes
 \#        process size:	667672576 (0x27cbe000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		16659
+\# Process Id:		4919
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	21303772 (0x14511dc) kilobytes UTC 2015.10.16 11:41:34.842
-\# Memory report: Maximum memory size now 21879156736 (0x518197000) bytes, UTC 2015.10.16 11:41:34.843
+\# Available memory:	17830248 (0x1101168) kilobytes UTC 2015.10.19 12:44:23.751
+\# Memory report: Maximum memory size now 18320490496 (0x443fc8000) bytes, UTC 2015.10.19 12:44:23.751
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -100,9 +100,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_Interactive.33
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_MonteCarlo.7
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.7.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.7/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
 \o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
 \o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
@@ -115,7 +115,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 163962880 (0x9c5e000) bytes, process size 911282176 (0x36511000) bytes at UTC 2015.10.16 11:41:37.768
+\# Memory report: now 163958784 (0x9c5d000) bytes, process size 911278080 (0x36510000) bytes at UTC 2015.10.19 12:44:25.870
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -139,7 +139,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (35 2) on testbench [
+\o *Info*    Run start for Point ID (27 51) on testbench [
 \o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
 \o 
 \o Resetting statistical vars
@@ -147,10 +147,10 @@
 \o *Info*    Setting parameter values ...
 \o 
 \o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "5p"
+\o Setting var CPAD = "4p"
 \o Setting var DC_IN = "0"
-\o Setting var G0 = "1.8"
-\o Setting var G1 = "1.8"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
 \o Setting var G2 = "1.8"
 \o Setting var G3 = "1.8"
 \o Setting var I_REF = "100u"
@@ -162,33 +162,34 @@
 \o Setting var VDD_PULSE = "0"
 \o Setting var VIN_AC = "0"
 \o Setting var VIN_PULSE = "0"
+\o Loading monte.cxt 
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/2/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.7/51/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/2/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.7/51/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (35 2)
+\o *Info*    Creating Netlist for Point ID (27 51)
 \o 
 \o generate netlist...
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:41:40 2015
+\o Begin Incremental Netlisting Oct 19 14:44:30 2015
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Oct 16 13:41:40 2015
+\o End netlisting Oct 19 14:44:30 2015
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:  139
+\o 	Number of components:  143
 \o 
 \o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
@@ -197,9 +198,20 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (35 2).
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (27 51).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/2/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.7/51/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 19 14:44:30 2015
+\o End netlisting Oct 19 14:44:30 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -209,7 +221,7 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 21291896832 (0x4f5189000) bytes, UTC 2015.10.16 11:41:44.884
+\# Memory report: Maximum memory size now 17609531392 (0x4199c2000) bytes, UTC 2015.10.19 12:44:33.751
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -224,249 +236,2407 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 39.70992"))
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
 \o 
 \o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.405907e-14"))
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (35 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (35 13) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (35 13)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:41:49 2015
-\o End netlisting Oct 16 13:41:49 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (35 13).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 45.0"))
+\o Loading stats.cxt 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
 \o 
 \o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.517007e-14"))
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (35 13) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (35 5) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/5/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/5/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (35 5)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:41:59 2015
-\o End netlisting Oct 16 13:41:59 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (35 5).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/5/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\# Memory report: now 271486976 (0x102e9000) bytes, process size 1018806272 (0x3cb9c000) bytes at UTC 2015.10.19 12:44:53.242
 \o *Info*    Client has finished evaluating ... 
 \o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 39.70992"))
+\o 
+\o *Info*    Run complete for Point ID (27 51) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
 \o 
 \o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.405907e-14"))
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
-\o 
-\o *Info*    Run complete for Point ID (35 5) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (35 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (35 9)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:42:08 2015
-\o End netlisting Oct 16 13:42:08 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (35 9).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.33/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 39.28941"))
+\o 
+\o *Info*    Run complete for Point ID (27 52) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
 \o 
 \o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.787016e-14"))
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
 \e 
 \e 
 \o 
 \o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o *Info*    Run complete for Point ID (35 9) on testbench [
+\o 
+\o *Info*    Run complete for Point ID (27 53) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 54) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 55) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 56) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 57) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 58) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 59) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 60) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 61) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 62) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 63) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 64) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 65) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 66) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 67) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 68) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 69) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 70) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 71) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 72) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 73) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 74) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 75) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 76) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 77) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 78) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 79) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 80) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 81) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 82) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 83) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 84) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 85) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 86) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 87) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 88) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 89) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 90) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 91) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 92) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 93) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 94) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 95) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 96) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 97) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 98) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
+\o 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 99) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (27 100) on testbench [
 \o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
 \o 
 \o 
@@ -476,1762 +2646,5 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_Interactive.34
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (36 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "2p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "1.8"
-\o Setting var G1 = "1.8"
-\o Setting var G2 = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
-\o Setting var PULSE_CMFB = "10m"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (36 1)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:44:36 2015
-\o End netlisting Oct 16 13:44:37 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (36 1).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 49.61065"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.812942e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (36 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (36 15) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/15/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/15/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (36 15)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:44:47 2015
-\o End netlisting Oct 16 13:44:47 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (36 15).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/15/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 48.50353"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 9.249431e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (36 15) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (36 4) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (36 4)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:44:55 2015
-\o End netlisting Oct 16 13:44:55 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (36 4).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 46.4688"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 9.800597e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (36 4) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (36 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (36 9)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:45:07 2015
-\o End netlisting Oct 16 13:45:07 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (36 9).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 42.05595"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.100517e-13"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (36 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (36 11) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/11/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/11/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (36 11)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:45:17 2015
-\o End netlisting Oct 16 13:45:17 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (36 11).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.34/11/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 48.95755"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.000966e-13"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (36 11) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_Interactive.35
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (37 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "3p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "1.8"
-\o Setting var G1 = "1.8"
-\o Setting var G2 = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
-\o Setting var PULSE_CMFB = "10m"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (37 1)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:49:41 2015
-\o End netlisting Oct 16 13:49:41 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (37 1).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 45.0"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 4.773081e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (37 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (37 14) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (37 14)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:49:49 2015
-\o End netlisting Oct 16 13:49:49 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (37 14).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 46.27303"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 5.653728e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (37 14) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (37 4) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (37 4)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:49:58 2015
-\o End netlisting Oct 16 13:49:58 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (37 4).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 42.92283"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.064542e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (37 4) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (37 10) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (37 10)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:50:10 2015
-\o End netlisting Oct 16 13:50:10 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (37 10).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.35/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 46.16914"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 6.156044e-14"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (37 10) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_Interactive.36
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (38 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "3p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "0"
-\o Setting var G1 = "0"
-\o Setting var G2 = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
-\o Setting var PULSE_CMFB = "10m"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (38 1)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:54:44 2015
-\o End netlisting Oct 16 13:54:44 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (38 1).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.550904"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.216783e-16"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (38 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (38 13) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (38 13)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:54:52 2015
-\o End netlisting Oct 16 13:54:52 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (38 13).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.940919"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 3.25925e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (38 13) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (38 17) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/17/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/17/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (38 17)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:55:02 2015
-\o End netlisting Oct 16 13:55:02 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (38 17).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/17/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.172765"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.317897e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (38 17) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (38 7) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (38 7)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:55:12 2015
-\o End netlisting Oct 16 13:55:12 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (38 7).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.36/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.795602"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.353216e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (38 7) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_Interactive.37
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (39 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "5p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "0"
-\o Setting var G1 = "0"
-\o Setting var G2 = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
-\o Setting var PULSE_CMFB = "10m"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (39 1)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:56:34 2015
-\o End netlisting Oct 16 13:56:34 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (39 1).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.4212849"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 4.718575e-16"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (39 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (39 16) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (39 16)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:56:45 2015
-\o End netlisting Oct 16 13:56:45 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (39 16).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.337444"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.135095e-16"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (39 16) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (39 6) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (39 6)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:56:53 2015
-\o End netlisting Oct 16 13:56:54 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   1.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (39 6).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.688448"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.400368e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (39 6) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (39 10) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (39 10)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:57:03 2015
-\o End netlisting Oct 16 13:57:03 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (39 10).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.37/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.491848"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 2.020553e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (39 10) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_Interactive.38
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (40 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "5p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "0"
-\o Setting var G1 = "0"
-\o Setting var G2 = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
-\o Setting var PULSE_CMFB = "10m"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (40 1)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:59:04 2015
-\o End netlisting Oct 16 13:59:04 2015
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   31
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (40 1).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 0.9548413"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 4.163915e-16"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (40 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (40 14) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (40 14)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:59:14 2015
-\o End netlisting Oct 16 13:59:14 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (40 14).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 8.630802"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.860576e-16"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (40 14) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (40 6) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (40 6)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:59:25 2015
-\o End netlisting Oct 16 13:59:25 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (40 6).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.829077"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.400836e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (40 6) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (40 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (40 9)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 16 13:59:33 2015
-\o End netlisting Oct 16 13:59:33 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (40 9).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/Interactive.38/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 7.829077"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* ("error" 0 t nil ("*Error* drfGetWaveformXVec (DRL-18): argument not a valid srr waveform interface object 1.400836e-15"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (40 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 195371008 (0xba52000) bytes, process size 942690304 (0x38305000) bytes at UTC 2015.10.16 12:04:50.853
-\# Memory report: peak usage 195387392 (0xba56000) bytes, process size 942706688 (0x38309000) bytes
+\# Memory report: on exit 301965312 (0x11ffa000) bytes, process size 1049284608 (0x3e8ad000) bytes at UTC 2015.10.19 12:50:57.638
+\# Memory report: peak usage 301985792 (0x11fff000) bytes, process size 1049296896 (0x3e8b0000) bytes
