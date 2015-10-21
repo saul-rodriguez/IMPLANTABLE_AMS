@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.10.19 13:27:24.589
-\# Local time Monday 19 October 2015, 3:27 pm
+\# Program start time UTC 2015.10.21 13:07:52.814
+\# Local time Wednesday 21 October 2015, 3:07 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1400000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	463499264 (0x1ba07000) bytes
-\# Available memory:	18671952 (0x11ce950) kilobytes
-\# System memory:	24046944 (0x16eed60) kilobytes
-\# Maximum memory size:	24216977408 (0x5a371c000) bytes
-\# Max mem available:	19176484864 (0x47701f000) bytes
-\# Initial memory used:	56406016 (0x35cb000) bytes
-\#        process size:	667680768 (0x27cc0000) bytes
+\# Initial sbrk value:	501264384 (0x1de0b000) bytes
+\# Available memory:	12473812 (0xbe55d4) kilobytes
+\# System memory:	18405228 (0x118d76c) kilobytes
+\# Maximum memory size:	18403401728 (0x448eda000) bytes
+\# Max mem available:	12830896128 (0x2fcc7f000) bytes
+\# Initial memory used:	57712640 (0x370a000) bytes
+\#        process size:	669081600 (0x27e16000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		1834
+\# Process Id:		28121
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	18595352 (0x11bbe18) kilobytes UTC 2015.10.19 13:27:24.875
-\# Memory report: Maximum memory size now 19121037312 (0x473b3e000) bytes, UTC 2015.10.19 13:27:24.875
+\# Available memory:	12443388 (0xbddefc) kilobytes UTC 2015.10.21 13:07:52.995
+\# Memory report: Maximum memory size now 12822765568 (0x2fc4be000) bytes, UTC 2015.10.21 13:07:52.995
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -65,13 +65,13 @@
 \o 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o ......................................................................................
 \o            ams AG hitkit v.ams_4.11
@@ -95,45 +95,211 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_SIGNAL_GEN_GM
-\o 	Cell         = S3_TB
-\o 	View         = schematic
-\o 	Simulator    = spectre
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:2_none_MonteCarlo.9
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.9.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.9/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.66
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 164802560 (0x9d2b000) bytes, process size 912121856 (0x365de000) bytes at UTC 2015.10.19 13:27:27.435
+\# Memory report: now 165646336 (0x9df9000) bytes, process size 913059840 (0x366c3000) bytes at UTC 2015.10.21 13:07:54.472
 \o Loading relXpert.cxt 
-\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading msgHandler.cxt 
 \o Loading UltraSim.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 2) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "1600000"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "333k"
+\o Setting var STEPNUM = "0"
+\o Setting var VDD_PULSE = "1.8"
+\o Setting var Vsupply = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 2)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Oct 21 15:07:56 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 21 15:07:56 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (9
+\o           2).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -143,2491 +309,1299 @@
 \o  Default set for Left & Right WindowCoordIBM
 \o System hardware set for Linux IBM_PDK procedures
 \o Setting calibre env variable table for cmhv7sf 
-\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o Using menu definition file: /pkg/AMS/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (9 2) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (29 101) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CMFB_VAC = "1"
-\o Setting var CPAD = "4p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "0"
-\o Setting var G1 = "0"
-\o Setting var G2 = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var I_REF = "100u"
-\o Setting var PULSE_CMFB = "10m"
-\o Setting var RL = "1000"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_PULSE = "0"
-\o Loading monte.cxt 
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.9/101/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/14/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.9/101/IMP_AN_SIGNAL_GEN_GM:S3_TB:2
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/14/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (29 101)
+\o *Info*    Creating Netlist for Point ID (9 14)
 \o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Loading seCore.cxt 
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 19 15:27:30 2015
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
+\o Begin Incremental Netlisting Oct 21 15:08:21 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o End netlisting Oct 19 15:27:30 2015
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:  144
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 21 15:08:21 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ] for Point ID (29 101).
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (9
+\o           14).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/14/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlNVM/results/data/MonteCarlo.9/101/IMP_AN_SIGNAL_GEN_GM:S3_TB:2/psf.
+\o 
+\o *Info*    Run complete for Point ID (9 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 4)
+\o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 19 15:27:30 2015
-\o End netlisting Oct 19 15:27:30 2015
+\o Begin Incremental Netlisting Oct 21 15:08:44 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 21 15:08:44 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (9
+\o           4).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 18553737216 (0x451e39000) bytes, UTC 2015.10.19 13:27:34.876
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o *Info*    Run complete for Point ID (9 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
 \o 
 \o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
 \o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 8)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 15:09:07 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 21 15:09:08 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (9
+\o           8).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/Interactive.66/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (9 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 13095649280 (0x30c8fc000) bytes, UTC 2015.10.21 13:09:52.997
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_MonteCarlo.0
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (10 101) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "1600000"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "333k"
+\o Setting var STEPNUM = "0"
+\o Setting var VDD_PULSE = "1.8"
+\o Setting var Vsupply = "0"
+\o Loading monte.cxt 
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0/101/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0/101/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (10 101)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 15:13:05 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0/101/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 21 15:13:05 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (10
+\o           101).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0/101/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 15:13:06 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlVM/results/data/MonteCarlo.0/101/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Oct 21 15:13:06 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 12677849088 (0x2f3a8a000) bytes, UTC 2015.10.21 13:13:23.003
 \o Loading stats.cxt 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
+\# Memory report: now 281944064 (0x10ce2000) bytes, process size 1029357568 (0x3d5ac000) bytes at UTC 2015.10.21 13:13:40.854
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
+\o *Info*    Run complete for Point ID (10 101) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
 \o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 101) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 102) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 102) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 103) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 103) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 104) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 104) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 105) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 105) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 106) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 106) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 107) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 107) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 108) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 108) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 109) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 109) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 110) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 110) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 111) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 111) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 112) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 112) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 113) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 113) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 114) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 114) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 115) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 115) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 116) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 116) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 117) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 117) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 118) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 118) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 119) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 119) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 120) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 120) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 121) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 121) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 122) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 122) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 123) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 123) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 124) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 124) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 125) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 125) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 126) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 126) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 127) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 127) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 128) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 128) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 129) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 129) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 130) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 130) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 131) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 131) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 132) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 132) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 133) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 133) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 134) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 134) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 135) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 135) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 136) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 136) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 137) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 137) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 138) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
-\o 
-\o 
-\# Memory report: Maximum memory size now 18179751936 (0x43b990000) bytes, UTC 2015.10.19 13:28:35.330
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (29 138) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 139) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 139) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 140) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 140) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 141) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 141) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 142) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 142) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 143) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 143) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 144) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 144) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 145) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 145) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 146) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 146) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 147) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 147) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 148) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 148) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(phaseDeg((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 -2 4)). 
-\o 
-\o 
-\e *Error* phaseDeg: can't handle phaseDeg(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (dB20((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression ((VT("/OUTP") - VT("/OUTN"))). 
-\o 
-\o 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o 
-\o *Error*   Evaluating expression (histo(value(mag((VF("/OUTP") - VF("/OUTN"))) 1000000) 40 0.117 0.121)). 
 \o 
 \o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 149) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 149) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Memory report: Maximum memory size now 12963209216 (0x304aae000) bytes, UTC 2015.10.21 13:20:45.540
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
@@ -2636,16 +1610,16 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 150) on testbench [
-\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:2 ].
+\o *Info*    Run complete for Point ID (10 150) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 18652786688 (0x457caf000) bytes, UTC 2015.10.19 13:28:55.338
+\# Memory report: Maximum memory size now 13495844864 (0x3246a4000) bytes, UTC 2015.10.21 13:21:25.541
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 235773952 (0xe0da000) bytes, process size 983093248 (0x3a98d000) bytes at UTC 2015.10.19 13:33:58.928
-\# Memory report: peak usage 235794432 (0xe0df000) bytes, process size 983105536 (0x3a990000) bytes
+\# Memory report: on exit 330067968 (0x13ac7000) bytes, process size 1077481472 (0x40391000) bytes at UTC 2015.10.21 13:26:35.098
+\# Memory report: peak usage 330088448 (0x13acc000) bytes, process size 1077493760 (0x40394000) bytes

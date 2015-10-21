@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.10.20 12:54:57.982
-\# Local time Tuesday 20 October 2015, 2:54 pm
+\# Program start time UTC 2015.10.21 09:24:33.136
+\# Local time Wednesday 21 October 2015, 11:24 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	277278720 (0x1086f000) bytes
-\# Available memory:	22281960 (0x153fee8) kilobytes
-\# System memory:	24046944 (0x16eed60) kilobytes
-\# Maximum memory size:	24403197952 (0x5ae8b4000) bytes
-\# Max mem available:	22873133056 (0x553585000) bytes
-\# Initial memory used:	56406016 (0x35cb000) bytes
-\#        process size:	667680768 (0x27cc0000) bytes
+\# Initial sbrk value:	315170816 (0x12c92000) bytes
+\# Available memory:	15534440 (0xed0968) kilobytes
+\# System memory:	18405228 (0x118d76c) kilobytes
+\# Maximum memory size:	18589491200 (0x454052000) bytes
+\# Max mem available:	15964975104 (0x3b7963000) bytes
+\# Initial memory used:	57708544 (0x3709000) bytes
+\#        process size:	669077504 (0x27e15000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		16237
+\# Process Id:		12784
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	22236912 (0x1534ef0) kilobytes UTC 2015.10.20 12:54:58.292
-\# Memory report: Maximum memory size now 22850007040 (0x551f77000) bytes, UTC 2015.10.20 12:54:58.292
+\# Available memory:	15493724 (0xec6a5c) kilobytes UTC 2015.10.21 09:24:33.235
+\# Memory report: Maximum memory size now 15930974208 (0x3b58f6000) bytes, UTC 2015.10.21 09:24:33.235
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -65,13 +65,13 @@
 \o 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o ......................................................................................
 \o            ams AG hitkit v.ams_4.11
@@ -95,299 +95,275 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_SIGNAL_GEN
-\o 	Cell         = Signal_Generator_tb
-\o 	View         = config
-\o 	Simulator    = ams
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_MonteCarlo.0
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:1_spectre_state1VM_Interactive.158
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 164831232 (0x9d32000) bytes, process size 912150528 (0x365e5000) bytes at UTC 2015.10.20 12:55:01.196
+\# Memory report: now 168013824 (0xa03b000) bytes, process size 915427328 (0x36905000) bytes at UTC 2015.10.21 09:24:35.299
 \o Loading relXpert.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading msgHandler.cxt 
 \o Loading UltraSim.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
-\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading devCheck.cxt 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (4 51) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Info*    Run start for Point ID (126 12) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CLOCKWIDTH = "15.625"
 \o Setting var CMFB_VAC = "0"
-\o Setting var CPAD = "3p"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
 \o Setting var G0 = "1.8"
 \o Setting var G1 = "1.8"
 \o Setting var G2 = "1.8"
 \o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
 \o Setting var PULSE_CMFB = "0"
-\o Setting var RL = "1k"
-\o Setting var STEPNUM = "0"
-\o Loading monte.cxt 
+\o Setting var RL = "1.2k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "1000m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "10m"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0/51/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/12/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0/51/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/12/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (4 51)
+\o *Info*    Creating Netlist for Point ID (126 12)
 \o 
 \o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Loading verilogI.cxt 
-\o Begin Incremental Netlisting Oct 20 14:55:03 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o Begin Incremental Netlisting Oct 21 11:24:36 2015
+\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
+\o was generated using a previous IHNL version which is incompatible with the
+\o current IHNL version. Therefore re-netlisting the entire design using the
+\o current IHNL version.
 \o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0/51/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o End netlisting Oct 21 11:24:36 2015
 \o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o Netlisting Statistics:
+\o 	Number of components:  149
 \o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o INFO (205) : The following cells will be netlisted without using the spectre CDF
-\o              simulation information, because they are bound to view symbol:
-\o               *** Library - CORELIB  Cell - INVX1 ***
-\o              To use the spectre CDF simulation information, do one of the following:
-\o               - Open your configuration in Hierarchy Editor and replace "symbol"
-\o               with "spectre" in the view list and stop list. 
-\o               - Choose Simulation->Options->Netlister and add "symbol"
-\o               in the "Netlist using spectre CDF simInfo" field.
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o INVX1                       symbol               *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o Signal_Generator_CMFB       schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Oct 20 14:55:04 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (4
-\o           51).
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (126 12).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0/51/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Oct 20 14:55:05 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/MonteCarlo.0/51/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o INFO (205) : The following cells will be netlisted without using the spectre CDF
-\o              simulation information, because they are bound to view symbol:
-\o               *** Library - CORELIB  Cell - INVX1 ***
-\o              To use the spectre CDF simulation information, do one of the following:
-\o               - Open your configuration in Hierarchy Editor and replace "symbol"
-\o               with "spectre" in the view list and stop list. 
-\o               - Choose Simulation->Options->Netlister and add "symbol"
-\o               in the "Netlist using spectre CDF simInfo" field.
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o INVX1                       symbol               *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o Signal_Generator_CMFB       schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Oct 20 14:55:05 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/12/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
 \o       ...successful.
-\o create cds_globals...
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (126 12) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (126 15) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/15/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/15/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (126 15)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:24:40 2015
+\o End netlisting Oct 21 11:24:40 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o validating simulator hierarchy...
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (126 15).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/15/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
 \o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o Loading paraplot.cxt 
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (126 15) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (126 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (126 4)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:24:42 2015
+\o End netlisting Oct 21 11:24:42 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (126 4).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 15436394496 (0x39814b000) bytes, UTC 2015.10.21 09:24:43.240
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -397,528 +373,1794 @@
 \o  Default set for Left & Right WindowCoordIBM
 \o System hardware set for Linux IBM_PDK procedures
 \o Setting calibre env variable table for cmhv7sf 
-\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o Using menu definition file: /pkg/AMS/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\# Memory report: Maximum memory size now 22221017088 (0x52c79d000) bytes, UTC 2015.10.20 12:55:08.293
-\# Memory report: Maximum memory size now 21505556480 (0x501d4c000) bytes, UTC 2015.10.20 12:55:28.293
-\o Loading stats.cxt 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 51) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 52) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 53) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 54) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 55) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 56) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 57) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 58) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 59) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 60) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 61) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 62) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 21082226688 (0x4e8994000) bytes, UTC 2015.10.20 13:08:08.353
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 63) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 64) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 65) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 66) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 67) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 68) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 69) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 70) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 71) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 72) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 73) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 74) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 75) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 76) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 77) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Available memory:	20195804 (0x13429dc) kilobytes UTC 2015.10.20 13:21:59.003
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 78) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 79) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 80) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 81) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 82) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 83) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 84) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 85) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 86) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 87) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 88) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 89) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 90) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 91) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 92) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 93) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 94) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 95) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 96) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 97) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 98) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 99) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (4 100) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (126 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 22152364032 (0x528624000) bytes, UTC 2015.10.20 13:44:02.100
-\# Memory report: Maximum memory size now 21608439808 (0x507f6a000) bytes, UTC 2015.10.20 13:44:42.102
-\# Memory report: Maximum memory size now 21060694016 (0x4e750b000) bytes, UTC 2015.10.20 13:44:52.102
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (126 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/8/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/8/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (126 8)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:24:44 2015
+\o End netlisting Oct 21 11:24:44 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (126 8).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.158/8/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (126 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \o 
-\o *Info*    Received signal SIGTERM.
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:1_spectre_state1VM_Interactive.159
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM
+\o 	File Encoding = 0
 \o 
 \o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (127 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1.2k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "1000m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "10m"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (127 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:25:17 2015
+\o End netlisting Oct 21 11:25:17 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (127 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (127 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (127 13) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (127 13)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:25:21 2015
+\o End netlisting Oct 21 11:25:21 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (127 13).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/13/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (127 13) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (127 5) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/5/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/5/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (127 5)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:25:23 2015
+\o End netlisting Oct 21 11:25:23 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (127 5).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/5/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (127 5) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (127 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/8/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/8/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (127 8)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:25:26 2015
+\o End netlisting Oct 21 11:25:26 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (127 8).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.159/8/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (127 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:1_spectre_state1VM_Interactive.160
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (128 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1.2k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "20m"
+\o Setting var VDC_CM = "1000m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (128 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:26:57 2015
+\o End netlisting Oct 21 11:26:57 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (128 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (128 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (128 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (128 16)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:27:02 2015
+\o End netlisting Oct 21 11:27:02 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (128 16).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (128 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (128 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (128 6)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:27:05 2015
+\o End netlisting Oct 21 11:27:05 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (128 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (128 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (128 10) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (128 10)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:27:07 2015
+\o End netlisting Oct 21 11:27:07 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (128 10).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.160/10/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (128 10) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:1_spectre_state1VM_Interactive.161
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (129 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "1.2k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "1000m"
+\o Setting var VDD_PULSE = "10m"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (129 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:28:58 2015
+\o End netlisting Oct 21 11:28:58 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (129 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (129 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (129 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (129 14)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:29:02 2015
+\o End netlisting Oct 21 11:29:02 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (129 14).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (129 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (129 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (129 4)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:29:04 2015
+\o End netlisting Oct 21 11:29:05 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (129 4).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (129 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (129 7) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (129 7)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:29:07 2015
+\o End netlisting Oct 21 11:29:07 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (129 7).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.161/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (129 7) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:1_spectre_state1VM_Interactive.162
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (130 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
+\o Setting var PULSE_CMFB = "10m"
+\o Setting var RL = "1.2k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "1000m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (130 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:30:06 2015
+\o End netlisting Oct 21 11:30:06 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (130 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (130 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (130 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (130 14)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:30:10 2015
+\o End netlisting Oct 21 11:30:10 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (130 14).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/14/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (130 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (130 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (130 4)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:30:13 2015
+\o End netlisting Oct 21 11:30:13 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (130 4).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/4/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (130 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (130 7) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (130 7)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:30:15 2015
+\o End netlisting Oct 21 11:30:15 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (130 7).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.162/7/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (130 7) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN_GM
+\o 	Cell         = S3_TB
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN_GM:S3_TB:1_spectre_state1VM_Interactive.163
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (131 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "2p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "1.8"
+\o Setting var G3 = "1.8"
+\o Setting var I_REF = "100u"
+\o Setting var PULSE_CMFB = "10m"
+\o Setting var RL = "1.2k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "1000m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (131 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:31:00 2015
+\o End netlisting Oct 21 11:31:00 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (131 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/1/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 15058210816 (0x3818a1000) bytes, UTC 2015.10.21 09:31:03.490
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (131 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (131 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (131 16)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:31:04 2015
+\o End netlisting Oct 21 11:31:04 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (131 16).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/16/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (131 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (131 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (131 6)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:31:06 2015
+\o End netlisting Oct 21 11:31:06 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (131 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/6/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (131 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (131 9) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (131 9)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Oct 21 11:31:08 2015
+\o End netlisting Oct 21 11:31:08 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ] for Point ID (131 9).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN_GM/S3_TB/adexlVM/results/data/Interactive.163/9/IMP_AN_SIGNAL_GEN_GM:S3_TB:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VF("/OUTP") - VF("/OUTN"))). 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (phaseDeg((VF("/OUTP") - VF("/OUTN")))). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (131 9) on testbench [
+\o           IMP_AN_SIGNAL_GEN_GM:S3_TB:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 15404408832 (0x3962ca000) bytes, UTC 2015.10.21 09:36:13.493
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 195137536 (0xba19000) bytes, process size 942551040 (0x382e3000) bytes at UTC 2015.10.21 09:36:14.501
+\# Memory report: peak usage 195158016 (0xba1e000) bytes, process size 942567424 (0x382e7000) bytes
