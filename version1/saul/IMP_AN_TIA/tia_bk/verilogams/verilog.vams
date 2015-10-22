@@ -1,0 +1,65 @@
+//Verilog-AMS HDL for "IMP_AN_TIA", "tia" "verilogams"
+
+/*
+ * Transimpedance Amplifier TIA
+ * Author: Saul Rodriguez
+ * Date : 2015-06-10
+ */
+
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module tia_bk( voutn, voutp, vdda, Iinn, Iinp, vssa, vsub, bias_in );
+
+  output voutp;
+  output voutn;
+  input vsub;
+  input Iinp;
+  input vdda;
+  input vssa;
+  input Iinn;
+  input bias_in;
+
+  parameter real RF = 10M;
+  parameter real vcm = 0.9;
+  real vdif;
+
+  electrical voutn, voutp, Iinn, Iinp, vssa;
+
+  analog begin
+
+/*
+	V(voutn,voutp) <+ -10000*V(Iinp,Iinn);
+
+	I(Iinp,voutn) <+ V(Iinp,voutn)/(RF/2);
+	I(Iinn,voutp) <+ V(Iinn,voutp)/(RF/2);
+  */
+
+
+
+/*
+	vdif = RF*I(Iinp,Iinn);
+
+	V(voutp,vssa) <+ vcm + vdif/2;
+	V(voutn,vssa) <+ vcm - vdif/2;
+*/
+
+	vdif = -10000*V(Iinp,Iinn);
+	V(voutp,vssa) <+ vdif/2 + vcm;
+	V(voutn,vssa) <+ -vdif/2 + vcm;
+
+    I(Iinp,voutn) <+ V(Iinp,voutn)/(RF/2);
+	I(Iinn,voutp) <+ V(Iinn,voutp)/(RF/2);
+
+
+
+
+	
+
+	
+
+  end
+
+
+endmodule
