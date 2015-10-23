@@ -1,0 +1,16 @@
+//Revision 7
+config tia_lpf_tb;
+design IMP_AN_TIA.tia_tb:schematic;
+liblist IMP_AN_TIA;
+
+viewlist spectre, schematic, functional, symbol;
+stoplist spectre, symbol;
+
+
+cell IMP_AN_LPF.s1_gm1_block binding :verilogams;
+cell IMP_AN_LPF.lpf_cmfb binding :schematic_dummy;
+
+cell IMP_AN_TIA.tia binding :verilogams;
+
+
+endconfig

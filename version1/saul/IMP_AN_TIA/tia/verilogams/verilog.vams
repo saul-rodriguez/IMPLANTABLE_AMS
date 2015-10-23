@@ -1,65 +1,55 @@
 //Verilog-AMS HDL for "IMP_AN_TIA", "tia" "verilogams"
 
-/*
- * Transimpedance Amplifier TIA
- * Author: Saul Rodriguez
- * Date : 2015-06-10
- */
-
-
 `include "constants.vams"
 `include "disciplines.vams"
 
-module tia ( voutn, voutp, vdda, Iinn, Iinp, vssa, vsub, bias_in );
+module tia ( voutn, voutp, Gain, Iinn, Iinp, bias_in, vdda, vssa, vsub );
 
   output voutp;
   output voutn;
   input vsub;
-  input Iinp;
-  input vdda;
-  input vssa;
   input Iinn;
+  input vdda;
   input bias_in;
+  input Iinp;
+  input vssa;
+  input Gain;
 
-  parameter real RF = 10M;
-  parameter real vcm = 0.9;
-  real vdif;
-
+  logic Gain;
   electrical voutn, voutp, Iinn, Iinp, vssa;
 
+  
+  parameter real vcm = 0.9 ;
+
+  real RF = 1.5e6;
+  real vdif;
+
+  //Digital part
+  always @(Gain)
+  begin
+	if (Gain == 0) begin // High Gain, RF = 1.5M
+ 		RF = 1.5e6;
+	end else begin // Low Gain RF = 500k
+		RF = 500.0e3;
+	end
+  end
+
+  //Analog part
   analog begin
 
-/*
-	V(voutn,voutp) <+ -10000*V(Iinp,Iinn);
+  	vdif = -10000*V(Iinp,Iinn);
 
-	I(Iinp,voutn) <+ V(Iinp,voutn)/(RF/2);
-	I(Iinn,voutp) <+ V(Iinn,voutp)/(RF/2);
-  */
-
-
-
-/*
-	vdif = RF*I(Iinp,Iinn);
-
-	V(voutp,vssa) <+ vcm + vdif/2;
-	V(voutn,vssa) <+ vcm - vdif/2;
-*/
-
-	vdif = -10000*V(Iinp,Iinn);
+	//Set the common mode	
 	V(voutp,vssa) <+ vdif/2 + vcm;
 	V(voutn,vssa) <+ -vdif/2 + vcm;
 
+    //Transimpedance amplifier
     I(Iinp,voutn) <+ V(Iinp,voutn)/(RF/2);
-	I(Iinn,voutp) <+ V(Iinn,voutp)/(RF/2);
+    I(Iinn,voutp) <+ V(Iinn,voutp)/(RF/2);
 
-
-
-
-	
-
-	
 
   end
+
 
 
 endmodule
