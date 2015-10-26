@@ -1,0 +1,23 @@
+//Revision 6
+config tia_lna_lpf_tb;
+design IMP_AN_TIA.tia_lna_lpf_tb:schematic;
+liblist IMP_AN_TIA;
+
+viewlist spectre, schematic, functional, symbol;
+stoplist spectre, symbol;
+
+
+cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
+
+cell IMP_AN_MIXER.mixer binding :schematic;
+
+cell IMP_AN_LPF.s1_gm1_block binding :verilogams;
+cell IMP_AN_LPF.lpf_cmfb binding :schematic_dummy;
+
+cell IMP_AN_TIA.tia binding :schematic;
+
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_LNA binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier_LNA binding :schematic;
+
+
+endconfig
