@@ -29,7 +29,7 @@ module cp ( CP_out, AN, B, vdda, vssa, vsub, bias );
     end
 
     // NMOS Current source
-	if (B) begin
+	if (B && V(CP_out) > 0) begin		
 		I(CP_out,vssa) <+ out_current;		
 	end else begin
 		I(CP_out,vssa) <+ 0;
