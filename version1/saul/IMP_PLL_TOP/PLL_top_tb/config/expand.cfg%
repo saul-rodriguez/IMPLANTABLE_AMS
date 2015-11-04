@@ -1,4 +1,4 @@
-//Revision 12
+//Revision 15
 config PLL_top_tb;
 design IMP_PLL_TOP.PLL_top_tb:schematic;
 liblist IMP_DIG_DUMMY;
@@ -7,14 +7,14 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_PLL_VCO.vco binding :verilogams;
+cell IMP_PLL_TOP.PLL_top binding :schematic;
+cell IMP_PLL_TOP.PLL_top_stimulus binding :verilogams;
+
+cell IMP_PLL_CP.cp binding :schematic;
 
 cell IMP_PLL_PFD.pfd_res binding :schematic;
 
-cell IMP_PLL_CP.cp binding :verilogams;
-
-cell IMP_PLL_TOP.PLL_top_stimulus binding :verilogams;
-cell IMP_PLL_TOP.PLL_top binding :schematic;
+cell IMP_PLL_VCO.vco binding :verilogams;
 
 
 endconfig
