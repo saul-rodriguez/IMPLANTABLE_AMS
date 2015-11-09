@@ -116,7 +116,7 @@
 				</dependentTests>
 			</var>
 			<var>FREQ
-				<value>1k</value>
+				<value>1M</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
 				</dependentTests>
@@ -200,13 +200,13 @@
 				</dependentTests>
 			</var>
 			<var>CLPF
-				<value>0.5n</value>
+				<value>4.7n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>CTIA
-				<value>1n</value>
+				<value>4.7n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
 				</dependentTests>
@@ -233,1241 +233,12 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
 	</active>
 	<history>History
-		<historyentry>Interactive.0
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_DEMOD:iq_demod_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.0</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>AMP_IN
-						<value>5m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AMP_PHA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLOCKWIDTH
-						<value>15625</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_FREQ
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CPAD
-						<value>500f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>1k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IQCTRL
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLPF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CTIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Nov  9 09:48:01 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.0.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_094801346</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.0</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.0</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.0.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.1
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_DEMOD:iq_demod_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.1</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>AMP_IN
-						<value>5m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AMP_PHA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLOCKWIDTH
-						<value>15625</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_FREQ
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CPAD
-						<value>500f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>1k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IQCTRL
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLPF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CTIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Nov  9 09:49:15 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.1.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_094915116</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.1</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.1</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.1.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.2
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_DEMOD:iq_demod_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.2</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-							<output>VTIA
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AMP_IN
-						<value>5m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AMP_PHA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLOCKWIDTH
-						<value>15625</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_FREQ
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CPAD
-						<value>500f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>1k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IQCTRL
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLPF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CTIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Nov  9 09:56:44 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_095644194</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.2</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.3
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_DEMOD:iq_demod_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.3</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-							<output>VTIA
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AMP_IN
-						<value>5m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AMP_PHA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLOCKWIDTH
-						<value>15625</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_FREQ
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CPAD
-						<value>500f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>1k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IQCTRL
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLPF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CTIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_PULSE_TIA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Nov  9 10:00:15 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.3.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_100015852</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.3</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.4
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_AN_DEMOD:iq_demod_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.4</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>iq_demod_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_DEMOD</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ams_state1</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-							<output>VTIA
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AMP_IN
-						<value>5m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>AMP_PHA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLOCKWIDTH
-						<value>15625</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CM_FREQ
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CPAD
-						<value>500f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>1k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IQCTRL
-						<value>0,1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>STEPNUM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CLPF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CTIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_PULSE_TIA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Nov  9 10:05:47 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_100547073</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.4</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>IQCTRL
-						<value>0</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry>Interactive.5
 			<checkpoint>
 				<corners>
@@ -1702,13 +473,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Nov  9 10:15:13 2015
-</timestamp>
+			<timestamp>Mon Nov 9 10:15:13 2015</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.5.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1963,13 +733,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Nov  9 10:15:42 2015
-</timestamp>
+			<timestamp>Mon Nov 9 10:15:42 2015</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.6.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -2218,13 +987,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Nov  9 10:18:08 2015
-</timestamp>
+			<timestamp>Mon Nov 9 10:18:08 2015</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.7.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -2236,6 +1004,1791 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.7.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15.625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 20:00:12 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_200012272</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 21:10:50 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.9.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_211050491</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.9</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.9</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.9.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 21:13:05 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.10.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_211305811</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.10</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.10</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.10.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 21:15:29 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_211529630</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.12
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.12</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 21:18:29 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_211829093</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.12</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.13
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.13</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 22:29:21 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.13.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_222921586</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.13</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.13</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.13.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.14
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_AN_DEMOD:iq_demod_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.14</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>iq_demod_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_DEMOD</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ams_state1</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>VTIA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AMP_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMP_PHA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLOCKWIDTH
+						<value>15625</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_AMP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CM_FREQ
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CPAD
+						<value>500f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IQCTRL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>STEPNUM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CLPF
+						<value>4.7n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CTIA
+						<value>4.7n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_PULSE_TIA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_AN_DEMOD:iq_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Nov  9 22:31:06 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.14.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.14.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_223106119</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.14</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.14</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.14.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.14.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
