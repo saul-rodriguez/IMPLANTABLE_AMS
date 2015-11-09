@@ -5,20 +5,22 @@ Clk,
 Resetn,
 F,
 IQ,
-G,
+GS,
 CE,
-GCP
+NS,
+GD
 );
 
 input Cfg_in, Clk, Resetn;
 
 output reg[3:0] F;
 output reg IQ;
-output reg [2:0] G;
+output reg [3:0] GS;
 output reg CE;
-output reg [1:0] GCP;
+output reg NS;
+output reg [2:0] GD;
 
-reg [10:0] out; 
+reg [13:0] out; 
 reg [3:0] count;
 
 wire strobe;
@@ -30,10 +32,13 @@ always @(posedge Clk, negedge Resetn)
 begin
     if (Resetn == 0) begin
         out <= 0;
-        count <= 11;
+        count <= 14;
     end else begin
         //Shift the data
-        out[10] <= Cfg_in;
+        out[13] <= Cfg_in;
+        out[12] <= out[13];
+        out[11] <= out[12];
+        out[10] <= out[11];
         out[9] <= out[10];
         out[8] <= out[9];
         out[7] <= out[8];
@@ -44,6 +49,7 @@ begin
         out[2] <= out[3];
         out[1] <= out[2];
         out[0] <= out[1];
+        
         //Decrement the counter
         count <= count - 1;
     end    
@@ -51,37 +57,22 @@ end
 
 assign strobe = (!count) & (~Clk);
 
-/*
-* Output registers with strobe
-*/
-/*
-always @(posedge strobe)
-begin
-        F[3:0] <= out[10:7];
-        IQ <= out[6];
-        G[2:0] <= out[5:3];
-        CE <= out[2];
-        GCP[1:0] <= out[1:0];
-end
-*/
-/*
-* Output registers with async. reset
-*/
-
 always @(posedge strobe, negedge Resetn)
 begin
     if (Resetn == 0) begin
         F[3:0] <= 0;
         IQ <= 0;
-        G[2:0] <= 0;
+        GS[3:0] <= 0;
         CE <= 0;
-        GCP[1:0] <= 0;
+        NS <= 0;
+        GD[2:0] <= 0;
     end else begin
-        F[3:0] <= out[10:7];
-        IQ <= out[6];
-        G[2:0] <= out[5:3];
-        CE <= out[2];
-        GCP[1:0] <= out[1:0];
+        F[3:0] <= out[13:10];
+        IQ <= out[9];
+        GS[3:0] <= out[8:5];
+        CE <= out[4];
+        NS <= out[3];
+        GD[2:0] <= out[2:0];
     end
 end
 

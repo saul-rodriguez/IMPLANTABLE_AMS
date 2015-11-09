@@ -30,24 +30,36 @@ IQ: selects either the I or Q reference
 	IQ = 0  selects the I reference
 	IQ = 1  selects the Q reference
 
-G: selects the variable gain, 3 bits
+GS: selects the variable gain, 4 bits
 
-	G[1:0] controls the variable GM gain of the Signal generator
-		00 = 11.11 uS (1.13 uA signal amplitude)
-		01 = 33.33 uS (3.33 uA signal amplitude)
-		11 = 100 uS	 (10 uA signal amplitude)
+    TODO: UPDATE THIS TABLE!!!!
 
+	GS[1:0] controls the variable GM gain of the Signal generator
+		0000 = 11.11 uS (0.123 uA signal amplitude)
+		0100 = 			 (0.370 uA signal amplitude)
+		1100 =           (1.111 uA signal amplitude)
+		1101 =           (3.333 uA)
+		1111 = 100 uS	 (10 uA signal amplitude)
 	G[2] controls the variable GM gain of the LNA
 		0 = 6.66 uS
 		1 = 20 uS
 
 CE: Current Signal Generator Enable bit
-		0 = disabled signal generator
+		0 = disabled signal generator (0V diff, CM ~ 900 mV)
 		1 = enabled signal generator
 
-GCP: Gain charge pump PLL 2 bits (not used anymore
-	 and reserved for new functionality)
+NS: Number of DAC steps
+		0 = 32 steps
+		1 = 16 steps
+ 
+GD: Demodulator Gain (3 bits)
 		
+		GD[2:0] controls the gain at the LNA and TIA (G[2] is active low!)
+		Code		Gain
+		100		  5.555
+		101		  16.667 
+		111		  50
+		011      150
 		
 
 */
@@ -55,7 +67,7 @@ GCP: Gain charge pump PLL 2 bits (not used anymore
 
 `include "constants.vams"
 `include "disciplines.vams"
-`timescale 1ns / 1ps
+`timescale 1 ns/ 1ps
 
 module bravo(SD,CD,Fref,Resetn);
 
@@ -71,31 +83,49 @@ reg CD;
 reg Resetn;
 reg Fref;
 
-parameter [10:0] confWord  = 11'b10101100001; //0x561
-parameter [3:0] F = 4'b1101;
-parameter [0:0] IQ = 0;
-parameter [2:0] G = 3'b111;
+logic SD;
+logic CD;
+logic Resetn;
+logic Fref;
+
+//parameter [13:0] confWord  = 14'b1010_1_1011_0_1_001; //0x561
+parameter [13:0] confWord  = 14'b0000_0_0000_0_0_000; //0x561
+
+parameter [3:0] F = 4'b1010;
+parameter [0:0] IQ = 1;
+parameter [3:0] GS = 4'b1111;
 parameter [0:0] CE = 1;
-parameter [1:0] GCP = 2'b01;
- 
-reg [10:0] mConf;
+parameter [0:0] NS = 0;
+parameter [2:0] GD = 3'b011;
+
+/*
+wire [3:0] F;
+wire IQ;
+wire [3:0] GS;
+wire CE;
+wire NS;
+wire [2:0] GD;
+*/ 
+reg [13:0] mConf;
 
 reg [3:0] tF;
 reg [0:0] tIQ;
-reg [2:0] tG;
+reg [3:0] tGS;
 reg [0:0] tCE;
-reg [1:0] tGCP;
+reg [0:0] tNS;
+reg [2:0] tGD;
 
 
 initial begin
 	//mConf = confWord;
 	tF = F;
 	tIQ = IQ;
-	tG = G;
+	tGS = GS;
 	tCE = CE;
-	tGCP = GCP;
+	tNS = NS;
+	tGD = GD;
 
-	mConf = {tF,tIQ,tG,tCE,tGCP};
+	mConf = {tF,tIQ,tGS,tCE,tNS,tGD};
 
 	SD = 0;
 	CD = 0;
@@ -124,6 +154,12 @@ initial begin
     #10 CD = 0; SD = mConf[9];
 	#10 CD = 1;
     #10 CD = 0; SD = mConf[10];
+	#10 CD = 1;
+ 	#10 CD = 0; SD = mConf[11];
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[12];
+	#10 CD = 1;
+ 	#10 CD = 0; SD = mConf[13];
 	#10 CD = 1;
     #10 CD = 0; 
 
@@ -158,9 +194,8 @@ initial begin
 end
 
 
-always #(cycle/2)
-begin
-	Fref = ~Fref;
+always begin
+#(cycle) Fref = ~Fref;
 end
 
 
