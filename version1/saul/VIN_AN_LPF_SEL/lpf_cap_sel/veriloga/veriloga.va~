@@ -1,0 +1,62 @@
+// VerilogA for VIN_AN_LPF_SEL, lpf_cap_sel, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module lpf_cap_sel(C1, C1a, C2, C2a, C3, C3a, C4, C4a, Sel, vdda, vssa, vsub);
+inout C1;
+electrical C1;
+inout C1a;
+electrical C1a;
+inout C2;
+electrical C2;
+inout C2a;
+electrical C2a;
+inout C3;
+electrical C3;
+inout C3a;
+electrical C3a;
+inout C4;
+electrical C4;
+inout C4a;
+electrical C4a;
+inout Sel;
+electrical Sel;
+inout vdda;
+electrical vdda;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+
+
+
+
+analog begin
+	
+	@(cross(V(Sel)-0.9,0))
+	; //just capture the trigger event for the rest of the model to execute
+
+	if (V(Sel) > 0.9) begin
+
+		V(C1,C1a) <+ 0;
+		V(C2,C2a) <+ 0;		
+		V(C3,C3a) <+ 0;		
+		V(C4,C4a) <+ 0;				
+
+	end else begin
+
+		I(C1,C1a) <+ 0;
+		I(C2,C2a) <+ 0;
+		I(C3,C3a) <+ 0;
+		I(C4,C4a) <+ 0;
+
+	end
+
+	
+
+
+end
+
+
+endmodule
