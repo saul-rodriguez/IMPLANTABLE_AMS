@@ -1,0 +1,71 @@
+// VerilogA for VIN_AN_LPF_SEL, lpf_cap_sel, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module lpf_cap_sel(C1, C1a, C2, C2a, C3, C3a, C4, C4a, Sel, vdda, vssa, vsub);
+inout C1;
+electrical C1;
+inout C1a;
+electrical C1a;
+inout C2;
+electrical C2;
+inout C2a;
+electrical C2a;
+inout C3;
+electrical C3;
+inout C3a;
+electrical C3a;
+inout C4;
+electrical C4;
+inout C4a;
+electrical C4a;
+inout Sel;
+electrical Sel;
+inout vdda;
+electrical vdda;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+
+parameter real ron = 1;
+parameter real goff = 1e-9;
+
+
+analog begin
+	@(initial_step)
+	begin
+		I(C1,C1a) <+ goff*V(C1,C1a);
+		I(C2,C2a) <+ goff*V(C2,C2a);
+		I(C3,C3a) <+ goff*V(C3,C3a);
+		I(C4,C4a) <+ goff*V(C4,C4a);
+	end	
+
+
+	@(cross(V(Sel)-0.9,0))
+	 ; //just capture the trigger event for the rest of the model to execute
+
+	if (V(Sel) > 0.9) begin
+
+		V(C1,C1a) <+ ron*I(C1,C1a);
+		V(C2,C2a) <+ ron*I(C2,C2a);		
+		V(C3,C3a) <+ ron*I(C3,C3a);		
+		V(C4,C4a) <+ ron*I(C4,C4a);				
+
+	end else begin
+
+		I(C1,C1a) <+ goff*V(C1,C1a);
+		I(C2,C2a) <+ goff*V(C2,C2a);
+		I(C3,C3a) <+ goff*V(C3,C3a);
+		I(C4,C4a) <+ goff*V(C4,C4a);
+
+	end
+
+	
+
+
+end
+
+
+endmodule

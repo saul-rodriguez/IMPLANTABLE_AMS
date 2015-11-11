@@ -3,7 +3,7 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module lpf_cap_sel(C1, C1a, C2, C2a, C3, C3a, C4, C4a, Sel, vdda, vssa, vsub);
+module lpf_cap_sel(C1, C1a, C2, C2a, C3, C3a, C4, C4a, C5p, C5pa, C6p, C6pa, Sel, vdda, vssa, vsub);
 inout C1;
 electrical C1;
 inout C1a;
@@ -20,6 +20,14 @@ inout C4;
 electrical C4;
 inout C4a;
 electrical C4a;
+inout C5p;
+electrical C5p;
+inout C5pa;
+electrical C5pa;
+inout C6p;
+electrical C6p;
+inout C6pa;
+electrical C6pa;
 inout Sel;
 electrical Sel;
 inout vdda;
@@ -29,27 +37,46 @@ electrical vssa;
 inout vsub;
 electrical vsub;
 
-
+parameter real goff = 1e-09 ;
+parameter real ron = 1 ;
 
 
 analog begin
-	
+	@(initial_step)
+	begin
+		I(C1,C1a) <+ goff*V(C1,C1a);
+		I(C2,C2a) <+ goff*V(C2,C2a);
+		I(C3,C3a) <+ goff*V(C3,C3a);
+		I(C4,C4a) <+ goff*V(C4,C4a);
+
+		I(C5p,C5pa) <+ goff*V(C5p,C5pa);
+		I(C6p,C6pa) <+ goff*V(C6p,C6pa);
+
+	end	
+
+
 	@(cross(V(Sel)-0.9,0))
-	; //just capture the trigger event for the rest of the model to execute
+	 ; //just capture the trigger event for the rest of the model to execute
 
 	if (V(Sel) > 0.9) begin
 
-		V(C1,C1a) <+ 0;
-		V(C2,C2a) <+ 0;		
-		V(C3,C3a) <+ 0;		
-		V(C4,C4a) <+ 0;				
+		V(C1,C1a) <+ ron*I(C1,C1a);
+		V(C2,C2a) <+ ron*I(C2,C2a);		
+		V(C3,C3a) <+ ron*I(C3,C3a);		
+		V(C4,C4a) <+ ron*I(C4,C4a);		
+
+		V(C5p,C5pa) <+ ron*I(C5p,C5pa);
+		V(C6p,C6pa) <+ ron*I(C6p,C6pa);
 
 	end else begin
 
-		I(C1,C1a) <+ 0;
-		I(C2,C2a) <+ 0;
-		I(C3,C3a) <+ 0;
-		I(C4,C4a) <+ 0;
+		I(C1,C1a) <+ goff*V(C1,C1a);
+		I(C2,C2a) <+ goff*V(C2,C2a);
+		I(C3,C3a) <+ goff*V(C3,C3a);
+		I(C4,C4a) <+ goff*V(C4,C4a);
+
+		I(C5p,C5pa) <+ goff*V(C5p,C5pa);
+		I(C6p,C6pa) <+ goff*V(C6p,C6pa);
 
 	end
 
@@ -57,6 +84,7 @@ analog begin
 
 
 end
+
 
 
 endmodule

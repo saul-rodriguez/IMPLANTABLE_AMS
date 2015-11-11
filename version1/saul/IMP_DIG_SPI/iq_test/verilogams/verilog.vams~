@@ -1,0 +1,267 @@
+//Verilog-AMS HDL for "IMP_DIG_SPI", "bravo" "verilogams"
+
+/*
+Author: Saul Rodriguez
+Date: 2015-09-16
+
+Parameters:
+
+F: Frequency selection, 4 bits
+
+	Frequency Table
+	-----------------
+	4'b0000 = 16 MHz
+	4'b0001 = 8 MHz
+	4'b0010 = 4 MHz
+	4'b0011 = 2 MHz
+	4'b0100 = 1 MHz
+	4'b0101 = 500 kHz
+	4'b0110 = 250 kHz
+	4'b0111 = 125 kHz
+	4'b1000 = 62.5 kHz
+	4'b1001 = 31.25 kHz
+	4'b1010 = 15.625 kHz
+	4'b1011 = 7.8125 kHz
+	4'b1100 = 3.90625 kHz
+	4'b1101 = 1.953125 kHz
+	4'b1110 = 0.9765625 kHz
+
+IQ: selects either the I or Q reference
+
+	IQ = 0  selects the I reference
+	IQ = 1  selects the Q reference
+
+GS: selects the variable gain, 4 bits
+
+    TODO: UPDATE THIS TABLE!!!!
+
+	GS[1:0] controls the variable GM gain of the Signal generator
+		0000 = 11.11 uS (0.123 uA signal amplitude)
+		0100 = 			 (0.370 uA signal amplitude)
+		1100 =           (1.111 uA signal amplitude)
+		1101 =           (3.333 uA)
+		1111 = 100 uS	 (10 uA signal amplitude)
+	G[2] controls the variable GM gain of the LNA
+		0 = 6.66 uS
+		1 = 20 uS
+
+CE: Current Signal Generator Enable bit
+		0 = disabled signal generator (0V diff, CM ~ 900 mV)
+		1 = enabled signal generator
+
+NS: Number of DAC steps
+		0 = 32 steps
+		1 = 16 steps
+ 
+GD: Demodulator Gain (3 bits)
+		
+		GD[2:0] controls the gain at the LNA and TIA (G[2] is active low!)
+		Code		Gain
+		100		  5.555
+		101		  16.667 
+		111		  50
+		011      150
+		
+
+*/
+
+
+`include "constants.vams"
+`include "disciplines.vams"
+`timescale 1 ns/ 1ps
+
+module iq_test(SD,CD,Fref,Resetn);
+
+output SD; //serial data
+output CD; //clock data
+output Fref; //clock reference
+output Resetn; //Reset (L)
+
+parameter clk_width = 1000; //1000ns ->  2000ns period -> 500 kHz
+
+reg SD;
+reg CD;
+reg Resetn;
+reg Fref;
+
+logic SD;
+logic CD;
+logic Resetn;
+logic Fref;
+
+parameter [15:0] confWord  = 16'b1010_1_1011_0_1_001_0_1;
+parameter [15:0] conf2  = 16'b0101_0_0100_1_0_110_1_0;
+
+parameter [3:0] F = 4'b1010;
+parameter [0:0] IQ = 1;
+parameter [3:0] GS = 4'b1111;
+parameter [0:0] CE = 1;
+parameter [0:0] NS = 0;
+parameter [2:0] GD = 3'b011;
+parameter [0:0] FS = 0;
+parameter [0:0] RE = 1;
+
+
+reg [15:0] mConf;
+
+reg [3:0] tF;
+reg [0:0] tIQ;
+reg [3:0] tGS;
+reg [0:0] tCE;
+reg [0:0] tNS;
+reg [2:0] tGD;
+reg [0:0] tFS;
+reg [0:0] tRE;
+
+
+initial begin
+	//mConf = confWord;
+	tF = F;
+	tIQ = IQ;
+	tGS = GS;
+	tCE = CE;
+	tNS = NS;
+	tGD = GD;
+	tFS = FS;
+	tRE = RE;
+
+	mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+
+	SD = 0;
+	CD = 0;	
+	Fref = 0;
+	Resetn = 0;
+
+    #50 Resetn = 1; 
+
+
+	//Configure I Path		
+ 
+	#10 CD = 0; SD = mConf[0]; 
+	#10 CD = 1;	
+    #10 CD = 0; SD = mConf[1];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[2];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[3];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[4];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[5];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[6];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[7];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[8];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[9];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[10];
+	#10 CD = 1;
+ 	//#10 CD = 0; SD = mConf[11];
+	#10 CD = 0; SD = 0; //I Signal
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[12];
+	#10 CD = 1;
+ 	#10 CD = 0; SD = mConf[13];
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[14];
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[15];
+	#10 CD = 1;
+    #10 CD = 0; 
+
+	//Delay to settle the transient and make a measurement
+	//1000 -> 1us 1_000_000 -> 1ms
+	#100000000 Resetn = 0; //100ms
+    #10 Resetn = 1; 
+	//configure Q Path
+	
+    #10 CD = 0; SD = mConf[0]; 
+	#10 CD = 1;	
+    #10 CD = 0; SD = mConf[1];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[2];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[3];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[4];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[5];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[6];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[7];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[8];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[9];
+	#10 CD = 1;
+    #10 CD = 0; SD = mConf[10];
+	#10 CD = 1;
+ 	//#10 CD = 0; SD = mConf[11];
+	#10 CD = 0; SD = 1; //I Signal
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[12];
+	#10 CD = 1;
+ 	#10 CD = 0; SD = mConf[13];
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[14];
+	#10 CD = 1;
+	#10 CD = 0; SD = mConf[15];
+	#10 CD = 1;
+    #10 CD = 0; 
+
+
+	//The following block is to test a following configuration
+	// Comment it for normal use
+/*
+	#100 Resetn = 0;
+    #10 Resetn = 1;
+	#10 CD = 0; SD = conf2[0]; 
+	#10 CD = 1;	
+    #10 CD = 0; SD = conf2[1];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[2];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[3];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[4];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[5];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[6];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[7];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[8];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[9];
+	#10 CD = 1;
+    #10 CD = 0; SD = conf2[10];
+	#10 CD = 1;
+ 	#10 CD = 0; SD = conf2[11];
+	#10 CD = 1;
+	#10 CD = 0; SD = conf2[12];
+	#10 CD = 1;
+ 	#10 CD = 0; SD = conf2[13];
+	#10 CD = 1;
+	#10 CD = 0; SD = conf2[14];
+	#10 CD = 1;
+	#10 CD = 0; SD = conf2[15];
+	#10 CD = 1;
+    #10 CD = 0; 
+
+*/
+
+end
+
+
+always begin
+#(clk_width) Fref = ~Fref;
+end
+
+
+endmodule
+
