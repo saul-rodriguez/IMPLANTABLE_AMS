@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.11.11 17:03:50.936
-\# Local time Wednesday 11 November 2015, 6:03 pm
+\# Program start time UTC 2015.11.12 08:54:08.860
+\# Local time Thursday 12 November 2015, 9:54 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0xc00000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	367132672 (0x15e20000) bytes
-\# Available memory:	22704596 (0x15a71d4) kilobytes
+\# Initial sbrk value:	420954112 (0x19174000) bytes
+\# Available memory:	22973460 (0x15e8c14) kilobytes
 \# System memory:	24046944 (0x16eed60) kilobytes
-\# Maximum memory size:	24313360384 (0x5a9307000) bytes
-\# Max mem available:	23305928704 (0x56d244000) bytes
-\# Initial memory used:	56422400 (0x35cf000) bytes
-\#        process size:	667697152 (0x27cc4000) bytes
+\# Maximum memory size:	24259534848 (0x5a5fb2000) bytes
+\# Max mem available:	23581241344 (0x57d8d3000) bytes
+\# Initial memory used:	56418304 (0x35ce000) bytes
+\#        process size:	667693056 (0x27cc3000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		16602
+\# Process Id:		9395
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	22703460 (0x15a6d64) kilobytes UTC 2015.11.11 17:03:50.964
-\# Memory report: Maximum memory size now 23307526144 (0x56d3ca000) bytes, UTC 2015.11.11 17:03:50.965
+\# Available memory:	22960408 (0x15e5918) kilobytes UTC 2015.11.12 08:54:09.063
+\# Memory report: Maximum memory size now 23575572480 (0x57d36b000) bytes, UTC 2015.11.12 08:54:09.064
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,17 +95,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
+\o 	Library      = IMP_AN_DEMOD
+\o 	Cell         = iq_demod_tb
 \o 	View         = config
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.26
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.26.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.26/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
+\o 	State Name   = IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.25
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.25.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.25/1/IMP_AN_DEMOD:iq_demod_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM
 \o 	File Encoding = 0
 \o 
 \o 
@@ -113,7 +113,7 @@
 \o Loading awv.cxt 
 \o Loading viva.cxt 
 \o Loading spectrei.cxt 
-\# Memory report: now 166936576 (0x9f34000) bytes, process size 914255872 (0x367e7000) bytes at UTC 2015.11.11 17:03:53.854
+\# Memory report: now 164032512 (0x9c6f000) bytes, process size 911351808 (0x36522000) bytes at UTC 2015.11.12 08:54:11.061
 \o Loading relXpert.cxt 
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
@@ -132,6 +132,190 @@
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 2) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMP_IN = "135m"
+\o Setting var AMP_PHA = "0"
+\o Setting var CLOCKWIDTH = "15625"
+\o Setting var CLPF = "0.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CM_AMP = "100m"
+\o Setting var CM_FREQ = "5.5k"
+\o Setting var CPAD = "500f"
+\o Setting var CTIA = "1n"
+\o Setting var DC_IN = "0"
+\o Setting var FREQ = "1k"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "1.8"
+\o Setting var IQCTRL = "1.8"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var STEPNUM = "0"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_PULSE = "0"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.25/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.25/2/IMP_AN_DEMOD:iq_demod_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 2)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Nov 12 09:54:13 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.25/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 12 09:54:14 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (4 2).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.25/2/IMP_AN_DEMOD:iq_demod_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -146,215 +330,15 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (26 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.26/1/VIN_TOP_SENSOR:top_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.26/1/VIN_TOP_SENSOR:top_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (26 1)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o Loading seCore.cxt 
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Loading verilogI.cxt 
-\o Begin Incremental Netlisting Nov 11 18:03:55 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.26/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
-\o iq_demod                    schematic                             
-\o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o lpf_bias                    schematic                             
-\o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Nov 11 18:03:56 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (26 1).
-\o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.26/1/VIN_TOP_SENSOR:top_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o Loading paraplot.cxt 
+\# Memory report: Maximum memory size now 23018536960 (0x55c030000) bytes, UTC 2015.11.12 08:54:29.064
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (26 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (4 2) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
@@ -367,17 +351,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
+\o 	Library      = IMP_AN_DEMOD
+\o 	Cell         = iq_demod_tb
 \o 	View         = config
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.27
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.27.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.27/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
+\o 	State Name   = IMP_AN_DEMOD:iq_demod_tb:1_ams_state1_Interactive.26
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/1/IMP_AN_DEMOD:iq_demod_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DEMOD/iq_demod_tb/adexlNVM
 \o 	File Encoding = 0
 \o 
 \o 
@@ -389,29 +373,50 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (27 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run start for Point ID (5 2) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
+\o Setting var AMP_IN = "135m"
+\o Setting var AMP_PHA = "0"
+\o Setting var CLOCKWIDTH = "15625"
+\o Setting var CLPF = "0.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CM_AMP = "100m"
+\o Setting var CM_FREQ = "5.5k"
+\o Setting var CPAD = "500f"
+\o Setting var CTIA = "1n"
+\o Setting var DC_IN = "0"
+\o Setting var FREQ = "1k"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "1.8"
+\o Setting var IQCTRL = "0"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var STEPNUM = "0"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_PULSE = "0"
+\o Setting var Vsupply = "1.8"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.27/1/VIN_TOP_SENSOR:top_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.27/1/VIN_TOP_SENSOR:top_tb:1
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (27 1)
+\o *Info*    Creating Netlist for Point ID (5 2)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
@@ -419,12 +424,12 @@
 \o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 11 18:07:23 2015
+\o Begin Incremental Netlisting Nov 12 10:01:53 2015
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.27/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -449,8 +454,17 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
 \o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
@@ -458,63 +472,10 @@
 \o 
 \o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -523,39 +484,45 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
 \o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
 \o iq_demod                    schematic                             
+\o buffer                      schematic                             
 \o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
 \o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
 \o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting Nov 11 18:07:23 2015
+\o End netlisting Nov 12 10:01:53 2015
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -565,10 +532,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (27 1).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 2).
 \o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.27/1/VIN_TOP_SENSOR:top_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/psf.
 \o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
@@ -579,84 +546,57 @@
 \o To check for output from compilation, elaboration and simulation run, 
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 22293499904 (0x530cbd000) bytes, UTC 2015.11.12 09:02:19.091
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (27 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (5 2) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
-\o 	View         = config
-\o 	Simulator    = ams
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.28
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.28.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.28/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (28 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run start for Point ID (5 13) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.28/1/VIN_TOP_SENSOR:top_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/13/IMP_AN_DEMOD:iq_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.28/1/VIN_TOP_SENSOR:top_tb:1
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/13/IMP_AN_DEMOD:iq_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (28 1)
+\o *Info*    Creating Netlist for Point ID (5 13)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
 \o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
 \o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 11 18:10:52 2015
+\o Begin Incremental Netlisting Nov 12 10:09:17 2015
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.28/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -681,8 +621,17 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
 \o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
@@ -690,63 +639,10 @@
 \o 
 \o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -755,39 +651,45 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
 \o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
 \o iq_demod                    schematic                             
+\o buffer                      schematic                             
 \o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
 \o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
 \o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting Nov 11 18:10:52 2015
+\o End netlisting Nov 12 10:09:18 2015
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -797,12 +699,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (28 1).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 13).
 \o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.28/1/VIN_TOP_SENSOR:top_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/13/IMP_AN_DEMOD:iq_demod_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -817,78 +717,50 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (28 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (5 13) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
-\o 	View         = config
-\o 	Simulator    = ams
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.29
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.29.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.29/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (29 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run start for Point ID (5 17) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.29/1/VIN_TOP_SENSOR:top_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/17/IMP_AN_DEMOD:iq_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.29/1/VIN_TOP_SENSOR:top_tb:1
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/17/IMP_AN_DEMOD:iq_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (29 1)
+\o *Info*    Creating Netlist for Point ID (5 17)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
 \o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
 \o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 11 18:13:08 2015
+\o Begin Incremental Netlisting Nov 12 10:17:16 2015
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.29/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -913,8 +785,17 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
 \o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
@@ -922,63 +803,10 @@
 \o 
 \o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -987,39 +815,45 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
 \o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
 \o iq_demod                    schematic                             
+\o buffer                      schematic                             
 \o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
 \o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
 \o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting Nov 11 18:13:08 2015
+\o End netlisting Nov 12 10:17:17 2015
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -1029,12 +863,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (29 1).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 17).
 \o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.29/1/VIN_TOP_SENSOR:top_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/17/IMP_AN_DEMOD:iq_demod_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -1043,84 +875,57 @@
 \o To check for output from compilation, elaboration and simulation run, 
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 21841645568 (0x515dd1000) bytes, UTC 2015.11.12 09:21:39.193
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (29 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (5 17) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
-\o 	View         = config
-\o 	Simulator    = ams
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.30
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.30.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.30/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams4'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams4'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (30 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run start for Point ID (5 9) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.30/1/VIN_TOP_SENSOR:top_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/9/IMP_AN_DEMOD:iq_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.30/1/VIN_TOP_SENSOR:top_tb:1
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/9/IMP_AN_DEMOD:iq_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (30 1)
+\o *Info*    Creating Netlist for Point ID (5 9)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
 \o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
 \o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 11 18:18:27 2015
+\o Begin Incremental Netlisting Nov 12 10:25:18 2015
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.30/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -1145,8 +950,17 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
 \o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
@@ -1154,63 +968,10 @@
 \o 
 \o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -1219,39 +980,45 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
 \o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
 \o iq_demod                    schematic                             
+\o buffer                      schematic                             
 \o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
 \o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
 \o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting Nov 11 18:18:27 2015
+\o End netlisting Nov 12 10:25:19 2015
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -1261,12 +1028,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (30 1).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 9).
 \o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.30/1/VIN_TOP_SENSOR:top_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/9/IMP_AN_DEMOD:iq_demod_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -1275,84 +1040,58 @@
 \o To check for output from compilation, elaboration and simulation run, 
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
+\# Available memory:	20845476 (0x13e13a4) kilobytes UTC 2015.11.12 09:26:39.412
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (30 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (5 9) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
-\o 	View         = config
-\o 	Simulator    = ams
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.31
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.31.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.31/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams5'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams5'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (31 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run start for Point ID (5 18) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
-\o Setting temp(T) = 27
+\o Setting var IQCTRL = "1.8"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.31/1/VIN_TOP_SENSOR:top_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/18/IMP_AN_DEMOD:iq_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.31/1/VIN_TOP_SENSOR:top_tb:1
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/18/IMP_AN_DEMOD:iq_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (31 1)
+\o *Info*    Creating Netlist for Point ID (5 18)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
 \o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
 \o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 11 18:21:41 2015
+\o Begin Incremental Netlisting Nov 12 10:33:18 2015
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.31/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -1377,8 +1116,17 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
 \o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
@@ -1386,63 +1134,10 @@
 \o 
 \o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -1451,39 +1146,45 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
 \o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
 \o iq_demod                    schematic                             
+\o buffer                      schematic                             
 \o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
 \o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
 \o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting Nov 11 18:21:41 2015
+\o End netlisting Nov 12 10:33:19 2015
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -1493,12 +1194,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (31 1).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 18).
 \o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.31/1/VIN_TOP_SENSOR:top_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/18/IMP_AN_DEMOD:iq_demod_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -1507,84 +1206,57 @@
 \o To check for output from compilation, elaboration and simulation run, 
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 21412618240 (0x4fc4aa000) bytes, UTC 2015.11.12 09:34:59.530
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (31 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (5 18) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = VIN_TOP_SENSOR
-\o 	Cell         = top_tb
-\o 	View         = config
-\o 	Simulator    = ams
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = VIN_TOP_SENSOR:top_tb:1_none_Interactive.32
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.32.rdb
-\o 	Results Dir  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.32/1/VIN_TOP_SENSOR:top_tb:1
-\o 	Results Loc  = /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/VIN_TOP_SENSOR/top_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams6'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams6'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams6'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (32 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run start for Point ID (5 30) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "1n"
-\o Setting var CAP_OFF2 = "1n"
-\o Setting var CAP_TIA = "4.7n"
-\o Setting var CAP_TIA2 = "10.3n"
-\o Setting var RL = "10000"
-\o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.32/1/VIN_TOP_SENSOR:top_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/30/IMP_AN_DEMOD:iq_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.32/1/VIN_TOP_SENSOR:top_tb:1
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/30/IMP_AN_DEMOD:iq_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (32 1)
+\o *Info*    Creating Netlist for Point ID (5 30)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
 \o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
 \o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 11 18:22:39 2015
+\o Begin Incremental Netlisting Nov 12 10:41:03 2015
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.32/1/VIN_TOP_SENSOR:top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -1609,8 +1281,17 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:VIN_TOP_SENSOR cell:top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'VIN_TOP_SENSOR/top_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
 \o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
@@ -1618,63 +1299,10 @@
 \o 
 \o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_bias', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("bias_CMFB" "bias_DAC" "bias_gm" "vdda" "vssa" "vsub" "G2" "G3" "bias_in")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DAC', cell 'RDAC32', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("VON" "VOP" "bias" "vdda" "vssa" "vsub" "P<16:0>")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier_LNA', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
-\o      "vssa" "vssd" "vsub") 
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("SD" "CD" "Fref" "Resetn")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -1683,39 +1311,45 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o iq_test                     verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier_LNA   verilogams           *Stopping View*  
-\o mixer                       verilogams           *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o s1_gm1_block                verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o PLL_top                     verilogams           *Stopping View*  
-\o spc2                        functional           *Stopping View*  
-\o lpf_cap_sel                 veriloga             *Stopping View*  
-\o RDAC32                      verilogams           *Stopping View*  
-\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
-\o Signal_Generator_bias       verilogams           *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
 \o DacCtrl                     functional           *Stopping View*  
-\o top_tb                      schematic                             
-\o top_imp_sensor              schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_CMFB       schematic_dummy                       
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
 \o iq_demod                    schematic                             
+\o buffer                      schematic                             
 \o lpf                         schematic                             
-\o lpf_cmfb                    schematic_dummy                       
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
 \o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
 \o lna2                        schematic                             
-\o Signal_Generator_CMFB_LNA   schematic_dummy                       
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'VIN_TOP_SENSOR', cell 'top_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting Nov 11 18:22:40 2015
+\o End netlisting Nov 12 10:41:04 2015
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -1725,12 +1359,342 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ VIN_TOP_SENSOR:top_tb:1 ]
-\o           for Point ID (32 1).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 30).
 \o 
-\o Delete simulation data in /home/saul/Sim/VIN_TOP_SENSOR/top_tb/adexl/results/data/Interactive.32/1/VIN_TOP_SENSOR:top_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/30/IMP_AN_DEMOD:iq_demod_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 21880053760 (0x518272000) bytes, UTC 2015.11.12 09:41:29.581
+\# Memory report: Maximum memory size now 21422952448 (0x4fce85000) bytes, UTC 2015.11.12 09:41:49.581
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 30) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 34) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/34/IMP_AN_DEMOD:iq_demod_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/34/IMP_AN_DEMOD:iq_demod_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 34)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 12 10:48:57 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 12 10:48:57 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
 \o create cds_globals...
 \o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 34).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/34/IMP_AN_DEMOD:iq_demod_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 21916155904 (0x51a4e0000) bytes, UTC 2015.11.12 09:49:19.658
+\# Memory report: Maximum memory size now 21476225024 (0x500153000) bytes, UTC 2015.11.12 09:49:39.659
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 34) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 24) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/24/IMP_AN_DEMOD:iq_demod_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/24/IMP_AN_DEMOD:iq_demod_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 24)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 12 10:56:15 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 12 10:56:15 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 24).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/24/IMP_AN_DEMOD:iq_demod_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -1745,8 +1709,172 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (32 1) on testbench [
-\o           VIN_TOP_SENSOR:top_tb:1 ].
+\o *Info*    Run complete for Point ID (5 24) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 28) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/28/IMP_AN_DEMOD:iq_demod_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/28/IMP_AN_DEMOD:iq_demod_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 28)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 12 11:03:57 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/2/IMP_AN_DEMOD:iq_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_DEMOD cell:iq_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_DEMOD/iq_demod_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o iprobe                      spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o vcvs                        spectre              *Stopping View*  
+\o iq_demod_tb                 schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o lpf_bias                    schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_CMFB_LNA   schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier_LNA   schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_DEMOD', cell 'iq_demod_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 12 11:03:59 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ] for Point ID (5 28).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_DEMOD/iq_demod_tb/adexlNVM/results/data/Interactive.26/28/IMP_AN_DEMOD:iq_demod_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 28) on testbench [
+\o           IMP_AN_DEMOD:iq_demod_tb:1 ].
 \o 
 \o 
 \o 
@@ -1756,7 +1884,5 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Memory report: on exit 204845056 (0xc35b000) bytes, process size 952164352 (0x38c0e000) bytes at UTC 2015.11.12 10:13:53.964
+\# Memory report: peak usage 204861440 (0xc35f000) bytes, process size 952176640 (0x38c11000) bytes
