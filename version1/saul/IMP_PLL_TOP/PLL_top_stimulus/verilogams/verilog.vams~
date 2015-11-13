@@ -29,7 +29,7 @@ initial begin
 	FSel = freq_selection;
 
 	#200 Resetn = 0;
-	#200 Resetn = 1;
+	#400 Resetn = 1;
 end 
 
 always #(cycle/2) Fin = ~Fin;

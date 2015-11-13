@@ -1,0 +1,39 @@
+// VerilogA for IMP_AN_BIAS, current_mirror1, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module current_mirror1(bias1, bias2, bias3, bias4, bias5, bias6, bias_in, vdda, vssa, vsub);
+output bias1;
+electrical bias1;
+output bias2;
+electrical bias2;
+output bias3;
+electrical bias3;
+output bias4;
+electrical bias4;
+output bias5;
+electrical bias5;
+output bias6;
+electrical bias6;
+input bias_in;
+electrical bias_in;
+input vdda;
+electrical vdda;
+input vssa;
+electrical vssa;
+input vsub;
+electrical vsub;
+
+analog begin
+
+I(bias1) <+ -100n;
+I(bias2) <+ -100n;
+I(bias3) <+ -100n;
+I(bias4) <+ -100n;
+I(bias5) <+ -100n;
+I(bias6) <+ -100n;
+
+end
+
+endmodule
