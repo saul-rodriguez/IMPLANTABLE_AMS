@@ -54,13 +54,13 @@
 		</tests>
 		<vars>
 			<var>C1
-				<value>1u</value>
+				<value>47n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>R1
-				<value>10k</value>
+				<value>500k</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
 				</dependentTests>
@@ -68,7 +68,19 @@
 			<var>VCOMP
 				<value>1.1</value>
 				<dependentTests>
-					<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+					<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>AMPLITUDE
+				<value>200m</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VOFFSET
+				<value>1.5</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -81,12 +93,12 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.9
+		<historyentry>Interactive.34
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -120,7 +132,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.9</value>
+								<value>IMP_COMM:S1:1_none_Interactive.34</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -141,892 +153,31 @@
 				</tests>
 				<vars>
 					<var>C1
-						<value>1u</value>
+						<value>10n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:30:01 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_153001421</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.9</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.10
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.10</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:31:19 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_153119333</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.10</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.11
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.11</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:31:33 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_153133888</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.11</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.12
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.12</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:32:26 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.12.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_153226922</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.12</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.12</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.12.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.13
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.13</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:38:14 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.13.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_153814379</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.13</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.13</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.13.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.14
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.14</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:42:10 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.14.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.14.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_154210786</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.14</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.14</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.14.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.14.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.15
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.15</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:44:59 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.15.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.15.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_154459364</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.15</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.15</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.15.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.15.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.16
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.16</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:47:32 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.16.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_154732574</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.16</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.16</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.16.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.17
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.17</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value>                            </value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sat Nov 14 15:53:48 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.17.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.17.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_155348492</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.17</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.17</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.17.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.17.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.18
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_COMM:S1:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:S1:1_none_Interactive.18</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>S1</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>C1
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R1
-						<value>10k</value>
+						<value>500k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCOMP
 						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
 						<dependentTests>
 							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
 						</dependentTests>
@@ -1041,24 +192,1059 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Nov 14 16:07:09 2015
+			<timestamp>Sun Nov 15 14:35:49 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.18.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.18.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.34.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_160709766</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.18</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.18</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_143549989</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.34</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.34</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.18.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.18.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.34.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.35
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.35</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 14:36:35 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.35.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.35.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_143635376</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.35</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.35</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.35.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.35.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.36
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.36</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 14:49:10 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.36.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.36.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_144910154</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.36</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.36</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.36.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.36.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.37
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.37</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 14:50:10 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.37.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_145010019</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.37</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.37</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.37.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.37.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.38
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.38</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 14:52:01 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.38.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.38.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_145201980</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.38</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.38</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.38.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.38.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.39
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.39</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 14:53:03 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.39.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.39.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_145303950</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.39</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.39</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.39.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.39.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.40
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.40</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 14:53:53 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.40.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.40.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_145353870</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.40</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.40</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.40.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.40.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.41
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.41</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 15:05:26 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.41.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.41.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_150526905</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.41</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.41</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.41.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.41.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.42
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.42</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 15:06:36 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.42.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.42.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_150636994</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.42</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.42</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.42.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.42.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.43
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_COMM:S1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:S1:1_none_Interactive.43</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>S1</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>C1
+						<value>47n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R1
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCOMP
+						<value>1.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>AMPLITUDE
+						<value>200m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VOFFSET
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:S1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Sun Nov 15 16:05:46 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.43.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_160546228</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.43</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/S1/adexl/results/data/Interactive.43</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.43.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

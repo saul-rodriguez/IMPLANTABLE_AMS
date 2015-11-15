@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.11.14 14:20:30.504
-\# Local time Saturday 14 November 2015, 3:20 pm
+\# Program start time UTC 2015.11.15 10:17:30.998
+\# Local time Sunday 15 November 2015, 11:17 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -15,18 +15,18 @@
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	402817024 (0x18028000) bytes
-\# Available memory:	20372124 (0x136da9c) kilobytes
+\# Initial sbrk value:	388091904 (0x1721d000) bytes
+\# Available memory:	20495688 (0x138bd48) kilobytes
 \# System memory:	21610592 (0x149c060) kilobytes
-\# Maximum memory size:	21784150016 (0x5126fc000) bytes
-\# Max mem available:	20918775808 (0x4dedb3000) bytes
+\# Maximum memory size:	21798875136 (0x513507000) bytes
+\# Max mem available:	21045305344 (0x4e665e000) bytes
 \# Initial memory used:	57720832 (0x370c000) bytes
 \#        process size:	669089792 (0x27e18000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		32397
+\# Process Id:		24911
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	20359952 (0x136ab10) kilobytes UTC 2015.11.14 14:20:30.674
-\# Memory report: Maximum memory size now 20929327104 (0x4df7c3000) bytes, UTC 2015.11.14 14:20:30.674
+\# Available memory:	20483384 (0x1388d38) kilobytes UTC 2015.11.15 10:17:31.172
+\# Memory report: Maximum memory size now 21055725568 (0x4e704e000) bytes, UTC 2015.11.15 10:17:31.172
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,32 +95,28 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_COMM
-\o 	Cell         = S1
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
 \o 	View         = config
-\o 	Simulator    = ams
+\o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_COMM:S1:1_none_Interactive.8
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl/results/data/Interactive.8.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.8/1/IMP_COMM:S1:1
-\o 	Results Loc  = /home/saul/Sim/IMP_COMM/S1/adexl/results/data
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.33
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/S1/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 168300544 (0xa081000) bytes, process size 915714048 (0x3694b000) bytes at UTC 2015.11.14 14:20:32.314
+\# Memory report: now 168112128 (0xa053000) bytes, process size 915525632 (0x3691d000) bytes at UTC 2015.11.15 10:17:32.771
 \o Loading relXpert.cxt 
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -131,6 +127,12 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
@@ -146,141 +148,2207 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (8 1) on testbench [ IMP_COMM:S1:1 ].
+\o *Info*    Run start for Point ID (7 1) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var C1 = "1u"
-\o Setting var R1 = "10k"
+\o Setting var CL = "1p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "100k"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "10m"
+\o Setting var Vsupply = "1.8"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.8/1/IMP_COMM:S1:1/netlist
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.8/1/IMP_COMM:S1:1
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (8 1)
+\o *Info*    Creating Netlist for Point ID (7 1)
 \o 
 \o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Loading verilogI.cxt 
-\o Begin Incremental Netlisting Nov 14 15:20:33 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o Begin Incremental Netlisting Nov 15 11:17:33 2015
+\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
+\o was generated using a previous IHNL version which is incompatible with the
+\o current IHNL version. Therefore re-netlisting the entire design using the
+\o current IHNL version.
 \o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.8/1/IMP_COMM:S1:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o End netlisting Nov 15 11:17:33 2015
 \o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o Netlisting Statistics:
+\o 	Number of components:   22
 \o 
-\o Traverse Config lib:IMP_COMM cell:S1 view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_COMM/S1/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("DO" "Dem_output")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o amp                         veriloga             *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o message_demod               verilogams           *Stopping View*  
-\o S1                          schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_COMM', cell 'S1', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Nov 14 15:20:33 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
+\o 	Elapsed time:          1.0s (22.00/s)
+\o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_COMM:S1:1 ] for Point
-\o           ID (8 1).
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 1).
 \o 
-\o Delete simulation data in /home/saul/Sim/IMP_COMM/S1/adexl/results/data/Interactive.8/1/IMP_COMM:S1:1/psf.
-\o create cds_globals...
-\o       ...successful.
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o validating simulator hierarchy...
+\o start simulator if needed...
 \o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/1/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
 \o 
-\o *Info*    Run complete for Point ID (8 1) on testbench [
-\o           IMP_COMM:S1:1 ].
+\o *Info*    Run complete for Point ID (7 1) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Job timed out after no activity in 300 seconds.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 2) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 2)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:38 2015
+\o End netlisting Nov 15 11:17:38 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 2).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/2/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 2) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 3) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "10M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 3)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:39 2015
+\o End netlisting Nov 15 11:17:39 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 3).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/3/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 3) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 4) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "100M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 4)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:40 2015
+\o End netlisting Nov 15 11:17:40 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 4).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 4) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 5) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "10p"
+\o Setting var RL = "100k"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 5)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:41 2015
+\o End netlisting Nov 15 11:17:41 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 5).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/5/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 5) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 6)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:42 2015
+\o End netlisting Nov 15 11:17:42 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 7) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "10M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 7)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:43 2015
+\o End netlisting Nov 15 11:17:43 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 7).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 7) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 8) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "100M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 8)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:44 2015
+\o End netlisting Nov 15 11:17:44 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 8).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/8/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 8) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 9) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "30p"
+\o Setting var RL = "100k"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 9)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:45 2015
+\o End netlisting Nov 15 11:17:45 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 9).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/9/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 9) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 10) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 10)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:46 2015
+\o End netlisting Nov 15 11:17:46 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 10).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/10/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 10) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 11) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "10M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 11)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:47 2015
+\o End netlisting Nov 15 11:17:47 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 11).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/11/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 11) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 12) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "100M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 12)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:48 2015
+\o End netlisting Nov 15 11:17:48 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 12).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/12/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 12) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 13) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "300p"
+\o Setting var RL = "100k"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 13)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:49 2015
+\o End netlisting Nov 15 11:17:49 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 13).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/13/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 13) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 14) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 14)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:50 2015
+\o End netlisting Nov 15 11:17:50 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 14).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/14/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 14) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 15) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "10M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 15)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:50 2015
+\o End netlisting Nov 15 11:17:50 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 15).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/15/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 15) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 16) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "100M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 16)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:51 2015
+\o End netlisting Nov 15 11:17:51 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 16).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/16/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 16) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 17) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "3n"
+\o Setting var RL = "100k"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 17)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:52 2015
+\o End netlisting Nov 15 11:17:52 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 17).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/17/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 17) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 18) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 18)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:53 2015
+\o End netlisting Nov 15 11:17:53 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 18).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/18/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 18) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 19) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "10M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 19)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:54 2015
+\o End netlisting Nov 15 11:17:54 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 19).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/19/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 19) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 20) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "100M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 20)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:17:55 2015
+\o End netlisting Nov 15 11:17:55 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (7 20).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.33/20/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (7 20) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \o 
-\o *Info*    Received signal SIGTERM.
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.34
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	File Encoding = 0
 \o 
 \o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 1) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "1p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "100k"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "10m"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 1)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:33 2015
+\o End netlisting Nov 15 11:18:33 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/1/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 1) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 5) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "10p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 5)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:39 2015
+\o End netlisting Nov 15 11:18:39 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 5).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 20332777472 (0x4bbed9000) bytes, UTC 2015.11.15 10:18:41.360
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/5/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 5) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 6)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:41 2015
+\o End netlisting Nov 15 11:18:41 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 7) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "10M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 7)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:43 2015
+\o End netlisting Nov 15 11:18:43 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 7).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 7) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 8) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "100M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 8)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:45 2015
+\o End netlisting Nov 15 11:18:45 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 8).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/8/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 8) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 13) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "300p"
+\o Setting var RL = "100k"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 13)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:47 2015
+\o End netlisting Nov 15 11:18:47 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 13).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/13/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 13) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 17) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "3n"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 17)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:18:49 2015
+\o End netlisting Nov 15 11:18:49 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (8 17).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.34/17/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (8 17) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_BUFFER
+\o 	Cell         = buffer_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.35
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/1/IMP_AN_BUFFER:buffer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 4) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "1p"
+\o Setting var IBIAS_STEP = "0"
+\o Setting var RL = "100M"
+\o Setting var VDD_AC = "0"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_DC = "900m"
+\o Setting var VIN_STEP = "50m"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 4)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:23:07 2015
+\o End netlisting Nov 15 11:23:07 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (9 4).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (9 4) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "10p"
+\o Setting var RL = "1M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 6)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:23:15 2015
+\o End netlisting Nov 15 11:23:16 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (9 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/6/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (9 6) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 10) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "30p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 10)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:23:17 2015
+\o End netlisting Nov 15 11:23:17 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (9 10).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/10/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (9 10) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 14) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CL = "300p"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 14)
+\o 
+\o generate netlist...
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 15 11:23:18 2015
+\o End netlisting Nov 15 11:23:18 2015
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
+\o           ] for Point ID (9 14).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.35/14/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
+\e *Error* deriv: can't handle deriv(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (9 14) on testbench [
+\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 193097728 (0xb827000) bytes, process size 940511232 (0x380f1000) bytes at UTC 2015.11.15 10:28:22.309
+\# Memory report: peak usage 193114112 (0xb82b000) bytes, process size 940523520 (0x380f4000) bytes

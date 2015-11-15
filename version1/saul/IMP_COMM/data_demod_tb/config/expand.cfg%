@@ -1,0 +1,25 @@
+//Revision 3
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config data_demod_tb;
+design IMP_COMM.data_demod_tb:schematic;
+
+const analog veriloga, functional, schematic, symbol;
+const digital behavioral, functional, schematic, symbol;
+liblist basic, analogLib;
+
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
+stoplist symbol, spectre;
+
+
+cell IMP_COMM.comp_amp binding :schematic;
+cell IMP_COMM.amp binding :schematic;
+cell IMP_COMM.S1 binding :schematic;
+
+
+endconfig
