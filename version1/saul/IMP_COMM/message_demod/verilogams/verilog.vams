@@ -1,0 +1,65 @@
+//Verilog-AMS HDL for "IMP_COMM", "message_demod" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+`timescale 1ns / 1ps
+
+
+
+module message_demod ( DO, Dem_output );
+
+inout Dem_output;
+output DO;
+
+electrical Dem_output; //Analog signal after rectifier
+logic DO;
+
+reg DO; //Demodulated signal (for comparison later)
+
+
+
+parameter cycles = 100000; // 100uS (10 kHz)
+parameter init_delay = cycles*10; // 
+parameter voffset = 1.0;
+parameter amplitude = 0.1; 
+parameter [15:0] conf  = 16'b1010_1_1011_0_1_001_0_1;
+
+
+real outvolt;
+
+initial begin
+	DO = 0;
+
+	#init_delay DO = conf[0];
+	#cycles DO = conf[1];
+	#cycles DO = conf[2];
+	#cycles DO = conf[3];
+	#cycles DO = conf[4];
+	#cycles DO = conf[5];
+	#cycles DO = conf[6];
+	#cycles DO = conf[7];
+	#cycles DO = conf[8];
+	#cycles DO = conf[9];
+	#cycles DO = conf[10];
+	#cycles DO = conf[11];
+	#cycles DO = conf[12];
+	#cycles DO = conf[13];
+	#cycles DO = conf[14];
+	#cycles DO = conf[15];
+	#cycles DO = 0;
+
+
+end
+
+analog begin
+	//@(posedge DO)
+	//;
+
+	outvolt = voffset - DO*amplitude;
+
+	V(Dem_output) <+ outvolt;
+end
+  
+  
+  
+endmodule
