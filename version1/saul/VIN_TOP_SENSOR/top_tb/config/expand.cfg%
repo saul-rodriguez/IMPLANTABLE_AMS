@@ -1,4 +1,4 @@
-//Revision 4
+//Revision 9
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -17,9 +17,13 @@ viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spec
 stoplist symbol, spectre;
 
 
+cell IMP_AN_BUFFER.buffer binding :verilogams;
+
+cell IMP_AN_BIAS.current_mirror1 binding :veriloga;
+
 cell VIN_AN_LPF_SEL.lpf_cap_sel binding :veriloga;
 
-cell IMP_DAC.RDAC32 binding :schematic;
+cell IMP_DAC.RDAC32 binding :verilogams;
 
 cell IMP_AN_TIA.tia binding :verilogams;
 
