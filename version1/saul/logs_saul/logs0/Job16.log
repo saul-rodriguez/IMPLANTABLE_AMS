@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.11.15 10:43:40.969
-\# Local time Sunday 15 November 2015, 11:43 am
+\# Program start time UTC 2015.11.18 21:00:07.629
+\# Local time Wednesday 18 November 2015, 10:00 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	468320256 (0x1bea0000) bytes
-\# Available memory:	20103460 (0x132c124) kilobytes
+\# Initial sbrk value:	437288960 (0x1a108000) bytes
+\# Available memory:	19554300 (0x12a5ffc) kilobytes
 \# System memory:	21610592 (0x149c060) kilobytes
-\# Maximum memory size:	21718654976 (0x50e886000) bytes
-\# Max mem available:	20643672064 (0x4ce757000) bytes
+\# Maximum memory size:	21749686272 (0x51061e000) bytes
+\# Max mem available:	20081332224 (0x4acf0d000) bytes
 \# Initial memory used:	57729024 (0x370e000) bytes
 \#        process size:	669097984 (0x27e1a000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		28688
+\# Process Id:		9333
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	20056784 (0x1320ad0) kilobytes UTC 2015.11.15 10:43:41.124
-\# Memory report: Maximum memory size now 20618887168 (0x4ccfb4000) bytes, UTC 2015.11.15 10:43:41.124
+\# Available memory:	19479072 (0x1293a20) kilobytes UTC 2015.11.18 21:00:07.779
+\# Memory report: Maximum memory size now 20011999232 (0x4a8cee000) bytes, UTC 2015.11.18 21:00:07.779
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,28 +95,32 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_BUFFER
-\o 	Cell         = buffer_tb
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_BUFFER:buffer_tb:1_state1_Interactive.38
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/1/IMP_AN_BUFFER:buffer_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.30
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 168112128 (0xa053000) bytes, process size 915525632 (0x3691d000) bytes at UTC 2015.11.15 10:43:43.432
+\# Memory report: now 166150144 (0x9e74000) bytes, process size 913563648 (0x3673e000) bytes at UTC 2015.11.18 21:00:09.757
 \o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -127,82 +131,175 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (12 4) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o *Info*    Run start for Point ID (11 12) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CL = "10p"
-\o Setting var IBIAS_STEP = "5n"
-\o Setting var RL = "1M"
-\o Setting var VDD_AC = "0"
-\o Setting var VDD_STEP = "0"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_DC = "900m"
-\o Setting var VIN_STEP = "0"
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "0"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "10"
+\o Setting var STEPNUM = "0"
+\o Setting var VDD_PULSE = "0"
 \o Setting var Vsupply = "1.8"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (12 4)
+\o *Info*    Creating Netlist for Point ID (11 12)
 \o 
 \o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o Loading seCore.cxt 
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 15 11:43:44 2015
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Nov 18 22:00:11 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o End netlisting Nov 15 11:43:44 2015
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:   22
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:00:11 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (12 4).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (11
+\o           12).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 19887833088 (0x4a1684000) bytes, UTC 2015.11.15 10:43:51.124
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -217,167 +314,1910 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\# Memory report: Maximum memory size now 19583545344 (0x48f453000) bytes, UTC 2015.11.18 21:00:17.779
+\# Memory report: Maximum memory size now 19072372736 (0x470cd5000) bytes, UTC 2015.11.18 21:00:27.780
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/4/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\e *Error* deriv: can't handle deriv(nil)
-\e 
-\e 
-\e *Error* dB20: can't handle dB20(nil)
-\e 
-\e 
+\o 
+\o *Info*    Run complete for Point ID (11 12) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 13) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/13/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/13/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 13)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:00:57 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:00:57 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (11
+\o           13).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/13/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 19591168000 (0x48fb98000) bytes, UTC 2015.11.18 21:00:57.800
+\# Memory report: Maximum memory size now 19062124544 (0x47030f000) bytes, UTC 2015.11.18 21:01:17.801
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 13) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/6/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/6/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 6)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:01:43 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:01:43 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (11
+\o           6).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/6/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 19448999936 (0x487403000) bytes, UTC 2015.11.18 21:01:47.817
+\# Memory report: Maximum memory size now 19056283648 (0x46fd7d000) bytes, UTC 2015.11.18 21:01:57.817
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19452284928 (0x487725000) bytes, UTC 2015.11.18 21:02:27.818
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 9) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/9/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/9/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 9)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:02:28 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/12/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:02:29 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (11
+\o           9).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.30/9/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18942722048 (0x469130000) bytes, UTC 2015.11.18 21:02:47.819
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 9) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19391107072 (0x483ccd000) bytes, UTC 2015.11.18 21:03:17.820
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.31
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "0"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "10"
+\o Setting var STEPNUM = "0"
+\o Setting var VDD_PULSE = "0"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:07:48 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:07:48 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (12
+\o           1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18990182400 (0x46be73000) bytes, UTC 2015.11.18 21:07:57.851
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 15) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/15/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/15/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 15)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:08:19 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:08:19 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (12
+\o           15).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/15/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18606325760 (0x455060000) bytes, UTC 2015.11.18 21:08:37.852
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 15) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 4)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:08:52 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:08:53 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (12
+\o           4).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 19024822272 (0x46df7c000) bytes, UTC 2015.11.18 21:08:57.853
+\# Memory report: Maximum memory size now 18602807296 (0x454d05000) bytes, UTC 2015.11.18 21:09:17.854
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
 \o 
 \o *Info*    Run complete for Point ID (12 4) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (12 7) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CL = "30p"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (12 7)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 15 11:43:53 2015
-\o End netlisting Nov 15 11:43:53 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (12 7).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/7/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\e *Error* deriv: can't handle deriv(nil)
-\e 
-\e 
-\e *Error* dB20: can't handle dB20(nil)
-\e 
-\e 
-\o 
-\o *Info*    Run complete for Point ID (12 7) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (12 12) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o *Info*    Run start for Point ID (12 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CL = "300p"
-\o Setting var RL = "100M"
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (12 12)
+\o *Info*    Creating Netlist for Point ID (12 8)
 \o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 15 11:43:54 2015
-\o End netlisting Nov 15 11:43:54 2015
+\o Begin Incremental Netlisting Nov 18 22:09:26 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:09:26 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:1
-\o           ] for Point ID (12 12).
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (12
+\o           8).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.31/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results noise are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results dc are not available for /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.38/12/IMP_AN_BUFFER:buffer_tb:1/psf. Use results() for a list of available results.
-\e *Error* deriv: can't handle deriv(nil)
-\e 
-\e 
-\e *Error* dB20: can't handle dB20(nil)
-\e 
-\e 
 \o 
-\o *Info*    Run complete for Point ID (12 12) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:1 ].
+\o *Info*    Run complete for Point ID (12 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 19024388096 (0x46df12000) bytes, UTC 2015.11.18 21:10:27.855
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.32
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "0"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "1"
+\o Setting var G3 = "1"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "10"
+\o Setting var STEPNUM = "0"
+\o Setting var VDD_PULSE = "0"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:11:51 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:11:51 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (13
+\o           1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 18491273216 (0x44e2a7000) bytes, UTC 2015.11.18 21:12:07.856
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/14/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/14/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 14)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:12:22 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:12:22 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (13
+\o           14).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/14/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 4)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:12:55 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:12:56 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (13
+\o           4).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Available memory:	17685064 (0x10dda48) kilobytes UTC 2015.11.18 21:13:17.857
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 8)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:13:28 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_SIGNAL_GEN_GM', cell 'Signal_Generator_Amplifier', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_in" "G0_NEG" "G1_NEG" "G0" "G1" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" 
+\o      "vssa" "vssd" "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o Signal_Generator_Amplifier   verilogams           *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_CMFB       schematic_dummy                       
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:13:28 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (13
+\o           8).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.32/8/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
 \o 
 \o 
 \o 
@@ -386,5 +2226,690 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 191352832 (0xb67d000) bytes, process size 938766336 (0x37f47000) bytes at UTC 2015.11.15 10:48:57.845
-\# Memory report: peak usage 191369216 (0xb681000) bytes, process size 938778624 (0x37f4a000) bytes
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.33
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CLOCKWIDTH = "15.625"
+\o Setting var CMFB_VAC = "0"
+\o Setting var CPAD = "0"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "1"
+\o Setting var G3 = "1"
+\o Setting var PULSE_CMFB = "0"
+\o Setting var RL = "10"
+\o Setting var STEPNUM = "0"
+\o Setting var VDD_PULSE = "0"
+\o Setting var Vsupply = "1.8"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:19:04 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:19:04 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (14
+\o           1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/16/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/16/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 16)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:19:48 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:19:49 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (14
+\o           16).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/16/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 4)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:20:31 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:20:32 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (14
+\o           4).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/4/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 10) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/10/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/10/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 10)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 18 22:21:18 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o stimulus_block              verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o DacCtrl                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o Signal_Generator_tb         schematic                             
+\o pad_cap                     schematic                             
+\o TI_D                        schematic                             
+\o TI_C                        schematic                             
+\o TI_B                        schematic                             
+\o TI_A                        schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o RDAC32                      schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 18 22:21:18 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (14
+\o           10).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.33/10/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 10) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 202428416 (0xc10d000) bytes, process size 949841920 (0x389d7000) bytes at UTC 2015.11.18 21:27:35.707
+\# Memory report: peak usage 202461184 (0xc115000) bytes, process size 949858304 (0x389db000) bytes
