@@ -1,4 +1,4 @@
-//Revision 10
+//Revision 20
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -9,32 +9,34 @@
 config top_core_tb;
 design IMP_TOP.top_core_tb:schematic;
 
-const analog veriloga, functional, schematic, symbol;
 const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
 liblist basic, analogLib;
 
 viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, symbol;
-stoplist symbol, spectre;
+stoplist spectre, symbol;
 
 
-cell IMP_PLL_PFD.PFD_man binding :schematic;
+cell IMP_DIG_DIV.FreqDiv binding :functional;
 
-cell IMP_PLL_VCO.vco binding :schematic;
+cell IMP_COMM.data_demod binding :schematic_dummy;
 
-cell CORELIB.NAND2X1 binding :cmos_sch;
-cell CORELIB.INVX1 binding :cmos_sch;
-cell CORELIB.DFCX4 binding :cmos_sch;
-
-cell IMP_PLL_CP.cp binding :schematic;
-
-cell IMP_PLL_TOP.PLL_top binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic_dummy;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_LNA binding :schematic_dummy;
 
 cell IMP_AN_LPF.lpf_cmfb binding :schematic_dummy;
 
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_LNA binding :schematic_dummy;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic_dummy;
+cell IMP_PLL_TOP.PLL_top binding :verilogams;
 
-cell IMP_COMM.data_demod binding :schematic_dummy;
+cell IMP_PLL_CP.cp binding :verilogams;
+
+cell CORELIB.DFCX4 binding :cmos_sch;
+cell CORELIB.INVX1 binding :cmos_sch;
+cell CORELIB.NAND2X1 binding :cmos_sch;
+
+cell IMP_PLL_VCO.vco binding :verilogams;
+
+cell IMP_PLL_PFD.PFD_man binding :schematic;
 
 
 endconfig

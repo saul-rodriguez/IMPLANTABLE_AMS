@@ -50,6 +50,20 @@
 						<value>config</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>VIN
+						<evalType>point</evalType>
+					</output>
+					<output>VOUT
+						<evalType>point</evalType>
+					</output>
+					<output>AMP
+						<evalType>point</evalType>
+					</output>
+					<output>PHA
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<vars>
@@ -66,7 +80,7 @@
 				</dependentTests>
 			</var>
 			<var>CAP_OFF
-				<value>1.5n</value>
+				<value>1n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
@@ -78,7 +92,7 @@
 				</dependentTests>
 			</var>
 			<var>CAP_TIA
-				<value>1n</value>
+				<value>4.5n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
@@ -102,7 +116,7 @@
 				</dependentTests>
 			</var>
 			<var>RL
-				<value>100</value>
+				<value>1000</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
@@ -135,12 +149,13 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
 	</active>
 	<history>History
-		<historyentry>Interactive.3
+		<historyentry>Interactive.21
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -174,7 +189,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.3</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.21</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -191,6 +206,11 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -276,28 +296,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:18:06 2015
+			<timestamp>Tue Nov 24 22:01:14 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.3.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_171806351</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.3</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220114085</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.4
+		<historyentry>Interactive.22
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -331,7 +351,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.4</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.22</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -348,6 +368,11 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -433,28 +458,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:42:43 2015
+			<timestamp>Tue Nov 24 22:01:43 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_174243797</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.4</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220143963</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.5
+		<historyentry>Interactive.23
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -488,7 +513,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.5</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.23</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -505,6 +530,11 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -590,28 +620,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:45:45 2015
+			<timestamp>Tue Nov 24 22:03:00 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.5.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_174545921</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.5</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.5</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220300902</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.5.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.6
+		<historyentry>Interactive.24
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -645,7 +675,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.6</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.24</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -662,6 +692,11 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -747,28 +782,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:47:13 2015
+			<timestamp>Tue Nov 24 22:04:07 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.6.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_174713805</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.6</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.6</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220407079</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.6.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.7
+		<historyentry>Interactive.25
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -802,7 +837,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.7</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.25</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -819,6 +854,11 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -904,28 +944,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:49:17 2015
+			<timestamp>Tue Nov 24 22:05:15 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.7.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_174917344</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.7</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.7</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220515163</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.8
+		<historyentry>Interactive.26
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -959,7 +999,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.8</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.26</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -976,6 +1016,11 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1028,7 +1073,7 @@
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>500</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1061,28 +1106,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:51:54 2015
+			<timestamp>Tue Nov 24 22:07:24 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_175154349</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.8</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220724191</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.9
+		<historyentry>Interactive.27
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1116,7 +1161,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.9</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.27</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1133,6 +1178,14 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1185,7 +1238,7 @@
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>500</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1218,28 +1271,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:56:07 2015
+			<timestamp>Tue Nov 24 22:08:26 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_175607960</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.9</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220826534</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.10
+		<historyentry>Interactive.28
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1273,7 +1326,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.10</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.28</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1290,6 +1343,14 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1306,7 +1367,7 @@
 						</dependentTests>
 					</var>
 					<var>CAP_OFF
-						<value>1.5n</value>
+						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1318,7 +1379,7 @@
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
-						<value>1n</value>
+						<value>4.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1342,7 +1403,7 @@
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>500</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1375,28 +1436,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 17:59:12 2015
+			<timestamp>Tue Nov 24 22:09:36 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_175912480</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.10</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_220936814</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.11
+		<historyentry>Interactive.29
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1430,7 +1491,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.11</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.29</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1447,6 +1508,20 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1463,7 +1538,7 @@
 						</dependentTests>
 					</var>
 					<var>CAP_OFF
-						<value>1.5n</value>
+						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1475,7 +1550,7 @@
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
-						<value>1n</value>
+						<value>4.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1499,7 +1574,7 @@
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>500</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1532,28 +1607,28 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 18:04:09 2015
+			<timestamp>Tue Nov 24 22:19:14 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_180409053</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.11</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_221914806</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.12
+		<historyentry>Interactive.30
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1587,7 +1662,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.12</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.30</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1604,6 +1679,20 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1620,7 +1709,7 @@
 						</dependentTests>
 					</var>
 					<var>CAP_OFF
-						<value>1.5n</value>
+						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1632,7 +1721,7 @@
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
-						<value>1n</value>
+						<value>4.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1656,7 +1745,7 @@
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>1000</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1689,24 +1778,24 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 18:08:11 2015
+			<timestamp>Tue Nov 24 22:21:02 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.12.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_180811821</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.12</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.12</simdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_222102922</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.12.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
