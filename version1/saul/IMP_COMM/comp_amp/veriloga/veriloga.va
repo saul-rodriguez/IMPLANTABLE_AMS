@@ -28,6 +28,7 @@ analog begin
 
 vout = (V(P_IN) - V(N_IN))*gain;
 
+
 if (vout > 1.8) begin
 	vout = 1.8;
 end
@@ -35,6 +36,7 @@ end
 if (vout < 0) begin
 	vout = 0;
 end
+
 
 V(OUT) <+ vout;
 

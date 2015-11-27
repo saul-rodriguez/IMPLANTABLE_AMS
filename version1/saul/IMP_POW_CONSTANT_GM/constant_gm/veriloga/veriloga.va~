@@ -20,14 +20,16 @@ analog begin
 
 if (V(VD) > 0.8) begin
 
-	I(bias1) <+ -250e-9;
-	I(bias2) <+ -250e-9;
+	I(bias1) <+ -100e-9;
+	I(bias2) <+ -100e-9;
 
 end else begin
 
 	I(bias1) <+ 0;
 	I(bias2) <+ 0;
 end
+
+//V(bias1) <+ I(bias1)*1;
 
 
 end

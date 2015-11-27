@@ -1,0 +1,856 @@
+\# Program start time UTC 2015.11.26 09:23:16.915
+\# Local time Thursday 26 November 2015, 10:23 am
+\o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
+\o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
+\# Host name (type):	s2424.it.kth.se (x86_64)
+\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
+\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x31, current max 0x3ffffa (4194298)
+\# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Initial sbrk value:	443170816 (0x1a6a4000) bytes
+\# Available memory:	69537504 (0x4250ee0) kilobytes
+\# System memory:	80336196 (0x4c9d544) kilobytes
+\# Maximum memory size:	81878786048 (0x13105b2000) bytes
+\# Max mem available:	71264096256 (0x1097abd000) bytes
+\# Initial memory used:	57692160 (0x3705000) bytes
+\#        process size:	673415168 (0x28238000) bytes
+\# Qt version:		4.5.3
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		18869
+\o 
+\o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:	69525464 (0x424dfd8) kilobytes UTC 2015.11.26 09:23:17.151
+\# Memory report: Maximum memory size now 71274733568 (0x10984e2000) bytes, UTC 2015.11.26 09:23:17.151
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dcm.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexl.cxt 
+\o Loading oasis.cxt 
+\o Loading asimenv.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading socket.cxt 
+\o Loading alvs.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o ......................................................................................
+\o            ams AG hitkit v.ams_4.11
+\o ......................................................................................
+\o COPYRIGHT (c) 2013 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This hitkit and attached documentation are confidential information and may 
+\o only be used as authorized by the hitkit license agreement.
+\o ......................................................................................
+\o Loading simulator default settings.
+\o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
+\o No mx check
+\o  
+\o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
+\o ...IBM PDK cmhv7sf procedures loaded.
+\o  
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\p hitkit: ams_4.11  Tech: h18a6am  User: saul 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.36
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.36.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.36/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\# Memory report: now 165396480 (0x9dbc000) bytes, process size 912871424 (0x36695000) bytes at UTC 2015.11.26 09:23:18.728
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading devCheck.cxt 
+\o Initializing IBM_PDK functions
+\o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
+\o Licensed Materials - Property of IBM - All Rights Reserved 
+\o Copyright: International Business Machines Corporation, 2015
+\o This Material may not be copied without the written consent of 
+\o Semiconductor Research and Development Center, IBM Corp., Essex Junction, VT 05452-4299.
+\o  Default set for Left & Right WindowCoordIBM
+\o System hardware set for Linux IBM_PDK procedures
+\o Setting calibre env variable table for cmhv7sf 
+\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "1n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "4.5n"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "1000"
+\o Setting var TX_DELAY = "1"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.36/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.36/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Nov 26 10:23:21 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.36/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o current_mirror2             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic_dummy                       
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 26 10:23:21 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (5 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.36/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("quotient" 0 t nil ("*Error* quotient: Attempted to divide by zero" (0.0 0.0)))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (((atan((value((VT("/VOUTP") - VT("/VOUTN")) 0.199) / value((VT("/VOUTP") - VT("/VOUTN")) 0.099))) * 180) / pi)). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.37
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "1n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "4.5n"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "1000"
+\o Setting var TX_DELAY = "1"
+\o Setting var VIN_AC = ""
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 26 10:26:43 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o pfetmx                      spectre              *Stopping View*  
+\o nfetmx                      spectre              *Stopping View*  
+\o dipdnw                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o current_mirror2             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o pow_top                     schematic                             
+\o rectifier_demod             schematic                             
+\o res_250k_pd                 schematic                             
+\o ref_bias                    schematic                             
+\o constant_gm                 schematic                             
+\o bandgap                     schematic                             
+\o res_30k                     schematic                             
+\o ldo                         schematic                             
+\o res_250k                    schematic                             
+\o top_imp_sensor              schematic_dummy                       
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 26 10:26:43 2015
+\o *Warning*	Additional design variables have been found during netlisting.
+\o  		A value is necessary for successful simulation.
+\o 		To simulate, assign values to all design variables with 
+\o 		the Variables->Edit... menu, and use "Netlist and Run".
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (6 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o  
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "1n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "4.5n"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "1000"
+\o Setting var TX_DELAY = "1"
+\o Setting var VIN_AC = ""
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 26 10:26:56 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o pfetmx                      spectre              *Stopping View*  
+\o nfetmx                      spectre              *Stopping View*  
+\o dipdnw                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o current_mirror2             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o pow_top                     schematic                             
+\o rectifier_demod             schematic                             
+\o res_250k_pd                 schematic                             
+\o ref_bias                    schematic                             
+\o constant_gm                 schematic                             
+\o bandgap                     schematic                             
+\o res_30k                     schematic                             
+\o ldo                         schematic                             
+\o res_250k                    schematic                             
+\o top_imp_sensor              schematic_dummy                       
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 26 10:26:57 2015
+\o *Warning*	Additional design variables have been found during netlisting.
+\o  		A value is necessary for successful simulation.
+\o 		To simulate, assign values to all design variables with 
+\o 		the Variables->Edit... menu, and use "Netlist and Run".
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (6 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.37/1/IMP_TOP:top_core_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o  
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.38
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.38.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.38/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "1n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "4.5n"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "1000"
+\o Setting var TX_DELAY = "1"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.38/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.38/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
+\o Begin Incremental Netlisting Nov 26 10:28:03 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.38/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o pfetmx                      spectre              *Stopping View*  
+\o nfetmx                      spectre              *Stopping View*  
+\o dipdnw                      spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o current_mirror2             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o pow_top                     schematic                             
+\o rectifier_demod             schematic                             
+\o res_250k_pd                 schematic                             
+\o ref_bias                    schematic                             
+\o constant_gm                 schematic                             
+\o bandgap                     schematic                             
+\o res_30k                     schematic                             
+\o ldo                         schematic                             
+\o res_250k                    schematic                             
+\o top_imp_sensor              schematic_dummy                       
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 26 10:28:03 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (7 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.38/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\e *Error* ("quotient" 0 t nil ("*Error* quotient: Attempted to divide by zero" (0.0 0.0)))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression (((atan((value((VT("/VOUTP") - VT("/VOUTN")) 0.199) / value((VT("/VOUTP") - VT("/VOUTN")) 0.099))) * 180) / pi)). 
+\o 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Job timed out after no activity in 300 seconds.
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

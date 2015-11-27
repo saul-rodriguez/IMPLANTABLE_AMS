@@ -74,7 +74,7 @@
 				</dependentTests>
 			</var>
 			<var>C_REG
-				<value>20u</value>
+				<value>1u</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
@@ -104,7 +104,7 @@
 				</dependentTests>
 			</var>
 			<var>FREQ
-				<value>10M</value>
+				<value>1M</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
@@ -128,13 +128,19 @@
 				</dependentTests>
 			</var>
 			<var>VIN_AMP
-				<value>0</value>
+				<value>4</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VIN_DC
-				<value>4</value>
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VIN_AC
+				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 				</dependentTests>
@@ -155,7 +161,7 @@
 		<jobpolicyname>ADE XL Default</jobpolicyname>
 	</active>
 	<history>History
-		<historyentry>Interactive.21
+		<historyentry>Interactive.51
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -189,1309 +195,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.21</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:01:14 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220114085</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.21.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.22
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.22</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:01:43 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220143963</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.22.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.23
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.23</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:03:00 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220300902</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.23.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.24
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.24</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:04:07 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220407079</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.24.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.25
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.25</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:05:15 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220515163</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.25.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.26
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.26</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:07:24 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220724191</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.26.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.27
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.27</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:08:26 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220826534</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.27.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.28
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.28</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>4.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:09:36 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220936814</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.28.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.29
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.29</value>
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.51</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1532,7 +236,7 @@
 						</dependentTests>
 					</var>
 					<var>C_REG
-						<value>20u</value>
+						<value>1u</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1562,178 +266,7 @@
 						</dependentTests>
 					</var>
 					<var>FREQ
-						<value>10M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>PULSE_CMFB_LNA
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>500</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>TX_DELAY
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>4</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Tue Nov 24 22:19:14 2015
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_221914806</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.29.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.30
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_core_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_core_tb:1_none_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_core_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VIN
-								<evalType>point</evalType>
-							</output>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-							<output>AMP
-								<evalType>point</evalType>
-							</output>
-							<output>PHA
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>AM_INDEX
-						<value>0.1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>C_REG
-						<value>20u</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_OFF
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>600f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>4.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CMFB_VAC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FREQ
-						<value>10M</value>
+						<value>1M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1757,13 +290,19 @@
 						</dependentTests>
 					</var>
 					<var>VIN_AMP
-						<value>0</value>
+						<value>4</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VIN_DC
-						<value>4</value>
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
 						</dependentTests>
@@ -1783,19 +322,1612 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Nov 24 22:21:02 2015
+			<timestamp>Thu Nov 26 16:22:14 2015
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.51.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.51.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_222102922</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_162214038</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.51</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.51</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.30.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.51.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.51.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.52
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.52</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:36:12 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.52.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.52.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_163612326</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.52</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.52</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.52.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.52.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.53
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.53</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:36:57 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.53.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.53.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_163657257</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.53</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.53</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.53.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.53.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.54
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.54</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:40:02 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.54.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.54.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_164002327</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.54</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.54</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.54.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.54.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.55
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.55</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:47:01 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.55.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.55.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_164701543</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.55</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.55</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.55.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.55.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.56
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.56</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:50:58 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.56.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.56.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_165059001</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.56</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.56</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.56.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.56.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.57
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.57</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:52:37 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_165237620</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.57</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.58
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.58</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:58:05 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.58.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.58.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_165805807</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.58</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.58</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.58.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.58.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.59
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 16:58:37 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.59.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.59.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_165837199</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.59</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.59</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.59.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.59.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.60
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_core_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_core_tb:1_none_Interactive.60</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_core_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VIN
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>AM_INDEX
+						<value>0.1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>C_REG
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_OFF
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>600f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>4.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CMFB_VAC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FREQ
+						<value>1M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>PULSE_CMFB_LNA
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>TX_DELAY
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AMP
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_core_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Nov 26 17:02:36 2015
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.60.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.60.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_170236122</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.60</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_core_tb/adexl/results/data/Interactive.60</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.60.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.60.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
