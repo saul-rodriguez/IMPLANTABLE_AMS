@@ -1,6 +1,6 @@
 /* 
 File Name:    :    .simrc
-File path:    :    /afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_H18
+File path:    :    /pkg/AMS411/cds/HK_H18
 Author        :    Douglas Pattullo: austriamicrosystems Design Support
 Date          :    11-Dec-1996
 Version:      :    1.0 for HIT Kit 3.xx
@@ -43,7 +43,7 @@ HIT-Kit: Digital
 
 */
 
-AMS_LIB = "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_H18"
+AMS_LIB = "/pkg/AMS411/cds/HK_H18"
 AMS_VERSION = "develop"
 AMS_TECH = "h18a6"
 
@@ -76,15 +76,15 @@ verilogSimStopList = '( "symbol" )
 verilogSimViewList = '("behavioral" "functional" "schematic" "symbol" )
 
 
-; verilogSimBinary                 = "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/veritools/verilog_2.3"
+; verilogSimBinary                 = "/pkg/AMS411/cds/HK_ALL/veritools/verilog_2.3"
 
 simVerilogLibraryDirectory       = ""
 simVerilogLibraryFile            = ""
 
 
 simVerilogInteractiveCommandFile = ""
-simVerilogInvocationOptionsFile  = "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/../verilog/h18a6/vxl.inc"
-simNCVerilogOptFile  = "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/../verilog/h18a6/vxl.inc"
+simVerilogInvocationOptionsFile  = "/pkg/AMS411/cds/../verilog/h18a6/vxl.inc"
+simNCVerilogOptFile  = "/pkg/AMS411/cds/../verilog/h18a6/vxl.inc"
 simVerilogInvocationOptions = "+libext+.v+ +incdir+hdlFilesDir +sdf_verbose "
 
 ; Post-layout simulation variables.
@@ -108,8 +108,8 @@ simVerilogDelayUseDefault   = t
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; for veritime
-; veritimeSimBinary    = "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_H18/veritools/veritime_1.5"
-; vtiInvocationOptions = "-f /afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_H18/veritools/vxl.inc_vtime"
+; veritimeSimBinary    = "/pkg/AMS411/cds/HK_H18/veritools/veritime_1.5"
+; vtiInvocationOptions = "-f /pkg/AMS411/cds/HK_H18/veritools/vxl.inc_vtime"
 
 
 
@@ -135,8 +135,8 @@ simVerilogDelayUseDefault   = t
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-load("/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il")
-;; load("/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlLDDN.il")   ;; HGE added for H35 21.Nov.03
+load("/pkg/AMS411/cds/HK_ALL/skill/ansCdlCompPrim.il")
+;; load("/pkg/AMS411/cds/HK_ALL/skill/ansCdlLDDN.il")   ;; HGE added for H35 21.Nov.03
 auCdlCheckLDD = t
 ; auCdlCDFPinCntrl = t
 ;auCdlCheckRESI = t

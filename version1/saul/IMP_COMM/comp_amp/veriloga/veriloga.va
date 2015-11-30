@@ -20,11 +20,20 @@ inout vsub;
 electrical vsub;
 input bias_in;
 electrical bias_in;
-parameter real gain = 1000 ;
 
-real vout;
+parameter real gain = 1000.0 ;
+
+parameter real rout = 10.0;
+parameter real rin = 100e6;
+parameter real iout_max = 10e-6;
+parameter real volc = 1;
+parameter real voutmax = 1.8;
+parameter real voutmin = 0;
+
+real vout, vout0, iout, vin;
 
 analog begin
+
 
 vout = (V(P_IN) - V(N_IN))*gain;
 
@@ -38,7 +47,12 @@ if (vout < 0) begin
 end
 
 
-V(OUT) <+ vout;
+
+V(OUT,vssa) <+ vout;
+
+//I(OUT,vssa) <+ V(OUT)/100e6;
+I(P_IN) <+ V(P_IN)/100e6;
+I(N_IN) <+ V(N_IN)/100e6;
 
 
 end

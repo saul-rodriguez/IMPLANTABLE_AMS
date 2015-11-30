@@ -1,4 +1,4 @@
-//Revision 13
+//Revision 16
 config iq_demod_tb;
 design IMP_AN_DEMOD.iq_demod_tb:schematic;
 liblist IMP_AN_DEMOD;
@@ -7,7 +7,10 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_AN_BUFFER.buffer binding :verilogams;
+cell CORELIB.MUX2X8 binding :cmos_sch;
+cell CORELIB.INVX1 binding :cmos_sch;
+
+cell IMP_AN_BUFFER.buffer binding :schematic;
 
 cell IMP_AN_LNA.lna_gm binding :verilogams;
 
@@ -23,7 +26,7 @@ cell IMP_AN_TIA.tia binding :schematic;
 cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier_LNA binding :schematic;
 cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_LNA binding :schematic;
 
-cell IMP_DIG_SIGGEN.DacCtrl binding :functional;
+cell IMP_DIG_SIGGEN.DacCtrl binding :schematic;
 cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
 
 
