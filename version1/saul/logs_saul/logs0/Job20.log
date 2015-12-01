@@ -1,5 +1,5 @@
-\# Program start time UTC 2015.11.26 14:32:12.997
-\# Local time Thursday 26 November 2015, 3:32 pm
+\# Program start time UTC 2015.11.30 21:14:44.328
+\# Local time Monday 30 November 2015, 10:14 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x6400000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x2c00000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	271888384 (0x1034b000) bytes
-\# Available memory:	67230712 (0x401dbf8) kilobytes
+\# Initial sbrk value:	315334656 (0x12cba000) bytes
+\# Available memory:	59208128 (0x38771c0) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	82050064384 (0x131a90a000) bytes
-\# Max mem available:	68901937152 (0x100ae02000) bytes
+\# Maximum memory size:	82006618112 (0x1317f9b000) bytes
+\# Max mem available:	60686811136 (0xe21374000) bytes
 \# Initial memory used:	57688064 (0x3704000) bytes
 \#        process size:	673411072 (0x28237000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		13281
+\# Process Id:		20153
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	67074848 (0x3ff7b20) kilobytes UTC 2015.11.26 14:32:13.220
-\# Memory report: Maximum memory size now 68763537408 (0x1002a05000) bytes, UTC 2015.11.26 14:32:13.221
+\# Available memory:	59106088 (0x385e328) kilobytes UTC 2015.11.30 21:14:44.761
+\# Memory report: Maximum memory size now 60605321216 (0xe1c5bd000) bytes, UTC 2015.11.30 21:14:44.761
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,28 +95,32 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_POW_TOP
-\o 	Cell         = pow_top_tb
+\o 	Library      = IMP_PLL_TOP
+\o 	Cell         = PLL_top_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_POW_TOP:pow_top_tb:2_none_Interactive.23
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/1/IMP_POW_TOP:pow_top_tb:2
-\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data
+\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_MonteCarlo.23
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23/9/IMP_PLL_TOP:PLL_top_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 165392384 (0x9dbb000) bytes, process size 912867328 (0x36694000) bytes at UTC 2015.11.26 14:32:15.187
+\# Memory report: now 165462016 (0x9dcc000) bytes, process size 912936960 (0x366a5000) bytes at UTC 2015.11.30 21:14:47.853
 \o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -127,81 +131,7 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (14 14) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var AM_INDEX = "0.1"
-\o Setting var C_REC = "1u"
-\o Setting var FREQ = "100k"
-\o Setting var TX_DATA = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_AMP = "0"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_PULSE = "5"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/14/IMP_POW_TOP:pow_top_tb:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/14/IMP_POW_TOP:pow_top_tb:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (14 14)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Loading seCore.cxt 
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:32:18 2015
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
-\o 
-\o End netlisting Nov 26 15:32:18 2015
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:  148
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:2
-\o           ] for Point ID (14 14).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/14/IMP_POW_TOP:pow_top_tb:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 67002167296 (0xf99a3f000) bytes, UTC 2015.11.26 14:32:23.221
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -216,230 +146,326 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 14) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (14 25) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run start for Point ID (0 65) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/25/IMP_POW_TOP:pow_top_tb:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/25/IMP_POW_TOP:pow_top_tb:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (14 25)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:32:35 2015
-\o End netlisting Nov 26 15:32:35 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:2
-\o           ] for Point ID (14 25).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/25/IMP_POW_TOP:pow_top_tb:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 25) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (14 11) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/11/IMP_POW_TOP:pow_top_tb:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/11/IMP_POW_TOP:pow_top_tb:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (14 11)
-\o 
-\o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:32:42 2015
-\o End netlisting Nov 26 15:32:42 2015
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:2
-\o           ] for Point ID (14 11).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/Interactive.23/11/IMP_POW_TOP:pow_top_tb:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (14 11) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_POW_TOP
-\o 	Cell         = pow_top_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_POW_TOP:pow_top_tb:2_none_MonteCarlo.0
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.0.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.0/1/IMP_POW_TOP:pow_top_tb:2
-\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (15 13) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var AM_INDEX = "0.1"
-\o Setting var C_REC = "1u"
-\o Setting var FREQ = "100k"
-\o Setting var TX_DATA = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_AMP = "0"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_PULSE = "5"
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
 \o Loading monte.cxt 
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.0/13/IMP_POW_TOP:pow_top_tb:2/netlist
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23/65/IMP_PLL_TOP:PLL_top_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.0/13/IMP_POW_TOP:pow_top_tb:2
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23/65/IMP_PLL_TOP:PLL_top_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (15 13)
+\o *Info*    Creating Netlist for Point ID (0 65)
 \o 
 \o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:36:36 2015
-\o End netlisting Nov 26 15:36:36 2015
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Nov 30 22:14:54 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23/65/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\# Memory report: Maximum memory size now 58887806976 (0xdb5fca000) bytes, UTC 2015.11.30 21:14:54.821
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX32_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI221X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI211X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OA22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX6_HV ***
+\o               *** Library - CORELIB_HV  Cell - XOR2X1_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_DIV/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV', cell 'FreqDiv', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "FSel<3:0>" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o PLL_top_stimulus            verilogams           *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o OR2X2_HV                    symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XOR2X1_HV                   symbol               *Stopping View*  
+\o DFCX6_HV                    symbol               *Stopping View*  
+\o OA22X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o OAI211X3_HV                 symbol               *Stopping View*  
+\o OAI221X3_HV                 symbol               *Stopping View*  
+\o MUX2X6_HV                   symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX32_HV               symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o PLL_top_tb                  schematic                             
+\o PLL_top                     schematic                             
+\o PFD_man                     schematic                             
+\o NAND2X1                     cmos_sch                              
+\o DFCX4                       cmos_sch                              
+\o INVX1                       cmos_sch                              
+\o lpf                         schematic                             
+\o vco                         schematic                             
+\o vco_comparator              schematic                             
+\o vco_core                    schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o cp                          schematic                             
+\o FreqDiv                     schematic                             
+\o fillcaps                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 30 22:14:55 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:2
-\o           ] for Point ID (15 13).
+\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
+\o           ] for Point ID (0 65).
 \o 
 \o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.0/13/IMP_POW_TOP:pow_top_tb:2/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23/65/IMP_PLL_TOP:PLL_top_tb:1/psf.
 \o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:36:37 2015
-\o End netlisting Nov 26 15:36:37 2015
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Nov 30 22:14:56 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.23/65/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX32_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI221X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI211X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OA22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX6_HV ***
+\o               *** Library - CORELIB_HV  Cell - XOR2X1_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_DIV/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV', cell 'FreqDiv', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "FSel<3:0>" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o PLL_top_stimulus            verilogams           *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o OR2X2_HV                    symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XOR2X1_HV                   symbol               *Stopping View*  
+\o DFCX6_HV                    symbol               *Stopping View*  
+\o OA22X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o OAI211X3_HV                 symbol               *Stopping View*  
+\o OAI221X3_HV                 symbol               *Stopping View*  
+\o MUX2X6_HV                   symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX32_HV               symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o PLL_top_tb                  schematic                             
+\o PLL_top                     schematic                             
+\o PFD_man                     schematic                             
+\o NAND2X1                     cmos_sch                              
+\o DFCX4                       cmos_sch                              
+\o INVX1                       cmos_sch                              
+\o lpf                         schematic                             
+\o vco                         schematic                             
+\o vco_comparator              schematic                             
+\o vco_core                    schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o cp                          schematic                             
+\o FreqDiv                     schematic                             
+\o fillcaps                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 30 22:14:56 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\# Memory report: Maximum memory size now 57650098176 (0xd6c36b000) bytes, UTC 2015.11.30 21:15:14.822
 \o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
 \o reading simulation data...
 \o       ...successful.
@@ -449,15 +475,14 @@
 \o 
 \o *Error*   Error ID  = 5052
 \o *Error*   Error Msg = 
-\o Nominal simulation might have failed. Either
-\o           fix the problem in the test setup or disable the test and
-\o           re-run.
+\o Either fix the problem in the test setup or
+\o           disable the test and re-run.
 \o 
-\o To view the simulator output, right-click on the
-\o           test name, result name, or any corner column in the
-\o           "Detail" view 
-\o of the "Results" tab and choose "Output Log"
-\o           menu option.
+\o To view the simulator output,
+\o           right-click on the test name, result name, or any corner
+\o           column in the "Detail" view 
+\o of the "Results" tab and
+\o           choose "Output Log" menu option.
 \o 
 \o 
 \o 
@@ -466,8 +491,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 13) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 65) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -476,8 +501,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 45) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 66) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -486,8 +511,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 77) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 67) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -496,8 +521,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 109) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 68) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -506,8 +531,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 141) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 69) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -516,8 +541,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 173) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 70) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -526,8 +551,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 205) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 71) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -536,1933 +561,14 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (15 237) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (0 72) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 269) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 301) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 333) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 365) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 397) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 429) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 461) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 493) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 525) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 557) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 589) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 621) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 653) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 685) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 717) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 749) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 781) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 813) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 845) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 877) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 909) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 941) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 973) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1005) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1037) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1069) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1101) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1133) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1165) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1197) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1229) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1261) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1293) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1325) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1357) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1389) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1421) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1453) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1485) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1517) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1549) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1581) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1613) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1645) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1677) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1709) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1741) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1773) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1805) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1837) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1869) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1901) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1933) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1965) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 1997) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2029) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2061) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2093) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2125) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2157) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2189) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2221) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2253) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2285) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2317) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2349) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2381) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2413) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2445) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2477) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2509) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2541) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2573) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2605) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2637) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2669) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2701) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2733) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2765) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2797) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2829) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2861) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2893) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2925) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2957) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 2989) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3021) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3053) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3085) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3117) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3149) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3181) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3213) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3245) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3277) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3309) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3341) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3373) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3405) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3437) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3469) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3501) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3533) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3565) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3597) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3629) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3661) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3693) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3725) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3757) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3789) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3821) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3853) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3885) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3917) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3949) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 3981) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4013) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4045) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4077) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4109) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4141) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4173) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4205) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4237) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4269) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4301) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4333) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4365) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4397) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4429) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4461) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4493) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4525) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4557) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4589) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4621) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4653) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4685) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4717) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4749) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4781) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4813) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4845) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4877) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4909) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4941) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 4973) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5005) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5037) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5069) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5101) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5133) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5165) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5197) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5229) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5261) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5293) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5325) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5357) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5389) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5421) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5453) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5485) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5517) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5549) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5581) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5613) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5645) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5677) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5709) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5741) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5773) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5805) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5837) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5869) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5901) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5933) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5965) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 5997) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6029) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6061) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6093) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6125) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6157) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6189) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6221) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6253) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6285) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6317) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6349) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (15 6381) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\# Memory report: Maximum memory size now 60217528320 (0xe053e9000) bytes, UTC 2015.11.30 21:32:44.873
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
@@ -2470,105 +576,252 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_POW_TOP
-\o 	Cell         = pow_top_tb
+\o 	Library      = IMP_PLL_TOP
+\o 	Cell         = PLL_top_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_POW_TOP:pow_top_tb:2_none_MonteCarlo.1
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/1/IMP_POW_TOP:pow_top_tb:2
-\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data
+\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_MonteCarlo.24
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM
 \o 	File Encoding = 0
 \o 
 \o 
-\o *Info*    Spectre controlMode is set "batch".
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o *Info*    Run start for Point ID (16 69) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run start for Point ID (1 73) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var AM_INDEX = "0.1"
-\o Setting var C_REC = "1u"
-\o Setting var FREQ = "100k"
-\o Setting var TX_DATA = "0"
-\o Setting var VIN_AC = "0"
-\o Setting var VIN_AMP = "0"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_PULSE = "5"
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/69/IMP_POW_TOP:pow_top_tb:2/netlist
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24/73/IMP_PLL_TOP:PLL_top_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/69/IMP_POW_TOP:pow_top_tb:2
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24/73/IMP_PLL_TOP:PLL_top_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (16 69)
+\o *Info*    Creating Netlist for Point ID (1 73)
 \o 
 \o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:37:33 2015
-\o End netlisting Nov 26 15:37:33 2015
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Nov 30 22:33:09 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24/73/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV', cell 'FreqDiv', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "FSel<3:0>" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o PLL_top_stimulus            verilogams           *Stopping View*  
+\o FreqDiv                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o PLL_top_tb                  schematic                             
+\o PLL_top                     schematic                             
+\o PFD_man                     schematic                             
+\o NAND2X1                     cmos_sch                              
+\o DFCX4                       cmos_sch                              
+\o INVX1                       cmos_sch                              
+\o lpf                         schematic                             
+\o vco                         schematic                             
+\o vco_comparator              schematic                             
+\o vco_core                    schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o cp                          schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 30 22:33:09 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb:2
-\o           ] for Point ID (16 69).
+\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
+\o           ] for Point ID (1 73).
 \o 
 \o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb/adexl/results/data/MonteCarlo.1/69/IMP_POW_TOP:pow_top_tb:2/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24/73/IMP_PLL_TOP:PLL_top_tb:1/psf.
 \o generate netlist...
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\e *Error* load: can't access file - "/afs/ict.kth.se/proj/ektlab/PDK/AMS/cds/HK_ALL/skill/ansCdlCompPrim.il"
-\o Begin Incremental Netlisting Nov 26 15:37:33 2015
-\o End netlisting Nov 26 15:37:33 2015
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Nov 30 22:33:10 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.24/73/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV', cell 'FreqDiv', view 'functional' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "FSel<3:0>" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o PLL_top_stimulus            verilogams           *Stopping View*  
+\o FreqDiv                     functional           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o PLL_top_tb                  schematic                             
+\o PLL_top                     schematic                             
+\o PFD_man                     schematic                             
+\o NAND2X1                     cmos_sch                              
+\o DFCX4                       cmos_sch                              
+\o INVX1                       cmos_sch                              
+\o lpf                         schematic                             
+\o vco                         schematic                             
+\o vco_comparator              schematic                             
+\o vco_core                    schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o cp                          schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Nov 30 22:33:10 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: now 275587072 (0x106d2000) bytes, process size 1023062016 (0x3cfab000) bytes at UTC 2015.11.26 14:37:54.050
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 58543149056 (0xda1719000) bytes, UTC 2015.11.30 21:33:34.875
+\# Memory report: now 279543808 (0x10a98000) bytes, process size 1027018752 (0x3d371000) bytes at UTC 2015.11.30 22:24:18.262
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 69) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 70) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 73) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -2577,8 +830,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 71) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 74) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -2587,8 +840,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 72) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 75) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -2597,8 +850,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 73) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 76) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -2607,8 +860,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 74) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 77) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -2617,98 +870,19 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 75) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 78) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Memory report: Maximum memory size now 59775414272 (0xdeae47000) bytes, UTC 2015.12.01 00:15:55.228
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 76) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 77) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 78) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 79) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 80) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 81) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 82) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 83) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (16 84) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 79) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
@@ -2722,15 +896,17 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 85) on testbench [
-\o           IMP_POW_TOP:pow_top_tb:2 ].
+\o *Info*    Run complete for Point ID (1 80) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\# Memory report: Maximum memory size now 61138309120 (0xe3c209000) bytes, UTC 2015.12.01 00:19:15.235
+\# Memory report: Maximum memory size now 62401937408 (0xe87720000) bytes, UTC 2015.12.01 00:23:05.242
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 284680192 (0x10f7e000) bytes, process size 1032155136 (0x3d857000) bytes at UTC 2015.11.26 14:43:43.252
-\# Memory report: peak usage 284700672 (0x10f83000) bytes, process size 1032167424 (0x3d85a000) bytes
+\# Memory report: on exit 279527424 (0x10a94000) bytes, process size 1027002368 (0x3d36d000) bytes at UTC 2015.12.01 00:28:05.275
+\# Memory report: peak usage 279547904 (0x10a99000) bytes, process size 1027018752 (0x3d371000) bytes
