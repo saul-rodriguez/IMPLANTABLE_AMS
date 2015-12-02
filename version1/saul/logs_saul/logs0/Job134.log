@@ -1,0 +1,2733 @@
+\# Program start time UTC 2015.12.02 13:49:40.928
+\# Local time Wednesday 2 December 2015, 2:49 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
+\o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
+\# Host name (type):	s2424.it.kth.se (x86_64)
+\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
+\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x31, current max 0x3ffffa (4194298)
+\# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Initial sbrk value:	434864128 (0x19eb8000) bytes
+\# Available memory:	64051828 (0x3d15a74) kilobytes
+\# System memory:	80336196 (0x4c9d544) kilobytes
+\# Maximum memory size:	81887113216 (0x1310da3000) bytes
+\# Max mem available:	65646784512 (0xf48da7000) bytes
+\# Initial memory used:	57712640 (0x370a000) bytes
+\#        process size:	673435648 (0x2823d000) bytes
+\# Qt version:		4.5.3
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		16300
+\o 
+\o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:	64039548 (0x3d12a7c) kilobytes UTC 2015.12.02 13:49:41.159
+\# Memory report: Maximum memory size now 65657217024 (0xf4979a000) bytes, UTC 2015.12.02 13:49:41.160
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dcm.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexl.cxt 
+\o Loading oasis.cxt 
+\o Loading asimenv.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading socket.cxt 
+\o Loading alvs.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o ......................................................................................
+\o            ams AG hitkit v.ams_4.11
+\o ......................................................................................
+\o COPYRIGHT (c) 2013 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This hitkit and attached documentation are confidential information and may 
+\o only be used as authorized by the hitkit license agreement.
+\o ......................................................................................
+\o Loading simulator default settings.
+\o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
+\o No mx check
+\o  
+\o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
+\o ...IBM PDK cmhv7sf procedures loaded.
+\o  
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\p hitkit: ams_4.11  Tech: h18a6am  User: saul 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.91
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.91.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.91/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\# Memory report: now 165453824 (0x9dca000) bytes, process size 912928768 (0x366a3000) bytes at UTC 2015.12.02 13:49:42.586
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading devCheck.cxt 
+\o Initializing IBM_PDK functions
+\o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
+\o Licensed Materials - Property of IBM - All Rights Reserved 
+\o Copyright: International Business Machines Corporation, 2015
+\o This Material may not be copied without the written consent of 
+\o Semiconductor Research and Development Center, IBM Corp., Essex Junction, VT 05452-4299.
+\o  Default set for Left & Right WindowCoordIBM
+\o System hardware set for Linux IBM_PDK procedures
+\o Setting calibre env variable table for cmhv7sf 
+\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "1n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "4.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.91/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.91/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Dec  2 14:49:45 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.91/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 14:49:46 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (2 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.91/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.92
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.92.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.92/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.5n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "1n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.92/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.92/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:00:30 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.92/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:00:31 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (3 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.92/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.93
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.93.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.93/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.5n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "1n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.93/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.93/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:05:56 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.93/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:05:57 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (4 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.93/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.94
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.94.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.94/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.25n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "1n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.94/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.94/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:08:03 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.94/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:08:04 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (5 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.94/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.95
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.95.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.95/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams4'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.2n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "0.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.95/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.95/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:11:06 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.95/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:11:07 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (6 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.95/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.96
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.96.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.96/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams5'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.2n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "0.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.96/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.96/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:14:01 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.96/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:14:02 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (7 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.96/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.97
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.97.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.97/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams6'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams6'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams6'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.2n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "0.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "50m"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.97/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.97/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:16:15 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.97/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:16:16 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (8 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.97/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_TOP
+\o 	Cell         = top_core_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_TOP:top_core_tb:1_none_Interactive.98
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl/results/data/Interactive.98.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.98/1/IMP_TOP:top_core_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_core_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams7'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams7'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams7'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 1) on testbench [
+\o           IMP_TOP:top_core_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AMPLITUDE = "0.1"
+\o Setting var AM_INDEX = "0.1"
+\o Setting var CAP_OFF = "0.2n"
+\o Setting var CAP_PAD = "600f"
+\o Setting var CAP_TIA = "0.5n"
+\o Setting var CMFB_AC = "0"
+\o Setting var CMFB_PULSE_TIA = "0"
+\o Setting var CMFB_VAC = "0"
+\o Setting var C_REG = "1u"
+\o Setting var FREQ = "1k"
+\o Setting var PULSE_CMFB_LNA = "0"
+\o Setting var RL = "500"
+\o Setting var TX_DELAY = "1"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "0"
+\o Setting var VIN_AMP = "4"
+\o Setting var VIN_DC = "0"
+\o Setting var VOFFSET = "1.4"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.98/1/IMP_TOP:top_core_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.98/1/IMP_TOP:top_core_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Dec  2 15:21:14 2015
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.98/1/IMP_TOP:top_core_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_TOP cell:top_core_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o               *** Library - CORELIB  Cell - FILLCAPX16 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX4 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX8 ***
+\o               *** Library - CORELIB  Cell - FILLCAPX32 ***
+\o               *** Library - CORELIB  Cell - NAND3X1 ***
+\o               *** Library - CORELIB  Cell - DFPX3 ***
+\o               *** Library - CORELIB  Cell - INVXL ***
+\o               *** Library - CORELIB  Cell - XOR2X1 ***
+\o               *** Library - CORELIB  Cell - AO21X3 ***
+\o               *** Library - CORELIB  Cell - DFCX3 ***
+\o               *** Library - CORELIB  Cell - DFCX1 ***
+\o               *** Library - CORELIB  Cell - NOR2XL ***
+\o               *** Library - CORELIB  Cell - OR2X3 ***
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SPI/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'spc2', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => "Cfg_in" "Clk" "Resetn" "F<3:0>" "IQ" "GS<3:0>" "CE" "NS" "GD<2:0>" "FS" "RE" 
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_TOP/top_core_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SPI', cell 'iq_test', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("SD" "CD" "Fref" "Resetn")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fout" "Fref" "Fsel<3:0>" "Resetn" "vdda" "vddd" "vssa" "vssd" "vsub" "bias_vco" "bias_cp" 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o res                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o PLL_top                     verilogams           *Stopping View*  
+\o OR2X3                       symbol               *Stopping View*  
+\o NOR2XL                      symbol               *Stopping View*  
+\o DFCX1                       symbol               *Stopping View*  
+\o DFCX3                       symbol               *Stopping View*  
+\o AO21X3                      symbol               *Stopping View*  
+\o XOR2X1                      symbol               *Stopping View*  
+\o INVXL                       symbol               *Stopping View*  
+\o DFPX3                       symbol               *Stopping View*  
+\o NAND3X1                     symbol               *Stopping View*  
+\o FILLCAPX32                  symbol               *Stopping View*  
+\o FILLCAPX8                   symbol               *Stopping View*  
+\o FILLCAPX4                   symbol               *Stopping View*  
+\o FILLCAPX16                  symbol               *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o constant_gm2                veriloga             *Stopping View*  
+\o ldo                         veriloga             *Stopping View*  
+\o bandgap                     veriloga             *Stopping View*  
+\o constant_gm                 veriloga             *Stopping View*  
+\o ref_bias                    veriloga             *Stopping View*  
+\o rectifier_demod             veriloga             *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o iq_test                     verilogams           *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o vsin                        spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o message_demod               verilogams           *Stopping View*  
+\o top_core_tb                 schematic                             
+\o top                         schematic                             
+\o current_mirror2             schematic                             
+\o pow_top                     schematic                             
+\o top_imp_sensor              schematic                             
+\o DacCtrl                     schematic                             
+\o Signal_Generator            schematic                             
+\o Signal_Generator_bias       schematic                             
+\o RDAC32                      schematic                             
+\o spc2                        schematic                             
+\o fillcaps                    schematic                             
+\o iq_demod                    schematic                             
+\o buffer                      schematic                             
+\o amp                         schematic                             
+\o comp_amp                    schematic                             
+\o lpf                         schematic                             
+\o s1_gm1_block                schematic                             
+\o lpf_cmfb                    schematic                             
+\o current_mirror1             schematic                             
+\o tia                         schematic                             
+\o res_tia                     schematic                             
+\o mixer                       schematic                             
+\o lna2                        schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o data_demod                  schematic_dummy                       
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_TOP', cell 'top_core_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Dec  2 15:21:15 2015
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_TOP:top_core_tb:1 ]
+\o           for Point ID (9 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_TOP/top_core_tb/adexl/results/data/Interactive.98/1/IMP_TOP:top_core_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 64314773504 (0xef9759000) bytes, UTC 2015.12.02 15:19:12.352
+\# Memory report: Maximum memory size now 62957735936 (0xea892d000) bytes, UTC 2015.12.02 16:47:32.601
+\# Memory report: Maximum memory size now 61670535168 (0xe5bd9b000) bytes, UTC 2015.12.02 17:04:12.661
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: now 323883008 (0x134e1000) bytes, process size 1071423488 (0x3fdca000) bytes at UTC 2015.12.02 17:05:13.142

@@ -83,6 +83,7 @@ output Fref; //clock reference
 output Resetn; //Reset (L)
 
 parameter clk_width = 1000; //1000ns ->  2000ns period -> 500 kHz
+parameter Q_delay = 100000000; //100ms  
 
 reg SD;
 reg CD;
@@ -179,7 +180,9 @@ initial begin
 
 	//Delay to settle the transient and make a measurement
 	//1000 -> 1us 1_000_000 -> 1ms
-	#100000000 Resetn = 0; //100ms
+	//#100000000 Resetn = 0; //100ms
+	#Q_delay Resetn = 0; //100ms
+
     #10 Resetn = 1; 
 	//configure Q Path
 	
