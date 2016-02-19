@@ -170,7 +170,7 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 		<runoptions>
@@ -219,6 +219,7 @@
 				</runoption>
 			</mode>
 		</runoptions>
+		<distributeoptions></distributeoptions>
 	</active>
 	<history>History
 		<historyentry>Interactive.0
@@ -392,13 +393,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep  2 12:43:50 2015
-</timestamp>
+			<timestamp>Wed Sep 2 12:43:50 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/Interactive.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -584,13 +584,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep  2 12:51:28 2015
-</timestamp>
+			<timestamp>Wed Sep 2 12:51:28 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/Interactive.1.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -776,7 +775,7 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<runoptions>
@@ -827,8 +826,7 @@
 				</runoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Sep  2 12:52:39 2015
-</timestamp>
+			<timestamp>Wed Sep 2 12:52:39 2015</timestamp>
 			<resultsname>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -840,6 +838,706 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/afs/kth.se/home/s/a/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.0.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>MonteCarlo.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ALL_TESTS:ldo_test_b:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ldo_test_b</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:ldo_test_b:1_state1_MonteCarlo.1</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>IDC("/I0/TP4/D")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>ldo_test_b</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VREF
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VREF_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>10</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+			</checkpoint>
+			<timestamp>Tue Feb 16 20:22:28 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_202228688</localpsfdir>
+		</historyentry>
+		<historyentry>MonteCarlo.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ALL_TESTS:ldo_test_b:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ldo_test_b</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:ldo_test_b:1_state1_MonteCarlo.2</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>IDC("/I0/TP4/D")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>ldo_test_b</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VREF
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VREF_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>10</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+			</checkpoint>
+			<timestamp>Tue Feb 16 20:24:05 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_202405889</localpsfdir>
+		</historyentry>
+		<historyentry>MonteCarlo.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">corner
+						<vars>
+							<var>temperature
+								<value>27</value>
+							</var>
+							<var>Vsupply
+								<value>3</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">design.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/design.scs</modelfile>
+								<modelsection>"noitm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cap.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">esddi.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/esddi.scs</modelfile>
+								<modelsection>"esdditm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">bip.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">res.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswz" "cmosfff" "cmosssf"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+							<model enabled="0">mcparams.scs
+								<modelfile>/afs/ict.kth.se/proj/ektlab/PDK/AMS/spectre/h18/soac/mcparams.scs</modelfile>
+								<modelsection></modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ALL_TESTS:ldo_test_b:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ldo_test_b</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ALL_TESTS:ldo_test_b:1_state1_MonteCarlo.3</value>
+							</option>
+						</tooloptions>
+						<outputs>
+							<output>IDC("/I0/TP4/D")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<origoptions>
+							<option>cell
+								<value>ldo_test_b</value>
+							</option>
+							<option>lib
+								<value>ALL_TESTS</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>state1</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>10u</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VD_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VREF
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VREF_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ALL_TESTS:ldo_test_b:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>10</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>1</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<distributeoptions></distributeoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Feb 16 20:24:38 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_202438484</localpsfdir>
+			<psfdir>/home/saul/Sim/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.3</psfdir>
+			<simdir>./SimVM/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.3</simdir>
+			<resultspsfisuserpath>1</resultspsfisuserpath>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/ldo_test_b/adexl/results/data/MonteCarlo.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.3.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

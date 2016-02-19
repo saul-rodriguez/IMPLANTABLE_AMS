@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.02.12 13:47:09.227
-\# Local time Friday 12 February 2016, 2:47 pm
+\# Program start time UTC 2016.02.18 14:33:50.276
+\# Local time Thursday 18 February 2016, 3:33 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x2400000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	412991488 (0x189dc000) bytes
-\# Available memory:	39271936 (0x2573e00) kilobytes
+\# Initial sbrk value:	470978560 (0x1c129000) bytes
+\# Available memory:	65944168 (0x3ee3a68) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	81908981760 (0x131227e000) bytes
-\# Max mem available:	40272171008 (0x960689000) bytes
-\# Initial memory used:	57708544 (0x3709000) bytes
-\#        process size:	673431552 (0x2823c000) bytes
+\# Maximum memory size:	81851006976 (0x130eb34000) bytes
+\# Max mem available:	67584548864 (0xfbc5a6000) bytes
+\# Initial memory used:	57720832 (0x370c000) bytes
+\#        process size:	673443840 (0x2823f000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		17188
+\# Process Id:		9600
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	39232444 (0x256a3bc) kilobytes UTC 2016.02.12 13:47:09.537
-\# Memory report: Maximum memory size now 40254730240 (0x95f5e7000) bytes, UTC 2016.02.12 13:47:09.537
+\# Available memory:	65932260 (0x3ee0be4) kilobytes UTC 2016.02.18 14:33:50.519
+\# Memory report: Maximum memory size now 67595350016 (0xfbcff3000) bytes, UTC 2016.02.18 14:33:50.519
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -95,17 +95,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_BUFFER
-\o 	Cell         = buffer_tb
+\o 	Library      = IMP_COMM
+\o 	Cell         = amp_tb
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_BUFFER:buffer_tb:2_none_Interactive.49
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/1/IMP_AN_BUFFER:buffer_tb:2
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data
+\o 	State Name   = IMP_COMM:amp_tb:1_none_Interactive.6
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/amp_tb/adexl/results/data/Interactive.6.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_COMM/amp_tb/adexl/results/data/Interactive.6/1/IMP_COMM:amp_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_COMM/amp_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_BUFFER/buffer_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/amp_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -115,7 +115,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 165355520 (0x9db2000) bytes, process size 912830464 (0x3668b000) bytes at UTC 2016.02.12 13:47:11.604
+\# Memory report: now 168095744 (0xa04f000) bytes, process size 915570688 (0x36928000) bytes at UTC 2016.02.18 14:33:52.616
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -153,48 +153,41 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (1 2) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
+\o *Info*    Run start for Point ID (6 1) on testbench [
+\o           IMP_COMM:amp_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CL = "1p"
-\o Setting var IBIAS_STEP = "0"
-\o Setting var RL = "10M"
-\o Setting var VDD_AC = "0"
-\o Setting var VDD_STEP = "0"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_DC = "900m"
-\o Setting var VIN_STEP = "50m"
-\o Setting var Vsupply = "1.8"
+\o Setting var CL = "30p"
+\o Setting var IN = "900m"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/2/IMP_AN_BUFFER:buffer_tb:2/netlist
+\o           /home/saul/Sim/IMP_COMM/amp_tb/adexl/results/data/Interactive.6/1/IMP_COMM:amp_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/2/IMP_AN_BUFFER:buffer_tb:2
+\o           /home/saul/Sim/IMP_COMM/amp_tb/adexl/results/data/Interactive.6/1/IMP_COMM:amp_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (1 2)
+\o *Info*    Creating Netlist for Point ID (6 1)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Feb 12 14:47:14 2016
+\o Begin Incremental Netlisting Feb 18 15:33:54 2016
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Feb 12 14:47:14 2016
+\o End netlisting Feb 18 15:33:54 2016
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   27
+\o 	Number of components:   29
 \o 
 \o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
@@ -202,10 +195,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:2
-\o           ] for Point ID (1 2).
+\o *Info*    Running simulation on testbench [ IMP_COMM:amp_tb:1 ] for
+\o           Point ID (6 1).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/2/IMP_AN_BUFFER:buffer_tb:2/psf.
+\o Delete psf data in /home/saul/Sim/IMP_COMM/amp_tb/adexl/results/data/Interactive.6/1/IMP_COMM:amp_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -221,201 +214,14 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 2) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
+\o *Info*    Run complete for Point ID (6 1) on testbench [
+\o           IMP_COMM:amp_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 5) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CL = "10p"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/5/IMP_AN_BUFFER:buffer_tb:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/5/IMP_AN_BUFFER:buffer_tb:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 5)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Feb 12 14:47:18 2016
-\o End netlisting Feb 12 14:47:18 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:2
-\o           ] for Point ID (1 5).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/5/IMP_AN_BUFFER:buffer_tb:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 5) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 8) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CL = "30p"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/8/IMP_AN_BUFFER:buffer_tb:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/8/IMP_AN_BUFFER:buffer_tb:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 8)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Feb 12 14:47:20 2016
-\o End netlisting Feb 12 14:47:20 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:2
-\o           ] for Point ID (1 8).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/8/IMP_AN_BUFFER:buffer_tb:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 8) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 11) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CL = "300p"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/11/IMP_AN_BUFFER:buffer_tb:2/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/11/IMP_AN_BUFFER:buffer_tb:2
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 11)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Feb 12 14:47:21 2016
-\o End netlisting Feb 12 14:47:21 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_AN_BUFFER:buffer_tb:2
-\o           ] for Point ID (1 11).
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_BUFFER/buffer_tb/adexl/results/data/Interactive.49/11/IMP_AN_BUFFER:buffer_tb:2/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 11) on testbench [
-\o           IMP_AN_BUFFER:buffer_tb:2 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Job timed out after no activity in 300 seconds.
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables2".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
+\o *Info*    Received signal SIGINT.
 \o 
 \o 
