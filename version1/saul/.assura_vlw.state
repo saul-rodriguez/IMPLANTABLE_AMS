@@ -1,6 +1,6 @@
 ;----------------------------------------------------------------------------
-; @(#)$CDS: assura version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 08/31/15 04:19 (sjfql463) $
-; sub-version 4.1_USR4_HF25
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.5-64b:IC6.1.5-64b.500.17 04/19/15 20:36 (sjfql463) $
+; sub-version 4.1_USR4_HF23
 ;----------------------------------------------------------------------------
 
 
@@ -29,22 +29,22 @@ vuiLayerList  = '(
 		("m2" 881 "m2 = geomOr( m2 )" 1 28 t "y6 (drawing)" t)
 		("m3" 884 "m3 = geomOr( m3 )" 1 30 t "y7 (drawing)" t)
 		("m4" 887 "m4 = geomOr( m4 )" 1 32 t "y8 (drawing)" t)
-		("mt" 893 "mt = geomOr( mt )" 1 34 t "y7 (drawing)" t)
-		("ndiff" 1200 "ndiff = geomAndNot( rx bp )" 0 22 t "y8 (drawing)" t)
-		("ndnw_via" 36218 "ndnw_via = groupVias(  via(ndnw_via) conn1(ndiff) conn2(nw) )" 1 14 t "y9 (drawing)" t)
-		("ndnw_via_265a" 36236 "ndnw_via_265a = groupVias(  via(ndnw_via_265a) conn1(ndiff) conn2(nwfat_4000) )" 1 24 t "y0 (drawing)" t)
-		("nw" 839 "nw = geomOr( nw )" 1 9 t "y1 (drawing)" t)
-		("nwfat_4000" 2098 "nwfat_4000 = geomAnd( T?2097 nw )" 0 19 t "y2 (drawing)" t)
-		("pc" 904 "pc = geomOr( pc )" 1 0 t "y3 (drawing)" t)
-		("pw_guard_ring" 16842 "pw_guard_ring = geomAnd( pw_ring rx )" 0 2 t "y4 (drawing)" t)
+		("mt" 893 "mt = geomOr( mt )" 1 34 t "y9 (drawing)" t)
+		("ndiff" 1200 "ndiff = geomAndNot( rx bp )" 0 22 t "y0 (drawing)" t)
+		("ndnw_via" 36218 "ndnw_via = groupVias(  via(ndnw_via) conn1(ndiff) conn2(nw) )" 1 14 t "y1 (drawing)" t)
+		("ndnw_via_265a" 36236 "ndnw_via_265a = groupVias(  via(ndnw_via_265a) conn1(ndiff) conn2(nwfat_4000) )" 1 24 t "y2 (drawing)" t)
+		("nw" 839 "nw = geomOr( nw )" 1 9 t "y3 (drawing)" t)
+		("nwfat_4000" 2098 "nwfat_4000 = geomAnd( T?2097 nw )" 0 19 t "y4 (drawing)" t)
+		("pc" 904 "pc = geomOr( pc )" 1 0 t "y5 (drawing)" t)
+		("pw_guard_ring" 16842 "pw_guard_ring = geomAnd( pw_ring rx )" 0 2 t "y6 (drawing)" t)
 		("qt" 1002 "qt = geomOr( qt )" 1 33 t "y5 (drawing)" t)
-		("rx_net" 2101 "rx_net = geomCat( diff )" 0 20 t "y6 (drawing)" t)
-		("rx_not_pc" 35804 "rx_not_pc = geomAndNot( rx pc )" 1 31 t "y7 (drawing)" t)
-		("rxnp_junction" 2115 "rxnp_junction = geomAndNot( ndiff nw )" 0 26 t "y8 (drawing)" t)
-		("v1" 842 "v1 = geomOr( v1 )" 1 11 t "y5 (drawing)" t)
-		("v1" 36220 "v1 = groupVias(  via(v1) conn1(m1) conn2(m2 m1_vcapm1_vcaphv m2_vcapm2_vcaphv) )" 3 15 t "y0 (drawing)" t)
-		("v1_via" 36216 "v1_via = groupVias(  via(v1_via) conn1(v1) conn2(m1 v1bar) )" 1 13 t "y1 (drawing)" t)
-		("v2" 36224 "v2 = groupVias(  via(v2) conn1(m2) conn2(m3 m2_vcapm2_vcaphv m3_vcapm3_vcaphv) )" 3 18 t "y3 (drawing)" t)
+		("rx_net" 2101 "rx_net = geomCat( diff )" 0 20 t "y8 (drawing)" t)
+		("rx_not_pc" 35804 "rx_not_pc = geomAndNot( rx pc )" 1 31 t "y9 (drawing)" t)
+		("rxnp_junction" 2115 "rxnp_junction = geomAndNot( ndiff nw )" 0 26 t "y0 (drawing)" t)
+		("v1" 842 "v1 = geomOr( v1 )" 1 11 t "y1 (drawing)" t)
+		("v1" 36220 "v1 = groupVias(  via(v1) conn1(m1) conn2(m2 m1_vcapm1_vcaphv m2_vcapm2_vcaphv) )" 3 15 t "y2 (drawing)" t)
+		("v1_via" 36216 "v1_via = groupVias(  via(v1_via) conn1(v1) conn2(m1 v1bar) )" 1 13 t "y3 (drawing)" t)
+		("v2" 36224 "v2 = groupVias(  via(v2) conn1(m2) conn2(m3 m2_vcapm2_vcaphv m3_vcapm3_vcaphv) )" 3 18 t "y4 (drawing)" t)
 		("v3" 36228 "v3 = groupVias(  via(v3) conn1(m3) conn2(m4 m3_vcapm3_vcaphv m4_vcapm4_vcaphv) )" 3 21 t "y5 (drawing)" t)
 		("v4_NL6" 36231 "v4_NL6 = groupVias(  via(v4_NL6) conn1(m4) conn2(mt m4_vcapm4_vcaphv mt_vcapm..." 1 23 t "y6 (drawing)" t)
 )
