@@ -21,10 +21,11 @@ electrical vsub;
 
 analog begin
 
+
 V(RES) <+ V(VREF);
 
 if (V(VD) > 1.25) begin
-	I(IOUT) <+ I(RES);	
+	I(IOUT) <+ I(RES)*0.8;	
 end else begin
 	I(IOUT) <+ 0;	
 end
