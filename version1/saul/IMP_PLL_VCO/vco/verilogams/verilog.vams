@@ -1,15 +1,17 @@
 //Verilog-AMS HDL for "IMP_PLL_VCO", "vco" "verilogams"
 
 /*
- * 16 MHz VCO  
+ * 32 MHz VCO  
  * 
  * Author: Saul Rodriguez
  * Date: 2015-06-17
  * 
  * Description:
- * This VCO has a TT free running frequency of around 16 MHz when the control voltage is 1V.
+ * This VCO has a TT free running frequency of around 28.5 MHz when the control voltage is 1V.
  * The VCO's gain is 19.2 MHz/V.
  * The VerilogA model is a modified version of the model taken from "The Designers's Guide to Verilog-AMS, 2004" 
+
+
  */
 
 
@@ -30,8 +32,8 @@ module vco ( Vout, Vctrl, bias_in, vdda, vssa, vsub );
 
   parameter real vmin=0.5;				// input voltage that corresponds to minimum output frequency
   parameter real vmax=1.5 from (vmin:inf);	// input voltage that corresponds to maximum output frequency
-  parameter real fmin=6.6M from (0:inf);		// minimum output frequency
-  parameter real fmax=25.8M from (fmin:inf);	// maximum output frequency
+  parameter real fmin=10.3M from (0:inf);		// minimum output frequency
+  parameter real fmax=37.5M from (fmin:inf);	// maximum output frequency
   parameter real vl=0;				// high output voltage
   parameter real vh=1.8;				// low output voltage
   parameter real tt=0.01/fmax from (0:inf);	// output transition time

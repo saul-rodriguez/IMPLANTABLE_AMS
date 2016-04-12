@@ -1,0 +1,17 @@
+
+`timescale 1ns / 1ps
+
+module test;
+
+
+wire  F_PFD, Fout;
+
+reg  Fin, Resetn;
+
+reg [3:0]  Fsel;
+
+
+
+FreqDiv64_tb top(.F_PFD(F_PFD), .Fout(Fout), .Fin(Fin), .Fsel(Fsel), 
+     .Resetn(Resetn)); 
+ 

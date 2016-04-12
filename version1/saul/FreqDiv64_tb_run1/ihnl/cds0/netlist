@@ -1,0 +1,23 @@
+// Library - IMP_DIG_DIV64, Cell - FreqDiv64_tb, View - schematic
+// LAST TIME SAVED: Apr  8 17:22:46 2016
+// NETLIST TIME: Apr  8 17:25:16 2016
+`timescale 1ns / 1ps 
+
+module FreqDiv64_tb ( F_PFD, Fout, Fin, Fsel, Resetn );
+
+output  F_PFD, Fout;
+
+input  Fin, Resetn;
+
+input [3:0]  Fsel;
+
+
+specify 
+    specparam CDS_LIBNAME  = "IMP_DIG_DIV64";
+    specparam CDS_CELLNAME = "FreqDiv64_tb";
+    specparam CDS_VIEWNAME = "schematic";
+endspecify
+
+FreqDiv64 I0 ( Fin, Fsel[3:0], Resetn, Fout, F_PFD);
+
+endmodule

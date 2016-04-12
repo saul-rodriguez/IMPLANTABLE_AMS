@@ -1,0 +1,67 @@
+// VerilogA for IMP_PLL_VCO, vco, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module vco(Vout, Vctrl, bias_in, vdda, vssa, vsub);
+output Vout;
+electrical Vout;
+input Vctrl;
+electrical Vctrl;
+input bias_in;
+electrical bias_in;
+input vdda;
+electrical vdda;
+input vssa;
+electrical vssa;
+input vsub;
+electrical vsub;
+
+/*
+parameter real ttol = 2.66667e-14 ;
+parameter real tt = 2.66667e-10 ;
+parameter real fmax = 3.75e+07 ;
+parameter real fmin = 1.03e+07 ;
+parameter real vh = 1.8 ;
+parameter real vl = 0 ;
+parameter real vmax = 1.5 ;
+parameter real vmin = 0.5 ;
+*/
+
+  parameter real vmin=0.5;				// input voltage that corresponds to minimum output frequency
+  parameter real vmax=1.5 from (vmin:inf);	// input voltage that corresponds to maximum output frequency
+  parameter real fmin=10.3M from (0:inf);		// minimum output frequency
+  parameter real fmax=37.5M from (fmin:inf);	// maximum output frequency
+  parameter real vl=0;				// high output voltage
+  parameter real vh=1.8;				// low output voltage
+  parameter real tt=0.01/fmax from (0:inf);	// output transition time
+  parameter real ttol=1u/fmax from (0:1/fmax);	// time tolerance
+  real freq, phase;
+  integer n;
+
+analog begin
+    // compute the freq from the input voltage
+    freq = (V(Vctrl) - vmin)*(fmax - fmin) / (vmax - vmin) + fmin;
+
+    // bound the frequency (this is optional)
+    if (freq > fmax) freq = fmax;
+    if (freq < fmin) freq = fmin;
+
+    // bound the time step to assure no cycles are skipped
+    $bound_step(0.6/freq);
+
+    // phase is the integral of the freq modulo 2p
+    phase = 2*`M_PI*idtmod(freq, 0.0, 1.0, -0.5);
+
+    // identify the point where switching occurs
+    @(cross(phase + `M_PI/2, +1, ttol) or cross(phase - `M_PI/2, +1, ttol))
+	n = (phase >= -`M_PI/2) && (phase < `M_PI/2);
+
+    // generate the output
+    V(Vout) <+ transition(n ? vh : vl, 0, tt);
+end
+
+
+
+
+endmodule
