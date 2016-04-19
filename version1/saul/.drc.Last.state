@@ -13,14 +13,14 @@
 vuiDRCFormTable = '(
 	format  "DFII"
 	vui2dbxor  nil
-	runName  "mm"
-	runDir  "ASSURA_DRC/FreqDiv64"
+	runName  "fKa"
+	runDir  "ASSURA_DRC/vco_comparator"
 	machineLoc  "local"
 	viewRules  t
 	technologyField  "h18a6am"
-	runsetField  "dfII"
-	rules  "/pkg/AMS411/assura/h18a6/h18a6/drc.rul"
-	switches  "GridCheck"
+	runsetField  "floating gate"
+	rules  "/pkg/AMS411/assura/h18a6/h18a6/float.rul"
+	switches  "ALL_CHECKS"
 	rsfInclude  "/pkg/AMS411/assura/h18a6/h18a6/DRCinclude.rsf"
 	varTag  "None"
 	varVal  ""
@@ -29,8 +29,8 @@ vuiDRCFormTable = '(
 	avView  nil
 	additionalFunctionsButton  nil
 	limitDRCswitcher  nil
-	library  "IMP_DIG_DIV64"
-	cell  "FreqDiv64"
+	library  "IMP_PLL_VCO"
+	cell  "vco_comparator"
 	view  "layout"
 	saveExtracted  nil
 	extractedView  "drc_extracted"

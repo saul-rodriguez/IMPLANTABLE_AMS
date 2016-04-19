@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.04.11 11:37:54.374
-\# Local time Monday 11 April 2016, 1:37 pm
+\# Program start time UTC 2016.04.14 09:12:10.338
+\# Local time Thursday 14 April 2016, 11:12 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x3400000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x2400000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	481824768 (0x1cb81000) bytes
-\# Available memory:	62056600 (0x3b2e898) kilobytes
+\# Initial sbrk value:	399634432 (0x17d1f000) bytes
+\# Available memory:	71872636 (0x448b07c) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	81840156672 (0x130e0db000) bytes
-\# Max mem available:	63603675136 (0xecf131000) bytes
+\# Maximum memory size:	81922347008 (0x1312f3d000) bytes
+\# Max mem available:	73655296000 (0x112632a000) bytes
 \# Initial memory used:	57716736 (0x370b000) bytes
 \#        process size:	673439744 (0x2823e000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		27692
+\# Process Id:		2343
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	61984060 (0x3b1cd3c) kilobytes UTC 2016.04.11 11:37:54.645
-\# Memory report: Maximum memory size now 63552397312 (0xecc04a000) bytes, UTC 2016.04.11 11:37:54.645
+\# Available memory:	71791176 (0x4477248) kilobytes UTC 2016.04.14 09:12:10.577
+\# Memory report: Maximum memory size now 73594884096 (0x112298d000) bytes, UTC 2016.04.14 09:12:10.577
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -100,9 +100,9 @@
 \o 	View         = config
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_Interactive.28
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1
+\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_MonteCarlo.16
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16/1/IMP_PLL_TOP:PLL_top_tb:1
 \o 	Results Loc  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
 \o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM
@@ -113,7 +113,7 @@
 \o Loading awv.cxt 
 \o Loading viva.cxt 
 \o Loading spectrei.cxt 
-\# Memory report: now 168263680 (0xa078000) bytes, process size 915738624 (0x36951000) bytes at UTC 2016.04.11 11:37:57.123
+\# Memory report: now 165543936 (0x9de0000) bytes, process size 913018880 (0x366b9000) bytes at UTC 2016.04.14 09:12:12.238
 \o Loading relXpert.cxt 
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
@@ -132,6 +132,329 @@
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 27) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
+\o Loading monte.cxt 
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16/27/IMP_PLL_TOP:PLL_top_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16/27/IMP_PLL_TOP:PLL_top_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 27)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Apr 14 11:12:15 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16/27/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX32_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI221X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI211X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OA22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - XOR2X1_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - CLKBUFX2_HV ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_DIV64/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV64', cell 'FreqDiv64', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "FSel<3:0>" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o PLL_top_stimulus            verilogams           *Stopping View*  
+\o CLKBUFX2_HV                 symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o OR2X2_HV                    symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XOR2X1_HV                   symbol               *Stopping View*  
+\o DFCX4_HV                    symbol               *Stopping View*  
+\o OA22X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o OAI211X3_HV                 symbol               *Stopping View*  
+\o OAI221X3_HV                 symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX32_HV               symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o PLL_top_tb                  schematic                             
+\o PLL_top                     schematic                             
+\o PFD_man                     schematic                             
+\o NAND2X1                     cmos_sch                              
+\o DFCX4                       cmos_sch                              
+\o INVX1                       cmos_sch                              
+\o lpf                         schematic                             
+\o res_500k                    schematic                             
+\o vco                         schematic                             
+\o vco_comparator              schematic                             
+\o vco_core                    schematic                             
+\o res_250k                    schematic                             
+\o cp                          schematic                             
+\o FreqDiv64                   schematic                             
+\o fillcaps                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Apr 14 11:12:15 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
+\o           ] for Point ID (1 27).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16/27/IMP_PLL_TOP:PLL_top_tb:1/psf.
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 14 11:12:16 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/MonteCarlo.16/27/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX32_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI221X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI211X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OA22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - XOR2X1_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - CLKBUFX2_HV ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_DIV64/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV64', cell 'FreqDiv64', view 'schematic' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("Fin" "FSel<3:0>" "Resetn")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o PLL_top_stimulus            verilogams           *Stopping View*  
+\o CLKBUFX2_HV                 symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o OR2X2_HV                    symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XOR2X1_HV                   symbol               *Stopping View*  
+\o DFCX4_HV                    symbol               *Stopping View*  
+\o OA22X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o OAI211X3_HV                 symbol               *Stopping View*  
+\o OAI221X3_HV                 symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX32_HV               symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o dualcmimx                   spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o PLL_top_tb                  schematic                             
+\o PLL_top                     schematic                             
+\o PFD_man                     schematic                             
+\o NAND2X1                     cmos_sch                              
+\o DFCX4                       cmos_sch                              
+\o INVX1                       cmos_sch                              
+\o lpf                         schematic                             
+\o res_500k                    schematic                             
+\o vco                         schematic                             
+\o vco_comparator              schematic                             
+\o vco_core                    schematic                             
+\o res_250k                    schematic                             
+\o cp                          schematic                             
+\o FreqDiv64                   schematic                             
+\o fillcaps                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Apr 14 11:12:16 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
@@ -146,583 +469,138 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (16 2) on testbench [
-\o           IMP_PLL_TOP:PLL_top_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var MYFREQ = "5"
-\o Setting var Vsupply = "1.8"
-\o Setting var fmax = "37.5M"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (16 2)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o Loading seCore.cxt 
-\o function ansCdlCompPrim redefined
-\o Loading verilogI.cxt 
-\o Begin Incremental Netlisting Apr 11 13:37:58 2016
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV64', cell 'FreqDiv64', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "FSel<3:0>" "Resetn")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o PLL_top_stimulus            verilogams           *Stopping View*  
-\o FreqDiv64                   functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o dualcmimx                   spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o PLL_top_tb                  schematic                             
-\o PLL_top                     schematic                             
-\o PFD_man                     schematic                             
-\o NAND2X1                     cmos_sch                              
-\o DFCX4                       cmos_sch                              
-\o INVX1                       cmos_sch                              
-\o lpf                         schematic                             
-\o vco                         schematic                             
-\o vco_comparator              schematic                             
-\o vco_core                    schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o cp                          schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Apr 11 13:37:59 2016
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
-\o           ] for Point ID (16 2).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\o Loading stats.cxt 
+\# Memory report: now 278716416 (0x109ce000) bytes, process size 1026191360 (0x3d2a7000) bytes at UTC 2016.04.14 09:23:53.757
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 2) on testbench [
+\o *Info*    Run complete for Point ID (1 27) on testbench [
 \o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (16 15) on testbench [
-\o           IMP_PLL_TOP:PLL_top_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/15/IMP_PLL_TOP:PLL_top_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/15/IMP_PLL_TOP:PLL_top_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (16 15)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 11 13:49:55 2016
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV64', cell 'FreqDiv64', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "FSel<3:0>" "Resetn")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o PLL_top_stimulus            verilogams           *Stopping View*  
-\o FreqDiv64                   functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o dualcmimx                   spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o PLL_top_tb                  schematic                             
-\o PLL_top                     schematic                             
-\o PFD_man                     schematic                             
-\o NAND2X1                     cmos_sch                              
-\o DFCX4                       cmos_sch                              
-\o INVX1                       cmos_sch                              
-\o lpf                         schematic                             
-\o vco                         schematic                             
-\o vco_comparator              schematic                             
-\o vco_core                    schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o cp                          schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Apr 11 13:49:55 2016
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
-\o           ] for Point ID (16 15).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/15/IMP_PLL_TOP:PLL_top_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\# Memory report: Maximum memory size now 71979282432 (0x10c24cb000) bytes, UTC 2016.04.14 09:28:20.607
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 15) on testbench [
+\o *Info*    Run complete for Point ID (1 28) on testbench [
 \o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (16 5) on testbench [
-\o           IMP_PLL_TOP:PLL_top_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/5/IMP_PLL_TOP:PLL_top_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/5/IMP_PLL_TOP:PLL_top_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (16 5)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 11 14:01:40 2016
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV64', cell 'FreqDiv64', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "FSel<3:0>" "Resetn")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o PLL_top_stimulus            verilogams           *Stopping View*  
-\o FreqDiv64                   functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o dualcmimx                   spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o PLL_top_tb                  schematic                             
-\o PLL_top                     schematic                             
-\o PFD_man                     schematic                             
-\o NAND2X1                     cmos_sch                              
-\o DFCX4                       cmos_sch                              
-\o INVX1                       cmos_sch                              
-\o lpf                         schematic                             
-\o vco                         schematic                             
-\o vco_comparator              schematic                             
-\o vco_core                    schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o cp                          schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Apr 11 14:01:40 2016
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
-\o           ] for Point ID (16 5).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/5/IMP_PLL_TOP:PLL_top_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\# Available memory:	68065704 (0x40e99a8) kilobytes UTC 2016.04.11 12:05:44.704
-\# Memory report: Maximum memory size now 69896241152 (0x1046240000) bytes, UTC 2016.04.11 12:05:44.704
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 5) on testbench [
+\o *Info*    Run complete for Point ID (1 29) on testbench [
 \o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (16 9) on testbench [
-\o           IMP_PLL_TOP:PLL_top_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/9/IMP_PLL_TOP:PLL_top_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/9/IMP_PLL_TOP:PLL_top_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (16 9)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Apr 11 14:13:54 2016
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/2/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_PLL_TOP/PLL_top_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_DIV64', cell 'FreqDiv64', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "Fsel<3:0>" "Resetn" "Fout" "F_PFD")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_PLL_TOP', cell 'PLL_top_stimulus', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("Fin" "FSel<3:0>" "Resetn")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o PLL_top_stimulus            verilogams           *Stopping View*  
-\o FreqDiv64                   functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o dualcmimx                   spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o PLL_top_tb                  schematic                             
-\o PLL_top                     schematic                             
-\o PFD_man                     schematic                             
-\o NAND2X1                     cmos_sch                              
-\o DFCX4                       cmos_sch                              
-\o INVX1                       cmos_sch                              
-\o lpf                         schematic                             
-\o vco                         schematic                             
-\o vco_comparator              schematic                             
-\o vco_core                    schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o cp                          schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_PLL_TOP', cell 'PLL_top_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Apr 11 14:13:54 2016
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ IMP_PLL_TOP:PLL_top_tb:1
-\o           ] for Point ID (16 9).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.28/9/IMP_PLL_TOP:PLL_top_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (16 9) on testbench [
+\o *Info*    Run complete for Point ID (1 30) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 31) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 32) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 33) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 34) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 35) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 36) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 37) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 38) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 39) on testbench [
 \o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o 
@@ -737,3 +615,5 @@
 \o *Info*    Received signal SIGTERM.
 \o 
 \o 
+\# Memory report: on exit 278700032 (0x109ca000) bytes, process size 1026174976 (0x3d2a3000) bytes at UTC 2016.04.14 10:25:00.727
+\# Memory report: peak usage 278720512 (0x109cf000) bytes, process size 1026191360 (0x3d2a7000) bytes
