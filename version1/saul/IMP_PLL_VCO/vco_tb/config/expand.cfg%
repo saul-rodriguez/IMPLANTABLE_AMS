@@ -1,4 +1,4 @@
-//Revision 16
+//Revision 23
 config vco_tb;
 design IMP_PLL_VCO.vco_tb:schematic;
 liblist IMP_PLL_VCO;
@@ -7,8 +7,9 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_PLL_VCO.vco binding :veriloga;
+cell IMP_PLL_VCO.vco_comparator binding :schematic;
 cell IMP_PLL_VCO.vco_core binding :schematic;
+cell IMP_PLL_VCO.vco binding :av_analog_extracted;
 
 
 endconfig
