@@ -66,6 +66,15 @@ export CDS_ENABLE_EXP_PCELL=TRUE
 export RTL_HOME=/pkg/Cadence/installs/RC142
 export PATH=$PATH:$RTL_HOME/tools.lnx86/bin
 
+#############################
+# CALIBRE PHYS VERIFICATION #
+#############################
+export MGC_HOME=/pkg/calibre_2012/ixl_cal_2012.4_16.11
+#export MGC_HOME=/pkg/calibre_2015/aoi_cal_2015.4_16.11
+#export OA_PLUGIN_PATH=${MGC_HOME}/shared/pkgs/icv/tools/queryskl
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/$MGC_HOME/shared/pkgs/icv/tools/calibre_client/lib/64
+
+
 
 # Set license file location for Cadence software
 export LM_LICENSE_FILE=@license.it.kth.se
