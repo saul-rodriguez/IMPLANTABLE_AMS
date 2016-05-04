@@ -77,7 +77,7 @@ export MGC_HOME=/pkg/calibre_2012/ixl_cal_2012.4_16.11
 
 
 # Set license file location for Cadence software
-export LM_LICENSE_FILE=@license.it.kth.se
+export LM_LICENSE_FILE=@lic1.ict.kth.se
 
 #Start Cadence tools
 
