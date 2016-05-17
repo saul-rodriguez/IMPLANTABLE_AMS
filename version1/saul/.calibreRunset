@@ -1,6 +1,24 @@
-*drcRulesFile: $AMS_DIR/calibre/cmhv7sf/cacmhv7sfrules_all.run
+*drcRulesFile: /pkg/AMS411/calibre/cmhv7sf/cacmhv7sfrules_all.run
+*drcRunDir: /home/saul/projects/IMPLANTABLE_AMS/version1/saul/DRC
+*drcLayoutPaths: layout_tut.calibre.db
+*drcLayoutPrimary: layout_tut
+*drcLayoutLibrary: ALL_TESTS
+*drcLayoutView: layout
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: layout_tut.drc.results
+*drcPreTrigger: $AMS_DIR/programs/bin/cdl2calibre %s
+*drcSummaryFile: layout_tut.drc.summary
+*drcIncrDRCSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*drcIncrDRCLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*drcIncrDRCGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
 *lvsRulesFile: $AMS_DIR/calibre/cmhv7sf/cacmhv7sfrules_lvs.run
 *pexRulesFile: $AMS_DIR/calibre/cmhv7sf/cacmhv7sfrules_lvs.run
 *pexIncludeFiles: $AMS_DIR/calibre/cmhv7sf/XRC/cmhv7sf_7AM.xrc.cal
 *cmnPreTrigger: $AMS_DIR/programs/bin/cdl2calibre %s
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: ALL_TESTS
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: layout_tut.def
 *cmnIncludeRulesFilesAfterMain: 1
