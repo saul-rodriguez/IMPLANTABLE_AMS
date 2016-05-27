@@ -1,4 +1,4 @@
-//Revision 22
+//Revision 24
 config tia_lna_tb;
 design IMP_AN_TIA.tia_lna_tb:schematic;
 liblist IMP_AN_TIA;
@@ -7,15 +7,15 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_AN_TIA.tia binding :verilogams;
-
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic_dummy;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :verilogams;
-
-cell IMP_AN_MIXER.mixer binding :verilogams;
-
-cell CORELIB.MUX2X8 binding :cmos_sch;
 cell CORELIB.INVX1 binding :cmos_sch;
+cell CORELIB.MUX2X8 binding :cmos_sch;
+
+cell IMP_AN_MIXER.mixer binding :av_analog_extracted;
+
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic;
+
+cell IMP_AN_TIA.tia binding :schematic;
 
 
 endconfig

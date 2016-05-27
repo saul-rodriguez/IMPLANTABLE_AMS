@@ -1,24 +1,10 @@
 //Verilog-AMS HDL for "IMP_AN_MIXER", "mixer" "verilogams"
 
-/*
- * I/Q Switching-Current Down-converter Mixer
- * Author: Saul Rodriguez
- * Date: 2015-06-10
- *
- * Description:
- * The block's input is a differential current at the RF_P RF_N ports. This current is frequency-mixed
- * with either the I_P,I_N or Q_P,Q_N clock signals. The selection of the clock signal is done by using the
- * IQ_CTRL digital input. The core of the mixer is a current switching differential
- * mixer. The output currents are available in the ports IF_P, IF_N. 
- *
- */
-
-`timescale 1ns/1ps
 `include "constants.vams"
 `include "disciplines.vams"
 
-module mixer ( IF_N, IF_P, IQ_CTRL, I_N, I_P, Q_N, Q_P, RF_N, RF_P, vddd, vssa,
-vssd, vsub );
+module mixer ( IF_N, IF_P, IQ_CTRL, I_N, I_P, Q_N, Q_P, RF_N, RF_P, vdda, vddd,
+vssa, vssd, vsub );
 
   input Q_N;
   input vsub;
@@ -26,6 +12,7 @@ vssd, vsub );
   input I_P;
   input IQ_CTRL;
   input vssd;
+  input vdda;
   input RF_P;
   input I_N;
   input vssa;
@@ -33,6 +20,8 @@ vssd, vsub );
   output IF_P;
   input RF_N;
   input Q_P;
+
+
 
   logic IQ_CTRL, I_N, I_P, Q_N, Q_P;
   electrical IF_N, IF_P, RF_N, RF_P, vssa;
@@ -126,19 +115,3 @@ vssd, vsub );
 
 
 endmodule
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

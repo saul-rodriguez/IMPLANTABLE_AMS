@@ -1,0 +1,2837 @@
+\# Program start time UTC 2016.05.26 13:18:27.097
+\# Local time Thursday 26 May 2016, 3:18 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
+\o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
+\# Host name (type):	s2424.it.kth.se (x86_64)
+\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
+\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x1400000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x31, current max 0x3ffffa (4194298)
+\# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Initial sbrk value:	354729984 (0x1524c000) bytes
+\# Available memory:	63922304 (0x3cf6080) kilobytes
+\# System memory:	80336196 (0x4c9d544) kilobytes
+\# Maximum memory size:	81967259648 (0x1315a12000) bytes
+\# Max mem available:	65514164224 (0xf40f2d000) bytes
+\# Initial memory used:	57724928 (0x370d000) bytes
+\#        process size:	673447936 (0x28240000) bytes
+\# Qt version:		4.5.3
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		8518
+\o 
+\o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:	63910468 (0x3cf3244) kilobytes UTC 2016.05.26 13:18:27.352
+\# Memory report: Maximum memory size now 65525039104 (0xf4198c000) bytes, UTC 2016.05.26 13:18:27.353
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dcm.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexl.cxt 
+\o Loading oasis.cxt 
+\o Loading asimenv.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading socket.cxt 
+\o Loading alvs.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o ......................................................................................
+\o            ams AG hitkit v.ams_4.11
+\o ......................................................................................
+\o COPYRIGHT (c) 2013 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This hitkit and attached documentation are confidential information and may 
+\o only be used as authorized by the hitkit license agreement.
+\o ......................................................................................
+\o Loading simulator default settings.
+\o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
+\o No mx check
+\o //
+\o //  Calibre Skill Interface * (v2012.4_16.11) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o  
+\o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
+\o ...IBM PDK cmhv7sf procedures loaded.
+\o  
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\p hitkit: ams_4.11  Tech: h18a6am  User: saul 
+\o Initializing IBM_PDK functions
+\o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
+\o Licensed Materials - Property of IBM - All Rights Reserved 
+\o Copyright: International Business Machines Corporation, 2016
+\o This Material may not be copied without the written consent of 
+\o Semiconductor Research and Development Center, IBM Corp., Essex Junction, VT 05452-4299.
+\o  Default set for Left & Right WindowCoordIBM
+\o System hardware set for Linux IBM_PDK procedures
+\o Setting calibre env variable table for cmhv7sf 
+\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.0
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.0.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.0/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\# Memory report: now 169869312 (0xa200000) bytes, process size 917344256 (0x36ad9000) bytes at UTC 2016.05.26 13:22:24.719
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FLO = "2k"
+\o Setting var IQCTRL = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.0/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.0/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting May 26 15:22:26 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.0/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o tdndsx                      spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o cmimx                       spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o s1_gm1_block_tw             schematic                             
+\o res_250k                    schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o current_mirror1             schematic                             
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:22:27 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (0 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.0/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.1
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.1/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FLO = "2k"
+\o Setting var IQCTRL = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.1/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.1/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:23:04 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.1/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o tdndsx                      spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o cmimx                       spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o s1_gm1_block_tw             schematic                             
+\o res_250k                    schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o current_mirror1             schematic                             
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:23:04 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (1 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.1/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 63765368832 (0xed8b65000) bytes, UTC 2016.05.26 13:24:57.392
+\# Memory report: Maximum memory size now 62357417984 (0xe84cab000) bytes, UTC 2016.05.26 13:25:17.394
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.2
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.2.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.2/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FLO = "2k"
+\o Setting var IQCTRL = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.2/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.2/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:26:00 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.2/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:26:01 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (2 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.2/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 60952387584 (0xe310ba000) bytes, UTC 2016.05.26 13:27:47.400
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.3
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.3.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.3/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams3'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams3'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "100m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.3/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.3/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:28:22 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.3/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:28:22 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (3 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.3/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.4
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.4.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.4/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams4'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams4'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "100m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "90"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.4/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.4/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:29:03 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.4/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:29:03 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (4 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.4/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.5
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.5.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.5/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams5'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams5'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "10m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "90"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.5/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.5/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (5 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:30:22 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.5/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:30:22 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (5 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.5/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 64862818304 (0xf1a201000) bytes, UTC 2016.05.26 13:31:57.412
+\# Memory report: Maximum memory size now 63224602624 (0xeb87ae000) bytes, UTC 2016.05.26 13:32:27.413
+\# Memory report: Maximum memory size now 61455085568 (0xe4f023000) bytes, UTC 2016.05.26 13:32:37.413
+\# Available memory:	57996492 (0x374f4cc) kilobytes UTC 2016.05.26 13:32:47.414
+\# Memory report: Maximum memory size now 59589689344 (0xddfd28000) bytes, UTC 2016.05.26 13:32:47.414
+\# Memory report: Maximum memory size now 57652150272 (0xd6c560000) bytes, UTC 2016.05.26 13:32:57.414
+\# Memory report: Maximum memory size now 56030789632 (0xd0bb20000) bytes, UTC 2016.05.26 13:33:07.415
+\# Memory report: Maximum memory size now 54196416512 (0xc9e5bb000) bytes, UTC 2016.05.26 13:33:17.415
+\# Available memory:	50933260 (0x3092e0c) kilobytes UTC 2016.05.26 13:33:27.416
+\# Memory report: Maximum memory size now 52356939776 (0xc30b78000) bytes, UTC 2016.05.26 13:33:27.416
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.6
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.6.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.6/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams6'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams6'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams6'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "10m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "1.8"
+\o Setting var Phase = "90"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.6/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.6/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:33:28 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.6/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:33:29 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (6 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.6/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 50390319104 (0xbbb7f4000) bytes, UTC 2016.05.26 13:33:37.416
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.7
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.7.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.7/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams7'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams7'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams7'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (7 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "10m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "1"
+\o Setting var Phase = "90"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.7/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.7/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (7 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:35:13 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.7/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:35:13 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (7 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.7/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.8
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.8.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.8/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams8'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams8'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams8'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (8 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "10m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "1"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.8/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.8/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (8 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:35:54 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.8/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:35:54 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (8 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.8/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (8 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.9
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.9.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.9/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams9'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams9'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams9'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (9 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "10m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.9/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.9/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (9 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:36:35 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.9/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_MIXER', cell 'mixer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IF_N" "IF_P" "IQ_CTRL" "I_N" "I_P" "Q_N" "Q_P" "RF_N" "RF_P" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o mixer                       verilogams           *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:36:36 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (9 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.9/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (9 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.10
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.10.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.10/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams10'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams10'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams10'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (10 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "10m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.10/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.10/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (10 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:37:35 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.10/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o mixer                       schematic                             
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:37:35 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (10 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.10/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (10 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 48606744576 (0xb51301000) bytes, UTC 2016.05.26 13:37:57.425
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.11
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.11.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.11/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams11'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams11'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams11'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "50m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.11/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.11/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:42:45 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.11/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o mixer                       schematic                             
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:42:45 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (11 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.11/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.12
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.12.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.12/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams12'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams12'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams12'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "50m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.12/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.12/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:44:48 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.12/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o mixer                       schematic                             
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:44:48 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (12 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.12/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_MIXER
+\o 	Cell         = lna_mixer_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.13
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.13.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.13/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams13'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams13'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams13'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Amp = "50m"
+\o Setting var FLO = "2k"
+\o Setting var Freq = "2K"
+\o Setting var IQCTRL = "0"
+\o Setting var Phase = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.13/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.13/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 15:45:29 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.13/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - MUX2X8 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
+\o 
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
+\o      "vsub") 
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o vsin                        spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o lna_gm                      verilogams           *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o MUX2X8                      symbol               *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o vpulse                      spectre              *Stopping View*  
+\o tia                         verilogams           *Stopping View*  
+\o buffer                      verilogams           *Stopping View*  
+\o current_mirror1             veriloga             *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o lna_mixer_tb                schematic                             
+\o lpf_tw                      schematic                             
+\o power_rail4_V2              schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o lpf_cmfb                    schematic_dummy                       
+\o mixer                       schematic                             
+\o lna                         schematic                             
+\o lna_cmfb                    schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting May 26 15:45:29 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (13 1).
+\o 
+\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.13/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o validating simulator hierarchy...
+\o       ...successful.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 1) on testbench [
+\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:	63266004 (0x3c55cd4) kilobytes UTC 2016.05.26 13:48:57.456
+\# Memory report: Maximum memory size now 64987402240 (0xf218d1000) bytes, UTC 2016.05.26 13:48:57.456
+\o Job timed out after no activity in 300 seconds.
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
