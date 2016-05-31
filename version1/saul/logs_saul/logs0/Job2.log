@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.05.26 15:24:12.200
-\# Local time Thursday 26 May 2016, 5:24 pm
+\# Program start time UTC 2016.05.31 13:17:24.800
+\# Local time Tuesday 31 May 2016, 3:17 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x4c00000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1400000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	456052736 (0x1b2ed000) bytes
-\# Available memory:	58265456 (0x3790f70) kilobytes
+\# Initial sbrk value:	459526144 (0x1b63d000) bytes
+\# Available memory:	68982592 (0x41c9740) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	81865932800 (0x130f970000) bytes
-\# Max mem available:	59721547776 (0xde7ae8000) bytes
-\# Initial memory used:	57720832 (0x370c000) bytes
-\#        process size:	673443840 (0x2823f000) bytes
+\# Maximum memory size:	81862463488 (0x130f621000) bytes
+\# Max mem available:	70695899136 (0x1075cdd000) bytes
+\# Initial memory used:	57724928 (0x370d000) bytes
+\#        process size:	673447936 (0x28240000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		12221
+\# Process Id:		18857
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	58265416 (0x3790f48) kilobytes UTC 2016.05.26 15:24:12.643
-\# Memory report: Maximum memory size now 59744501760 (0xde90cc000) bytes, UTC 2016.05.26 15:24:12.643
+\# Available memory:	68970504 (0x41c6808) kilobytes UTC 2016.05.31 13:17:25.038
+\# Memory report: Maximum memory size now 70706520064 (0x10766fe000) bytes, UTC 2016.05.31 13:17:25.038
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -119,17 +119,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_MIXER
-\o 	Cell         = lna_mixer_tb
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb2
 \o 	View         = config
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.16
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	State Name   = IMP_DAC:RDAC32_tb2:1_none_Interactive.5
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.5.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -137,7 +137,7 @@
 \o Loading awv.cxt 
 \o Loading viva.cxt 
 \o Loading spectrei.cxt 
-\# Memory report: now 168427520 (0xa0a0000) bytes, process size 915902464 (0x36979000) bytes at UTC 2016.05.26 15:24:15.874
+\# Memory report: now 168710144 (0xa0e5000) bytes, process size 916185088 (0x369be000) bytes at UTC 2016.05.31 13:17:27.617
 \o Loading relXpert.cxt 
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
@@ -164,29 +164,27 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (16 1) on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o *Info*    Run start for Point ID (5 1) on testbench [
+\o           IMP_DAC:RDAC32_tb2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var Amp = "50m"
-\o Setting var FLO = "2k"
-\o Setting var Freq = "2K"
-\o Setting var IQCTRL = "0"
-\o Setting var Phase = "0"
+\o Setting var CLOCKWIDTH = "31.25"
+\o Setting var I_BIAS = "2u"
+\o Setting var STEPNUM = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb2:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (16 1)
+\o *Info*    Creating Netlist for Point ID (5 1)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
@@ -195,12 +193,12 @@
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o Loading verilogI.cxt 
-\o Begin Incremental Netlisting May 26 17:24:19 2016
+\o Begin Incremental Netlisting May 31 15:17:30 2016
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb2:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -235,30 +233,61 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb2 view:config
+\o       4096 nodes ...
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-186): Unable to generate explicit netlist for the 'IMP_DAC/RDAC32/av_analog_extracted' cell view because split buses and/or bundle terminals are present in it.  
+\o Set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' or set the hnlVerilogTermSyncUp variable as 'mergeAll' and netlist again.
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
-\o      "vsub") 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -267,39 +296,61 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vsin                        spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o lna_gm                      verilogams           *Stopping View*  
-\o cap                         spectre              *Stopping View*  
 \o pcapacitor                  spectre              *Stopping View*  
 \o presistor                   spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
 \o nfetx                       spectre              *Stopping View*  
 \o diodenwx                    spectre              *Stopping View*  
-\o tdndsx                      spectre              *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o current_mirror1             veriloga             *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
 \o res                         spectre              *Stopping View*  
-\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
 \o mosvartx                    spectre              *Stopping View*  
-\o lna_mixer_tb                schematic                             
-\o lpf_tw                      schematic                             
-\o power_rail4_V2              schematic                             
-\o power_rail2_V2              schematic                             
-\o power_rail1_V2              schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o mixer                       av_analog_extracted                   
-\o lna                         schematic                             
-\o lna_cmfb                    schematic                             
+\o RDAC32_tb                   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o DacCtrl                     schematic                             
+\o fillcaps                    schematic                             
+\o RDAC32                      av_analog_extracted                   
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb2', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting May 26 17:24:23 2016
+\o End netlisting May 31 15:17:33 2016
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -309,10 +360,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (16 1).
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb2:1 ]
+\o           for Point ID (5 1).
 \o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.5/1/IMP_DAC:RDAC32_tb2:1/psf.
 \o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
@@ -324,190 +375,14 @@
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-\o         to view the simulation run log.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
 \o reading simulation data...
 \o       ...successful.
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre at time = 375 us during transient
-\o           analysis `tran'.
-\o ERROR (SPECTRE-16384): Signal
-\o           V(lna_mixer_tb.VTIA_P) = 1.02805 GV exceeds
+\o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (16 1) on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var Amp = "50m"
-\o Setting var FLO = "2k"
-\o Setting var Freq = "2K"
-\o Setting var IQCTRL = "0"
-\o Setting var Phase = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (16 1)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 26 17:24:57 2016
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o vsin                        spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o lna_gm                      verilogams           *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o pcapacitor                  spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o diodenwx                    spectre              *Stopping View*  
-\o tdndsx                      spectre              *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o current_mirror1             veriloga             *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o s1_gm1_block_tw             verilogams           *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o lna_mixer_tb                schematic                             
-\o lpf_tw                      schematic                             
-\o power_rail4_V2              schematic                             
-\o power_rail2_V2              schematic                             
-\o power_rail1_V2              schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o mixer                       av_analog_extracted                   
-\o lna                         schematic                             
-\o lna_cmfb                    schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting May 26 17:25:00 2016
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (16 1).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.16/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-\o         to view the simulation run log.
-\o reading simulation data...
-\o       ...successful.
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre at time = 375 us during transient
-\o           analysis `tran'.
-\o ERROR (SPECTRE-16384): Signal
-\o           V(lna_mixer_tb.VTIA_P) = 1.02805 GV exceeds
+\o *Info*    Run complete for Point ID (5 1) on testbench [
+\o           IMP_DAC:RDAC32_tb2:1 ].
 \o 
 \o 
 \o 
@@ -520,17 +395,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_MIXER
-\o 	Cell         = lna_mixer_tb
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb2
 \o 	View         = config
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.17
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	State Name   = IMP_DAC:RDAC32_tb2:1_none_Interactive.6
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.6.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.6/1/IMP_DAC:RDAC32_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -542,29 +417,27 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (17 1) on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o *Info*    Run start for Point ID (6 1) on testbench [
+\o           IMP_DAC:RDAC32_tb2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var Amp = "50m"
-\o Setting var FLO = "2k"
-\o Setting var Freq = "2K"
-\o Setting var IQCTRL = "0"
-\o Setting var Phase = "0"
+\o Setting var CLOCKWIDTH = "16"
+\o Setting var I_BIAS = "2u"
+\o Setting var STEPNUM = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.6/1/IMP_DAC:RDAC32_tb2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.6/1/IMP_DAC:RDAC32_tb2:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (17 1)
+\o *Info*    Creating Netlist for Point ID (6 1)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
@@ -572,12 +445,12 @@
 \o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 26 17:27:02 2016
+\o Begin Incremental Netlisting May 31 15:24:17 2016
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.6/1/IMP_DAC:RDAC32_tb2:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -602,30 +475,61 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb2 view:config
+\o       4096 nodes ...
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - CORELIB  Cell - INVX1 ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX16_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX8_HV ***
+\o               *** Library - CORELIB_HV  Cell - FILLCAPX4_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - IMUX2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - MUX2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI21X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI31X6_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCSX2_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - DFCX1_HV ***
+\o               *** Library - CORELIB_HV  Cell - XNOR2X2_HV ***
+\o               *** Library - CORELIB_HV  Cell - HAX3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AOI32X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AND2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - INVXL_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR3X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NAND2XL_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - NOR2X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - AO22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OAI22X3_HV ***
+\o               *** Library - CORELIB_HV  Cell - OR3X3_HV ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-186): Unable to generate explicit netlist for the 'IMP_DAC/RDAC32/av_analog_extracted' cell view because split buses and/or bundle terminals are present in it.  
+\o Set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' or set the hnlVerilogTermSyncUp variable as 'mergeAll' and netlist again.
+\o 
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
 \o design.
 \o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
-\o      "vsub") 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -634,39 +538,61 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vsin                        spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o lna_gm                      verilogams           *Stopping View*  
-\o cap                         spectre              *Stopping View*  
 \o pcapacitor                  spectre              *Stopping View*  
 \o presistor                   spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
 \o nfetx                       spectre              *Stopping View*  
 \o diodenwx                    spectre              *Stopping View*  
-\o tdndsx                      spectre              *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o current_mirror1             veriloga             *Stopping View*  
+\o OR3X3_HV                    symbol               *Stopping View*  
+\o OAI22X3_HV                  symbol               *Stopping View*  
+\o AO22X3_HV                   symbol               *Stopping View*  
+\o NOR2X3_HV                   symbol               *Stopping View*  
+\o OR2X3_HV                    symbol               *Stopping View*  
+\o NAND2XL_HV                  symbol               *Stopping View*  
+\o NOR3X3_HV                   symbol               *Stopping View*  
+\o INVXL_HV                    symbol               *Stopping View*  
+\o NAND3X3_HV                  symbol               *Stopping View*  
+\o NOR2XL_HV                   symbol               *Stopping View*  
+\o AND2X3_HV                   symbol               *Stopping View*  
+\o AOI32X3_HV                  symbol               *Stopping View*  
+\o HAX3_HV                     symbol               *Stopping View*  
+\o XNOR2X2_HV                  symbol               *Stopping View*  
+\o DFCX1_HV                    symbol               *Stopping View*  
+\o AOI22X3_HV                  symbol               *Stopping View*  
+\o DFCSX2_HV                   symbol               *Stopping View*  
+\o INVX3_HV                    symbol               *Stopping View*  
+\o OAI31X6_HV                  symbol               *Stopping View*  
+\o AOI21X3_HV                  symbol               *Stopping View*  
+\o AO21X3_HV                   symbol               *Stopping View*  
+\o MUX2X3_HV                   symbol               *Stopping View*  
+\o IMUX2XL_HV                  symbol               *Stopping View*  
+\o DFCX3_HV                    symbol               *Stopping View*  
+\o FILLCAPX4_HV                symbol               *Stopping View*  
+\o FILLCAPX8_HV                symbol               *Stopping View*  
+\o FILLCAPX16_HV               symbol               *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
 \o res                         spectre              *Stopping View*  
-\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o INVX1                       symbol               *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
 \o mosvartx                    spectre              *Stopping View*  
-\o lna_mixer_tb                schematic                             
-\o lpf_tw                      schematic                             
-\o power_rail4_V2              schematic                             
-\o power_rail2_V2              schematic                             
-\o power_rail1_V2              schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o mixer                       av_analog_extracted                   
-\o lna                         schematic                             
-\o lna_cmfb                    schematic                             
+\o RDAC32_tb                   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o DacCtrl                     schematic                             
+\o fillcaps                    schematic                             
+\o RDAC32                      av_analog_extracted                   
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb2', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting May 26 17:27:05 2016
+\o End netlisting May 31 15:24:20 2016
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -676,10 +602,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (17 1).
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb2:1 ]
+\o           for Point ID (6 1).
 \o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.6/1/IMP_DAC:RDAC32_tb2:1/psf.
 \o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
@@ -690,190 +616,21 @@
 \o To check for output from compilation, elaboration and simulation run, 
 \o right-click on the test name, result name, or any value in the "Results" 
 \o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-\o         to view the simulation run log.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
 \o reading simulation data...
 \o       ...successful.
+\o *Info*    Client has finished evaluating ... 
 \o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
 \o 
-\o           Error found by spectre at time = 313.608 us during
-\o           transient analysis `tran'.
-\o ERROR (SPECTRE-16384): Signal
-\o           V(lna_mixer_tb.VTIA_P) = 1.00539 GV exceeds
-\o 
+\o *Error*   Evaluating expression ((VT("/VOP") - VT("/VON"))). 
 \o 
 \o 
 \o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (17 1) on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var Amp = "50m"
-\o Setting var FLO = "2k"
-\o Setting var Freq = "2K"
-\o Setting var IQCTRL = "0"
-\o Setting var Phase = "0"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (17 1)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 26 17:27:33 2016
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
-\o      "vsub") 
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o vsin                        spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o lna_gm                      verilogams           *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o pcapacitor                  spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o diodenwx                    spectre              *Stopping View*  
-\o tdndsx                      spectre              *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o current_mirror1             veriloga             *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o s1_gm1_block_tw             verilogams           *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o lna_mixer_tb                schematic                             
-\o lpf_tw                      schematic                             
-\o power_rail4_V2              schematic                             
-\o power_rail2_V2              schematic                             
-\o power_rail1_V2              schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o mixer                       av_analog_extracted                   
-\o lna                         schematic                             
-\o lna_cmfb                    schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting May 26 17:27:35 2016
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (17 1).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.17/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-\o         to view the simulation run log.
-\o reading simulation data...
-\o       ...successful.
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre at time = 313.608 us during
-\o           transient analysis `tran'.
-\o ERROR (SPECTRE-16384): Signal
-\o           V(lna_mixer_tb.VTIA_P) = 1.00539 GV exceeds
+\o *Info*    Run complete for Point ID (6 1) on testbench [
+\o           IMP_DAC:RDAC32_tb2:1 ].
 \o 
 \o 
 \o 
@@ -886,17 +643,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_MIXER
-\o 	Cell         = lna_mixer_tb
+\o 	Library      = IMP_DAC
+\o 	Cell         = RDAC32_tb2
 \o 	View         = config
 \o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_MIXER:lna_mixer_tb:1_none_Interactive.18
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data
+\o 	State Name   = IMP_DAC:RDAC32_tb2:1_none_Interactive.7
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_MIXER/lna_mixer_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_DAC/RDAC32_tb2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -908,29 +665,27 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 1) on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o *Info*    Run start for Point ID (7 1) on testbench [
+\o           IMP_DAC:RDAC32_tb2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var Amp = "50m"
-\o Setting var FLO = "2k"
-\o Setting var Freq = "2K"
-\o Setting var IQCTRL = "0"
-\o Setting var Phase = "0"
+\o Setting var CLOCKWIDTH = "16"
+\o Setting var I_BIAS = "2u"
+\o Setting var STEPNUM = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 1)
+\o *Info*    Creating Netlist for Point ID (7 1)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
@@ -938,12 +693,12 @@
 \o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 26 17:28:52 2016
+\o Begin Incremental Netlisting May 31 15:32:21 2016
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -968,30 +723,35 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb2 view:config
+\o       4096 nodes ...
+\o WARNING (VLOGNET-186): Unable to generate explicit netlist for the 'IMP_DAC/RDAC32/av_analog_extracted' cell view because split buses and/or bundle terminals are present in it.  
+\o Set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' or set the hnlVerilogTermSyncUp variable as 'mergeAll' and netlist again.
+\o 
+\o WARNING (VLOGNET-110): The cell 'CORELIB_HV/FILLCAPX4_HV/cmos_sch' has no ports. Make sure that this was the intended 
 \o design.
 \o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o WARNING (VLOGNET-110): The cell 'CORELIB_HV/FILLCAPX8_HV/cmos_sch' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o WARNING (VLOGNET-110): The cell 'CORELIB_HV/FILLCAPX16_HV/cmos_sch' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
-\o      "vsub") 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -1000,39 +760,63 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vsin                        spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o lna_gm                      verilogams           *Stopping View*  
-\o cap                         spectre              *Stopping View*  
 \o pcapacitor                  spectre              *Stopping View*  
 \o presistor                   spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
 \o nfetx                       spectre              *Stopping View*  
 \o diodenwx                    spectre              *Stopping View*  
-\o tdndsx                      spectre              *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o current_mirror1             veriloga             *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o pfeti                       spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
 \o res                         spectre              *Stopping View*  
-\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
 \o mosvartx                    spectre              *Stopping View*  
-\o lna_mixer_tb                schematic                             
-\o lpf_tw                      schematic                             
-\o power_rail4_V2              schematic                             
-\o power_rail2_V2              schematic                             
-\o power_rail1_V2              schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o mixer                       av_analog_extracted                   
-\o lna                         schematic                             
-\o lna_cmfb                    schematic                             
+\o RDAC32_tb                   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o INVX1                       cmos_sch                              
+\o DacCtrl                     schematic                             
+\o fillcaps                    schematic                             
+\o FILLCAPX16_HV               cmos_sch                              
+\o FILLCAPX8_HV                cmos_sch                              
+\o FILLCAPX4_HV                cmos_sch                              
+\o DFCX3_HV                    cmos_sch                              
+\o IMUX2XL_HV                  cmos_sch                              
+\o MUX2X3_HV                   cmos_sch                              
+\o AO21X3_HV                   cmos_sch                              
+\o AOI21X3_HV                  cmos_sch                              
+\o OAI31X6_HV                  cmos_sch                              
+\o INVX3_HV                    cmos_sch                              
+\o DFCSX2_HV                   cmos_sch                              
+\o AOI22X3_HV                  cmos_sch                              
+\o DFCX1_HV                    cmos_sch                              
+\o XNOR2X2_HV                  cmos_sch                              
+\o HAX3_HV                     cmos_sch                              
+\o AOI32X3_HV                  cmos_sch                              
+\o AND2X3_HV                   cmos_sch                              
+\o NOR2XL_HV                   cmos_sch                              
+\o NAND3X3_HV                  cmos_sch                              
+\o INVXL_HV                    cmos_sch                              
+\o NOR3X3_HV                   cmos_sch                              
+\o NAND2XL_HV                  cmos_sch                              
+\o OR2X3_HV                    cmos_sch                              
+\o NOR2X3_HV                   cmos_sch                              
+\o AO22X3_HV                   cmos_sch                              
+\o OAI22X3_HV                  cmos_sch                              
+\o OR3X3_HV                    cmos_sch                              
+\o nfetid                      schematic                             
+\o RDAC32                      av_analog_extracted                   
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb2', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting May 26 17:28:56 2016
+\o End netlisting May 31 15:32:25 2016
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -1042,10 +826,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (18 1).
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb2:1 ]
+\o           for Point ID (7 1).
 \o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1/psf.
 \o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
@@ -1059,17 +843,10 @@
 \o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
 \o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
 \o         to view the simulation run log.
-\o reading simulation data...
-\o       ...successful.
 \o 
 \o *Error*   Error ID  = 5011
 \o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre at time = 314.429 us during
-\o           transient analysis `tran'.
-\o ERROR (SPECTRE-16384): Signal
-\o           V(lna_mixer_tb.VTIA_P) = 1.00005 GV exceeds
-\o 
+\o  
 \o 
 \o 
 \o 
@@ -1082,41 +859,39 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (18 1) on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ].
+\o *Info*    Run start for Point ID (7 1) on testbench [
+\o           IMP_DAC:RDAC32_tb2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var Amp = "50m"
-\o Setting var FLO = "2k"
-\o Setting var Freq = "2K"
-\o Setting var IQCTRL = "0"
-\o Setting var Phase = "0"
+\o Setting var CLOCKWIDTH = "16"
+\o Setting var I_BIAS = "2u"
+\o Setting var STEPNUM = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1
+\o           /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (18 1)
+\o *Info*    Creating Netlist for Point ID (7 1)
 \o 
 \o generate netlist...
 \o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
 \o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
 \o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting May 26 17:29:24 2016
+\o Begin Incremental Netlisting May 31 15:32:39 2016
 \o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
 \o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
 \o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o "/home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
 \o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 \o before invoking Verilog netlister.
 \o  
@@ -1141,30 +916,35 @@
 \o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
 \o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o Traverse Config lib:IMP_AN_MIXER cell:lna_mixer_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_MIXER/lna_mixer_tb/schematic' has no ports. Make sure that this was the intended 
+\o Traverse Config lib:IMP_DAC cell:RDAC32_tb2 view:config
+\o       4096 nodes ...
+\o WARNING (VLOGNET-186): Unable to generate explicit netlist for the 'IMP_DAC/RDAC32/av_analog_extracted' cell view because split buses and/or bundle terminals are present in it.  
+\o Set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' or set the hnlVerilogTermSyncUp variable as 'mergeAll' and netlist again.
+\o 
+\o WARNING (VLOGNET-110): The cell 'CORELIB_HV/FILLCAPX4_HV/cmos_sch' has no ports. Make sure that this was the intended 
 \o design.
 \o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LPF', cell 's1_gm1_block_tw', view 'verilogams' will be
+\o WARNING (VLOGNET-110): The cell 'CORELIB_HV/FILLCAPX8_HV/cmos_sch' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o WARNING (VLOGNET-110): The cell 'CORELIB_HV/FILLCAPX16_HV/cmos_sch' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o WARNING (VLOGNET-110): The cell 'IMP_DIG_SIGGEN/fillcaps/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'schematic' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("IOUT_N" "IOUT_P" "VIN_N" "VIN_P" "bias_in" "vdda" "vssa" "vsub")
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
 \o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_BUFFER', cell 'buffer', view 'verilogams' will be
+\o WARNING (VLOGNET-110): The cell 'IMP_DAC/RDAC32_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
 \o  done using the user specified port order as follows:
 \o 
-\o  => ("OUT" "IN" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_TIA', cell 'tia', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("voutn" "voutp" "Gain" "Iinn" "Iinp" "bias_in" "vdda" "vssa" "vsub")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_AN_LNA', cell 'lna_gm', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("bias_CMFB" "bias_in" "G0" "IoutN" "IoutP" "VIN_N" "VIN_P" "vdda" "vddd" "vssa" "vssd" 
-\o      "vsub") 
+\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
 \o 
 \o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
 \o 
@@ -1173,39 +953,63 @@
 \o CELL NAME                   VIEW NAME            NOTE             
 \o ---------                   ---------            ----             
 \o 
-\o vsin                        spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o lna_gm                      verilogams           *Stopping View*  
-\o cap                         spectre              *Stopping View*  
 \o pcapacitor                  spectre              *Stopping View*  
 \o presistor                   spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
 \o nfetx                       spectre              *Stopping View*  
 \o diodenwx                    spectre              *Stopping View*  
-\o tdndsx                      spectre              *Stopping View*  
 \o subcx                       spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o tia                         verilogams           *Stopping View*  
-\o buffer                      verilogams           *Stopping View*  
-\o current_mirror1             veriloga             *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o pfeti                       spectre              *Stopping View*  
+\o stimulus_block              verilogams           *Stopping View*  
 \o res                         spectre              *Stopping View*  
-\o s1_gm1_block_tw             verilogams           *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
 \o mosvartx                    spectre              *Stopping View*  
-\o lna_mixer_tb                schematic                             
-\o lpf_tw                      schematic                             
-\o power_rail4_V2              schematic                             
-\o power_rail2_V2              schematic                             
-\o power_rail1_V2              schematic                             
-\o lpf_cmfb                    schematic_dummy                       
-\o mixer                       av_analog_extracted                   
-\o lna                         schematic                             
-\o lna_cmfb                    schematic                             
+\o RDAC32_tb                   schematic                             
+\o Signal_Generator_CMFB       schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o Signal_Generator_Amplifier   schematic                             
+\o INVX1                       cmos_sch                              
+\o DacCtrl                     schematic                             
+\o fillcaps                    schematic                             
+\o FILLCAPX16_HV               cmos_sch                              
+\o FILLCAPX8_HV                cmos_sch                              
+\o FILLCAPX4_HV                cmos_sch                              
+\o DFCX3_HV                    cmos_sch                              
+\o IMUX2XL_HV                  cmos_sch                              
+\o MUX2X3_HV                   cmos_sch                              
+\o AO21X3_HV                   cmos_sch                              
+\o AOI21X3_HV                  cmos_sch                              
+\o OAI31X6_HV                  cmos_sch                              
+\o INVX3_HV                    cmos_sch                              
+\o DFCSX2_HV                   cmos_sch                              
+\o AOI22X3_HV                  cmos_sch                              
+\o DFCX1_HV                    cmos_sch                              
+\o XNOR2X2_HV                  cmos_sch                              
+\o HAX3_HV                     cmos_sch                              
+\o AOI32X3_HV                  cmos_sch                              
+\o AND2X3_HV                   cmos_sch                              
+\o NOR2XL_HV                   cmos_sch                              
+\o NAND3X3_HV                  cmos_sch                              
+\o INVXL_HV                    cmos_sch                              
+\o NOR3X3_HV                   cmos_sch                              
+\o NAND2XL_HV                  cmos_sch                              
+\o OR2X3_HV                    cmos_sch                              
+\o NOR2X3_HV                   cmos_sch                              
+\o AO22X3_HV                   cmos_sch                              
+\o OAI22X3_HV                  cmos_sch                              
+\o OR3X3_HV                    cmos_sch                              
+\o nfetid                      schematic                             
+\o RDAC32                      av_analog_extracted                   
 \o 
 \o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_MIXER', cell 'lna_mixer_tb', and view 'config' has been netlisted successfully.
+\o INFO (VLOGNET-80): The library 'IMP_DAC', cell 'RDAC32_tb2', and view 'config' has been netlisted successfully.
 \o 
-\o End netlisting May 26 17:29:27 2016
+\o End netlisting May 31 15:32:42 2016
 \o INFO (193) : AMS netlisting has completed successfully.
 \o To view the modules, right-click the test name on the Tests and Analyses 
 \o assistant pane and choose Netlist->Display menu option.
@@ -1215,10 +1019,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_MIXER:lna_mixer_tb:1 ] for Point ID (18 1).
+\o *Info*    Running simulation on testbench [ IMP_DAC:RDAC32_tb2:1 ]
+\o           for Point ID (7 1).
 \o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_MIXER/lna_mixer_tb/adexl/results/data/Interactive.18/1/IMP_AN_MIXER:lna_mixer_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_DAC/RDAC32_tb2/adexl/results/data/Interactive.7/1/IMP_DAC:RDAC32_tb2:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o validating simulator hierarchy...
@@ -1230,22 +1034,11 @@
 \o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
 \o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
 \o         to view the simulation run log.
-\o reading simulation data...
-\o       ...successful.
 \o 
 \o *Error*   Error ID  = 5011
 \o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Error found by spectre at time = 314.429 us during
-\o           transient analysis `tran'.
-\o ERROR (SPECTRE-16384): Signal
-\o           V(lna_mixer_tb.VTIA_P) = 1.00005 GV exceeds
+\o  
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Received signal SIGINT.
 \o 
 \o 

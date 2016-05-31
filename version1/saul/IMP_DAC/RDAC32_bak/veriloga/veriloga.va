@@ -1,0 +1,172 @@
+// VerilogA for IMP_DAC, RDAC32, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+
+/*
+  P  Voltage
+ ----------- 
+  8  0.0500
+  7  0.0490
+  6  0.0462
+  5  0.0416
+  4  0.0354
+  3  0.0278
+  2  0.0191
+  1  0.0098
+  
+  0       0
+
+  9  -0.0098
+ 10  -0.0191
+ 11  -0.0278
+ 12  -0.0354
+ 13  -0.0416
+ 14  -0.0462
+ 15  -0.0490
+ 16  -0.0500
+
+*/
+
+module RDAC32(VON, VOP, bias, vdda, vssa, vsub, P);
+inout VON;
+electrical VON;
+inout VOP;
+electrical VOP;
+inout bias;
+electrical bias;
+inout vdda;
+electrical vdda;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+input [16:0] P;
+electrical [16:0] P;
+
+
+real td = 1e-09 ;
+real vth = 0.5 ;
+real vh = 1.8;
+real vl = 0;
+
+real vcm = 0.9;
+
+real vop,von; //Outputs 
+real bias_cur_factor;
+	
+analog begin
+	bias_cur_factor = I(bias)/2.0e-6;
+
+	@(cross(V(P[0]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm;
+		von = vcm;
+	end
+
+	@(cross(V(P[1]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0098*bias_cur_factor;
+		von = vcm-0.0098*bias_cur_factor;
+	end
+
+    @(cross(V(P[2]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+ 0.0191*bias_cur_factor;
+		von = vcm- 0.0191*bias_cur_factor;
+	end
+     
+    @(cross(V(P[3]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0278*bias_cur_factor;
+		von = vcm-0.0278*bias_cur_factor;
+	end
+   
+
+   @(cross(V(P[4]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0354*bias_cur_factor;
+		von = vcm-0.0354*bias_cur_factor;
+	end
+
+   @(cross(V(P[5]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0416*bias_cur_factor;
+		von = vcm-0.0416*bias_cur_factor;
+	end
+
+   @(cross(V(P[6]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0462*bias_cur_factor;
+		von = vcm-0.0462*bias_cur_factor;
+	end
+
+   @(cross(V(P[7]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0490*bias_cur_factor;
+		von = vcm-0.0490*bias_cur_factor;
+	end
+
+   @(cross(V(P[8]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm+0.0500*bias_cur_factor;
+		von = vcm-0.0500*bias_cur_factor;
+	end
+
+	@(cross(V(P[9]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0098*bias_cur_factor;
+		von = vcm+0.0098*bias_cur_factor;
+	end
+
+    @(cross(V(P[10]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm- 0.0191*bias_cur_factor;
+		von = vcm+ 0.0191*bias_cur_factor;
+	end
+     
+    @(cross(V(P[11]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0278*bias_cur_factor;
+		von = vcm+0.0278*bias_cur_factor;
+	end
+   
+
+   @(cross(V(P[12]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0354*bias_cur_factor;
+		von = vcm+0.0354*bias_cur_factor;
+	end
+
+   @(cross(V(P[13]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0416*bias_cur_factor;
+		von = vcm+0.0416*bias_cur_factor;
+	end
+
+   @(cross(V(P[14]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0462*bias_cur_factor;
+		von = vcm+0.0462*bias_cur_factor;
+	end
+
+   @(cross(V(P[15]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0490*bias_cur_factor;
+		von = vcm+0.0490*bias_cur_factor;
+	end
+
+   @(cross(V(P[16]) - vth, 1) or initial_step) 
+	begin
+		vop = vcm-0.0500*bias_cur_factor;
+		von = vcm+0.0500*bias_cur_factor;
+	end
+
+V(VOP) <+ vop;
+V(VON) <+ von;
+
+end
+
+
+endmodule
