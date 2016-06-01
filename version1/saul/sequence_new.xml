@@ -1,5 +1,5 @@
 <rdeSequenceEnvs name="current">
-	<StringList name="bottom_routing_layer" multiselect="false" singleSelectPosition="1">
+	<StringList name="bottom_routing_layer" multiselect="false" singleSelectPosition="0">
 		<s value="PC"/>
 		<s value="M1"/>
 		<s value="M2"/>
@@ -9,19 +9,17 @@
 		<s value="AM"/>
 	</StringList>
 	<Boolean name="close_design_when_finished" default="true">true </Boolean>
-	<StringList name="default_routespec" multiselect="false" singleSelectPosition="7">
+	<StringList name="default_routespec" multiselect="false" singleSelectPosition="6">
 		<s value="LEFDefaultRouteSpec"/>
 		<s value="LEFSpecialRouteSpec"/>
 		<s value="VLMDefaultSetup"/>
 		<s value="VSRDefaultSetup"/>
 		<s value="cmhv7sf6AM"/>
-		<s value="dsn:catenaDesignRules"/>
 		<s value="virtuosoDefaultExtractorSetup"/>
 		<s value="virtuosoDefaultSetup"/>
 		<s value="virtuosoDefaultTaper"/>
 	</StringList>
 	<Boolean name="has_std_vias">true </Boolean>
-	<Boolean name="inited" default="true">true </Boolean>
 	<StringList name="operate_on" multiselect="false" singleSelectPosition="1">
 		<s value="selected_set"/>
 		<s value="cellview"/>
@@ -51,7 +49,7 @@
 		<s value="min_pin"/>
 		<s value="avg_pin"/>
 	</StringList>
-	<StringList name="top_routing_layer" multiselect="false" singleSelectPosition="3">
+	<StringList name="top_routing_layer" multiselect="false" singleSelectPosition="0">
 		<s value="AM"/>
 		<s value="MT"/>
 		<s value="M4"/>
@@ -60,7 +58,7 @@
 		<s value="M1"/>
 		<s value="PC"/>
 	</StringList>
-	<Boolean name="use_double_cut_vias">true </Boolean>
+	<Boolean name="use_double_cut_vias">false </Boolean>
 	<StringList name="use_grid" multiselect="false" singleSelectPosition="0">
 		<s value="manufacturing"/>
 		<s value="routing"/>
@@ -115,11 +113,11 @@
 	</Package>
 	<Package name="net_options">
 		<Boolean name="excl_clock" default="true">true </Boolean>
-		<Boolean name="excl_power_and_ground" default="true">false </Boolean>
+		<Boolean name="excl_power_and_ground" default="true">true </Boolean>
 		<Boolean name="lock_after_routed">false </Boolean>
 		<Boolean name="lock_clock" default="true">true </Boolean>
-		<Boolean name="lock_existing_routing">true </Boolean>
-		<Boolean name="lock_power_and_ground" default="true">false </Boolean>
+		<Boolean name="lock_existing_routing">false </Boolean>
+		<Boolean name="lock_power_and_ground" default="true">true </Boolean>
 		<String name="net_exclude_file"></String>
 		<String name="net_lock_file"></String>
 		<StringList name="route_nets_of_type" multiselect="false" singleSelectPosition="1">
@@ -131,10 +129,10 @@
 		<Boolean name="unlock_before_routing">false </Boolean>
 	</Package>
 	<Package name="run_env">
-		<String name="cellName">"RDAC32"</String>
+		<String name="cellName">"Signal_Generator_bias"</String>
 		<Boolean name="is_db_opened">false </Boolean>
-		<String name="libName">"IMP_DAC"</String>
-		<String name="viewName">"layout"</String>
+		<String name="libName">"IMP_AN_SIGNAL_GEN_GM"</String>
+		<String name="viewName">"ModgenTmplayout17416"</String>
 	</Package>
 	<Package name="special_blockage_treatment">
 		<Boolean name="enabled">false </Boolean>
@@ -310,7 +308,7 @@
 		<Boolean name="crossing">false </Boolean>
 		<Boolean name="fix_extensions">false </Boolean>
 		<Boolean name="maximize_cuts" default="true">true </Boolean>
-		<Boolean name="minimize_unprotected_vias">true </Boolean>
+		<Boolean name="minimize_unprotected_vias">false </Boolean>
 		<Boolean name="minimize_unprotected_vias_peer">false </Boolean>
 		<Boolean name="minimum_area" default="true">true </Boolean>
 		<Boolean name="minimum_edge_length" default="true">true </Boolean>
@@ -338,9 +336,9 @@
 	</rdeStepEnvs>
 	<rdeStepEnvs name="step7">
 		<Boolean name="checkpoint" default="true">true </Boolean>
-		<String name="checkpoint_status">"rc"</String>
+		<String name="checkpoint_status">"not_run"</String>
 		<Boolean name="run" default="true">true </Boolean>
-		<String name="run_status">"rc"</String>
+		<String name="run_status">"not_run"</String>
 		<Boolean name="save">false </Boolean>
 		<String name="save_status">"not_run"</String>
 		<String name="scheme">"default"</String>
