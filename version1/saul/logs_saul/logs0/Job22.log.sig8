@@ -1,0 +1,5174 @@
+\# Program start time UTC 2016.06.07 15:05:34.392
+\# Local time Tuesday 7 June 2016, 5:05 pm
+\o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
+\o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
+\# Host name (type):	s2424.it.kth.se (x86_64)
+\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
+\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			RealVNC Ltd (VNC nograph server)
+\# Depth of Visual (Root):	16 (16)
+\# Number of Planes Used:	16
+\# X version:		11.0 (vendor release 3370)
+\# X resource pool:	base 0x2c00000, mask 0x3fffff (4194303), shift 0
+\# 			current id 0x31, current max 0x3ffffa (4194298)
+\# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
+\# Initial sbrk value:	461979648 (0x1b894000) bytes
+\# Available memory:	64562816 (0x3d92680) kilobytes
+\# System memory:	80336196 (0x4c9d544) kilobytes
+\# Maximum memory size:	81860009984 (0x130f3ca000) bytes
+\# Max mem available:	66170048512 (0xf680ad000) bytes
+\# Initial memory used:	57724928 (0x370d000) bytes
+\#        process size:	673447936 (0x28240000) bytes
+\# Qt version:		4.5.3
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		12042
+\o 
+\o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\# Available memory:	64479132 (0x3d7df9c) kilobytes UTC 2016.06.07 15:05:34.627
+\# Memory report: Maximum memory size now 66107351040 (0xf644e2000) bytes, UTC 2016.06.07 15:05:34.627
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading LVS.cxt 
+\o Loading layerProc.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dcm.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading adexl.cxt 
+\o Loading oasis.cxt 
+\o Loading asimenv.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading socket.cxt 
+\o Loading alvs.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o ......................................................................................
+\o            ams AG hitkit v.ams_4.11
+\o ......................................................................................
+\o COPYRIGHT (c) 2013 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This hitkit and attached documentation are confidential information and may 
+\o only be used as authorized by the hitkit license agreement.
+\o ......................................................................................
+\o Loading simulator default settings.
+\o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
+\o No mx check
+\o //
+\o //  Calibre Skill Interface * (v2012.4_16.11) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o  
+\o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
+\o ...IBM PDK cmhv7sf procedures loaded.
+\o  
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\p hitkit: ams_4.11  Tech: h18a6am  User: saul 
+\o Initializing IBM_PDK functions
+\o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
+\o Licensed Materials - Property of IBM - All Rights Reserved 
+\o Copyright: International Business Machines Corporation, 2016
+\o This Material may not be copied without the written consent of 
+\o Semiconductor Research and Development Center, IBM Corp., Essex Junction, VT 05452-4299.
+\o  Default set for Left & Right WindowCoordIBM
+\o System hardware set for Linux IBM_PDK procedures
+\o Setting calibre env variable table for cmhv7sf 
+\o Using menu definition file: /pkg/AMS411/cds/HK_H18/cmhv7sf/ibmPdkMenu.def
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibre settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
+\o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_no_DAC_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_MonteCarlo.17
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.17.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.17/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading simui.cxt 
+\o Loading awv.cxt 
+\o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o Loading spectrei.cxt 
+\# Memory report: now 167211008 (0x9f77000) bytes, process size 914685952 (0x36850000) bytes at UTC 2016.06.07 15:05:37.224
+\o Loading relXpert.cxt 
+\w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o Loading devCheck.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (17 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CC = "0.25p"
+\o Setting var CMCC = "70p"
+\o Setting var CMRES = "20k"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "0"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var R_DUT = "1M"
+\o Setting var VAC_CM = "0"
+\o Setting var VCMFB_PULSE = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Loading monte.cxt 
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.17/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.17/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (17 151)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:05:41 2016
+\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
+\o was generated using a previous IHNL version which is incompatible with the
+\o current IHNL version. Therefore re-netlisting the entire design using the
+\o current IHNL version.
+\o 
+\o End netlisting Jun  7 17:05:41 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:  148
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ] for
+\o           Point ID (17 151).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.17/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:05:41 2016
+\o End netlisting Jun  7 17:05:41 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.476636e-08)
+\e 
+\e 
+\o Loading stats.cxt 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.337455e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.647999e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 152) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.253974e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 153) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.526627e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 154) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.905874e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 155) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.87527e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 156) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.394702e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 157) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.543388e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 158) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.35457e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 159) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.131695e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 160) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.297992e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 161) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.230459e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 162) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.268313e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 163) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.544307e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 164) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.324653e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 165) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.120278e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 166) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.055917e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 167) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.407745e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 168) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.886285e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 169) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.724131e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 170) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.440961e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 171) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.007249e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 172) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.028187e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 173) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.561759e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 174) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.365406e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 175) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.413358e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 176) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.134763e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 177) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.078613e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 178) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.171608e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 179) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.934653e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 180) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.205493e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 181) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.868524e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 182) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.417417e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 183) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.179976e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 184) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.373453e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 185) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.936145e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 186) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.964535e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 187) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.879037e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 188) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.113528e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 189) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.696398e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 190) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.976859e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 191) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.166904e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 192) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.681419e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 193) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.167179e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 194) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.512249e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 195) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.057776e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 196) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.464519e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 197) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.412327e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 198) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.00382e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 199) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 200) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_no_DAC_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_MonteCarlo.18
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.18.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.18/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CC = "0.25p"
+\o Setting var CMCC = "70p"
+\o Setting var CMRES = "20k"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "0"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var R_DUT = "1M"
+\o Setting var VAC_CM = "0"
+\o Setting var VCMFB_PULSE = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.18/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.18/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 151)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:07:56 2016
+\o End netlisting Jun  7 17:07:56 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ] for
+\o           Point ID (18 151).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.18/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:07:56 2016
+\o End netlisting Jun  7 17:07:56 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.180077e-08)
+\e 
+\e 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.329961e-08)
+\e 
+\e 
+\# Memory report: now 277327872 (0x1087b000) bytes, process size 1024802816 (0x3d154000) bytes at UTC 2016.06.07 15:08:01.568
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.426876e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 152) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.973299e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 153) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.799086e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 154) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.462194e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 155) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.398807e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 156) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.856089e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 157) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.925912e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 158) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.074318e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 159) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.596102e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 160) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.17938e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 161) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-9.305296e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 162) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.249478e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 163) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.477057e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 164) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.07614e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 165) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.073971e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 166) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.010126e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 167) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.163172e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 168) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.505665e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 169) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.27016e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 170) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.514855e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 171) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.872704e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 172) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.667608e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 173) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.101027e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 174) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(6.237001e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 175) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.839603e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 176) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.457906e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 177) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.028625e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 178) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.355413e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 179) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.276593e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 180) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.233357e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 181) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.022935e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 182) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.368223e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 183) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.073254e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 184) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.995505e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 185) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.304661e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 186) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.453453e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 187) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.275292e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 188) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.255164e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 189) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.317726e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 190) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.775628e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 191) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.305067e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 192) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.247102e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 193) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.277168e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 194) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.80418e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 195) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.194422e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 196) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.778891e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 197) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.240703e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 198) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.220409e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 199) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (18 200) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_no_DAC_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_MonteCarlo.19
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.19.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.19/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (19 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CC = "0.25p"
+\o Setting var CMCC = "70p"
+\o Setting var CMRES = "20k"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "0"
+\o Setting var G1 = "0"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var R_DUT = "1M"
+\o Setting var VAC_CM = "0"
+\o Setting var VCMFB_PULSE = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.19/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.19/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (19 151)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:09:43 2016
+\o End netlisting Jun  7 17:09:43 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ] for
+\o           Point ID (19 151).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.19/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:09:43 2016
+\o End netlisting Jun  7 17:09:43 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.727782e-10)
+\e 
+\e 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.841971e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.533897e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 152) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.894598e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 153) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.178508e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 154) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(8.924086e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 155) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.181103e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 156) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.65171e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 157) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.5805e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 158) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.70906e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 159) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(6.42992e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 160) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.39305e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 161) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.097835e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 162) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-9.639394e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 163) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.843147e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 164) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(6.180907e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 165) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.29639e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 166) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.130148e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 167) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.801604e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 168) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-8.259925e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 169) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.556607e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 170) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.541378e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 171) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.231594e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 172) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.035242e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 173) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.162506e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 174) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.046821e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 175) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.334312e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 176) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.160615e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 177) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.036463e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 178) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.981491e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 179) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.459663e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 180) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.768731e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 181) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.081735e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 182) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.343322e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 183) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.263383e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 184) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.273461e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 185) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.082707e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 186) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(6.0798e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 187) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.935042e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 188) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.011571e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 189) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.50272e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 190) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-8.634034e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 191) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.961087e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 192) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.888868e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 193) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-9.11435e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 194) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.998813e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 195) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.690365e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 196) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.320376e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 197) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.095469e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 198) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.13669e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 199) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (19 200) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_SIGNAL_GEN
+\o 	Cell         = Signal_Generator_no_DAC_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_MonteCarlo.20
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.20.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.20/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 51) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CC = "0.25p"
+\o Setting var CMCC = "70p"
+\o Setting var CMRES = "20k"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var R_DUT = "1M"
+\o Setting var VAC_CM = "0"
+\o Setting var VCMFB_PULSE = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.20/51/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.20/51/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 51)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:13:53 2016
+\o End netlisting Jun  7 17:13:54 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ] for
+\o           Point ID (20 51).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl/results/data/MonteCarlo.20/51/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun  7 17:13:54 2016
+\o End netlisting Jun  7 17:13:54 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.926066e-08)
+\e 
+\e 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.616451e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 51) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.235592e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 52) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.574818e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 53) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.565748e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 54) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.117846e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 55) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.47445e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 56) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.743353e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 57) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.514695e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 58) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.095726e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 59) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.120953e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 60) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.152584e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 61) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.555224e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 62) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(9.858376e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 63) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.533117e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 64) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-6.877045e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 65) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.046097e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 66) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.667256e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 67) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(6.259808e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 68) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.003444e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 69) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.818582e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 70) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.59667e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 71) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.693538e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 72) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.540877e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 73) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.526639e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 74) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(7.779895e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 75) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(6.023319e-09)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 76) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.809321e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 77) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.829554e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 78) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.624064e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 79) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-5.465276e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 80) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(4.799541e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 81) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.240989e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 82) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.170899e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 83) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-2.145643e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 84) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(1.755049e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 85) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.724132e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 86) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.082902e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 87) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-8.459503e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 88) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(2.152895e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 89) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.061628e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 90) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.807265e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 91) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.691585e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 92) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-4.008864e-08)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 93) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.783164e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 94) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.001633e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 95) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(3.30995e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 96) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-1.325662e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 97) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(-3.292801e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 98) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* phaseDeg: can't handle phaseDeg(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o 
+\o *Error*   Evaluating expression ((VT("/VOUTP") - VT("/VOUTN"))). 
+\o 
+\o 
+\e *Error* deriv: can't handle deriv(5.520359e-07)
+\e 
+\e 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 99) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 100) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGINT.
+\o 
+\o 
