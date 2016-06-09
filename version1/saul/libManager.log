@@ -1,13 +1,13 @@
 \o Program:		@(#)$CDS: libManager version 6.1.5 - CAT32 05/06/2013 23:35 (cat91amd) $
 \o Sub version:		sub-version  s014 
-\o Arguments:		-mpssession virtuoso3557 -mpshost localhost.localdomain 
-\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\o Arguments:		-mpssession virtuoso15132 -mpshost s2424.it.kth.se 
+\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
 \o 64-bit offsets
 \o Qt version: 		4.5.3
 \o Log file is "/home/saul/projects/IMPLANTABLE_AMS/version1/saul/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
 \o changeWorkingDir("/home/saul/projects/IMPLANTABLE_AMS/version1/saul") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
@@ -25,17 +25,22 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
-\a cdsLibManager->cellListBox->value = "iq_demod_tb"
-\a cdsLibManager->cellLineEdit->value = "iq_demod_tb"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_Amplifier_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_Amplifier_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -52,16 +57,45 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
-\a cdsLibManager->cellListBox->value = "iq_demod_tb"
-\a cdsLibManager->cellLineEdit->value = "iq_demod_tb"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_Amplifier_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_Amplifier_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_no_DAC"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_no_DAC_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_no_DAC_tb"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -78,149 +112,1004 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
-\a cdsLibManager->cellListBox->value = "iq_demod_tb"
-\a cdsLibManager->cellLineEdit->value = "iq_demod_tb"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_no_DAC_tb"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_no_DAC_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_no_DAC_tb"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_no_DAC_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 -1066 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(-980 14 960 1028))
-\a nrResizeWindow(cdsLibManager list(2860 14 960 1028))
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 135 154 2 "Signal_Generator_CMFB_2")
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CategoryCellsEdit->value = "*"
+\a basicCopyForm->CellsSkipLibraries->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsSkipLibraries->value = t
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromLibrary->value = "ALL_TESTS"
+\a basicCopyForm->CopyToLibrary->value = "ALL_TESTS"
+\a basicCopyForm->CopyFromLibrary->value = "IMP_AN_SIGNAL_GEN_GM"
+\a basicCopyForm->CopyFromCell->value = "Signal_Generator_CMFB_2"
+\a basicCopyForm->CopyToLibrary->value = "IMP_AN_SIGNAL_GEN_GM"
+\a basicCopyForm->CopyToCell->value = "Signal_Generator_CMFB_2"
+\a basicCopyForm->CellsViewsToCopy->value = "schematic schematic_dummy symbol"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_TIA IMP_COMM IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM\nIOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_TIA IMP_COMM IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM\nIOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(3056 130 444 715))
+\a basicCopyForm->CopyToCell->value = "Signal_Generator_CMFB_2_bk"
+\a nrDialogAccept(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "IMP_AN_SIGNAL_GEN_GM".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a basicCopyForm->CopyToCell->value = "Signal_Generator_CMFB_2_bk"
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3126 340 304 134))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_TIA IMP_COMM IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM IOLIB_HV_5AM IOLIB_HV_6AM\nIOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -3226 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -3226 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -3226 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->cellListBox->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->cellLineEdit->value = "Signal_Generator_CMFB_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -3226 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -1066 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 14 913 1002))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 1094 913 1002))
+\a nrResizeWindow(cdsLibManager list(2822 -2146 913 1002))
+\o MPS service: shutdown
+\o libManager is exiting.
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a exit(0)
