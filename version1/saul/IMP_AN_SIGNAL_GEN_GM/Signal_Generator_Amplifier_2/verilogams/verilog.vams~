@@ -1,0 +1,30 @@
+//Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_Amplifier_2"
+//"verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module Signal_Generator_Amplifier_2 ( bias_in, G0_NEG, G1_NEG, G0, G1, IoutN,
+IoutP, VIN_N, VIN_P, vdda, vssa, vsub );
+
+  input vsub;
+  input IoutP;
+  input G0;
+  input VIN_P;
+  input VIN_N;
+  input G1;
+  input vdda;
+  input IoutN;
+  output bias_in;
+  inout G1_NEG;
+  inout G0_NEG;
+  input vssa;
+parameter real gm = 0.001 ;
+parameter real vcm = 0.9 ;
+parameter real GM = 0.001 ;
+parameter real I_bias_DAC = 2e-06 ;
+parameter real I_bias_CMFB = 5e-07 ;
+parameter real Av = 20000 ;
+parameter real GM0 = 1.11111e-05 ;
+parameter real alfa = 2 ;
+endmodule

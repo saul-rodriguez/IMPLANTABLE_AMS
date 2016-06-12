@@ -1,25 +1,11 @@
-//Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_Amplifier" "verilogams"
-
-//Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_Amplifier" "verilogams"
-/*
- *  Variable gain Transconductance Amplifier  
- *  Author: Saul Rodriguez
- *  Date: 2015-06-09
- *
- *  Description:
- *  This is a differential variable GM stage provides 3 gains
- *  which are controlled by the digital inputs G1-G0:
- *  G1 G0  Gain
- *   0  0   11.11111 uS
- *   0  1   33.33333 uS
- *   1  1  100 uS  
- */
+//Verilog-AMS HDL for "IMP_AN_SIGNAL_GEN_GM", "Signal_Generator_Amplifier_2"
+//"verilogams"
 
 `include "constants.vams"
 `include "disciplines.vams"
 
-module Signal_Generator_Amplifier_2( bias_in, G0_NEG, G1_NEG, G0, G1, IoutN,
-IoutP, VIN_N, VIN_P, vdda, vddd, vssa, vssd, vsub );
+module Signal_Generator_Amplifier_2 ( bias_in, G0_NEG, G1_NEG, G0, G1, IoutN,
+IoutP, VIN_N, VIN_P, vdda, vssa, vsub );
 
   input vsub;
   input IoutP;
@@ -27,14 +13,12 @@ IoutP, VIN_N, VIN_P, vdda, vddd, vssa, vssd, vsub );
   input VIN_P;
   input VIN_N;
   input G1;
-  input vssd;
   input vdda;
   input IoutN;
   output bias_in;
   inout G1_NEG;
   inout G0_NEG;
   input vssa;
-  input vddd;
 
 /*
 parameter real gm = 0.001 ;
@@ -45,7 +29,6 @@ parameter real I_bias_CMFB = 5e-07 ;
 parameter real Av = 20000 ;
 parameter real GM0 = 1.11111e-05 ;
 parameter real alfa = 2 ;
-
 */
 
 
@@ -103,6 +86,11 @@ parameter real alfa = 2 ;
   end 
 
   
+
+
+
+
+
 
 
 endmodule

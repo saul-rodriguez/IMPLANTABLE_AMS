@@ -1,0 +1,18 @@
+//Revision 9
+//NOTE
+// Default austriamicrosystems template for spectre
+//END_NOTE
+
+config Signal_Generator_no_DAC_tb;
+design IMP_AN_SIGNAL_GEN.Signal_Generator_no_DAC_tb:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, schematic, veriloga, ahdl;
+stoplist spectre;
+
+
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_2 binding :av_analog_extracted;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_bias binding :av_analog_extracted;
+
+
+endconfig

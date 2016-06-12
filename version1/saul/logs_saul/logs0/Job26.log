@@ -1,32 +1,32 @@
-\# Program start time UTC 2015.12.02 10:22:01.754
-\# Local time Wednesday 2 December 2015, 11:22 am
+\# Program start time UTC 2016.06.12 18:43:21.856
+\# Local time Sunday 12 June 2016, 8:43 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
-\# Host name (type):	s2424.it.kth.se (x86_64)
-\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
-\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
+\# Host name (type):	localhost.localdomain (x86_64)
+\# Operating system:	Linux 2.6.18-406.el5 #1 SMP Tue Jun 2 17:25:57 EDT 2015
+\# X display name (WxH):	localhost.localdomain:80.0 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			RealVNC Ltd (VNC nograph server)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	321142784 (0x13244000) bytes
-\# Available memory:	65989860 (0x3eeece4) kilobytes
-\# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	82000834560 (0x1317a17000) bytes
-\# Max mem available:	67631329280 (0xfbf243000) bytes
-\# Initial memory used:	57712640 (0x370a000) bytes
-\#        process size:	673435648 (0x2823d000) bytes
+\# Initial sbrk value:	483258368 (0x1ccdf000) bytes
+\# Available memory:	14835528 (0xe25f48) kilobytes
+\# System memory:	18405228 (0x118d76c) kilobytes
+\# Maximum memory size:	18421424128 (0x44a00a000) bytes
+\# Max mem available:	15249309696 (0x38cee0000) bytes
+\# Initial memory used:	57729024 (0x370e000) bytes
+\#        process size:	669097984 (0x27e1a000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
-\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		13323
+\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		19926
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	65928052 (0x3edfb74) kilobytes UTC 2015.12.02 10:22:01.989
-\# Memory report: Maximum memory size now 67591032832 (0xfbcbd5000) bytes, UTC 2015.12.02 10:22:01.989
+\# Available memory:	14754740 (0xe123b4) kilobytes UTC 2016.06.12 18:43:22.032
+\# Memory report: Maximum memory size now 15189606400 (0x3895f0000) bytes, UTC 2016.06.12 18:43:22.032
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -83,6 +83,7 @@
 \o Loading simulator default settings.
 \o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
 \o No mx check
+\e *Error* load: can't access file - "/pkg/calibre_2012/ixl_cal_2012.4_16.11/shared/pkgs/icv.ixl/tools/queryskl/calibre.skl"
 \o  
 \o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
 \o ...IBM PDK cmhv7sf procedures loaded.
@@ -96,31 +97,27 @@
 \o *Info*    Configuring the session ...
 \o 
 \o 	Library      = IMP_AN_SIGNAL_GEN
-\o 	Cell         = Signal_Generator_tb
+\o 	Cell         = Signal_Generator_no_DAC_tb
 \o 	View         = config
-\o 	Simulator    = ams
+\o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.71
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.71.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.71/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_MonteCarlo.11
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 167137280 (0x9f65000) bytes, process size 914612224 (0x3683e000) bytes at UTC 2015.12.02 10:22:04.058
+\# Memory report: now 168157184 (0xa05e000) bytes, process size 915570688 (0x36928000) bytes at UTC 2016.06.12 18:43:23.947
 \o Loading relXpert.cxt 
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -131,11 +128,102 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var R_DUT = "1k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting var Vsupply = "1.8"
+\o Loading monte.cxt 
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 1)
+\o 
+\o generate netlist...
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 12 20:43:25 2016
+\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
+\o was generated using a previous IHNL version which is incompatible with the
+\o current IHNL version. Therefore re-netlisting the entire design using the
+\o current IHNL version.
+\o 
+\o End netlisting Jun 12 20:43:25 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:  159
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ] for Point
+\o           ID (4 1).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 12 20:43:25 2016
+\o End netlisting Jun 12 20:43:25 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o Loading paraplot.cxt 
 \o Initializing IBM_PDK functions
 \o IBM_PDK skill procedures for Cadence 6.1 - Nov 29 08:29:37 2010
 \o Licensed Materials - Property of IBM - All Rights Reserved 
-\o Copyright: International Business Machines Corporation, 2015
+\o Copyright: International Business Machines Corporation, 2016
 \o This Material may not be copied without the written consent of 
 \o Semiconductor Research and Development Center, IBM Corp., Essex Junction, VT 05452-4299.
 \o  Default set for Left & Right WindowCoordIBM
@@ -146,183 +234,515 @@
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreDrc settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibreLvs settings
 \o set cmhv7sf  calibre env variables based on ibmPdkMenuCalibrePerc settings
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (2 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CE = "1"
-\o Setting var CLOCKWIDTH = "15.625"
-\o Setting var CMFB_VAC = "0"
-\o Setting var CPAD = "800f"
-\o Setting var G0 = "1.8"
-\o Setting var G0_PULSE = "1.8"
-\o Setting var G1 = "1.8"
-\o Setting var G1_PULSE = "1.8"
-\o Setting var G2 = "1.8"
-\o Setting var G2_PULSE = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var G3_PULSE = "1.8"
-\o Setting var PULSE_CMFB = "0"
-\o Setting var RL = "1k"
-\o Setting var STEPNUM = "0"
-\o Setting var VDD_PULSE = "0"
-\o Setting var Vsupply = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.71/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.71/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (2 2)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o Loading seCore.cxt 
-\o function ansCdlCompPrim redefined
-\o Loading verilogI.cxt 
-\o Begin Incremental Netlisting Dec  2 11:22:06 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.71/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o esdndidn                    spectre              *Stopping View*  
-\o esdpdidn                    spectre              *Stopping View*  
-\o tdpdnw                      spectre              *Stopping View*  
-\o opppcresx                   spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o pad_cap                     schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o INVX1                       cmos_sch                              
-\o Signal_Generator_CMFB       schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Dec  2 11:22:06 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (2
-\o           2).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.71/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\# Memory report: Maximum memory size now 14437707776 (0x35c8df000) bytes, UTC 2016.06.12 18:43:32.032
+\o Loading stats.cxt 
+\# Memory report: now 274477056 (0x105c3000) bytes, process size 1021890560 (0x3ce8d000) bytes at UTC 2016.06.12 18:43:39.828
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (2 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Info*    Run complete for Point ID (4 1) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 2) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 3) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 4) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 5) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 6) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 7) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 8) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 9) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 10) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 11) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 12) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 13) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 14) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 15) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 16) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 17) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 18) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 19) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 20) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 21) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 22) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 23) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 24) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 25) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 26) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 27) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 28) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 29) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 30) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 31) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 32) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 33) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 34) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 35) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 36) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 37) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 38) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 39) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 40) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 41) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 42) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 43) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 44) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 45) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 46) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 47) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 48) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 49) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 50) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 14800904192 (0x37233e000) bytes, UTC 2016.06.12 18:44:22.149
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
@@ -331,824 +751,599 @@
 \o *Info*    Configuring the session ...
 \o 
 \o 	Library      = IMP_AN_SIGNAL_GEN
-\o 	Cell         = Signal_Generator_tb
+\o 	Cell         = Signal_Generator_no_DAC_tb
 \o 	View         = config
-\o 	Simulator    = ams
+\o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1_none_Interactive.72
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/1/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data
+\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_MonteCarlo.12
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par
 \o 	File Encoding = 0
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o *Info*    Spectre controlMode is set "batch".
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (3 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o 
+\o *Info*    Run start for Point ID (5 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CE = "1"
-\o Setting var CLOCKWIDTH = "15.625"
-\o Setting var CMFB_VAC = "0"
-\o Setting var CPAD = "800f"
-\o Setting var G0 = "1.62"
-\o Setting var G0_PULSE = "1.62"
-\o Setting var G1 = "1.62"
-\o Setting var G1_PULSE = "1.62"
-\o Setting var G2 = "1.62"
-\o Setting var G2_PULSE = "1.62"
-\o Setting var G3 = "1.62"
-\o Setting var G3_PULSE = "1.62"
-\o Setting var PULSE_CMFB = "0"
-\o Setting var RL = "1k"
-\o Setting var STEPNUM = "0"
+\o Setting var CPAD = "1p"
+\o Setting var DC_IN = "0"
+\o Setting var G0 = "1.8"
+\o Setting var G1 = "1.8"
+\o Setting var G2 = "0"
+\o Setting var G3 = "0"
+\o Setting var R_DUT = "100k"
+\o Setting var VAC_CM = "0"
+\o Setting var VCM_PULSE = "0"
+\o Setting var VDC_CM = "900m"
 \o Setting var VDD_PULSE = "0"
-\o Setting var Vsupply = "1.62"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_PULSE = "0"
+\o Setting var Vsupply = "1.8"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
+\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (3 2)
+\o *Info*    Creating Netlist for Point ID (5 151)
 \o 
 \o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Dec  2 11:23:00 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o Begin Incremental Netlisting Jun 12 20:45:26 2016
+\o End netlisting Jun 12 20:45:26 2016
 \o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o esdndidn                    spectre              *Stopping View*  
-\o esdpdidn                    spectre              *Stopping View*  
-\o tdpdnw                      spectre              *Stopping View*  
-\o opppcresx                   spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o pad_cap                     schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o INVX1                       cmos_sch                              
-\o Signal_Generator_CMFB       schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Dec  2 11:23:00 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (3
-\o           2).
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ] for Point
+\o           ID (5 151).
 \o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 66037637120 (0xf60266000) bytes, UTC 2015.12.02 10:23:11.992
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
 \o 
-\o 
-\o *Info*    Run complete for Point ID (3 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (3 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/9/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/9/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (3 9)
-\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12/151/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/psf.
 \o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Dec  2 11:23:30 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 12 20:45:26 2016
+\o End netlisting Jun 12 20:45:26 2016
 \o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o esdndidn                    spectre              *Stopping View*  
-\o esdpdidn                    spectre              *Stopping View*  
-\o tdpdnw                      spectre              *Stopping View*  
-\o opppcresx                   spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o pad_cap                     schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o INVX1                       cmos_sch                              
-\o Signal_Generator_CMFB       schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Dec  2 11:23:30 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (3
-\o           9).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/9/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o compose simulator input file...
+\o start simulator if needed...
 \o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 14210740224 (0x34f06b000) bytes, UTC 2016.06.12 18:45:32.149
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Info*    Run complete for Point ID (5 151) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (3 34) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var G0 = "1.8"
-\o Setting var G0_PULSE = "1.8"
-\o Setting var G1 = "1.8"
-\o Setting var G1_PULSE = "1.8"
-\o Setting var G2 = "1.8"
-\o Setting var G2_PULSE = "1.8"
-\o Setting var G3 = "1.8"
-\o Setting var G3_PULSE = "1.8"
-\o Setting var Vsupply = "1.8"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/34/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/34/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (3 34)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Dec  2 11:23:59 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o esdndidn                    spectre              *Stopping View*  
-\o esdpdidn                    spectre              *Stopping View*  
-\o tdpdnw                      spectre              *Stopping View*  
-\o opppcresx                   spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o pad_cap                     schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o INVX1                       cmos_sch                              
-\o Signal_Generator_CMFB       schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Dec  2 11:24:00 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (3
-\o           34).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/34/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 34) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Info*    Run complete for Point ID (5 152) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (3 47) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var G0 = "1.98"
-\o Setting var G0_PULSE = "1.98"
-\o Setting var G1 = "1.98"
-\o Setting var G1_PULSE = "1.98"
-\o Setting var G2 = "1.98"
-\o Setting var G2_PULSE = "1.98"
-\o Setting var G3 = "1.98"
-\o Setting var G3_PULSE = "1.98"
-\o Setting var Vsupply = "1.98"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/47/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/47/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (3 47)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Dec  2 11:24:30 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o esdndidn                    spectre              *Stopping View*  
-\o esdpdidn                    spectre              *Stopping View*  
-\o tdpdnw                      spectre              *Stopping View*  
-\o opppcresx                   spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o pad_cap                     schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o INVX1                       cmos_sch                              
-\o Signal_Generator_CMFB       schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Dec  2 11:24:30 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (3
-\o           47).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/47/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 47) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Info*    Run complete for Point ID (5 153) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
-\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (3 45) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/45/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/45/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (3 45)
-\o 
-\o generate netlist...
-\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
-\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
-\o              analog primitives using the spectre CDF simulation information.
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Dec  2 11:25:00 2015
-\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
-\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
-\o 
-\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-\o "/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/2/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
-\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
-\o before invoking Verilog netlister.
-\o  
-\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
-\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
-\o the .simrc file.
-\o  
-\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
-\o If you want to print only those cellviews that need to be re-netlisted in the 
-\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
-\o .simrc file.
-\o  
-\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
-\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
-\o either in CIW or the .simrc file.
-\o  
-\o INFO (VLOGNET-117): Re-netlisting the entire design.
-\o 
-\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
-\o non-stopping cells.
-\o  
-\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
-\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
-\o 
-\o Traverse Config lib:IMP_AN_SIGNAL_GEN cell:Signal_Generator_tb view:config
-\o WARNING (VLOGNET-110): The cell 'IMP_AN_SIGNAL_GEN/Signal_Generator_tb/schematic' has no ports. Make sure that this was the intended 
-\o design.
-\o  
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'DacCtrl', view 'functional' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum" "P<16:0>" "IP" "IN" "QP" "QN")
-\o 
-\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_DIG_SIGGEN', cell 'stimulus_block', view 'verilogams' will be
-\o  done using the user specified port order as follows:
-\o 
-\o  => ("CountEnable" "Clk" "Resetn" "StepNum")
-\o 
-\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
-\o 
-\o 
-\o 
-\o CELL NAME                   VIEW NAME            NOTE             
-\o ---------                   ---------            ----             
-\o 
-\o stimulus_block              verilogams           *Stopping View*  
-\o res                         spectre              *Stopping View*  
-\o vdc                         spectre              *Stopping View*  
-\o DacCtrl                     functional           *Stopping View*  
-\o subcx                       spectre              *Stopping View*  
-\o nfetx                       spectre              *Stopping View*  
-\o oprrpresx                   spectre              *Stopping View*  
-\o nfetix                      spectre              *Stopping View*  
-\o pfetx                       spectre              *Stopping View*  
-\o mosvartx                    spectre              *Stopping View*  
-\o cap                         spectre              *Stopping View*  
-\o idc                         spectre              *Stopping View*  
-\o vpulse                      spectre              *Stopping View*  
-\o presistor                   spectre              *Stopping View*  
-\o esdndidn                    spectre              *Stopping View*  
-\o esdpdidn                    spectre              *Stopping View*  
-\o tdpdnw                      spectre              *Stopping View*  
-\o opppcresx                   spectre              *Stopping View*  
-\o Signal_Generator_tb         schematic                             
-\o pad_cap                     schematic                             
-\o TI_D                        schematic                             
-\o TI_C                        schematic                             
-\o TI_B                        schematic                             
-\o TI_A                        schematic                             
-\o Signal_Generator            schematic                             
-\o Signal_Generator_bias       schematic                             
-\o Signal_Generator_Amplifier   schematic                             
-\o INVX1                       cmos_sch                              
-\o Signal_Generator_CMFB       schematic                             
-\o res_500k                    schematic                             
-\o res_250k                    schematic                             
-\o RDAC32                      schematic                             
-\o 
-\o ---------- End of netlist configuration information   ----------
-\o INFO (VLOGNET-80): The library 'IMP_AN_SIGNAL_GEN', cell 'Signal_Generator_tb', and view 'config' has been netlisted successfully.
-\o 
-\o End netlisting Dec  2 11:25:01 2015
-\o INFO (193) : AMS netlisting has completed successfully.
-\o To view the modules, right-click the test name on the Tests and Analyses 
-\o assistant pane and choose Netlist->Display menu option.
-\o       ...successful.
-\o create cds_globals...
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ] for Point ID (3
-\o           45).
-\o 
-\o Delete simulation data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_tb/adexlNVM/results/data/Interactive.72/45/IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o validating simulator hierarchy...
-\o       ...successful.
-\o running...
-\o To check for output from compilation, elaboration and simulation run, 
-\o right-click on the test name, result name, or any value in the "Results" 
-\o tab of the Outputs section and choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 45) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_tb:1 ].
+\o *Info*    Run complete for Point ID (5 154) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 155) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 156) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 157) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 158) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 159) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 160) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 161) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 162) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 163) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:	13360532 (0xcbdd94) kilobytes UTC 2016.06.12 18:45:52.153
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 164) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 165) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 166) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 167) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 168) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 169) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 170) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 171) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 172) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 173) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 174) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 175) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 176) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 13913178112 (0x33d4a4000) bytes, UTC 2016.06.12 18:46:02.154
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 177) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 178) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 179) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 180) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 181) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 182) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 183) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 184) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 185) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 186) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 187) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 188) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 189) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 190) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 191) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 192) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 193) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 194) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 195) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 196) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 197) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 198) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 199) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Memory report: Maximum memory size now 14276202496 (0x352ed9000) bytes, UTC 2016.06.12 18:46:22.191
+\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (5 200) on testbench [
+\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
 \o 
 \o 
 \o 
@@ -1157,5 +1352,5 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 201560064 (0xc039000) bytes, process size 949035008 (0x38912000) bytes at UTC 2015.12.02 10:30:33.484
-\# Memory report: peak usage 201576448 (0xc03d000) bytes, process size 949047296 (0x38915000) bytes
+\# Memory report: on exit 279216128 (0x10a48000) bytes, process size 1026629632 (0x3d312000) bytes at UTC 2016.06.12 18:51:28.243
+\# Memory report: peak usage 279236608 (0x10a4d000) bytes, process size 1026650112 (0x3d317000) bytes
