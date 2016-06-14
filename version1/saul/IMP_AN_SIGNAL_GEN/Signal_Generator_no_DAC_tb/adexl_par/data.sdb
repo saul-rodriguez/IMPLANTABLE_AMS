@@ -54,7 +54,61 @@
 					<output>(VDC("/VOUTP") - VDC("/VOUTN"))
 						<evalType>point</evalType>
 					</output>
+					<output>phaseDeg(IF("/R0/PLUS"))
+						<evalType>point</evalType>
+					</output>
 				</outputs>
+			</test>
+			<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+				<tool>ADE</tool>
+				<outputs>
+					<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+						<evalType>point</evalType>
+					</output>
+					<output>phaseDeg(IF("/R0/PLUS"))
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<tooloptions>
+					<option>cell
+						<value>Signal_Generator_no_DAC_tb</value>
+					</option>
+					<option>lib
+						<value>IMP_AN_SIGNAL_GEN</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_active</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>Signal_Generator_no_DAC_tb</value>
+					</option>
+					<option>lib
+						<value>IMP_AN_SIGNAL_GEN</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+				</origoptions>
 			</test>
 		</tests>
 		<vars>
@@ -62,84 +116,98 @@
 				<value>1p</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>DC_IN
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>G0
 				<value>1.8</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>G1
 				<value>1.8</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>G2
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>G3
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>R_DUT
 				<value>1k</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VAC_CM
-				<value>0</value>
+				<value>1</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCM_PULSE
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VDC_CM
 				<value>900m</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VDD_PULSE
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VIN_AC
-				<value>1</value>
+				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VIN_PULSE
 				<value>0</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>Vsupply
 				<value>1.8</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+					<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -156,7 +224,9 @@
 			</plottingoption>
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
-		<disabledtests></disabledtests>
+		<disabledtests>
+			<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+		</disabledtests>
 		<runoptions>
 			<mode>Monte Carlo Sampling
 				<runoption>mcmethod
@@ -216,7 +286,2717 @@
 		</runoptions>
 	</active>
 	<history>History
-		<historyentry>MonteCarlo.11
+		<historyentry>Interactive.65
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.65</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.65</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:28:44 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.65.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.65.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_132844792</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.65</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.65</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.65.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.65.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.66
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.66</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.66</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:30:25 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.66.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.66.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133025714</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.66</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.66</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.66.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.66.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.67
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.67</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.67</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:31:10 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.67.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.67.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133110423</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.67</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.67</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.67.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.67.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.68
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.68</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.68</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:32:15 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.68.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.68.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133215367</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.68</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.68</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.68.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.68.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.69
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.69</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.69</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:33:25 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.69.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.69.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133326012</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.69</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.69</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.69.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.69.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.70
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.70</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.70</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:35:52 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.70.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.70.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133552207</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.70</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.70</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.70.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.70.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.71
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.71</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.71</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:36:53 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.71.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.71.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133653491</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.71</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.71</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.71.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.71.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.72
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.72</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.72</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>100m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 13:38:18 2016</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.72.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.72.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_133818885</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.72</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.72</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.72.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.72.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.73
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.73</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_Interactive.73</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CPAD
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>DC_IN
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G0
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G1
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>G3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>R_DUT
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VAC_CM
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDC_CM
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_PULSE
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Vsupply
+						<value>1.8</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>200</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcYieldTarget
+							<value>99.73</value>
+						</runoption>
+						<runoption>mcYieldAlphaLimit
+							<value>0.05</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>random</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>1</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dutsummary
+							<dutinstance>row0
+								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+								<type>Schematic</type>
+								<LCV>Schematic</LCV>
+								<Instances>/I0/I2/RRR4</Instances>
+							</dutinstance>
+						</runoption>
+						<runoption>ignoreflag
+							<value>1</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 14 14:38:30 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.73.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.73.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_143830965</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.73</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.73</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.73.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.73.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>MonteCarlo.0
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -250,7 +3030,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_MonteCarlo.11</value>
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_MonteCarlo.0</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -271,7 +3051,61 @@
 							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
 								<evalType>point</evalType>
 							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>phaseDeg(IF("/R0/PLUS"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state_MonteCarlo.0</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>Signal_Generator_no_DAC_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_AN_SIGNAL_GEN</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -279,84 +3113,98 @@
 						<value>1p</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>DC_IN
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>G0
 						<value>1.8</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>G1
 						<value>1.8</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>G2
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>G3
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>R_DUT
 						<value>1k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VAC_CM
-						<value>0</value>
+						<value>1</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCM_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDC_CM
 						<value>900m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VDD_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VIN_AC
-						<value>1</value>
+						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VIN_PULSE
 						<value>0</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>Vsupply
 						<value>1.8</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
+							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -372,7 +3220,9 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<disabledtests></disabledtests>
+				<disabledtests>
+					<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
+				</disabledtests>
 				<runoptions>
 					<mode>Monte Carlo Sampling
 						<runoption>mcmethod
@@ -432,2099 +3282,19 @@
 				</runoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jun 12 20:43:16 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.11.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_204316445</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.11.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>MonteCarlo.12
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Monte Carlo Sampling</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_MonteCarlo.12</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 20:45:24 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.12.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_204524311</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.12.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.12.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.43
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.43</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 20:49:51 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.43.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_204951037</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.43</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.43</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.43.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.44
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.44</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 21:15:23 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.44.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.44.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_211523143</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.44</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.44</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.44.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.44.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.45
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.45</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 22:36:48 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.45.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.45.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_223648437</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.45</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.45</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.45.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.45.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.46
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.46</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 22:38:14 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.46.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.46.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_223814622</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.46</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.46</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.46.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.46.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.47
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.47</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 22:39:29 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.47.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.47.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_223929445</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.47</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.47</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.47.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.47.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.48
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.48</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jun 12 22:39:41 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.48.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.48.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_223941436</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.48</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.48</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.48.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.48.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.49
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.49</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>100k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Jun 13 09:32:15 2016
+			<timestamp>Tue Jun 14 14:39:48 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.49.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.49.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_093215937</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.49</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.49</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_143948630</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.49.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.49.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.50
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.50</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>Signal_Generator_no_DAC_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_AN_SIGNAL_GEN</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>(VDC("/VOUTP") - VDC("/VOUTN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CPAD
-						<value>1p</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>DC_IN
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G0
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G1
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>G3
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>R_DUT
-						<value>1k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VAC_CM
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDC_CM
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_PULSE
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Vsupply
-						<value>1.8</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests></disabledtests>
-				<runoptions>
-					<mode>Monte Carlo Sampling
-						<runoption>mcmethod
-							<value>all</value>
-						</runoption>
-						<runoption>mcnumpoints
-							<value>200</value>
-						</runoption>
-						<runoption>mcnumbins
-							<value></value>
-						</runoption>
-						<runoption>mcStopEarly
-							<value>0</value>
-						</runoption>
-						<runoption>mcYieldTarget
-							<value>99.73</value>
-						</runoption>
-						<runoption>mcYieldAlphaLimit
-							<value>0.05</value>
-						</runoption>
-						<runoption>samplingmode
-							<value>random</value>
-						</runoption>
-						<runoption>saveprocess
-							<value>1</value>
-						</runoption>
-						<runoption>savemismatch
-							<value>0</value>
-						</runoption>
-						<runoption>mcreferencepoint
-							<value>0</value>
-						</runoption>
-						<runoption>donominal
-							<value>1</value>
-						</runoption>
-						<runoption>saveallplots
-							<value>1</value>
-						</runoption>
-						<runoption>montecarloseed
-							<value></value>
-						</runoption>
-						<runoption>mcstartingrunnumber
-							<value></value>
-						</runoption>
-						<runoption>dutsummary
-							<dutinstance>row0
-								<test>IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1</test>
-								<type>Schematic</type>
-								<LCV>Schematic</LCV>
-								<Instances>/I0/I2/RRR4</Instances>
-							</dutinstance>
-						</runoption>
-						<runoption>ignoreflag
-							<value>1</value>
-						</runoption>
-					</mode>
-				</runoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Jun 13 09:33:00 2016
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.50.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.50.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_093300741</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.50</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.50</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.50.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.50.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
