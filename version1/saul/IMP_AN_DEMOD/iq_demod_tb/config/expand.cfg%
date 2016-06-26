@@ -1,4 +1,4 @@
-//Revision 31
+//Revision 37
 config iq_demod_tb;
 design IMP_AN_DEMOD.iq_demod_tb:schematic;
 liblist IMP_AN_DEMOD;
@@ -7,35 +7,37 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_COMM.amp_2 binding :av_analog_extracted;
+cell IMP_AN_DEMOD.iq_demod binding :av_analog_extracted;
 
-cell IMP_AN_BIAS.current_mirror1_2 binding :schematic;
+cell CORELIB.MUX2X8 binding :cmos_sch;
+cell CORELIB.INVX1 binding :cmos_sch;
 
-cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
-cell IMP_DIG_SIGGEN.DacCtrl binding :schematic;
+cell IMP_AN_BUFFER.buffer binding :schematic;
 
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_LNA binding :schematic;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier_LNA binding :schematic;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :schematic;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic;
+cell IMP_AN_LNA.lna_gm binding :verilogams;
+cell IMP_AN_LNA.lna2 binding :schematic;
+
+cell IMP_AN_LPF.lpf_bias binding :schematic;
+cell IMP_AN_LPF.lpf_gm1 binding :verilogams;
+cell IMP_AN_LPF.lpf_cmfb binding :schematic;
+cell IMP_AN_LPF.s1_gm1_block binding :schematic;
+cell IMP_AN_LPF.lpf_tw binding :schematic;
+
+cell IMP_AN_MIXER.mixer binding :schematic;
 
 cell IMP_AN_TIA.tia binding :schematic;
 
-cell IMP_AN_MIXER.mixer binding :av_analog_extracted;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier_LNA binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_LNA binding :schematic;
 
-cell IMP_AN_LPF.lpf_tw binding :av_analog_extracted;
-cell IMP_AN_LPF.s1_gm1_block binding :schematic;
-cell IMP_AN_LPF.lpf_cmfb binding :schematic;
-cell IMP_AN_LPF.lpf_gm1 binding :verilogams;
-cell IMP_AN_LPF.lpf_bias binding :schematic;
+cell IMP_DIG_SIGGEN.DacCtrl binding :schematic;
+cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
 
-cell IMP_AN_LNA.lna2 binding :av_analog_extracted;
-cell IMP_AN_LNA.lna_gm binding :verilogams;
+cell IMP_AN_BIAS.current_mirror1_2 binding :schematic;
 
-cell IMP_AN_BUFFER.buffer binding :av_analog_extracted;
-
-cell CORELIB.INVX1 binding :cmos_sch;
-cell CORELIB.MUX2X8 binding :cmos_sch;
+cell IMP_COMM.amp_2 binding :schematic;
 
 
 endconfig
