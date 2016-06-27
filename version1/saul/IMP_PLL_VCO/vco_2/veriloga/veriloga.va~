@@ -1,0 +1,33 @@
+// VerilogA for IMP_PLL_VCO, vco_2, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module vco_2(Vout, vddd, vssd, Vctrl, bias_in, vdda, vssa, vsub);
+output Vout;
+electrical Vout;
+inout vddd;
+electrical vddd;
+inout vssd;
+electrical vssd;
+input Vctrl;
+electrical Vctrl;
+input bias_in;
+electrical bias_in;
+input vdda;
+electrical vdda;
+input vssa;
+electrical vssa;
+input vsub;
+electrical vsub;
+parameter real ttol = (1e-06)/(fmax) ;
+parameter real tt = (0.01)/(fmax) ;
+parameter real fmax = 3.75e+07 ;
+parameter real fmin = 1.03e+07 ;
+parameter real vh = 1.8 ;
+parameter real vl = 0 ;
+parameter real vmax = 1.5 ;
+parameter real vmin = 0.5 ;
+
+
+endmodule
