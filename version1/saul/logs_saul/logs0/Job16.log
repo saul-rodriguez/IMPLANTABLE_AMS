@@ -1,32 +1,32 @@
-\# Program start time UTC 2016.06.12 17:23:48.034
-\# Local time Sunday 12 June 2016, 7:23 pm
+\# Program start time UTC 2016.06.28 13:22:24.226
+\# Local time Tuesday 28 June 2016, 3:22 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
-\# Host name (type):	localhost.localdomain (x86_64)
-\# Operating system:	Linux 2.6.18-406.el5 #1 SMP Tue Jun 2 17:25:57 EDT 2015
-\# X display name (WxH):	localhost.localdomain:80.0 (1024x868)
+\# Host name (type):	s2424.it.kth.se (x86_64)
+\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
+\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			RealVNC Ltd (VNC nograph server)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x3000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	335446016 (0x13fe8000) bytes
-\# Available memory:	15829536 (0xf18a20) kilobytes
-\# System memory:	18405228 (0x118d76c) kilobytes
-\# Maximum memory size:	18569236480 (0x452d01000) bytes
-\# Max mem available:	16267173888 (0x3c9996000) bytes
+\# Initial sbrk value:	472993792 (0x1c315000) bytes
+\# Available memory:	68599752 (0x416bfc8) kilobytes
+\# System memory:	80336196 (0x4c9d544) kilobytes
+\# Maximum memory size:	81848999936 (0x130e94a000) bytes
+\# Max mem available:	70303875072 (0x105e700000) bytes
 \# Initial memory used:	57729024 (0x370e000) bytes
-\#        process size:	669097984 (0x27e1a000) bytes
+\#        process size:	673452032 (0x28241000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
-\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		26451
+\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		7434
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	15817224 (0xf15a08) kilobytes UTC 2016.06.12 17:23:48.199
-\# Memory report: Maximum memory size now 16277590016 (0x3ca385000) bytes, UTC 2016.06.12 17:23:48.199
+\# Available memory:	68469568 (0x414c340) kilobytes UTC 2016.06.28 13:22:24.474
+\# Memory report: Maximum memory size now 70193565696 (0x1057dcd000) bytes, UTC 2016.06.28 13:22:24.474
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -83,7 +83,16 @@
 \o Loading simulator default settings.
 \o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
 \o No mx check
-\e *Error* load: can't access file - "/pkg/calibre_2012/ixl_cal_2012.4_16.11/shared/pkgs/icv.ixl/tools/queryskl/calibre.skl"
+\o //
+\o //  Calibre Skill Interface * (v2012.4_16.11) *
+\o //
+\o //                 Copyright Mentor Graphics Corporation 2005
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
 \o  
 \o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
 \o ...IBM PDK cmhv7sf procedures loaded.
@@ -110,17 +119,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_SIGNAL_GEN
-\o 	Cell         = Signal_Generator_no_DAC_tb
-\o 	View         = config
+\o 	Library      = IMP_AN_DIFTOSE
+\o 	Cell         = dif2se_tb
+\o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_Interactive.42
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.42.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.42/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data
+\o 	State Name   = IMP_AN_DIFTOSE:dif2se_tb:1_none_MonteCarlo.3
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/1/IMP_AN_DIFTOSE:dif2se_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -130,7 +139,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 168398848 (0xa099000) bytes, process size 915812352 (0x36963000) bytes at UTC 2016.06.12 17:24:02.618
+\# Memory report: now 167346176 (0x9f98000) bytes, process size 914821120 (0x36871000) bytes at UTC 2016.06.28 13:22:26.507
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -154,65 +163,78 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run start for Point ID (6 69) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CPAD = "1p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "1.8"
-\o Setting var G1 = "1.8"
-\o Setting var G2 = "0"
-\o Setting var G3 = "0"
-\o Setting var R_DUT = "1k"
+\o Setting var VAC = "0"
 \o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_PULSE = "0"
-\o Setting var Vsupply = "1.8"
+\o Setting var VCM = "900m"
+\o Setting var VDC = "0"
+\o Loading monte.cxt 
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.42/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/69/IMP_AN_DIFTOSE:dif2se_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.42/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/69/IMP_AN_DIFTOSE:dif2se_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 1)
+\o *Info*    Creating Netlist for Point ID (6 69)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 12 19:24:03 2016
+\o Begin Incremental Netlisting Jun 28 15:22:29 2016
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o End netlisting Jun 12 19:24:03 2016
+\o WARNING (ADE-6003): Terminal "IOUTN", specified in the CDF termOrder, does not exist
+\o            in the cell-view "IMP_AN_DIFTOSE" "gm_difse_tw" "schematic"
+\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
+\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
+\o            property to be used for netlisting.
+\o            To edit CDF of a cell, 
+\o            i) Open CIW->Tools->CDF->Edit.
+\o            ii) Select Library Name & Cell Name.
+\o            iii) Click on the Edit button in the simulation information section of the
+\o                 Edit CDF window.
+\o End netlisting Jun 28 15:22:29 2016
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:  159
+\o 	Number of components:   59
 \o 
 \o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o Errors: 0	Warnings: 2
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ] for Point
-\o           ID (0 1).
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ] for Point ID (6 69).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/Interactive.42/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/69/IMP_AN_DIFTOSE:dif2se_tb:1/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 28 15:22:29 2016
+\o End netlisting Jun 28 15:22:29 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -222,134 +244,13 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_SIGNAL_GEN
-\o 	Cell         = Signal_Generator_no_DAC_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1_none_MonteCarlo.8
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.8.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.8/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var CPAD = "1p"
-\o Setting var DC_IN = "0"
-\o Setting var G0 = "1.8"
-\o Setting var G1 = "1.8"
-\o Setting var G2 = "0"
-\o Setting var G3 = "0"
-\o Setting var R_DUT = "1k"
-\o Setting var VAC_CM = "0"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC_CM = "900m"
-\o Setting var VDD_PULSE = "0"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_PULSE = "0"
-\o Setting var Vsupply = "1.8"
-\o Loading monte.cxt 
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.8/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.8/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 12 19:25:12 2016
-\o End netlisting Jun 12 19:25:12 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ] for Point
-\o           ID (1 1).
-\o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_SIGNAL_GEN/Signal_Generator_no_DAC_tb/adexl_par/results/data/MonteCarlo.8/1/IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 12 19:25:12 2016
-\o End netlisting Jun 12 19:25:12 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 15807447040 (0x3ae328000) bytes, UTC 2016.06.12 17:25:18.201
 \o Loading stats.cxt 
+\# Memory report: now 274288640 (0x10595000) bytes, process size 1021763584 (0x3ce6e000) bytes at UTC 2016.06.28 13:22:46.665
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 1) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 2) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 69) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -358,19 +259,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 3) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 15398735872 (0x395d61000) bytes, UTC 2016.06.12 17:25:28.217
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 4) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 70) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -379,8 +269,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 5) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 71) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -389,8 +279,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 6) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 72) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -399,8 +289,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 7) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 73) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -409,8 +299,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 8) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 74) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -419,8 +309,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 9) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 75) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -429,8 +319,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 10) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 76) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -439,8 +329,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 11) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 77) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -449,8 +339,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 12) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 78) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -459,8 +349,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 13) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 79) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -469,8 +359,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 14) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 80) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -479,8 +369,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 15) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 81) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -489,8 +379,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 16) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 82) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -499,8 +389,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 17) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 83) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -509,8 +399,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 18) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 84) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -519,8 +409,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 19) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 85) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -529,8 +419,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 20) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 86) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -539,8 +429,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 21) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 87) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -549,8 +439,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 22) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 88) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -559,8 +449,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 23) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 89) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -569,8 +459,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 24) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 90) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -579,8 +469,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 25) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 91) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -589,8 +479,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 26) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 92) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -599,8 +489,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 27) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 93) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -609,8 +499,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 28) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 94) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -619,8 +509,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 29) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 95) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -629,8 +519,19 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 30) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 96) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 68787281920 (0x10040aa000) bytes, UTC 2016.06.28 13:23:04.475
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 97) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -639,8 +540,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 31) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 98) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -649,8 +550,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 32) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 99) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -659,8 +560,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 33) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 100) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -669,158 +570,8 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 34) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 35) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 36) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 37) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 38) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 39) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 40) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 41) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 42) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 43) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 44) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 45) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 46) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 47) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 48) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 49) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 101) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
@@ -834,15 +585,42 @@
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 50) on testbench [
-\o           IMP_AN_SIGNAL_GEN:Signal_Generator_no_DAC_tb:1 ].
+\o *Info*    Run complete for Point ID (6 102) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
 \o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
+\o they have been saved in the file "/tmp/saved-design-variables2".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 210554880 (0xc8cd000) bytes, process size 957968384 (0x39197000) bytes at UTC 2016.06.12 17:31:23.732
-\# Memory report: peak usage 210575360 (0xc8d2000) bytes, process size 957980672 (0x3919a000) bytes
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_AN_DIFTOSE
+\o 	Cell         = dif2se_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_AN_DIFTOSE:dif2se_tb:1_none_MonteCarlo.4
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.4.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.4/1/IMP_AN_DIFTOSE:dif2se_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o *Info*    Received signal SIGINT.
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 274280448 (0x10593000) bytes, process size 1021755392 (0x3ce6c000) bytes at UTC 2016.06.28 13:28:24.908
+\# Memory report: peak usage 274296832 (0x10597000) bytes, process size 1021763584 (0x3ce6e000) bytes
