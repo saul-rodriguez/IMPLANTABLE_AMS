@@ -61,6 +61,16 @@
 						<suffix></suffix>
 						<evalType>point</evalType>
 					</output>
+					<output>VS("/OUT")
+						<evalType>point</evalType>
+					</output>
+					<output>copy2
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
 				</outputs>
 			</test>
 			<test enabled="1">IMP_COMM:comp_amp_tb:1:1
@@ -73,6 +83,13 @@
 						<evalType>point</evalType>
 					</output>
 					<output>copy1
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>copy2
 						<units></units>
 						<significantDigits>0</significantDigits>
 						<notation></notation>
@@ -124,7 +141,7 @@
 		</tests>
 		<vars>
 			<var>CL
-				<value>2p</value>
+				<value>2p,20p,200p</value>
 				<dependentTests>
 					<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
 					<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
@@ -148,6 +165,7 @@
 				<value>10m</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+					<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -165,1116 +183,10 @@
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
 		<disabledtests>
-			<test>IMP_COMM:comp_amp_tb:1:1</test>
+			<test>IMP_COMM:comp_amp_tb:1</test>
 		</disabledtests>
 	</active>
 	<history>History
-		<historyentry>Interactive.29
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.29</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
-						<tool>ADE</tool>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<evalType>point</evalType>
-							</output>
-							<output>copy1
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.29</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CL
-						<value>300p</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IN
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">IN2
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>IMP_COMM:comp_amp_tb:1:1</test>
-				</disabledtests>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jun 16 17:01:57 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.29.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_170157119</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.29</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.29</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.29.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.30
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.30</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
-						<tool>ADE</tool>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<evalType>point</evalType>
-							</output>
-							<output>copy1
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.30</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CL
-						<value>300p</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IN
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">IN2
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>IMP_COMM:comp_amp_tb:1:1</test>
-				</disabledtests>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jun 16 17:02:55 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.30.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_170256000</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.30</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.30</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.30.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.31
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.31</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
-						<tool>ADE</tool>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<evalType>point</evalType>
-							</output>
-							<output>copy1
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.31</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CL
-						<value>2p</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IN
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">IN2
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>IMP_COMM:comp_amp_tb:1:1</test>
-				</disabledtests>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jun 16 17:04:20 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.31.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_170420259</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.31</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.31</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.31.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.32
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.32</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
-						<tool>ADE</tool>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<evalType>point</evalType>
-							</output>
-							<output>copy1
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.32</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CL
-						<value>2p</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IN
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">IN2
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>IMP_COMM:comp_amp_tb:1:1</test>
-				</disabledtests>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jun 16 17:04:52 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.32.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.32.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_170452805</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.32</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.32</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.32.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.32.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.33
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.33</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
-						<tool>ADE</tool>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<evalType>point</evalType>
-							</output>
-							<output>copy1
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.33</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CL
-						<value>2p</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IN
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">IN2
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>IMP_COMM:comp_amp_tb:1:1</test>
-				</disabledtests>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jun 16 21:02:46 2016
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.33.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.33.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_210246295</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.33</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.33</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.33.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.33.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.34
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.34</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
-						<tool>ADE</tool>
-						<outputs>
-							<output>dB20(VF("/OUT"))
-								<evalType>point</evalType>
-							</output>
-							<output>VT("/OUT")
-								<evalType>point</evalType>
-							</output>
-							<output>copy1
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.34</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>comp_amp_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_COMM</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CL
-						<value>200p</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>IN
-						<value>900m</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">IN2
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_PULSE
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>IMP_COMM:comp_amp_tb:1:1</test>
-				</disabledtests>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jun 16 21:03:33 2016
-</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.34.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_210333498</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.34</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.34</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.34.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry>Interactive.35
 			<checkpoint>
 				<corners>
@@ -1444,8 +356,7 @@
 				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jun 16 22:23:47 2016
-</timestamp>
+			<timestamp>Thu Jun 16 22:23:47 2016</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.35.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.35.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1629,8 +540,7 @@
 				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jun 16 22:24:31 2016
-</timestamp>
+			<timestamp>Thu Jun 16 22:24:31 2016</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.36.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.36.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1814,8 +724,7 @@
 				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jun 16 22:25:15 2016
-</timestamp>
+			<timestamp>Thu Jun 16 22:25:15 2016</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.37.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1999,8 +908,7 @@
 				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jun 16 22:25:39 2016
-</timestamp>
+			<timestamp>Thu Jun 16 22:25:39 2016</timestamp>
 			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.38.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.38.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -2013,6 +921,1162 @@
 			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.38.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.38.log</runlogfile>
 			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.39
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.39</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.39</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">IN2
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_COMM:comp_amp_tb:1:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 28 20:31:58 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.39.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.39.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_203158868</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.39</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.39</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.39.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.39.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.40
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.40</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.40</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">IN2
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_COMM:comp_amp_tb:1:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 28 20:34:12 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.40.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.40.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_203412233</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.40</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.40</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.40.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.40.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.41
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.41</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.41</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>2p,20p,200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">IN2
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_COMM:comp_amp_tb:1:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 28 20:34:53 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.41.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.41.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_203453677</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.41</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.41</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.41.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.41.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CL
+						<value>300p</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.42
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.42</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.42</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>2p,20p,200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">IN2
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_COMM:comp_amp_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 28 20:41:26 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.42.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.42.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_204126399</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.42</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.42</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.42.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.42.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CL
+						<value>300p</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.43
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.43</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>VS("/OUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.43</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>2p,20p,200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">IN2
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_COMM:comp_amp_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 28 20:42:05 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.43.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_204205943</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.43</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.43</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.43.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CL
+						<value>300p</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.44
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1_none_Interactive.44</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>VS("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy2
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">IMP_COMM:comp_amp_tb:1:1
+						<tool>ADE</tool>
+						<outputs>
+							<output>dB20(VF("/OUT"))
+								<evalType>point</evalType>
+							</output>
+							<output>VT("/OUT")
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>copy2
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_IMP_COMM:comp_amp_tb:1:1_state_Interactive.44</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>comp_amp_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_COMM</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_COMM:comp_amp_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CL
+						<value>2p,20p,200p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>IN
+						<value>900m</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">IN2
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_PULSE
+						<value>10m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_COMM:comp_amp_tb:1</dependentTest>
+							<dependentTest omitted="0">IMP_COMM:comp_amp_tb:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_COMM:comp_amp_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jun 28 20:42:37 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.44.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.44.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/localhost.localdomain_saul_204237608</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.44</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.44</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/comp_amp_tb/adexl/results/data/Interactive.44.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.44.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>CL
+						<value>300p</value>
+					</var>
+				</vars>
+			</schematicpoint>
 			<test>all</test>
 		</historyentry>
 	</history>

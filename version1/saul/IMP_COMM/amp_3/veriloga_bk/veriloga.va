@@ -1,0 +1,43 @@
+// VerilogA for IMP_COMM, amp, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module amp(N_IN, OUT, P_IN, vdda, vssa, vsub);
+inout N_IN;
+electrical N_IN;
+inout OUT;
+electrical OUT;
+inout P_IN;
+electrical P_IN;
+inout vdda;
+electrical vdda;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+
+parameter gain = 1000.0;
+
+real vout;
+
+analog begin
+
+vout = (V(P_IN) - V(N_IN))*gain;
+
+if (vout > 1.8) begin
+	vout = 1.8;
+end
+
+if (vout < 0) begin
+	vout = 0;
+end
+
+V(OUT) <+ vout;
+
+
+end
+
+
+
+endmodule
