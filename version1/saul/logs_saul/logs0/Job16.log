@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.06.28 13:22:24.226
-\# Local time Tuesday 28 June 2016, 3:22 pm
+\# Program start time UTC 2016.06.30 08:50:04.898
+\# Local time Thursday 30 June 2016, 10:50 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x3000000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x2000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	472993792 (0x1c315000) bytes
-\# Available memory:	68599752 (0x416bfc8) kilobytes
+\# Initial sbrk value:	522301440 (0x1f21b000) bytes
+\# Available memory:	66453664 (0x3f600a0) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	81848999936 (0x130e94a000) bytes
-\# Max mem available:	70303875072 (0x105e700000) bytes
+\# Maximum memory size:	81799692288 (0x130ba44000) bytes
+\# Max mem available:	68106280960 (0xfdb736000) bytes
 \# Initial memory used:	57729024 (0x370e000) bytes
 \#        process size:	673452032 (0x28241000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		7434
+\# Process Id:		9958
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	68469568 (0x414c340) kilobytes UTC 2016.06.28 13:22:24.474
-\# Memory report: Maximum memory size now 70193565696 (0x1057dcd000) bytes, UTC 2016.06.28 13:22:24.474
+\# Available memory:	66371184 (0x3f4be70) kilobytes UTC 2016.06.30 08:50:05.133
+\# Memory report: Maximum memory size now 68044816384 (0xfd7c98000) bytes, UTC 2016.06.30 08:50:05.133
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -121,12 +121,12 @@
 \o 
 \o 	Library      = IMP_AN_DIFTOSE
 \o 	Cell         = dif2se_tb
-\o 	View         = schematic
+\o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_DIFTOSE:dif2se_tb:1_none_MonteCarlo.3
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/1/IMP_AN_DIFTOSE:dif2se_tb:1
+\o 	State Name   = IMP_AN_DIFTOSE:dif2se_tb:1_none_Interactive.116
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/1/IMP_AN_DIFTOSE:dif2se_tb:1
 \o 	Results Loc  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
 \o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl
@@ -139,7 +139,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 167346176 (0x9f98000) bytes, process size 914821120 (0x36871000) bytes at UTC 2016.06.28 13:22:26.507
+\# Memory report: now 169381888 (0xa189000) bytes, process size 916856832 (0x36a62000) bytes at UTC 2016.06.30 08:50:07.822
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -163,78 +163,61 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (6 69) on testbench [
+\o *Info*    Run start for Point ID (6 1) on testbench [
 \o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
+\o Setting var BONDWIRE = "3n"
+\o Setting var CC = "2p"
+\o Setting var CFIL = "10p"
+\o Setting var RC = "33k"
 \o Setting var VAC = "0"
-\o Setting var VAC_CM = "0"
+\o Setting var VAC_CM = "1"
+\o Setting var VCLOCK = "0"
 \o Setting var VCM = "900m"
+\o Setting var VCM_PULSE = "0"
 \o Setting var VDC = "0"
-\o Loading monte.cxt 
+\o Setting var VIN_PULSE = "10m"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/69/IMP_AN_DIFTOSE:dif2se_tb:1/netlist
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/1/IMP_AN_DIFTOSE:dif2se_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/69/IMP_AN_DIFTOSE:dif2se_tb:1
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/1/IMP_AN_DIFTOSE:dif2se_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (6 69)
+\o *Info*    Creating Netlist for Point ID (6 1)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 28 15:22:29 2016
+\o Begin Incremental Netlisting Jun 30 10:50:10 2016
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\o WARNING (ADE-6003): Terminal "IOUTN", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IMP_AN_DIFTOSE" "gm_difse_tw" "schematic"
-\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
-\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
-\o            property to be used for netlisting.
-\o            To edit CDF of a cell, 
-\o            i) Open CIW->Tools->CDF->Edit.
-\o            ii) Select Library Name & Cell Name.
-\o            iii) Click on the Edit button in the simulation information section of the
-\o                 Edit CDF window.
-\o End netlisting Jun 28 15:22:29 2016
+\o End netlisting Jun 30 10:50:10 2016
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   59
+\o 	Number of components:  101
 \o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 2
+\o 	Elapsed time:          1.0s (101.00/s)
+\o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ] for Point ID (6 69).
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ] for Point ID (6 1).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.3/69/IMP_AN_DIFTOSE:dif2se_tb:1/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 28 15:22:29 2016
-\o End netlisting Jun 28 15:22:29 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
+\o Delete psf data in /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/1/IMP_AN_DIFTOSE:dif2se_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -244,348 +227,133 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o Loading stats.cxt 
-\# Memory report: now 274288640 (0x10595000) bytes, process size 1021763584 (0x3ce6e000) bytes at UTC 2016.06.28 13:22:46.665
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 69) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 70) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 71) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 72) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 73) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 74) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 75) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 76) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 77) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 78) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 79) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 80) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 81) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 82) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 83) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 84) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 85) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 86) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 87) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 88) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 89) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 90) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 91) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 92) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 93) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 94) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 95) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 96) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 68787281920 (0x10040aa000) bytes, UTC 2016.06.28 13:23:04.475
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 97) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 98) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 99) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 100) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 101) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (6 102) on testbench [
+\o *Info*    Run complete for Point ID (6 1) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 16) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/16/IMP_AN_DIFTOSE:dif2se_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/16/IMP_AN_DIFTOSE:dif2se_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 30 10:50:15 2016
+\o End netlisting Jun 30 10:50:15 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ] for Point ID (6 16).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/16/IMP_AN_DIFTOSE:dif2se_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 16) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (6 9) on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/9/IMP_AN_DIFTOSE:dif2se_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/9/IMP_AN_DIFTOSE:dif2se_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (6 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jun 30 10:50:17 2016
+\o End netlisting Jun 30 10:50:17 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [
+\o           IMP_AN_DIFTOSE:dif2se_tb:1 ] for Point ID (6 9).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/Interactive.116/9/IMP_AN_DIFTOSE:dif2se_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (6 9) on testbench [
 \o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
 \o 
 \o 
@@ -595,32 +363,5 @@
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables2".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = IMP_AN_DIFTOSE
-\o 	Cell         = dif2se_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_DIFTOSE:dif2se_tb:1_none_MonteCarlo.4
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.4.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.4/1/IMP_AN_DIFTOSE:dif2se_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o *Info*    Received signal SIGINT.
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables2".
-\o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 274280448 (0x10593000) bytes, process size 1021755392 (0x3ce6c000) bytes at UTC 2016.06.28 13:28:24.908
-\# Memory report: peak usage 274296832 (0x10597000) bytes, process size 1021763584 (0x3ce6e000) bytes
+\# Memory report: on exit 195915776 (0xbad7000) bytes, process size 943390720 (0x383b0000) bytes at UTC 2016.06.30 08:55:21.542
+\# Memory report: peak usage 195932160 (0xbadb000) bytes, process size 943403008 (0x383b3000) bytes

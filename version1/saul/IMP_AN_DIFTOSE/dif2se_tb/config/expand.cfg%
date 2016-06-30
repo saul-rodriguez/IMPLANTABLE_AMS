@@ -1,4 +1,4 @@
-//Revision 3
+//Revision 7
 //NOTE
 // Default austriamicrosystems template for spectre
 //END_NOTE
@@ -11,9 +11,11 @@ viewlist spectre, cmos_sch, schematic, veriloga, ahdl;
 stoplist spectre;
 
 
-cell IMP_COMM.comp_amp_3 binding :av_analog_extracted;
+cell IMP_AN_DIFTOSE.dif2se binding :av_analog_extracted;
+cell IMP_AN_DIFTOSE.gm_difse_tw binding :schematic;
 
-cell IMP_AN_DIFTOSE.gm_difse_tw binding :av_analog_extracted;
+cell IMP_COMM.amp_3 binding :schematic;
+cell IMP_COMM.comp_amp_3 binding :schematic;
 
 
 endconfig

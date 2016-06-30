@@ -23,12 +23,12 @@ filter_coupling_cap \
 filter_res \
 	 -min_res 0.001
 input_db -type assura \
-	 -design_cell_name "amp_2 layout IMP_COMM" \
-	 -directory_name "/home/saul/Assura/ASSURA_LVS/amp_2" \
+	 -design_cell_name "amp_3 layout IMP_COMM" \
+	 -directory_name "/home/saul/Assura/ASSURA_LVS/amp_3" \
 	 -format "DFII" \
 	 -run_name "alfa"
 log_file \
-	 -file_name "/home/saul/Assura/ASSURA_LVS/amp_2/qrc.alfa.log"
+	 -file_name "/home/saul/Assura/ASSURA_LVS/amp_3/qrc.alfa.log"
 output_db -type extracted_view \
 	 -cap_component "pcapacitor auLvs cmhv7sf" \
 	 -cap_property_name "c" \
@@ -41,7 +41,7 @@ output_db -type extracted_view \
 	 -res_property_name "r" \
 	 -view_name "av_extracted"
 output_setup \
-	 -directory_name "/home/saul/Assura/ASSURA_LVS/amp_2" \
+	 -directory_name "/home/saul/Assura/ASSURA_LVS/amp_3" \
 	 -temporary_directory_name "alfa"
 process_technology \
 	 -technology_corner \
