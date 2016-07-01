@@ -1,0 +1,29 @@
+//Verilog-AMS HDL for "IMP_AN_DIFTOSE", "dif2se" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dif2se ( OUT, VIN_N, VIN_P, VREF_EXT, bias, vdda, vssa, vsub );
+
+  inout vsub;
+  inout OUT;
+  inout VIN_P;
+  inout VIN_N;
+  inout vdda;
+  inout bias;
+  inout vssa;
+  inout VREF_EXT;
+
+  electrical OUT, VIN_N, VIN_P, VREF_EXT, vssa;
+
+  analog begin
+	// Note that the AC gain is R2/R1*Ai where 
+    // R2 = Transimpedance feedback resistor
+    // R1 = TRansconductance feedback resistor
+    // Ai = Current mirror/addition gain. This is 2 in this case!
+ 
+	V(OUT) <+ V(VREF_EXT) + V(VIN_P,VIN_N)*2.0;
+
+  end
+
+endmodule
