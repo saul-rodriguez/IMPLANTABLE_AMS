@@ -1,32 +1,32 @@
-\# Program start time UTC 2016.06.30 08:40:17.835
-\# Local time Thursday 30 June 2016, 10:40 am
+\# Program start time UTC 2016.07.03 14:23:06.472
+\# Local time Sunday 3 July 2016, 4:23 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
-\# Host name (type):	s2424.it.kth.se (x86_64)
-\# Operating system:	Linux 2.6.18-407.el5 #1 SMP Wed Nov 11 08:12:41 EST 2015
-\# X display name (WxH):	s2424.it.kth.se:80.0 (1024x868)
+\# Host name (type):	localhost.localdomain (x86_64)
+\# Operating system:	Linux 2.6.18-406.el5 #1 SMP Tue Jun 2 17:25:57 EDT 2015
+\# X display name (WxH):	localhost.localdomain:80.0 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			RealVNC Ltd (VNC nograph server)
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x1c00000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	279375872 (0x10a6f000) bytes
-\# Available memory:	67156772 (0x400bb24) kilobytes
-\# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	82042617856 (0x131a1f0000) bytes
-\# Max mem available:	68826263552 (0x10065d7000) bytes
-\# Initial memory used:	57729024 (0x370e000) bytes
-\#        process size:	673452032 (0x28241000) bytes
+\# Initial sbrk value:	293036032 (0x11776000) bytes
+\# Available memory:	15711188 (0xefbbd4) kilobytes
+\# System memory:	18405228 (0x118d76c) kilobytes
+\# Maximum memory size:	18611650560 (0x455574000) bytes
+\# Max mem available:	16145989632 (0x3c2604000) bytes
+\# Initial memory used:	57733120 (0x370f000) bytes
+\#        process size:	673394688 (0x28233000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
-\o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		31508
+\o Working Directory:	localhost.localdomain:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
+\# Process Id:		21283
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	67150116 (0x400a124) kilobytes UTC 2016.06.30 08:40:17.860
-\# Memory report: Maximum memory size now 68822208512 (0x10061f9000) bytes, UTC 2016.06.30 08:40:17.860
+\# Available memory:	15704728 (0xefa298) kilobytes UTC 2016.07.03 14:23:06.606
+\# Memory report: Maximum memory size now 16147079168 (0x3c270e000) bytes, UTC 2016.07.03 14:23:06.606
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -83,16 +83,7 @@
 \o Loading simulator default settings.
 \o HitKit On-Line Documentation not enabled - does ~/data.reg exist?
 \o No mx check
-\o //
-\o //  Calibre Skill Interface * (v2012.4_16.11) *
-\o //
-\o //                 Copyright Mentor Graphics Corporation 2005
-\o //                             All Rights Reserved.
-\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
-\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
-\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
-\o //
-\o //
+\e *Error* load: can't access file - "/pkg/calibre_2012/ixl_cal_2012.4_16.11/shared/pkgs/icv.ixl/tools/queryskl/calibre.skl"
 \o  
 \o Loading IBM PDK cmhv7sf procedures for Cadence Version "6.1.5-64b"...
 \o ...IBM PDK cmhv7sf procedures loaded.
@@ -119,28 +110,32 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_AN_DIFTOSE
-\o 	Cell         = dif2se_tb
+\o 	Library      = IMP_PLL_TOP
+\o 	Cell         = PLL_top_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_AN_DIFTOSE:dif2se_tb:1_none_MonteCarlo.0
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.0.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.0/35/IMP_AN_DIFTOSE:dif2se_tb:1
-\o 	Results Loc  = /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data
+\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_Interactive.15
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_AN_DIFTOSE/dif2se_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 169742336 (0xa1e1000) bytes, process size 917217280 (0x36aba000) bytes at UTC 2016.06.30 08:40:20.811
+\# Memory report: now 168546304 (0xa0bd000) bytes, process size 915959808 (0x36987000) bytes at UTC 2016.07.03 14:24:25.195
 \o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -151,445 +146,586 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (5 103) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var BONDWIRE = "3n"
-\o Setting var CC = "2p"
-\o Setting var CFIL = "10p"
-\o Setting var RC = "33k"
-\o Setting var VAC = "0"
-\o Setting var VAC_CM = "1"
-\o Setting var VCLOCK = "0"
-\o Setting var VCM = "900m"
-\o Setting var VCM_PULSE = "0"
-\o Setting var VDC = "0"
-\o Setting var VIN_PULSE = "10m"
-\o Loading monte.cxt 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.0/103/IMP_AN_DIFTOSE:dif2se_tb:1/netlist
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.0/103/IMP_AN_DIFTOSE:dif2se_tb:1
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (5 103)
+\o *Info*    Creating Netlist for Point ID (0 1)
 \o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 30 10:40:23 2016
-\o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
-\o was generated using a previous IHNL version which is incompatible with the
-\o current IHNL version. Therefore re-netlisting the entire design using the
-\o current IHNL version.
+\o Loading verilogI.cxt 
+\o Initializing the control file using cp:
+\o     cp /pkg/Cadence/installs/IC615/tools.lnx86/dfII/etc/si/control.ver /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/control
+\o Begin Incremental Netlisting Jul  3 16:24:26 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
 \o 
-\o End netlisting Jun 30 10:40:23 2016
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:  101
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o ERROR (VLOGNET-194): Mismatch found between the model name 'PLL_top' and the module name 'PLL_top_2' on the digital leaf instance 'I1' inside the cellview 'IMP_PLL_TOP.PLL_top_tb:schematic'.
+\o        To fix this issue, perform the following corrective action(s):
+\o        1. Check if a modelName property is defined on the instance or in the CDF, and ensure that it has the same value as the name of the module.
+\o        2. Select Tools -> Update Text Views in ADE to ensure that the OA database of the instance is up to date with its master text representation.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ] for Point ID (5 103).
+\o End netlisting Jul  3 16:24:26 2016
+\o ERROR (OSSHNL-514): Netlisting failed due to errors reported before. Netlist may be corrupt or may not be produced at all. Fix reported errors and netlist again.
+\o ERROR (194) : AMS netlisting has failed because of errors in the design.
+\o Right-click the test name on the Outputs assistant pane 
+\o and check Output Log->Netlister Log for errors.
+\o Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (0 1).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_AN_DIFTOSE/dif2se_tb/adexl/results/data/MonteCarlo.0/103/IMP_AN_DIFTOSE:dif2se_tb:1/psf.
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 1) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 1)
+\o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jun 30 10:40:24 2016
-\o End netlisting Jun 30 10:40:24 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o Loading paraplot.cxt 
-\o Loading stats.cxt 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 103) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 104) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 105) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 106) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 107) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 108) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 109) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 110) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 111) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 112) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 113) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 114) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 115) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 116) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 117) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 118) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 119) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 120) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 121) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 122) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 123) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 124) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 125) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 126) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 127) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 67419209728 (0xfb27f8000) bytes, UTC 2016.06.30 08:41:07.881
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 128) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 129) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 130) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 131) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 132) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 133) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 134) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 135) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Monte Carlo Simulation completed successfully...
-\o WARNING (WIA-1120):  : Invalid directory found while clearing SST2 resources.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 136) on testbench [
-\o           IMP_AN_DIFTOSE:dif2se_tb:1 ].
-\o 
+\o Begin Incremental Netlisting Jul  3 16:24:26 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.15/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o ERROR (VLOGNET-194): Mismatch found between the model name 'PLL_top' and the module name 'PLL_top_2' on the digital leaf instance 'I1' inside the cellview 'IMP_PLL_TOP.PLL_top_tb:schematic'.
+\o        To fix this issue, perform the following corrective action(s):
+\o        1. Check if a modelName property is defined on the instance or in the CDF, and ensure that it has the same value as the name of the module.
+\o        2. Select Tools -> Update Text Views in ADE to ensure that the OA database of the instance is up to date with its master text representation.
+\o 
+\o End netlisting Jul  3 16:24:26 2016
+\o ERROR (OSSHNL-514): Netlisting failed due to errors reported before. Netlist may be corrupt or may not be produced at all. Fix reported errors and netlist again.
+\o ERROR (194) : AMS netlisting has failed because of errors in the design.
+\o Right-click the test name on the Outputs assistant pane 
+\o and check Output Log->Netlister Log for errors.
+\o Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (0 1).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
+\o 
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
 \o 
 \o 
 \o 
 \o 
 \o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables2".
+\o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
 \o 
-\o *Info*    Received signal SIGTERM.
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_PLL_TOP
+\o 	Cell         = PLL_top_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_Interactive.16
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  3 16:24:44 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o ERROR (VLOGNET-194): Mismatch found between the model name 'PLL_top' and the module name 'PLL_top_2' on the digital leaf instance 'I1' inside the cellview 'IMP_PLL_TOP.PLL_top_tb:schematic'.
+\o        To fix this issue, perform the following corrective action(s):
+\o        1. Check if a modelName property is defined on the instance or in the CDF, and ensure that it has the same value as the name of the module.
+\o        2. Select Tools -> Update Text Views in ADE to ensure that the OA database of the instance is up to date with its master text representation.
+\o 
+\o End netlisting Jul  3 16:24:44 2016
+\o ERROR (OSSHNL-514): Netlisting failed due to errors reported before. Netlist may be corrupt or may not be produced at all. Fix reported errors and netlist again.
+\o ERROR (194) : AMS netlisting has failed because of errors in the design.
+\o Right-click the test name on the Outputs assistant pane 
+\o and check Output Log->Netlister Log for errors.
+\o Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (1 1).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
+\o 
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 1) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  3 16:24:44 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.16/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o ERROR (VLOGNET-194): Mismatch found between the model name 'PLL_top' and the module name 'PLL_top_2' on the digital leaf instance 'I1' inside the cellview 'IMP_PLL_TOP.PLL_top_tb:schematic'.
+\o        To fix this issue, perform the following corrective action(s):
+\o        1. Check if a modelName property is defined on the instance or in the CDF, and ensure that it has the same value as the name of the module.
+\o        2. Select Tools -> Update Text Views in ADE to ensure that the OA database of the instance is up to date with its master text representation.
+\o 
+\o End netlisting Jul  3 16:24:44 2016
+\o ERROR (OSSHNL-514): Netlisting failed due to errors reported before. Netlist may be corrupt or may not be produced at all. Fix reported errors and netlist again.
+\o ERROR (194) : AMS netlisting has failed because of errors in the design.
+\o Right-click the test name on the Outputs assistant pane 
+\o and check Output Log->Netlister Log for errors.
+\o Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (1 1).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
+\o 
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_PLL_TOP
+\o 	Cell         = PLL_top_tb
+\o 	View         = config
+\o 	Simulator    = ams
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_PLL_TOP:PLL_top_tb:1_none_Interactive.17
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_PLL_TOP/PLL_top_tb/adexlNVM
+\o 	File Encoding = 0
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  3 16:24:50 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o ERROR (VLOGNET-194): Mismatch found between the model name 'PLL_top' and the module name 'PLL_top_2' on the digital leaf instance 'I1' inside the cellview 'IMP_PLL_TOP.PLL_top_tb:schematic'.
+\o        To fix this issue, perform the following corrective action(s):
+\o        1. Check if a modelName property is defined on the instance or in the CDF, and ensure that it has the same value as the name of the module.
+\o        2. Select Tools -> Update Text Views in ADE to ensure that the OA database of the instance is up to date with its master text representation.
+\o 
+\o End netlisting Jul  3 16:24:50 2016
+\o ERROR (OSSHNL-514): Netlisting failed due to errors reported before. Netlist may be corrupt or may not be produced at all. Fix reported errors and netlist again.
+\o ERROR (194) : AMS netlisting has failed because of errors in the design.
+\o Right-click the test name on the Outputs assistant pane 
+\o and check Output Log->Netlister Log for errors.
+\o Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (2 1).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
+\o 
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams2'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams2'.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           IMP_PLL_TOP:PLL_top_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var MYFREQ = "5"
+\o Setting var Vsupply = "1.8"
+\o Setting var fmax = "37.5M"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  3 16:24:50 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_PLL_TOP/PLL_top_tb/adexlNVM/results/data/Interactive.17/1/IMP_PLL_TOP:PLL_top_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
+\o 
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_PLL_TOP cell:PLL_top_tb view:config
+\o ERROR (VLOGNET-194): Mismatch found between the model name 'PLL_top' and the module name 'PLL_top_2' on the digital leaf instance 'I1' inside the cellview 'IMP_PLL_TOP.PLL_top_tb:schematic'.
+\o        To fix this issue, perform the following corrective action(s):
+\o        1. Check if a modelName property is defined on the instance or in the CDF, and ensure that it has the same value as the name of the module.
+\o        2. Select Tools -> Update Text Views in ADE to ensure that the OA database of the instance is up to date with its master text representation.
+\o 
+\o End netlisting Jul  3 16:24:50 2016
+\o ERROR (OSSHNL-514): Netlisting failed due to errors reported before. Netlist may be corrupt or may not be produced at all. Fix reported errors and netlist again.
+\o ERROR (194) : AMS netlisting has failed because of errors in the design.
+\o Right-click the test name on the Outputs assistant pane 
+\o and check Output Log->Netlister Log for errors.
+\o Correct your design and netlist again.
+\o       ...unsuccessful.
+\e *Error* Error during netlisting of design for the point ID (2 1).
+\e ("error" 0 t nil ("*Error* "))
+\e 
+\e 
+\o 
+\o *Error*   Error ID  = 5012
+\o *Error*   Error Msg = Failed to create netlist.
+\o 
+\o 
 \o 
 \o 

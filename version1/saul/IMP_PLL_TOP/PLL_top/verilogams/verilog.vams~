@@ -18,7 +18,9 @@ module PLL_top ( Fout, Fref, Fsel, Resetn, vdda, vddd, vssa, vssd, vsub, bias_vc
   input bias_vco;
   input bias_cp;
 
-  parameter cycle = 62.5;
+//  parameter cycle = 62.5;  //16 MHz
+  parameter cycle = 31.25;  //16 MHz
+
   reg vco_clk;
 
   reg [14:0] count;
