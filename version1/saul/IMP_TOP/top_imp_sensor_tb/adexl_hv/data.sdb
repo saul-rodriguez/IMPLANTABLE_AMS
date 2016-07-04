@@ -54,6 +54,24 @@
 					<output>VOUT
 						<evalType>point</evalType>
 					</output>
+					<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+						<evalType>point</evalType>
+					</output>
+					<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+						<evalType>point</evalType>
+					</output>
+					<output>VOUT_DEM
+						<evalType>point</evalType>
+					</output>
+					<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+						<evalType>point</evalType>
+					</output>
+					<output>AMP
+						<evalType>point</evalType>
+					</output>
+					<output>PHA
+						<evalType>point</evalType>
+					</output>
 				</outputs>
 			</test>
 		</tests>
@@ -82,6 +100,18 @@
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 				</dependentTests>
 			</var>
+			<var>fmax
+				<value>50M</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>LBOND
+				<value>2n</value>
+				<dependentTests>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+				</dependentTests>
+			</var>
 		</vars>
 		<overwritehistoryname>Interactive.0</overwritehistoryname>
 		<plottingoptions>
@@ -97,7 +127,7 @@
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.2
+		<historyentry>Interactive.36
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -131,7 +161,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.2</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.36</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -150,6 +180,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -180,115 +228,8 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jul 3 20:21:24 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_202124313</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.2</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.3
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_imp_sensor_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.3</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_imp_sensor_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>10k</value>
+					<var>fmax
+						<value>50M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
@@ -308,136 +249,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul 3 20:33:03 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.3.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_203303475</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.3</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.4
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_imp_sensor_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.4</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_imp_sensor_tb</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>VOUT
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>1.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Sun Jul  3 20:48:25 2016
+			<timestamp>Mon Jul  4 14:00:17 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.36.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.36.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_204825173</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.4</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_140017599</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.36</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.36</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.36.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.36.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.5
+		<historyentry>Interactive.37
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -471,7 +299,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.5</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.37</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -490,6 +318,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -520,6 +366,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -535,23 +393,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 20:59:28 2016
+			<timestamp>Mon Jul  4 14:32:33 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.5.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.37.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_205928422</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.5</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.5</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_143233507</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.37</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.37</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.5.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.37.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.37.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.6
+		<historyentry>Interactive.38
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -585,7 +443,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.6</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.38</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -604,6 +462,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -634,6 +510,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -649,23 +537,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 21:01:38 2016
+			<timestamp>Mon Jul  4 14:34:03 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.6.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.38.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.38.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_210138798</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.6</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.6</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_143403955</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.38</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.38</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.6.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.38.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.38.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.7
+		<historyentry>Interactive.39
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -699,7 +587,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.7</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.39</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -718,6 +606,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -748,6 +654,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -763,23 +681,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 21:08:40 2016
+			<timestamp>Mon Jul  4 14:47:44 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.7.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.39.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.39.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_210840268</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.7</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.7</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_144744662</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.39</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.39</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.39.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.39.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.8
+		<historyentry>Interactive.40
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -813,7 +731,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.8</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.40</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -832,6 +750,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -862,6 +798,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -877,23 +825,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 21:09:50 2016
+			<timestamp>Mon Jul  4 14:50:59 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.40.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.40.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_210950575</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.8</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_145059716</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.40</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.40</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.40.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.40.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.9
+		<historyentry>Interactive.41
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -927,7 +875,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.9</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.41</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -946,6 +894,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -976,6 +942,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -991,23 +969,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 22:07:34 2016
+			<timestamp>Mon Jul  4 15:15:30 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.41.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.41.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_220734791</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.9</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_151531010</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.41</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.41</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.41.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.41.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.10
+		<historyentry>Interactive.42
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1041,7 +1019,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.10</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.42</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1060,6 +1038,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -1090,6 +1086,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -1105,23 +1113,23 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 22:19:38 2016
+			<timestamp>Mon Jul  4 15:22:13 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.42.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.42.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_221938912</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.10</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_152213407</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.42</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.42</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.42.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.42.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.11
+		<historyentry>Interactive.43
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1155,7 +1163,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.11</value>
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.43</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1174,6 +1182,24 @@
 						</origoptions>
 						<outputs>
 							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
 								<evalType>point</evalType>
 							</output>
 						</outputs>
@@ -1204,6 +1230,18 @@
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -1219,19 +1257,307 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sun Jul  3 22:38:58 2016
+			<timestamp>Mon Jul  4 15:40:05 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.43.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_223858727</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.11</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_154005113</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.43</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.43</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.43.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.44
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_imp_sensor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.44</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>1.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Jul  4 15:46:16 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.44.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.44.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_154616074</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.44</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.44</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.44.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.44.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.45
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>IMP_TOP:top_imp_sensor_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb:1_none_Interactive.45</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.0099)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.0199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>calcVal("" "IMP_TOP:top_imp_sensor_tb:1")
+								<evalType>point</evalType>
+							</output>
+							<output>VOUT_DEM
+								<evalType>point</evalType>
+							</output>
+							<output>sqrt(((value((VT("/VOUTP") - VT("/VOUTN")) 0.99)**2) + (value((VT("/VOUTP") - VT("/VOUTN")) 0.199)**2)))
+								<evalType>point</evalType>
+							</output>
+							<output>AMP
+								<evalType>point</evalType>
+							</output>
+							<output>PHA
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>1.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>50M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>LBOND
+						<value>2n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Jul  4 15:48:47 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.45.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.45.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_154847351</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.45</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.45</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb/adexl_hv/results/data/Interactive.45.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.45.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

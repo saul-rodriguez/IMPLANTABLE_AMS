@@ -141,10 +141,91 @@ initial begin
 	SD = 0;
 	CD = 0;	
 	Fref = 0;
-//	Resetn = 0;
-//    #50 Resetn = 1; 
 
-/* // TEST OF GAIN SIGNAL GENERATOR 
+	//Gain Test Signal Generator
+        //test_gain_sgen;
+
+	//Gain Test Demodulator
+	//test_gain_demod;
+
+	//Test PLL Freq generation 
+	//test_pll_freq;
+
+	//Test PLL at 32 MHz
+	//test_pll_32M;
+
+	//Test PLL at 8 MHz
+	//test_pll_8M;
+
+	//Test signal generator enable (CE) 
+	//test_ce;
+
+	//Test I/Q demodulation (1kHZ)
+	  test_iq;
+
+end
+
+
+always begin
+#(clk_width) Fref = ~Fref;
+end
+
+/*
+* asic_conf ASIC CONFIGURATION 
+*/
+task asic_conf;
+
+//input [15:0] mConf;
+//output CD,SD;
+
+begin
+	mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+	Resetn = 0;
+    	#clk_conf Resetn = 1;
+    	#clk_conf CD = 0; SD = mConf[0]; 
+	#clk_conf CD = 1;	
+    	#clk_conf CD = 0; SD = mConf[1];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[2];
+	#clk_conf CD = 1;
+	#clk_conf CD = 0; SD = mConf[3];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[4];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[5];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[6];
+	#clk_conf CD = 1;
+	#clk_conf CD = 0; SD = mConf[7];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[8];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[9];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; SD = mConf[10];
+	#clk_conf CD = 1;
+ 	#clk_conf CD = 0; SD = mConf[11];
+	#clk_conf CD = 1;
+	#clk_conf CD = 0; SD = mConf[12];
+	#clk_conf CD = 1;
+ 	#clk_conf CD = 0; SD = mConf[13];
+	#clk_conf CD = 1;
+	#clk_conf CD = 0; SD = mConf[14];
+	#clk_conf CD = 1;
+	#clk_conf CD = 0; SD = mConf[15];
+	#clk_conf CD = 1;
+    	#clk_conf CD = 0; 
+end
+
+endtask
+
+/*
+*  TEST OF GAIN SIGNAL GENERATOR 
+*/
+
+task test_gain_sgen; 
+begin
+
     //Configuration 1
     tF = 4'b1010; //32 kHz
     tIQ = 0; //I Ref
@@ -173,10 +254,16 @@ initial begin
 	#G_delay tGS = 4'b1111; 
 	mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
 	asic_conf;
-   
-	*/
 
-	//TEST OF GAIN DEMODULATOR
+end
+endtask
+
+/*
+* TEST OF GAIN DEMODULATOR
+*/
+
+task test_gain_demod;
+begin
 
     //Configuration 1
     tF = 4'b1010; //32 kHz
@@ -200,77 +287,149 @@ initial begin
 	asic_conf;
 
 end
+endtask
 
-
-always begin
-#(clk_width) Fref = ~Fref;
-end
-
-task asic_conf;
-
-//input [15:0] mConf;
-//output CD,SD;
-
+/*
+* TEST OF PLL FREQUENCIES;
+*/
+task test_pll_freq;
 begin
-	mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
-	Resetn = 0;
-    #clk_conf Resetn = 1;
-    #clk_conf CD = 0; SD = mConf[0]; 
-	#clk_conf CD = 1;	
-    #clk_conf CD = 0; SD = mConf[1];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[2];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[3];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[4];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[5];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[6];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[7];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[8];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[9];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; SD = mConf[10];
-	#clk_conf CD = 1;
- 	#clk_conf CD = 0; SD = mConf[11];
-	#clk_conf CD = 1;
-	#clk_conf CD = 0; SD = mConf[12];
-	#clk_conf CD = 1;
- 	#clk_conf CD = 0; SD = mConf[13];
-	#clk_conf CD = 1;
-	#clk_conf CD = 0; SD = mConf[14];
-	#clk_conf CD = 1;
-	#clk_conf CD = 0; SD = mConf[15];
-	#clk_conf CD = 1;
-    #clk_conf CD = 0; 
-end
+//Configuration 1
+    tF = 4'b1010; //32 kHz
+    tIQ = 0; //I Ref
+    tGS = 4'b0000; // Gain signal generator
+    tCE = 1; //Enable signal generator
+    tNS = 0; // 32 steps
+    tGD = 3'b100; // Gain demodulator
+    tFS = 0; // Fast filter selection
+    tRE = 1; // Reserve
+    mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+    asic_conf;
 
+    #G_delay tF = 4'b1001; //64 kHz
+    asic_conf;
+    #G_delay tF = 4'b1000; //128 kHz
+    asic_conf;
+    #G_delay tF = 4'b0111; //256 kHz
+    asic_conf;
+    #G_delay tF = 4'b0110; //512 kHz
+    asic_conf;
+    #G_delay tF = 4'b0101; //1024 kHz
+    asic_conf;
+    #G_delay tF = 4'b0100; //2M 
+    asic_conf;
+    #G_delay tF = 4'b0011; //4M 
+    asic_conf;
+    #G_delay tF = 4'b0010; //8M 
+    asic_conf;
+    #G_delay tF = 4'b0001; //16M 
+    asic_conf;
+    #G_delay tF = 4'b0000; //32M 
+    asic_conf;
+
+end
+endtask
+
+/*
+* TEST PLL configuration at max frequency (32MHz clock --> 1 MHz sinusoidal)
+*/
+task test_pll_32M;
+begin
+
+//Configuration 1
+    tF = 4'b0000; //32 MHz
+    tIQ = 0; //I Ref
+    tGS = 4'b0000; // Gain signal generator
+    tCE = 1; //Enable signal generator
+    tNS = 0; // 32 steps
+    tGD = 3'b100; // Gain demodulator
+    tFS = 0; // Fast filter selection
+    tRE = 1; // Reserve
+    mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+    asic_conf;
+
+end
 endtask
 
 
-endmodule
+/*
+* TEST PLL configuration at max frequency 
+*/
+task test_pll_8M;
+begin
+
+//Configuration 1
+    tF = 4'b0010; //8 MHz
+    tIQ = 0; //I Ref
+    tGS = 4'b0000; // Gain signal generator
+    tCE = 1; //Enable signal generator
+    tNS = 0; // 32 steps
+    tGD = 3'b100; // Gain demodulator
+    tFS = 0; // Fast filter selection
+    tRE = 1; // Reserve
+    mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+    asic_conf;
 
 
 
+end
+endtask
+
+/*
+* TEST Signal Generator enable/disable 
+*/
+task test_ce;
+begin
+
+//Configuration 1
+    tF = 4'b1010; //32 kHz
+    tIQ = 0; //I Ref
+    tGS = 4'b0000; // Gain signal generator
+    tCE = 1; //Enable signal generator
+    tNS = 0; // 32 steps
+    tGD = 3'b100; // Gain demodulator
+    tFS = 0; // Fast filter selection
+    tRE = 1; // Reserve
+    mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+    asic_conf;
+
+    #G_delay tCE = 0; //Disable signal generator
+    asic_conf;
+
+    #G_delay tCE = 1; //Enable signal generator
+    asic_conf;
+
+end
+endtask
 
 
 /*
-Example of configuration
-//Configuration 2
-    #Q_delay tF = 4'b0101;
-    tIQ = 0;
-    tGS = 4'b0000;
-    tCE = 0;
-    tNS = 1;
-    tGD = 3'b100;
-    tFS = 1;
-    tRE = 0;
-	mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
-
-	asic_conf;
+* TEST I/Q demodulation  
 */
+
+task test_iq;
+begin
+
+//Configuration 1
+    tF = 4'b1010; //32 kHz
+    tIQ = 0; //I Ref
+    tGS = 4'b0000; // Gain signal generator
+    tCE = 1; //Enable signal generator
+    tNS = 0; // 32 steps
+    tGD = 3'b011; // Gain demodulator
+    tFS = 0; // Fast filter selection
+    tRE = 1; // Reserve
+    mConf = {tF,tIQ,tGS,tCE,tNS,tGD,tFS,tRE};
+    asic_conf;
+
+    #M_delay tIQ = 1; //Q Ref
+    asic_conf;
+
+
+end
+endtask
+
+
+
+
+endmodule

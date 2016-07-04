@@ -1,0 +1,235 @@
+// VerilogA for IMP_TOP, config_va, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module config_va(cfg, clk, res);
+inout cfg;
+electrical cfg;
+inout clk;
+electrical clk;
+inout res;
+electrical res;
+
+parameter real td = 1e-9;
+
+//Initial IC Configuration:
+parameter integer F3 = 1;
+parameter integer F2 = 1;
+parameter integer F1 = 1;
+parameter integer F0 = 1;
+parameter integer IQ = 0;
+parameter integer GS3 = 0;
+parameter integer GS2 = 0;
+parameter integer GS1 = 0;
+parameter integer GS0 = 0;
+parameter integer CE = 0;
+parameter integer NS = 0;
+parameter integer GD2 = 0;
+parameter integer GD1 = 0;
+parameter integer GD0 = 0;
+parameter integer FS = 0;
+parameter integer RE = 0;
+//parameter integer [15:0] mConf;
+
+
+
+parameter real cp = 10e-9;  //Clock pulse width (T/2)
+parameter real sc = 75e-9;  //clock delay Start (negative flank) 
+parameter real vh = 1.8;
+parameter real vl = 0;
+
+integer flank;
+integer reset;
+integer strobe;
+integer clock;
+integer data;
+
+
+analog begin
+
+
+// INITIAL STEP
+	@(initial_step) begin
+		reset = vl;
+		//strobe = vl;
+		clock = vl;
+		data = vl;
+	end	
+
+
+// RESET
+	@(timer(0.05e-6,0)) begin
+		reset = vl;
+	end
+
+	@(timer(0.07e-6,0)) begin
+		reset = vh;
+	end
+
+
+// CLOCK & DATA
+	@(timer(sc,0)) begin
+		clock = vl;
+		data = RE;
+	end
+	@(timer(sc + cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 2*cp,0)) begin
+		clock = vl;
+		data = FS;
+	end
+
+	@(timer(sc + 3*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 4*cp,0)) begin
+		clock = vl;
+		data = GD0;
+	end
+
+	@(timer(sc + 5*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 6*cp,0)) begin
+		clock = vl;
+		data = GD1;
+	end
+
+	@(timer(sc + 7*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 8*cp,0)) begin
+		clock = vl;
+		data = GD2;
+	end
+
+	@(timer(sc + 9*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 10*cp,0)) begin
+		clock = vl;
+		data = NS;
+	end
+
+	@(timer(sc + 11*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 12*cp,0)) begin
+		clock = vl;
+		data = CE;
+	end
+
+	@(timer(sc + 13*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 14*cp,0)) begin
+		clock = vl;
+		data = GS0;
+	end
+
+	@(timer(sc + 15*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 16*cp,0)) begin
+		clock = vl;
+		data = GS1;
+	end
+
+	@(timer(sc + 17*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 18*cp,0)) begin
+		clock = vl;
+		data = GS2;
+	end
+
+	@(timer(sc + 19*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 20*cp,0)) begin
+		clock = vl;
+		data = GS3;
+	end
+
+	@(timer(sc + 21*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 22*cp,0)) begin
+		clock = vl;
+		data = IQ;
+	end
+
+	@(timer(sc + 23*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 24*cp,0)) begin
+		clock = vl;
+		data = F0;
+	end
+
+	@(timer(sc + 25*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 26*cp,0)) begin
+		clock = vl;
+		data = F1;
+	end
+
+	@(timer(sc + 27*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 28*cp,0)) begin
+		clock = vl;
+		data = F2;
+	end
+
+	@(timer(sc + 29*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 30*cp,0)) begin
+		clock = vl;
+		data = F3;
+	end
+
+	@(timer(sc + 31*cp,0)) begin
+		clock = vh;
+	end
+
+	@(timer(sc + 32*cp,0)) begin
+		clock = vl;
+		data = 0;
+	end
+
+
+	V(clk) <+ transition(clock,0,td);
+	V(res) <+ transition(reset,0,td);
+	V(cfg) <+ transition(data,0,td);
+
+
+
+
+
+
+
+
+end
+
+
+endmodule
