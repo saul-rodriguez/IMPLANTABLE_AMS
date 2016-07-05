@@ -1,4 +1,4 @@
-//Revision 59
+//Revision 60
 config top_imp_sensor_tb;
 design IMP_TOP.top_tb:schematic;
 liblist IMP_DIG_DUMMY;
@@ -7,6 +7,7 @@ viewlist spectre, veriloga, verilogams, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
+cell CORELIB.MUX2X8 binding :cmos_sch;
 cell CORELIB.NAND2X1 binding :cmos_sch;
 cell CORELIB.INVX1 binding :cmos_sch;
 cell CORELIB.DFCX4 binding :cmos_sch;
