@@ -1,0 +1,32 @@
+// VerilogA for IMP_POW_LDO, ldo, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ldo(V_REF, V_REG, V_UNREG, vssa, vsub, bias);
+inout V_REF;
+electrical V_REF;
+inout V_REG;
+electrical V_REG;
+inout V_UNREG;
+electrical V_UNREG;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+input bias;
+electrical bias;
+
+analog begin
+
+	if (V(V_UNREG) > 1.8) begin
+		V(V_REG) <+ 1.8;
+	end else begin
+		V(V_REG) <+ V(V_UNREG);
+	end
+
+	V(bias) <+ I(bias)*1;
+
+end
+
+endmodule

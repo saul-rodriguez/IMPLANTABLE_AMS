@@ -1,0 +1,7 @@
+#!/bin/sh
+cdsVncserver :80
+sleep 3
+cd /home/saul/projects/IMPLANTABLE_AMS/version1/saul
+virtuoso -noautostart -mpssession "virtuoso28231" -mpshost "s2424.it.kth.se" -davinciService "DaVinciService_28231_1467880400" -log '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/logs_saul/logs0/Job5.log'  -licenseLockFileName '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/.tmp_saul/.s2424.it.kth.se_28231'  -axlChildIdFlag 5 1>/dev/null  2>/dev/null 
+exit $?
+
