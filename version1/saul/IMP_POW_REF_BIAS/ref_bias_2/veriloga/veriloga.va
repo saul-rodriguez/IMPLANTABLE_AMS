@@ -1,0 +1,37 @@
+// VerilogA for IMP_POW_REF_BIAS, ref_bias, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ref_bias(IOUT, RES, VD, VREF, bias, vssa, vsub);
+inout IOUT;
+electrical IOUT;
+inout RES;
+electrical RES;
+inout VD;
+electrical VD;
+inout VREF;
+electrical VREF;
+inout bias;
+electrical bias;
+inout vssa;
+electrical vssa;
+inout vsub;
+electrical vsub;
+
+analog begin
+
+
+V(RES) <+ V(VREF);
+
+if (V(VD) > 1.25) begin
+	I(IOUT) <+ I(RES)*0.8;	
+end else begin
+	I(IOUT) <+ 0;	
+end
+
+V(bias) <+ I(bias)*1;
+
+end
+
+endmodule
