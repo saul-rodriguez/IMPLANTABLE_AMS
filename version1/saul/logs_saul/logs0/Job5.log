@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.07.07 12:45:36.107
-\# Local time Thursday 7 July 2016, 2:45 pm
+\# Program start time UTC 2016.07.08 12:31:26.391
+\# Local time Friday 8 July 2016, 2:31 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -15,18 +15,18 @@
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	462970880 (0x1b986000) bytes
-\# Available memory:	45457672 (0x2b5a108) kilobytes
+\# Initial sbrk value:	459112448 (0x1b5d8000) bytes
+\# Available memory:	62473584 (0x3b94570) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	81859026944 (0x130f2da000) bytes
-\# Max mem available:	46606389248 (0xad9f51000) bytes
-\# Initial memory used:	57733120 (0x370f000) bytes
-\#        process size:	673456128 (0x28242000) bytes
+\# Maximum memory size:	81862889472 (0x130f689000) bytes
+\# Max mem available:	64030687232 (0xee886c000) bytes
+\# Initial memory used:	57737216 (0x3710000) bytes
+\#        process size:	673460224 (0x28243000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		30939
+\# Process Id:		4487
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	45445236 (0x2b57074) kilobytes UTC 2016.07.07 12:45:36.337
-\# Memory report: Maximum memory size now 46616657920 (0xada91c000) bytes, UTC 2016.07.07 12:45:36.337
+\# Available memory:	62461404 (0x3b915dc) kilobytes UTC 2016.07.08 12:31:26.646
+\# Memory report: Maximum memory size now 64041218048 (0xee9277000) bytes, UTC 2016.07.08 12:31:26.646
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -119,17 +119,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_TOP
-\o 	Cell         = top_imp_sensor_tb_spectre
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.18
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18/1/IMP_TOP:top_imp_sensor_tb_spectre:1
-\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.28
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.28.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.28/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -139,7 +139,7 @@
 \o *Info*    Spectre controlMode is set "batch".
 \o 
 \o Loading spectrei.cxt 
-\# Memory report: now 168853504 (0xa108000) bytes, process size 916328448 (0x369e1000) bytes at UTC 2016.07.07 12:45:38.828
+\# Memory report: now 168865792 (0xa10b000) bytes, process size 916340736 (0x369e4000) bytes at UTC 2016.07.08 12:31:29.135
 \o Loading relXpert.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
@@ -163,68 +163,58 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (3 1) on testbench [
-\o           IMP_TOP:top_imp_sensor_tb_spectre:1 ].
+\o *Info*    Run start for Point ID (13 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_PAD = "800f"
-\o Setting var CAP_TIA = "1n"
-\o Setting var RL = "100"
-\o Setting var fmax = "60M"
-\o Setting var fref = "500k"
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "10u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "1k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18/1/IMP_TOP:top_imp_sensor_tb_spectre:1/netlist
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.28/1/IMP_POW_TOP:pow_top_tb2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18/1/IMP_TOP:top_imp_sensor_tb_spectre:1
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.28/1/IMP_POW_TOP:pow_top_tb2:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (3 1)
+\o *Info*    Creating Netlist for Point ID (13 1)
 \o 
 \o generate netlist...
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul  7 14:45:41 2016
+\o Begin Incremental Netlisting Jul  8 14:31:31 2016
 \o WARNING (OSSHNL-145): Incremental netlisting is not possible since the netlist in this run directory
 \o was generated using a previous IHNL version which is incompatible with the
 \o current IHNL version. Therefore re-netlisting the entire design using the
 \o current IHNL version.
 \o 
-\w *WARNING* (icLic-3) Could not get license Virtuoso_Layout_Suite_L
-\w *WARNING* (icLic-21) License Virtuoso_Layout_Suite_L ("95300") is not available to run Layout-L.
-\w Trying to check out the license Virtuoso_Layout_Suite_XL ("95310") instead.
-\w *WARNING* (icLic-3) Could not get license Virtuoso_Layout_Suite_XL
-\w *WARNING* (icLic-21) License Virtuoso_Layout_Suite_XL ("95310") is not available to run Layout-L.
-\w Trying to check out the license Virtuoso_Layout_Suite_GXL ("95320") instead.
-\o *INFO* (icLic-25) License Virtuoso_Layout_Suite_GXL ("95320") was used to run Layout L.
-\o Checking out VLS-GXL license for the Express Pcell feature because a VLS-L or VLS-XL license is not available.
-\o VLS-GXL license has been checked out for the Express Pcell feature.
-\o VLS-L license has been locked for Express Pcell feature. This will remain checked out until the current session ends.
-\# Memory report: now 274997248 (0x10642000) bytes, process size 1022472192 (0x3cf1b000) bytes at UTC 2016.07.07 12:45:41.828
-\# Memory report: now 382156800 (0x16c74000) bytes, process size 1129631744 (0x4354d000) bytes at UTC 2016.07.07 12:46:11.830
-\o End netlisting Jul  7 14:46:51 2016
+\o End netlisting Jul  8 14:31:31 2016
 \o 
 \o Netlisting Statistics:
-\o 	Number of components: 324354
+\o 	Number of components:  225
 \o 
-\o 	Elapsed time:         70.0s (4633.63/s)
+\o 	Elapsed time:          0.0s
 \o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_TOP:top_imp_sensor_tb_spectre:1 ] for Point ID (3 1).
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (13 1).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18/1/IMP_TOP:top_imp_sensor_tb_spectre:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.28/1/IMP_POW_TOP:pow_top_tb2:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -234,15 +224,14 @@
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\# Memory report: Maximum memory size now 45656801280 (0xaa15b8000) bytes, UTC 2016.07.07 12:47:28.887
-\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 1) on testbench [
-\o           IMP_TOP:top_imp_sensor_tb_spectre:1 ].
+\o *Info*    Run complete for Point ID (13 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
 \o 
 \o 
 \o 
@@ -255,17 +244,17 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = IMP_TOP
-\o 	Cell         = top_imp_sensor_tb_spectre
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
 \o 	View         = config
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.19
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19.rdb
-\o 	Results Dir  = /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19/1/IMP_TOP:top_imp_sensor_tb_spectre:1
-\o 	Results Loc  = /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.29
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.29.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.29/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -276,47 +265,49 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (4 1) on testbench [
-\o           IMP_TOP:top_imp_sensor_tb_spectre:1 ].
+\o *Info*    Run start for Point ID (14 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var CAP_OFF = "0.5n"
-\o Setting var CAP_PAD = "800f"
-\o Setting var CAP_TIA = "1n"
-\o Setting var RL = "100"
-\o Setting var fmax = "60M"
-\o Setting var fref = "500k"
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "10u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "1k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19/1/IMP_TOP:top_imp_sensor_tb_spectre:1/netlist
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.29/1/IMP_POW_TOP:pow_top_tb2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19/1/IMP_TOP:top_imp_sensor_tb_spectre:1
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.29/1/IMP_POW_TOP:pow_top_tb2:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (4 1)
+\o *Info*    Creating Netlist for Point ID (14 1)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul  7 14:51:37 2016
-\o End netlisting Jul  7 14:51:43 2016
+\o Begin Incremental Netlisting Jul  8 14:31:52 2016
+\o End netlisting Jul  8 14:31:52 2016
 \o 
 \o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   6.0s
+\o 	Time taken to compare the design with netlist:   0.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           IMP_TOP:top_imp_sensor_tb_spectre:1 ] for Point ID (4 1).
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (14 1).
 \o 
-\o Delete psf data in /home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19/1/IMP_TOP:top_imp_sensor_tb_spectre:1/psf.
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.29/1/IMP_POW_TOP:pow_top_tb2:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -325,11 +316,383 @@
 \o To view the simulator output, right-click on the test name, result 
 \o name, or any value in the "Results" tab of the Outputs section and 
 \o choose "Output Log" menu option.
-\# Memory report: Maximum memory size now 44577103872 (0xa6100a000) bytes, UTC 2016.07.07 13:10:09.875
-\# Memory report: Maximum memory size now 43466153984 (0xa1ec8e000) bytes, UTC 2016.07.07 15:33:20.231
-\# Available memory:	41265968 (0x275ab30) kilobytes UTC 2016.07.07 15:33:40.233
-\# Memory report: Maximum memory size now 42377977856 (0x9ddeca000) bytes, UTC 2016.07.07 15:33:50.233
-\# Memory report: Maximum memory size now 41543364608 (0x9ac2d7000) bytes, UTC 2016.07.07 15:43:00.253
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.30
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.30.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.30/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "10u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "1k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.30/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.30/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:33:08 2016
+\o End netlisting Jul  8 14:33:08 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (15 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.30/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.31
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.31.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.31/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.31/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.31/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:33:54 2016
+\o End netlisting Jul  8 14:33:54 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (16 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.31/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.32
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.32.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.32/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (17 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.32/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.32/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (17 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:35:08 2016
+\o End netlisting Jul  8 14:35:08 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   13
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (17 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.32/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (17 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.33
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:38:14 2016
+\o End netlisting Jul  8 14:38:14 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   51
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o WARNING (ADE-3022): Schematics of the following net names could not be mapped to
+\o         simulators. Ensure that the specified schematic names are valid.
+\o         /I0/IPRB0 
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (18 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
 \o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
 \o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
 \o         to view the simulation run log.
@@ -338,18 +701,3429 @@
 \o 
 \o *Error*   Error ID  = 5011
 \o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o  
+\o 
+\o           Error found by spectre.
+\o Error found by spectre.
+\o ERROR
+\o           (SPECTRE-16408): The probe parameter must be specified to
+\o           perform stability analysis.
 \o 
 \o 
 \o 
 \o 
-\# Memory report: Maximum memory size now 42789322752 (0x9f6714000) bytes, UTC 2016.07.07 15:53:40.279
 \o 
-\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (18 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (18 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:38:19 2016
+\o End netlisting Jul  8 14:38:19 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o WARNING (ADE-3022): Schematics of the following net names could not be mapped to
+\o         simulators. Ensure that the specified schematic names are valid.
+\o         /I0/IPRB0 
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (18 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.33/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre.
+\o Error found by spectre.
+\o ERROR
+\o           (SPECTRE-16408): The probe parameter must be specified to
+\o           perform stability analysis.
+\o 
+\o 
+\o 
 \o 
 \o 
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables1".
 \o To save future changes, copy variables to cellView before exiting.
-\# Memory report: on exit 486387712 (0x1cfdb000) bytes, process size 1233862656 (0x498b4000) bytes at UTC 2016.07.07 15:54:45.670
-\# Memory report: peak usage 486395904 (0x1cfdd000) bytes, process size 1233866752 (0x498b5000) bytes
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.34
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.34.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.34/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (19 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.34/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.34/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (19 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:38:36 2016
+\o End netlisting Jul  8 14:38:36 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o WARNING (ADE-3022): Schematics of the following net names could not be mapped to
+\o         simulators. Ensure that the specified schematic names are valid.
+\o         /I0/IPRB0 
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (19 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.34/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o 
+\o *Error*   Error ID  = 5011
+\o *Error*   Error Msg = Simulator failed to complete the simulation.
+\o 
+\o           Error found by spectre during AHDL read-in.
+\o Error found by
+\o           spectre during AHDL read-in.
+\o ERROR (SPECTRE-25): Killed by
+\o           user.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.35
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.35.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.35/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (20 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.35/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.35/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (20 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:38:53 2016
+\o End netlisting Jul  8 14:38:53 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (20 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.35/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (20 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.36
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.36.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.36/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (21 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.36/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.36/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (21 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:40:57 2016
+\o End netlisting Jul  8 14:40:57 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (21 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.36/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (21 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.37
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "4k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:41:46 2016
+\o End netlisting Jul  8 14:41:46 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (22 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 2) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/2/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/2/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:41:51 2016
+\o End netlisting Jul  8 14:41:51 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (22 2).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/2/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 2) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 13) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/13/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/13/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:41:54 2016
+\o End netlisting Jul  8 14:41:55 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (22 13).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/13/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 13) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 16) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/16/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/16/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:41:59 2016
+\o End netlisting Jul  8 14:41:59 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (22 16).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/16/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 16) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 6) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/6/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/6/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:42:03 2016
+\o End netlisting Jul  8 14:42:03 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (22 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/6/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 6) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (22 10) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/10/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/10/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (22 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:42:08 2016
+\o End netlisting Jul  8 14:42:08 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (22 10).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.37/10/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (22 10) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.38
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "10M"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/3/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/3/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (23 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:45:31 2016
+\o End netlisting Jul  8 14:45:31 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (23 3).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/3/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (23 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 15) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/15/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/15/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (23 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:45:35 2016
+\o End netlisting Jul  8 14:45:35 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (23 15).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/15/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (23 15) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 6) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/6/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/6/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (23 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:45:40 2016
+\o End netlisting Jul  8 14:45:40 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (23 6).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/6/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (23 6) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (23 10) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/10/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/10/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (23 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:45:45 2016
+\o End netlisting Jul  8 14:45:45 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (23 10).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.38/10/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (23 10) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.39
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (24 12) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "10M"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/12/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/12/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (24 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:47:47 2016
+\o End netlisting Jul  8 14:47:47 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (24 12).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/12/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (24 12) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (24 14) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/14/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/14/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (24 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:47:53 2016
+\o End netlisting Jul  8 14:47:53 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (24 14).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/14/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (24 14) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (24 4) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/4/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/4/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (24 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:47:59 2016
+\o End netlisting Jul  8 14:47:59 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (24 4).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/4/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (24 4) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (24 8) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/8/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/8/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (24 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:48:04 2016
+\o End netlisting Jul  8 14:48:04 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (24 8).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.39/8/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (24 8) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.40
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (25 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "10M"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "5"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/3/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/3/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (25 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:49:12 2016
+\o End netlisting Jul  8 14:49:12 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (25 3).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/3/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: Maximum memory size now 62628470784 (0xe94f2a000) bytes, UTC 2016.07.08 12:49:17.141
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (25 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (25 16) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/16/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/16/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (25 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:49:59 2016
+\o End netlisting Jul  8 14:49:59 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (25 16).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/16/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (25 16) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (25 5) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/5/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/5/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (25 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:50:44 2016
+\o End netlisting Jul  8 14:50:44 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (25 5).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/5/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (25 5) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (25 9) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/9/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/9/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (25 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:51:31 2016
+\o End netlisting Jul  8 14:51:31 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (25 9).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.40/9/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (25 9) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 64672882688 (0xf0ecde000) bytes, UTC 2016.07.08 12:53:47.150
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.41
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 2) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "10M"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/2/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/2/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:54:38 2016
+\o End netlisting Jul  8 14:54:38 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (26 2).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/2/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (26 2) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 14) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/14/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/14/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:54:43 2016
+\o End netlisting Jul  8 14:54:43 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (26 14).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/14/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (26 14) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 7) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/7/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/7/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:54:53 2016
+\o End netlisting Jul  8 14:54:53 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (26 7).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/7/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (26 7) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (26 10) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/10/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/10/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (26 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:55:02 2016
+\o End netlisting Jul  8 14:55:02 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (26 10).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.41/10/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (26 10) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.42
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (27 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "10M"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_PULSE = "3"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (27 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:58:20 2016
+\o End netlisting Jul  8 14:58:20 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (27 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.42/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (27 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.43
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (28 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "10M"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (28 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:58:49 2016
+\o End netlisting Jul  8 14:58:49 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (28 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.43/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (28 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.44
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (29 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "1k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (29 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 14:59:35 2016
+\o End netlisting Jul  8 14:59:35 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (29 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.44/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (29 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.45
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (30 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "2k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (30 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:01:01 2016
+\o End netlisting Jul  8 15:01:01 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (30 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.45/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (30 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.46
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (31 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "500"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (31 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:01:42 2016
+\o End netlisting Jul  8 15:01:42 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (31 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.46/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (31 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.47
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (32 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "500"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3.2"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (32 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:02:33 2016
+\o End netlisting Jul  8 15:02:33 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (32 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.47/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (32 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.48
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.48.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.48/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (33 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "500"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3.2"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.48/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.48/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (33 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:03:13 2016
+\o End netlisting Jul  8 15:03:13 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (33 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.48/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (33 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.49
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.49.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.49/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (34 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "5k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3.2"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.49/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.49/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (34 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:05:28 2016
+\o End netlisting Jul  8 15:05:28 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (34 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.49/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (34 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.50
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.50.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.50/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (35 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "50k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3.2"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.50/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.50/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (35 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:08:01 2016
+\o End netlisting Jul  8 15:08:01 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (35 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.50/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (35 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.51
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.51.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.51/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (36 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "500k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3.2"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.51/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.51/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (36 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:10:42 2016
+\o End netlisting Jul  8 15:10:42 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (36 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.51/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (36 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.52
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (37 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "500k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "3.2"
+\o Setting var VIN_PULSE = "0"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (37 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:13:46 2016
+\o End netlisting Jul  8 15:13:46 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (37 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.52/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (37 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.53
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (38 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "500k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_PULSE = "3.3"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (38 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:15:31 2016
+\o End netlisting Jul  8 15:15:31 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   34
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (38 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.53/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (38 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.54
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (39 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "5k"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_PULSE = "3.3"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (39 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:16:32 2016
+\o End netlisting Jul  8 15:16:32 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (39 1).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/1/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (39 1) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (39 5) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "50M"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (39 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:16:46 2016
+\o End netlisting Jul  8 15:16:46 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (39 5).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.54/5/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (39 5) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = IMP_POW_TOP
+\o 	Cell         = pow_top_tb2
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = IMP_POW_TOP:pow_top_tb2:1_none_Interactive.55
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/1/IMP_POW_TOP:pow_top_tb2:1
+\o 	Results Loc  = /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_POW_TOP/pow_top_tb2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (40 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var AM_INDEX = "0"
+\o Setting var C_REC = "20u"
+\o Setting var FREQ = "10M"
+\o Setting var RL = "50000"
+\o Setting var TX_DATA = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_PULSE = "3.3"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (40 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:18:26 2016
+\o End netlisting Jul  8 15:18:26 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (40 3).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/3/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (40 3) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (40 5) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var RL = "5000000"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (40 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Jul  8 15:18:40 2016
+\o End netlisting Jul  8 15:18:40 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ IMP_POW_TOP:pow_top_tb2:1
+\o           ] for Point ID (40 5).
+\o 
+\o Delete psf data in /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* phaseDegUnwrapped: can't handle phaseDegUnwrapped(nil)
+\e 
+\e 
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results stb are not available for /home/saul/Sim/IMP_POW_TOP/pow_top_tb2/adexl/results/data/Interactive.55/5/IMP_POW_TOP:pow_top_tb2:1/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o 
+\o *Info*    Run complete for Point ID (40 5) on testbench [
+\o           IMP_POW_TOP:pow_top_tb2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables1".
+\o To save future changes, copy variables to cellView before exiting.
+\# Memory report: on exit 202874880 (0xc17a000) bytes, process size 950349824 (0x38a53000) bytes at UTC 2016.07.08 13:23:55.826
+\# Memory report: peak usage 202891264 (0xc17e000) bytes, process size 950366208 (0x38a57000) bytes
