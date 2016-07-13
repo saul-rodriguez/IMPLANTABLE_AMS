@@ -1,5 +1,5 @@
 <rdeSequenceEnvs name="current">
-	<StringList name="bottom_routing_layer" multiselect="false" singleSelectPosition="3">
+	<StringList name="bottom_routing_layer" multiselect="false" singleSelectPosition="2">
 		<s value="PC"/>
 		<s value="M1"/>
 		<s value="M2"/>
@@ -50,7 +50,7 @@
 		<s value="min_pin"/>
 		<s value="avg_pin"/>
 	</StringList>
-	<StringList name="top_routing_layer" multiselect="false" singleSelectPosition="2">
+	<StringList name="top_routing_layer" multiselect="false" singleSelectPosition="1">
 		<s value="AM"/>
 		<s value="MT"/>
 		<s value="M4"/>
@@ -130,9 +130,9 @@
 		<Boolean name="unlock_before_routing">false </Boolean>
 	</Package>
 	<Package name="run_env">
-		<String name="cellName">"top_imp_sensor"</String>
+		<String name="cellName">"spc_io_test"</String>
 		<Boolean name="is_db_opened">false </Boolean>
-		<String name="libName">"IMP_TOP"</String>
+		<String name="libName">"ALL_TESTS"</String>
 		<String name="viewName">"layout"</String>
 	</Package>
 	<Package name="special_blockage_treatment">
@@ -339,7 +339,7 @@
 		<Boolean name="checkpoint" default="true">true </Boolean>
 		<String name="checkpoint_status">"rc"</String>
 		<Boolean name="run" default="true">true </Boolean>
-		<String name="run_status">"nr"</String>
+		<String name="run_status">"rc"</String>
 		<Boolean name="save">false </Boolean>
 		<String name="save_status">"not_run"</String>
 		<String name="scheme">"default"</String>
