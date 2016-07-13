@@ -14,7 +14,7 @@
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+			<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -50,6 +50,87 @@
 						<value>config</value>
 					</option>
 				</origoptions>
+				<outputs>
+					<output>(VT("/VOUTP") - VT("/VOUTN"))
+						<evalType>point</evalType>
+					</output>
+					<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+						<evalType>point</evalType>
+					</output>
+					<output>copy1
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>copy2
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+			<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>top_imp_sensor_tb_spectre</value>
+					</option>
+					<option>lib
+						<value>IMP_TOP</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_active</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>top_imp_sensor_tb_spectre</value>
+					</option>
+					<option>lib
+						<value>IMP_TOP</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>copy1
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>copy2
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+				</outputs>
 			</test>
 		</tests>
 		<vars>
@@ -57,36 +138,48 @@
 				<value>0.5n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>CAP_PAD
 				<value>800f</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>CAP_TIA
 				<value>1n</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+					<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>fmax
 				<value>60M</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>RL
-				<value>100</value>
+				<value>1000</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>fref
 				<value>500k</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+					<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>BONDWIRE
+				<value>3n</value>
+				<dependentTests>
+					<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -102,9 +195,13 @@
 				<value></value>
 			</plottingoption>
 		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+		<disabledtests>
+			<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+		</disabledtests>
 	</active>
 	<history>History
-		<historyentry>Interactive.10
+		<historyentry>Interactive.25
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -119,7 +216,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -138,7 +235,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.10</value>
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.25</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -156,84 +253,7 @@
 							</option>
 						</origoptions>
 					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fmax
-						<value>60M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Jul 4 21:17:14 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_211714627</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.10</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.11
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -242,17 +262,17 @@
 							<option>lib
 								<value>IMP_TOP</value>
 							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.11</value>
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.25</value>
+							</option>
+							<option>view
+								<value>config</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -262,8 +282,14 @@
 							<option>lib
 								<value>IMP_TOP</value>
 							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
 							<option>sim
 								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
 							</option>
 							<option>view
 								<value>config</value>
@@ -276,384 +302,42 @@
 						<value>0.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_PAD
 						<value>800f</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
 						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fmax
 						<value>60M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Jul 6 15:00:40 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_150040207</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.11</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.12
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.12</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fmax
-						<value>60M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RL
 						<value>100</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Jul 6 15:05:38 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.12.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_150538819</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.12</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.12</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.12.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.13
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.13</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fmax
-						<value>60M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fref
-						<value>500k</value>
-						<dependentTests>
-							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Wed Jul 6 15:13:43 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.13.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_151343919</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.13</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.13</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.13.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.14
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.14</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fmax
-						<value>60M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fref
 						<value>500k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -669,145 +353,28 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Wed Jul 6 15:26:27 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.14.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.14.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_152627858</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.14</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.14</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.14.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.14.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.15
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.15</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>top_imp_sensor_tb_spectre</value>
-							</option>
-							<option>lib
-								<value>IMP_TOP</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>CAP_OFF
-						<value>0.5n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_PAD
-						<value>800f</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>CAP_TIA
-						<value>1n</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fmax
-						<value>60M</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>RL
-						<value>100</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>fref
-						<value>500k</value>
-						<dependentTests>
-							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Jul  7 10:42:20 2016
+			<timestamp>Tue Jul 12 12:23:44 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.15.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.15.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.25.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_104220823</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.15</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.15</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_122344092</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.25</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.25</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.15.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.15.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.25.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.16
+		<historyentry>Interactive.26
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -822,7 +389,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -841,7 +408,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.16</value>
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.26</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -859,42 +426,91 @@
 							</option>
 						</origoptions>
 					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.26</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>CAP_OFF
 						<value>0.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_PAD
 						<value>800f</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
 						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fmax
 						<value>60M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>1000</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fref
 						<value>500k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -910,25 +526,28 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jul  7 11:14:31 2016
+			<timestamp>Tue Jul 12 12:34:26 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.16.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.26.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_111431659</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.16</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.16</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_123426766</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.26</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.26</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.16.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.26.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.17
+		<historyentry>Interactive.27
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -943,7 +562,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -962,7 +581,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.17</value>
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.27</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -980,42 +599,91 @@
 							</option>
 						</origoptions>
 					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.27</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>CAP_OFF
 						<value>0.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_PAD
 						<value>800f</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
 						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fmax
 						<value>60M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>1000</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fref
 						<value>500k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1031,25 +699,28 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jul  7 12:14:51 2016
+			<timestamp>Tue Jul 12 12:37:18 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.17.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.17.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.27.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_121451380</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.17</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.17</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_123718489</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.27</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.27</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.17.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.17.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.27.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.18
+		<historyentry>Interactive.28
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1064,7 +735,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -1083,7 +754,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.18</value>
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.28</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1101,42 +772,91 @@
 							</option>
 						</origoptions>
 					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.28</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
 				</tests>
 				<vars>
 					<var>CAP_OFF
 						<value>0.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_PAD
 						<value>800f</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
 						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fmax
 						<value>60M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>1000</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fref
 						<value>500k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1152,25 +872,28 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jul  7 14:45:30 2016
+			<timestamp>Tue Jul 12 13:55:19 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.18.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.28.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_144530980</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_135519554</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.28</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.28</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.18.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.18.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.28.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.19
+		<historyentry>Interactive.29
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1185,7 +908,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>IMP_TOP:top_imp_sensor_tb_spectre:1
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -1204,7 +927,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.19</value>
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.29</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1221,6 +944,57 @@
 								<value>config</value>
 							</option>
 						</origoptions>
+						<outputs>
+							<output>(VT("/VOUTP") - VT("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.29</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -1228,36 +1002,48 @@
 						<value>0.5n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_PAD
 						<value>800f</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>CAP_TIA
 						<value>1n</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fmax
 						<value>60M</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>RL
-						<value>100</value>
+						<value>1000</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>fref
 						<value>500k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BONDWIRE
+						<value>3n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1273,21 +1059,1019 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jul  7 14:51:34 2016
+			<timestamp>Tue Jul 12 14:02:30 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.19.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.29.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.29.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424.it.kth.se_saul_145134723</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_140230192</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.29</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.29</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.19.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.19.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.29.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.29.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.30
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.30</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUTP") - VT("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.30</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>60M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fref
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BONDWIRE
+						<value>3n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jul 12 14:11:31 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.30.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.30.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_141131074</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.30</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.30</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.30.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.30.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.31
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.31</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUTP") - VT("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.31</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>60M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fref
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BONDWIRE
+						<value>3n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jul 12 14:17:06 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.31.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.31.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_141706640</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.31</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.31</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.31.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.31.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.32
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.32</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUTP") - VT("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.32</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>60M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fref
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BONDWIRE
+						<value>3n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jul 12 14:24:41 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.32.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.32.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_142441352</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.32</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.32</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.32.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.32.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.33
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.33</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUTP") - VT("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>copy2
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.33</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>copy2
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>60M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fref
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BONDWIRE
+						<value>3n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jul 12 14:44:21 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.33.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.33.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_144421897</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.33</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.33</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.33.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.33.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.34
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1_none_Interactive.34</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>(VT("/VOUTP") - VT("/VOUTN"))
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/VTIA_P") - VT("/VTIA_N"))
+								<evalType>point</evalType>
+							</output>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>copy2
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_IMP_TOP:top_imp_sensor_tb_spectre:1:1_state_Interactive.34</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>top_imp_sensor_tb_spectre</value>
+							</option>
+							<option>lib
+								<value>IMP_TOP</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IMP_TOP:top_imp_sensor_tb_spectre:1:1_state</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>copy1
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>copy2
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>CAP_OFF
+						<value>0.5n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_PAD
+						<value>800f</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CAP_TIA
+						<value>1n</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fmax
+						<value>60M</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>1000</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fref
+						<value>500k</value>
+						<dependentTests>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1</dependentTest>
+							<dependentTest enabled="1">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>BONDWIRE
+						<value>3n</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_TOP:top_imp_sensor_tb_spectre:1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>IMP_TOP:top_imp_sensor_tb_spectre:1</test>
+				</disabledtests>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Tue Jul 12 14:52:05 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.34.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.34.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_145205555</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.34</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.34</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_TOP/top_imp_sensor_tb_spectre/adexl/results/data/Interactive.34.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.34.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

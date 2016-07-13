@@ -1,13 +1,13 @@
 \o Program:		@(#)$CDS: libManager version 6.1.5 - CAT32 05/06/2013 23:35 (cat91amd) $
 \o Sub version:		sub-version  s014 
-\o Arguments:		-mpssession virtuoso8060 -mpshost s2424.it.kth.se 
+\o Arguments:		-mpssession virtuoso12557 -mpshost s2424.it.kth.se 
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
 \o 64-bit offsets
 \o Qt version: 		4.5.3
 \o Log file is "/home/saul/projects/IMPLANTABLE_AMS/version1/saul/libManager.log".
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
 \o changeWorkingDir("/home/saul/projects/IMPLANTABLE_AMS/version1/saul") unnecessary.
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
@@ -23,103 +23,261 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core"
-\a cdsLibManager->cellListBox->value = "top_core_tb_spectre"
-\a cdsLibManager->cellLineEdit->value = "top_core_tb_spectre"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup2" 54 31 2 "layout")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CategoryCellsEdit->value = "*"
+\a basicCopyForm->CellsSkipLibraries->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsSkipLibraries->value = t
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromLibrary->value = "ALL_TESTS"
+\a basicCopyForm->CopyToLibrary->value = "ALL_TESTS"
+\a basicCopyForm->CopyFromLibrary->value = "IMP_COMM"
+\a basicCopyForm->CopyFromCell->value = "data_demod_2"
+\a basicCopyForm->CopyFromView->value = "layout"
+\a basicCopyForm->CopyToLibrary->value = "IMP_COMM"
+\a basicCopyForm->CopyToCell->value = "data_demod_2"
+\a basicCopyForm->CopyToView->value = "layout"
+\a basicCopyForm->ViewsViewsToCopy->value = "layout"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_DIFTOSE IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_DIG_SPI_HV IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM\nIOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_DIFTOSE IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_DIG_SPI_HV IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM\nIOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(3066 110 444 779))
+\a basicCopyForm->CopyToView->value = "layout_2"
+\a nrDialogAccept(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "IMP_COMM".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a basicCopyForm->CopyToView->value = "layout_2"
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3136 285 304 134))
+\a nrResizeWindow(workingDialogForm list(3136 313 304 134))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrSetCurrentWindow(cdsLibManager)
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_DIFTOSE IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_DIG_SPI_HV IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM\nIOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a cdsLibManager->viewListBox->value = "layout_2"
+\a cdsLibManager->viewLineEdit->value = "layout_2"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout_2"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a lmgrLogShowPopup("mainListPopup2" 45 30 2 "layout")
+\a cdsLibManager->editPropertiesButton->value = t
+\o MPS request: edit property
+\a nrSetCurrentWindow(cdsLibManager)
+\a lmgrLogShowPopup("mainListPopup2" 73 25 2 "layout")
+\a cdsLibManager->editDeleteButton->value = t
+\a deleteForm->deleteBothRadioButton->value = t
+\a deleteForm->deleteFilterEdit->value = "*"
+\a deleteForm->notDeleteFilterEdit->value = "*"
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(2975 216 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(3086 290 405 269))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "layout" from cell "data_demod_2" in library "IMP_COMM".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\o Deleted cellview 'IMP_COMM/data_demod_2/layout'.
+\o Deletion of 1 view done.
+\a nrSetCurrentWindow(workingDialogForm)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
+\a nrResizeWindow(workingDialogForm list(3146 313 298 134))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "layout_2"
+\a cdsLibManager->viewLineEdit->value = "layout_2"
+\a lmgrLogShowPopup("mainListPopup2" 53 33 2 "layout_2")
+\a cdsLibManager->copySimpleButton->value = t
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->ViewsViewsToCopy->value = ""
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CopyFromCell->value = ""
+\a basicCopyForm->CopyFromView->value = ""
+\a basicCopyForm->CopyToCell->value = ""
+\a basicCopyForm->CopyToView->value = ""
+\a basicCopyForm->CopyFromLibrary->value = ""
+\a basicCopyForm->CopyToLibrary->value = ""
+\a basicCopyForm->CopyFromLibrary->value = "ALL_TESTS"
+\a basicCopyForm->CopyToLibrary->value = "ALL_TESTS"
+\a basicCopyForm->CopyFromLibrary->value = "IMP_COMM"
+\a basicCopyForm->CopyFromCell->value = "data_demod_2"
+\a basicCopyForm->CopyFromView->value = "layout_2"
+\a basicCopyForm->CopyToLibrary->value = "IMP_COMM"
+\a basicCopyForm->CopyToCell->value = "data_demod_2"
+\a basicCopyForm->CopyToView->value = "layout_2"
+\a basicCopyForm->ViewsViewsToCopy->value = "layout_2"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = ""
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_DIFTOSE IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_DIG_SPI_HV IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM\nIOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a basicCopyForm->ViewsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_DIFTOSE IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_DIG_SPI_HV IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM\nIOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a nrSetWindowVisibility(basicCopyForm "show")
+\a nrSetCurrentWindow(basicCopyForm)
+\a nrResizeWindow(basicCopyForm list(3056 100 444 779))
+\a basicCopyForm->CopyToView->value = "layout"
+\a nrDialogAccept(basicCopyForm)
+\a basicCopyForm->OK->value = t
+\o Beginning simple copy to library "IMP_COMM".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a basicCopyForm->CopyToView->value = "layout"
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(3136 248 304 134))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "layout_2"
+\a cdsLibManager->viewLineEdit->value = "layout_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout_2"
+\a cdsLibManager->viewLineEdit->value = "layout_2"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "*"
+\a basicCopyForm->CellsSkipLibrariesEdit->value = "ALL_TESTS A_CELLS_4AM A_CELLS_5AM A_CELLS_6AM A_CELLS_7AM BORDERS CHARACTERIZATION CORELIB CORELIB_HV CORELIB_HVT CORELIB_SHVT GATES GATES_ANA IMP_AN_BIAS IMP_AN_BUFFER IMP_AN_DEMOD IMP_AN_DIFTOSE IMP_AN_LNA IMP_AN_LPF IMP_AN_MIXER IMP_AN_PASSIVE IMP_AN_SIGNAL_GEN IMP_AN_SIGNAL_GEN_GM IMP_AN_TIA IMP_CONFIG IMP_DAC IMP_DIG_COUNTER IMP_DIG_DIV IMP_DIG_DIV64 IMP_DIG_DUMMY IMP_DIG_SIGGEN IMP_DIG_SPI IMP_DIG_SPI_HV IMP_PLL_CP IMP_PLL_LPF IMP_PLL_PFD IMP_PLL_TOP IMP_PLL_VCO IMP_POW_BANDGAP IMP_POW_CONSTANT_GM IMP_POW_LDO IMP_POW_RECTIFIER IMP_POW_REF_BIAS IMP_POW_TOP IMP_TOP IOLIB_4AM IOLIB_5AM IOLIB_6AM IOLIB_7AM IOLIB_HV_4AM\nIOLIB_HV_5AM IOLIB_HV_6AM IOLIB_HV_7AM LEADFRAMES PACKAGES TECH_H18A4 TECH_H18A6 US_8ths VIN_AN_LPF_SEL VIN_TOP_SENSOR ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib cmhv7sf connectLib dmsLib esd7hv functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core_tb_spectre"
-\a cdsLibManager->cellLineEdit->value = "top_core_tb_spectre"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core_tb_spectre"
-\a cdsLibManager->cellLineEdit->value = "top_core_tb_spectre"
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config"
-\a cdsLibManager->viewLineEdit->value = "config"
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "top_core"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = "top_core"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -136,36 +294,10 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core"
-\a cdsLibManager->cellLineEdit->value = "top_core"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core"
-\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -188,90 +320,18 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core"
-\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -288,35 +348,181 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_core"
-\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN_GM"
+\a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->cellListBox->value = "Signal_Generator"
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "Signal_Generator"
+\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a lmgrLogShowPopup("mainListPopup2" 100 6 2 "av_extracted")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(2965 206 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(3076 280 405 361))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "av_extracted" from cell "data_demod_2" in library "IMP_COMM".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\o *WARNING* Did not delete cellview 'IMP_COMM/data_demod_2/av_extracted'.
+\o Failed to delete view "av_extracted" at "/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_2/av_extracted".
+\o Deletion of view done. 1 of 1 failed.
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(3146 313 298 134))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "constraint"
+\a cdsLibManager->viewLineEdit->value = "constraint"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "data_demod_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_COMM"
+\a cdsLibManager->libLineEdit->value = "IMP_COMM"
+\a cdsLibManager->cellListBox->value = "data_demod_2"
+\a cdsLibManager->cellLineEdit->value = "data_demod_2"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "top_core"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 3 0)
 \a cdsLibManager->libListBox->value = nil
@@ -335,166 +541,33 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->cellListBox->value = "Signal_Generator"
-\a cdsLibManager->cellLineEdit->value = "Signal_Generator"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->cellListBox->value = "Signal_Generator"
-\a cdsLibManager->cellLineEdit->value = "Signal_Generator"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -4306 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->cellListBox->value = "Signal_Generator"
-\a cdsLibManager->cellLineEdit->value = "Signal_Generator"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->libLineEdit->value = "IMP_AN_SIGNAL_GEN"
-\a cdsLibManager->cellListBox->value = "Signal_Generator"
-\a cdsLibManager->cellLineEdit->value = "Signal_Generator"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "IMP_PLL_TOP"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "IMP_TOP"
 \a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_core"
+\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
@@ -502,6 +575,8 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -528,6 +603,446 @@
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_AN_DEMOD"
+\a cdsLibManager->libLineEdit->value = "IMP_AN_DEMOD"
+\a cdsLibManager->cellListBox->value = "iq_demod"
+\a cdsLibManager->cellLineEdit->value = "iq_demod"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_core"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_analog_extracted"
+\a lmgrLogShowPopup("mainListPopup2" 65 11 2 "av_analog_extracted")
+\a cdsLibManager->editDeleteButton->value = t
+\a nrSetWindowVisibility(deleteForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrResizeWindow(deleteForm list(2955 196 627 425))
+\a deleteForm->OK->value = t
+\o QUESTION (CLM-199): The following 1 items are marked for deletion.  Are you sure?
+\a nrSetWindowVisibility(mcMBXDLG "show")
+\a nrSetCurrentWindow(mcMBXDLG)
+\a nrResizeWindow(mcMBXDLG list(3066 270 405 361))
+\a mcMBXDLG->pushButton1->value = t
+\o Deleting view "av_analog_extracted" from cell "top_core" in library "IMP_TOP".
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(deleteForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\o Deleted cellview 'IMP_TOP/top_core/av_analog_extracted'.
+\a nrSetCurrentWindow(workingDialogForm)
+\o Deletion of 1 view done.
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrResizeWindow(workingDialogForm list(3139 313 298 134))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
+\w LIB TECH_H18A6 from the same file (defined earlier.)
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
+\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
+\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_core"
+\a cdsLibManager->cellLineEdit->value = "top_core"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "top_core_tb_spectre"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "top_core_tb_spectre"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "top_imp_sensor_tb_spectre"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellListBox->value = "top_imp_sensor_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellListBox->value = "top_imp_sensor_tb_spectre"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\a cdsLibManager->cellLineEdit->value = "top_imp_sensor_tb_spectre"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 7 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
@@ -548,210 +1063,597 @@
 \a cdsLibManager->libLineEdit->value = "IMP_TOP"
 \a cdsLibManager->cellListBox->value = "top_imp_sensor"
 \a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_analog_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "esd7hv"
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_imp_sensor"
-\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
+\a cdsLibManager->libLineEdit->value = "esd7hv"
+\a cdsLibManager->showCatsToggle->value = t
+\a cdsLibManager->QToolButton7->value = t
+\a cdsLibManager->showCategoriesAction->value = t
+\a cdsLibManager->libListBox->value = "cmhv7sf"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libListBox->value = "IOLIB_HV_6AM"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libLineEdit->value = "IOLIB_HV_6AM"
+\a cdsLibManager->cellListBox->value = "APRIO1V8_00_HC_HV"
+\a cdsLibManager->cellLineEdit->value = "APRIO1V8_00_HC_HV"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "APRIO5V_00_VHC_HV"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = "APRIO5V_00_VHC_HV"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\o MPS request: edit design
+\o MPS request: edit design
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libCatsTreeView->value = "subCells"
+\a cdsLibManager->catLineEdit->value = "subCells"
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_imp_sensor"
-\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libListBox->value = "cmhv7sf"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libLineEdit->value = "cmhv7sf"
+\a cdsLibManager->libCatsTreeView->value = "contacts"
+\a cdsLibManager->catLineEdit->value = "contacts"
+\a cdsLibManager->libCatsTreeView->value = "Don'tUse"
+\a cdsLibManager->catLineEdit->value = "Don'tUse"
+\a cdsLibManager->libCatsTreeView->value = "diode"
+\a cdsLibManager->catLineEdit->value = "diode"
+\a cdsLibManager->libCatsTreeView->value = "fet"
+\a cdsLibManager->catLineEdit->value = "fet"
+\a cdsLibManager->libCatsTreeView->value = "diode"
+\a cdsLibManager->catLineEdit->value = "diode"
+\a cdsLibManager->libCatsTreeView->value = "contacts"
+\a cdsLibManager->catLineEdit->value = "contacts"
+\a cdsLibManager->libCatsTreeView->value = "chip"
+\a cdsLibManager->catLineEdit->value = "chip"
+\a cdsLibManager->libCatsTreeView->value = "cap"
+\a cdsLibManager->catLineEdit->value = "cap"
+\a cdsLibManager->libCatsTreeView->value = "chip"
+\a cdsLibManager->catLineEdit->value = "chip"
+\a cdsLibManager->libListBox->value = "dmsLib"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = "dmsLib"
+\a cdsLibManager->cellListBox->value = "EE_pkg"
+\a cdsLibManager->viewListBox->value = "verilog_package"
+\a cdsLibManager->viewLineEdit->value = "verilog_package"
+\a cdsLibManager->cellListBox->value = "$unit_0x7dce5038"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->viewListBox->value = "compilation_unit"
+\a cdsLibManager->viewLineEdit->value = "compilation_unit"
+\a cdsLibManager->cellListBox->value = "$unit_0x0c3b912a"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "compilation_unit"
+\a cdsLibManager->viewLineEdit->value = "compilation_unit"
+\a cdsLibManager->cellLineEdit->value = "$unit_0x0c3b912a"
+\a cdsLibManager->libListBox->value = "connectLib"
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_imp_sensor"
-\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = "esd7hv"
+\a cdsLibManager->libListBox->value = "cmhv7sf"
+\a cdsLibManager->libCatsTreeView->value = "Everything"
+\a cdsLibManager->catLineEdit->value = "Everything"
+\a cdsLibManager->libLineEdit->value = "cmhv7sf"
+\a cdsLibManager->libCatsTreeView->value = "parasitics"
+\a cdsLibManager->catLineEdit->value = "parasitics"
+\a cdsLibManager->cellListBox->value = "diodenwx"
+\a cdsLibManager->cellListBox->value = "diodepwdn"
+\a cdsLibManager->cellLineEdit->value = "diodepwdn"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "diodepnw"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "diodenx"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "diodenwx"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "diodednsx"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "diodendpw"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "diodendpw"
+\a cdsLibManager->libCatsTreeView->value = "Well_Tie_diodes"
+\a cdsLibManager->catLineEdit->value = "Well_Tie_diodes"
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_imp_sensor"
-\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "tdndpw"
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "wdnwsx"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "wdnwsx"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 6 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "tdndpw_4"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "tdndpw_4"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 2 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "tdndpw"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "tdndpw"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 7 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 5 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IMP_TOP"
+\a cdsLibManager->libCatsTreeView->value = nil
+\a cdsLibManager->catLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
 \a cdsLibManager->libLineEdit->value = "IMP_TOP"
+\a cdsLibManager->cellListBox->value = "top_core"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->cellLineEdit->value = "top_core"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 5 0)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "av_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_extracted"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->cellListBox->value = "top_imp_sensor"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
 \a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_analog_extracted"
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
-\w LIB TECH_H18A6 from the same file (defined earlier.)
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A7AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A5AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A5AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A4AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
-\w Warning: The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
-\w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\a cdsLibManager->libListBox->value = "IMP_TOP"
-\a cdsLibManager->libLineEdit->value = "IMP_TOP"
-\a cdsLibManager->cellListBox->value = "top_imp_sensor"
-\a cdsLibManager->cellLineEdit->value = "top_imp_sensor"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -4306 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -3226 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -2146 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 -1066 965 1005))
+\a nrResizeWindow(cdsLibManager list(2806 14 965 1005))
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "top_core"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "av_analog_extracted"
+\a cdsLibManager->viewLineEdit->value = "av_analog_extracted"
 \a cdsLibManager->cellLineEdit->value = "top_core"
-\a cdsLibManager->viewListBox->value = "av_extracted"
-\a cdsLibManager->viewLineEdit->value = "av_extracted"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -3226 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -2146 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 -1066 965 1005))
-\a nrResizeWindow(cdsLibManager list(2826 14 965 1005))
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
 \a exit(0)
