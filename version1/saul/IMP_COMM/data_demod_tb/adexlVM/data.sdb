@@ -790,7 +790,7 @@
 		</tests>
 		<vars>
 			<var>AMPLITUDE
-				<value>30m</value>
+				<value>100m</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 				</dependentTests>
@@ -802,13 +802,13 @@
 				</dependentTests>
 			</var>
 			<var>R1
-				<value>500k</value>
+				<value>300k</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCOMP
-				<value>1.0</value>
+				<value>980m</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 				</dependentTests>
@@ -817,6 +817,12 @@
 				<value>1.5</value>
 				<dependentTests>
 					<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>CL
+				<value>10p</value>
+				<dependentTests>
+					<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -836,7 +842,7 @@
 		<allcornersenabled>0</allcornersenabled>
 	</active>
 	<history>History
-		<historyentry>Interactive.37
+		<historyentry>Interactive.61
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1606,7 +1612,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.37</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.61</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1627,7 +1633,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>20m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -1639,7 +1645,7 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>400k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -1654,6 +1660,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1672,22 +1684,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Jun 16 22:32:42 2016</timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.37.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.37.rdb</simresults>
+			<timestamp>Tue Jul 19 09:57:52 2016
+</timestamp>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.61.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.61.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_223242883</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.37</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.37</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_095752723</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.61</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.61</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.37.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.37.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.61.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.61.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.38
+		<historyentry>Interactive.62
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -2457,7 +2470,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.38</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.62</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -2478,7 +2491,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>20m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -2490,7 +2503,7 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>350k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -2505,6 +2518,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2523,23 +2542,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:34:25 2016
+			<timestamp>Tue Jul 19 09:59:03 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.38.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.38.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.62.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.62.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_113425210</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.38</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.38</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_095903219</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.62</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.62</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.38.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.38.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.62.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.62.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.39
+		<historyentry>Interactive.63
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -3309,7 +3328,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.39</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.63</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -3330,7 +3349,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>20m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -3342,7 +3361,7 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -3357,6 +3376,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -3375,23 +3400,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:35:25 2016
+			<timestamp>Tue Jul 19 10:00:17 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.39.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.39.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.63.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.63.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_113525707</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.39</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.39</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_100017337</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.63</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.63</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.39.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.39.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.63.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.63.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.40
+		<historyentry>Interactive.64
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -4161,7 +4186,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.40</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.64</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -4182,7 +4207,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>80m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -4194,7 +4219,7 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -4209,6 +4234,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -4227,23 +4258,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:36:27 2016
+			<timestamp>Tue Jul 19 10:02:00 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.40.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.40.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.64.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.64.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_113627013</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.40</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.40</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_100200803</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.64</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.64</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.40.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.40.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.64.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.64.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.41
+		<historyentry>Interactive.65
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -5013,7 +5044,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.41</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.65</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -5034,7 +5065,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>80m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -5046,7 +5077,7 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -5063,6 +5094,12 @@
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
@@ -5076,26 +5113,26 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<allcornersenabled>0</allcornersenabled>
+				<allcornersenabled>1</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:37:49 2016
+			<timestamp>Tue Jul 19 10:08:59 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.41.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.41.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.65.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.65.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_113749209</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.41</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.41</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_100859721</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.65</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.65</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.41.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.41.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.65.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.65.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.42
+		<historyentry>Interactive.66
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -5865,7 +5902,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.42</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.66</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -5886,7 +5923,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>80m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -5898,13 +5935,13 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCOMP
-						<value>1.0</value>
+						<value>980m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -5913,6 +5950,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>2p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -5928,26 +5971,26 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
-				<allcornersenabled>0</allcornersenabled>
+				<allcornersenabled>1</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:47:30 2016
+			<timestamp>Tue Jul 19 10:16:46 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.42.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.42.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.66.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.66.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_114730909</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.42</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.42</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_101646883</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.66</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.66</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.42.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.42.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.66.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.66.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.43
+		<historyentry>Interactive.67
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -6717,7 +6760,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.43</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.67</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -6738,7 +6781,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>80m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -6750,13 +6793,13 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCOMP
-						<value>1.0</value>
+						<value>980m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -6765,6 +6808,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -6783,23 +6832,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:49:47 2016
+			<timestamp>Tue Jul 19 10:23:48 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.43.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.67.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.67.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_114947520</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.43</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.43</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_102348861</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.67</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.67</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.43.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.67.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.67.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.44
+		<historyentry>Interactive.68
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -7569,7 +7618,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.44</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.68</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -7590,7 +7639,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>80m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -7602,13 +7651,13 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCOMP
-						<value>1.0</value>
+						<value>980m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -7617,6 +7666,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -7635,23 +7690,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:53:05 2016
+			<timestamp>Tue Jul 19 10:31:37 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.44.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.44.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.68.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_115305255</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.44</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.44</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_103137079</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.44.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.44.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.68.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.45
+		<historyentry>Interactive.69
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -8421,7 +8476,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.45</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.69</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -8442,7 +8497,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>20m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -8454,13 +8509,13 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCOMP
-						<value>1.0</value>
+						<value>980m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -8469,6 +8524,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -8487,23 +8548,23 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 11:58:52 2016
+			<timestamp>Tue Jul 19 10:33:20 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.45.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.45.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.69.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_115852736</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.45</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.45</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_103320623</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.45.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.45.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.69.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry>Interactive.46
+		<historyentry>Interactive.70
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -9273,7 +9334,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IMP_COMM:data_demod_tb:1_none_Interactive.46</value>
+								<value>IMP_COMM:data_demod_tb:1_none_Interactive.70</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -9294,7 +9355,7 @@
 				</tests>
 				<vars>
 					<var>AMPLITUDE
-						<value>30m</value>
+						<value>100m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -9306,13 +9367,13 @@
 						</dependentTests>
 					</var>
 					<var>R1
-						<value>500k</value>
+						<value>300k</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>VCOMP
-						<value>1.0</value>
+						<value>980m</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
@@ -9321,6 +9382,12 @@
 						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IMP_COMM:data_demod_tb:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>CL
+						<value>10p</value>
+						<dependentTests>
+							<dependentTest omitted="0">IMP_COMM:data_demod_tb:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -9339,19 +9406,19 @@
 				<allcornersenabled>0</allcornersenabled>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Sat Jun 18 12:00:37 2016
+			<timestamp>Tue Jul 19 10:39:14 2016
 </timestamp>
-			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.46.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.46.rdb</simresults>
+			<resultsname>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.70.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.70.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/localhost.localdomain_saul_120037249</localpsfdir>
-			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.46</psfdir>
-			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.46</simdir>
+			<localpsfdir>/tmp/s2424.it.kth.se_saul_103914389</localpsfdir>
+			<psfdir>/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.70</psfdir>
+			<simdir>$AXL_PROJECT_DIR/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.70</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.46.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.46.log</runlogfile>
+			<runlog>/home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.70.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.70.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

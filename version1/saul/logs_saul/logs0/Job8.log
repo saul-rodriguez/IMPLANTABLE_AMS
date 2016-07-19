@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.07.13 12:29:44.585
-\# Local time Wednesday 13 July 2016, 2:29 pm
+\# Program start time UTC 2016.07.19 08:31:42.338
+\# Local time Tuesday 19 July 2016, 10:31 am
 \o Program:		@(#)$CDS: virtuoso version 6.1.5-64b 06/11/2013 20:05 (sjfnl006) $
 \o Hierarchy:		/pkg/Cadence/installs/IC615/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.5-64b.500.17  (64-bit addresses)
@@ -11,22 +11,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x1400000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x31, current max 0x3ffffa (4194298)
 \# Memory report:	maximum data size 18446744073709551615 (0xffffffffffffffff) bytes
 \# Memory report:	maximum process size 18446744073709551615 (0xffffffffffffffff) bytes
-\# Initial sbrk value:	498585600 (0x1db7d000) bytes
-\# Available memory:	51859284 (0x3174f54) kilobytes
+\# Initial sbrk value:	457039872 (0x1b3de000) bytes
+\# Available memory:	51703492 (0x314eec4) kilobytes
 \# System memory:	80336196 (0x4c9d544) kilobytes
-\# Maximum memory size:	81823412224 (0x130d0e3000) bytes
-\# Max mem available:	53161639936 (0xc60ae4000) bytes
-\# Initial memory used:	57733120 (0x370f000) bytes
-\#        process size:	673456128 (0x28242000) bytes
+\# Maximum memory size:	81864962048 (0x130f883000) bytes
+\# Max mem available:	53002113024 (0xc572c1000) bytes
+\# Initial memory used:	57737216 (0x3710000) bytes
+\#        process size:	673460224 (0x28243000) bytes
 \# Qt version:		4.5.3
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	s2424.it.kth.se:/home/saul/projects/IMPLANTABLE_AMS/version1/saul
-\# Process Id:		21630
+\# Process Id:		16239
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -39,8 +39,8 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:	51852708 (0x31735a4) kilobytes UTC 2016.07.13 12:29:44.758
-\# Memory report: Maximum memory size now 53162602496 (0xc60bcf000) bytes, UTC 2016.07.13 12:29:44.758
+\# Available memory:	51702532 (0x314eb04) kilobytes UTC 2016.07.19 08:31:42.584
+\# Memory report: Maximum memory size now 53024133120 (0xc587c1000) bytes, UTC 2016.07.19 08:31:42.584
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -119,28 +119,32 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
+\o 	Library      = IMP_COMM
+\o 	Cell         = data_demod_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.0
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
+\o 	State Name   = IMP_COMM:data_demod_tb:1_none_Interactive.68
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68/1/IMP_COMM:data_demod_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading simui.cxt 
 \o Loading awv.cxt 
 \o Loading viva.cxt 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
 \o Loading spectrei.cxt 
-\# Memory report: now 169418752 (0xa192000) bytes, process size 916893696 (0x36a6b000) bytes at UTC 2016.07.13 12:30:02.680
+\# Memory report: now 167989248 (0xa035000) bytes, process size 915464192 (0x3690e000) bytes at UTC 2016.07.19 08:31:45.116
 \o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
 \w *WARNING* LIB TECH_H18A6 from File /home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib Line 69 redefines
 \w LIB TECH_H18A6 from the same file (defined earlier.)
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A7AMAM' does not exist
@@ -151,47 +155,69 @@
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A4AM'.
 \w *WARNING* The directory: '/pkg/AMS411/cds/HK_H18/TECH_H18A3AMAM' does not exist
 \w 	but was defined in libFile '/home/saul/projects/IMPLANTABLE_AMS/version1/saul/cds.lib' for Lib 'TECH_H18A3AM'.
-\o Loading hspiceD.cxt 
-\o Loading spectreinl.cxt 
-\o Loading msgHandler.cxt 
-\o Loading UltraSim.cxt 
-\o Loading AMSOSS.cxt 
-\o Loading AMS.cxt 
 \o Loading devCheck.cxt 
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams0'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams0'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (0 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
+\o *Info*    Run start for Point ID (21 1) on testbench [
+\o           IMP_COMM:data_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDC = "1.8"
+\o Setting var AMPLITUDE = "80m"
+\o Setting var C1 = "50n"
+\o Setting var CL = "10p"
+\o Setting var R1 = "300k"
+\o Setting var VCOMP = "980m"
+\o Setting var VOFFSET = "1.5"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1/netlist
+\o           /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68/1/IMP_COMM:data_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1
+\o           /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68/1/IMP_COMM:data_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (0 1)
+\o *Info*    Creating Netlist for Point ID (21 1)
 \o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Initializing the control file using cp:
-\o     cp /pkg/Cadence/installs/IC615/tools.lnx86/dfII/etc/si/control.spectre /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1/netlist/control
-\o Copying Spectre source file 'spectre.inp'
-\o Copying Spectre command file 'spectre.sim'
-\o Begin Incremental Netlisting Jul 13 14:30:04 2016
+\o Loading verilogI.cxt 
+\o Begin Incremental Netlisting Jul 19 10:31:47 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68/1/IMP_COMM:data_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
@@ -200,282 +226,136 @@
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o Loading BORDERS Skill code.WARNING (ADE-6003): Terminal "TRIG50", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "VDDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6003): Terminal "VDD50", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "VDDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6003): Terminal "VSS", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "VDDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6003): Terminal "VSUB", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "VDDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
-\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
-\o            property to be used for netlisting.
-\o            To edit CDF of a cell, 
-\o            i) Open CIW->Tools->CDF->Edit.
-\o            ii) Select Library Name & Cell Name.
-\o            iii) Click on the Edit button in the simulation information section of the
-\o                 Edit CDF window.
-\o WARNING (ADE-6003): Terminal "TRIG50", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "GNDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6003): Terminal "VDD50", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "GNDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6003): Terminal "VSS", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "GNDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6003): Terminal "VSUB", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "GNDPAD1V8ALL_HV" "schematic"
-\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
-\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
-\o            property to be used for netlisting.
-\o            To edit CDF of a cell, 
-\o            i) Open CIW->Tools->CDF->Edit.
-\o            ii) Select Library Name & Cell Name.
-\o            iii) Click on the Edit button in the simulation information section of the
-\o                 Edit CDF window.
-\o WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-\o            than the actual number of terminals in the cellview cell-view "IOLIB_HV_6AM" "VSUB1V8_5V_HV" "schematic"
-\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
-\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
-\o            property to be used for netlisting.
-\o            To edit CDF of a cell, 
-\o            i) Open CIW->Tools->CDF->Edit.
-\o            ii) Select Library Name & Cell Name.
-\o            iii) Click on the Edit button in the simulation information section of the
-\o                 Edit CDF window.
-\o WARNING (ADE-6003): Terminal "m1a", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6003): Terminal "n1", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6003): Terminal "n5", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6003): Terminal "p20", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6003): Terminal "p6", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6003): Terminal "q10", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6003): Terminal "q3", specified in the CDF termOrder, does not exist
-\o            in the cell-view "IOLIB_HV_6AM" "io_drvr_1V8" "schematic"
-\o WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-\o            termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-\o            be ignored. The terminals in the cellView will be netlisted in the alphabetical
-\o            order of their names. Eliminate the mismatch if you want the CDF termOrder
-\o            property to be used for netlisting.
-\o            To edit CDF of a cell, 
-\o            i) Open CIW->Tools->CDF->Edit.
-\o            ii) Select Library Name & Cell Name.
-\o            iii) Click on the Edit button in the simulation information section of the
-\o                 Edit CDF window.
-\o End netlisting Jul 13 14:30:05 2016
+\o Loading BORDERS Skill code.INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:  979
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
 \o 
-\o 	Elapsed time:          1.0s (979.00/s)
-\o Errors: 0	Warnings: 20
+\o Traverse Config lib:IMP_COMM cell:data_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - IOLIB_HV_6AM  Cell - LOGIC1 ***
+\o               *** Library - IOLIB_HV_6AM  Cell - LOGIC0 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IOLIB_HV_6AM/PORGEN_1V8_HV/cmos_sch' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o WARNING (VLOGNET-110): The cell 'IMP_COMM/data_demod_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o message_demod               verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o tdndsx                      spectre              *Stopping View*  
+\o cmimx                       spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o wdpwdn                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o tdndpw                      spectre              *Stopping View*  
+\o wddnsx                      spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o pfetix                      spectre              *Stopping View*  
+\o sblkndiresx                 spectre              *Stopping View*  
+\o LOGIC0                      symbol               *Stopping View*  
+\o LOGIC1                      symbol               *Stopping View*  
+\o ind                         spectre              *Stopping View*  
+\o pcapi                       spectre              *Stopping View*  
+\o oppdiresx                   spectre              *Stopping View*  
+\o data_demod_tb               schematic                             
+\o PORGEN_1V8_HV               cmos_sch                              
+\o VSUB1V8_5V_HV               schematic                             
+\o GNDPAD1V8ALL_HV             schematic                             
+\o ESD18clamp_v2               schematic                             
+\o VDDPAD1V8ALL_HV             schematic                             
+\o ESD18clamp_v4               schematic                             
+\o ESD18rctrigger_v1           schematic                             
+\o IOPAD1V8_3_HV               cmos_sch                              
+\o io_predrv_1V8               schematic                             
+\o io_drvr_1V8                 schematic                             
+\o io_inv_oe_1V8               schematic                             
+\o io_lvl_a_1V8                schematic                             
+\o io_in_1V8                   schematic                             
+\o io_lvl_b_1V8                schematic                             
+\o io_pull_1V8                 schematic                             
+\o io_inv_oe2_1V8              schematic                             
+\o APRIO1V8_00_HV              schematic                             
+\o ESD18clamp_v3               schematic                             
+\o data_demod_2                schematic                             
+\o amp_2                       schematic                             
+\o comp_amp_2                  schematic                             
+\o power_rail4_V2              schematic                             
+\o current_mirror1_2           schematic                             
+\o res_3M                      schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_COMM', cell 'data_demod_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Jul 19 10:31:49 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (0 1).
+\o *Info*    Running simulation on testbench [ IMP_COMM:data_demod_tb:1
+\o           ] for Point ID (21 1).
 \o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1/psf.
+\o Delete simulation data in /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.68/1/IMP_COMM:data_demod_tb:1/psf.
+\o create cds_globals...
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o start simulator if needed...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o Loading paraplot.cxt 
-\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-\o         to view the simulation run log.
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Fatal error found by spectre during topology check.
-\o FATAL:
-\o           The following branches form a loop of rigid branches
-\o           (shorts) when added to the circuit:
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDC = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:30:10 2016
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:30:10 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (0 1).
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.0/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-\o         to view the simulation run log.
-\o 
-\o *Error*   Error ID  = 5011
-\o *Error*   Error Msg = Simulator failed to complete the simulation.
-\o 
-\o           Fatal error found by spectre during topology check.
-\o FATAL:
-\o           The following branches form a loop of rigid branches
-\o           (shorts) when added to the circuit:
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables1".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.1
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.1.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.1/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDC = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.1/1/ALL_TESTS:spc_io_test_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.1/1/ALL_TESTS:spc_io_test_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:31:51 2016
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:31:52 2016
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:    6
-\o 
-\o 	Elapsed time:          1.0s (6.00/s)
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (1 1).
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.1/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (1 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
+\o *Info*    Run complete for Point ID (21 1) on testbench [
+\o           IMP_COMM:data_demod_tb:1 ].
 \o 
 \o 
 \o 
@@ -488,51 +368,81 @@
 \o 
 \o *Info*    Configuring the session ...
 \o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
+\o 	Library      = IMP_COMM
+\o 	Cell         = data_demod_tb
 \o 	View         = config
-\o 	Simulator    = spectre
+\o 	Simulator    = ams
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.2
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.2.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.2/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
+\o 	State Name   = IMP_COMM:data_demod_tb:1_none_Interactive.69
+\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69.rdb
+\o 	Results Dir  = /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69/1/IMP_COMM:data_demod_tb:1
+\o 	Results Loc  = /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data
 \o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/IMP_COMM/data_demod_tb/adexlVM
 \o 	File Encoding = 0
 \o 
 \o 
-\o *Info*    Spectre controlMode is set "batch".
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableGradualAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableAging' is not declared for tool 'ams1'.
+\o ERROR (ADE-5021): asiEnvGetVar: Variable 'relxOpts enableRelxpert' is not declared for tool 'ams1'.
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o *Info*    Run start for Point ID (2 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
+\o *Info*    Run start for Point ID (22 1) on testbench [
+\o           IMP_COMM:data_demod_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDC = "1.8"
+\o Setting var AMPLITUDE = "20m"
+\o Setting var C1 = "50n"
+\o Setting var CL = "10p"
+\o Setting var R1 = "300k"
+\o Setting var VCOMP = "980m"
+\o Setting var VOFFSET = "1.5"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.2/1/ALL_TESTS:spc_io_test_tb:1/netlist
+\o           /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69/1/IMP_COMM:data_demod_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.2/1/ALL_TESTS:spc_io_test_tb:1
+\o           /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69/1/IMP_COMM:data_demod_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (2 1)
+\o *Info*    Creating Netlist for Point ID (22 1)
 \o 
 \o generate netlist...
+\o INFO (209) : Instances bound to the views specified in the "Netlist using spectre CDF simInfo"
+\o              field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+\o              analog primitives using the spectre CDF simulation information.
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:34:56 2016
+\o Begin Incremental Netlisting Jul 19 10:33:22 2016
+\o INFO (VLOGNET-187): While generating an explicit netlist, it is recommended to set the Terminal SyncUp option on the Netlist Setup form as 'Merge All' with this option.
+\o Alternatively, you can set the hnlVerilogTermSyncUp variable as 'mergeAll'. This helps in generating a pure explicit netlist.
+\o 
+\o INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+\o "/home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69/1/IMP_COMM:data_demod_tb:1/netlist/testfixture.verilog" file. To print the stimulus name mapped table, set 
+\o simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+\o before invoking Verilog netlister.
+\o  
+\o INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+\o them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+\o the .simrc file.
+\o  
+\o INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+\o If you want to print only those cellviews that need to be re-netlisted in the 
+\o list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+\o .simrc file.
+\o  
+\o INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+\o pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+\o either in CIW or the .simrc file.
+\o  
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
@@ -541,425 +451,145 @@
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
 \w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:34:56 2016
+\o INFO (VLOGNET-117): Re-netlisting the entire design.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+\o non-stopping cells.
+\o  
+\o WARNING (VLOGNET-121): You are netlisting with the test fixture flag set to OFF. This could result in possible timescale directive violations. No 
+\o timescale directive will be added by the netlister. Set the test fixture option to ON before netlisting if there are such violations.
+\o 
+\o Traverse Config lib:IMP_COMM cell:data_demod_tb view:config
+\o INFO (205) : The following cells will be netlisted without using the spectre CDF
+\o              simulation information, because they are bound to view symbol:
+\o               *** Library - IOLIB_HV_6AM  Cell - LOGIC1 ***
+\o               *** Library - IOLIB_HV_6AM  Cell - LOGIC0 ***
+\o              To use the spectre CDF simulation information, do one of the following:
+\o               - Open your configuration in Hierarchy Editor and replace "symbol"
+\o               with "spectre" in the view list and stop list. 
+\o               - Choose Simulation->Options->Netlister and add "symbol"
+\o               in the "Netlist using spectre CDF simInfo" field.
+\o WARNING (VLOGNET-110): The cell 'IOLIB_HV_6AM/PORGEN_1V8_HV/cmos_sch' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o WARNING (VLOGNET-110): The cell 'IMP_COMM/data_demod_tb/schematic' has no ports. Make sure that this was the intended 
+\o design.
+\o  
+\o INFO (VLOGNET-169): Module port ordering for lib 'IMP_COMM', cell 'message_demod', view 'verilogams' will be
+\o  done using the user specified port order as follows:
+\o 
+\o  => ("DO" "Dem_output")
+\o 
+\o INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+\o 
+\o 
+\o 
+\o CELL NAME                   VIEW NAME            NOTE             
+\o ---------                   ---------            ----             
+\o 
+\o message_demod               verilogams           *Stopping View*  
+\o res                         spectre              *Stopping View*  
+\o cap                         spectre              *Stopping View*  
+\o vdc                         spectre              *Stopping View*  
+\o subcx                       spectre              *Stopping View*  
+\o mosvartx                    spectre              *Stopping View*  
+\o oprrpresx                   spectre              *Stopping View*  
+\o nfetx                       spectre              *Stopping View*  
+\o pfetx                       spectre              *Stopping View*  
+\o tdndsx                      spectre              *Stopping View*  
+\o cmimx                       spectre              *Stopping View*  
+\o idc                         spectre              *Stopping View*  
+\o wdpwdn                      spectre              *Stopping View*  
+\o presistor                   spectre              *Stopping View*  
+\o esdpdidn                    spectre              *Stopping View*  
+\o esdndidn                    spectre              *Stopping View*  
+\o opppcresx                   spectre              *Stopping View*  
+\o tdndpw                      spectre              *Stopping View*  
+\o wddnsx                      spectre              *Stopping View*  
+\o tdpdnw                      spectre              *Stopping View*  
+\o nfetix                      spectre              *Stopping View*  
+\o pfetix                      spectre              *Stopping View*  
+\o sblkndiresx                 spectre              *Stopping View*  
+\o LOGIC0                      symbol               *Stopping View*  
+\o LOGIC1                      symbol               *Stopping View*  
+\o ind                         spectre              *Stopping View*  
+\o pcapi                       spectre              *Stopping View*  
+\o oppdiresx                   spectre              *Stopping View*  
+\o data_demod_tb               schematic                             
+\o PORGEN_1V8_HV               cmos_sch                              
+\o VSUB1V8_5V_HV               schematic                             
+\o GNDPAD1V8ALL_HV             schematic                             
+\o ESD18clamp_v2               schematic                             
+\o VDDPAD1V8ALL_HV             schematic                             
+\o ESD18clamp_v4               schematic                             
+\o ESD18rctrigger_v1           schematic                             
+\o IOPAD1V8_3_HV               cmos_sch                              
+\o io_predrv_1V8               schematic                             
+\o io_drvr_1V8                 schematic                             
+\o io_inv_oe_1V8               schematic                             
+\o io_lvl_a_1V8                schematic                             
+\o io_in_1V8                   schematic                             
+\o io_lvl_b_1V8                schematic                             
+\o io_pull_1V8                 schematic                             
+\o io_inv_oe2_1V8              schematic                             
+\o APRIO1V8_00_HV              schematic                             
+\o ESD18clamp_v3               schematic                             
+\o data_demod_2                schematic                             
+\o amp_2                       schematic                             
+\o comp_amp_2                  schematic                             
+\o power_rail4_V2              schematic                             
+\o current_mirror1_2           schematic                             
+\o res_3M                      schematic                             
+\o res_500k                    schematic                             
+\o res_250k                    schematic                             
+\o power_rail2_V2              schematic                             
+\o power_rail1_V2              schematic                             
+\o 
+\o ---------- End of netlist configuration information   ----------
+\o INFO (VLOGNET-80): The library 'IMP_COMM', cell 'data_demod_tb', and view 'config' has been netlisted successfully.
+\o 
+\o End netlisting Jul 19 10:33:23 2016
+\o INFO (193) : AMS netlisting has completed successfully.
+\o To view the modules, right-click the test name on the Tests and Analyses 
+\o assistant pane and choose Netlist->Display menu option.
+\o       ...successful.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (2 1).
+\o *Info*    Running simulation on testbench [ IMP_COMM:data_demod_tb:1
+\o           ] for Point ID (22 1).
 \o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.2/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables1".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.3
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.3.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.3/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (3 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDC = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.3/1/ALL_TESTS:spc_io_test_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.3/1/ALL_TESTS:spc_io_test_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (3 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:39:11 2016
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:39:12 2016
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:    6
-\o 
-\o 	Elapsed time:          1.0s (6.00/s)
-\o Errors: 0	Warnings: 0
+\o Delete simulation data in /home/saul/Sim/IMP_COMM/data_demod_tb/adexlVM/results/data/Interactive.69/1/IMP_COMM:data_demod_tb:1/psf.
+\o create cds_globals...
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (3 1).
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.3/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
+\o validating simulator hierarchy...
 \o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
+\o running...
+\o To check for output from compilation, elaboration and simulation run, 
+\o right-click on the test name, result name, or any value in the "Results" 
+\o tab of the Outputs section and choose "Output Log" menu option.
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (3 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
+\o *Info*    Run complete for Point ID (22 1) on testbench [
+\o           IMP_COMM:data_demod_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables1".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.4
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.4.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.4/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (4 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDC = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.4/1/ALL_TESTS:spc_io_test_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.4/1/ALL_TESTS:spc_io_test_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (4 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:46:53 2016
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:46:53 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (4 1).
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.4/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (4 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables1".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.5
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.5.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.5/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (5 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDC = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.5/1/ALL_TESTS:spc_io_test_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.5/1/ALL_TESTS:spc_io_test_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (5 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:52:10 2016
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:52:10 2016
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:    6
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (5 1).
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.5/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (5 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables1".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ALL_TESTS
-\o 	Cell         = spc_io_test_tb
-\o 	View         = config
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ALL_TESTS:spc_io_test_tb:1_none_Interactive.6
-\o 	Results DB   = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.6.rdb
-\o 	Results Dir  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.6/1/ALL_TESTS:spc_io_test_tb:1
-\o 	Results Loc  = /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/SimVM
-\o 	Setup DB loc = /home/saul/projects/IMPLANTABLE_AMS/version1/saul/ALL_TESTS/spc_io_test_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o *Info*    Spectre controlMode is set "batch".
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (6 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDC = "1.8"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.6/1/ALL_TESTS:spc_io_test_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.6/1/ALL_TESTS:spc_io_test_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (6 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Jul 13 14:54:11 2016
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS title symbol" updated since last schematic save.
-\w *WARNING* (SCH-2159): "BORDERS A4 symbol" updated since last schematic save.
-\o End netlisting Jul 13 14:54:12 2016
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:    9
-\o 
-\o 	Elapsed time:          1.0s (9.00/s)
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ] for Point ID (6 1).
-\o 
-\o Delete psf data in /home/saul/Sim/ALL_TESTS/spc_io_test_tb/adexl/results/data/Interactive.6/1/ALL_TESTS:spc_io_test_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3072): Simulation is stopped by user. Simulation results may not be complete.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (6 1) on testbench [
-\o           ALL_TESTS:spc_io_test_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
+\# Memory report: Maximum memory size now 54187765760 (0xc9dd7b000) bytes, UTC 2016.07.19 08:34:22.616
+\# Memory report: Maximum memory size now 55260209152 (0xcddc3e000) bytes, UTC 2016.07.19 08:37:42.624
 \o Job timed out after no activity in 300 seconds.
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables1".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 
+\# Memory report: on exit 207560704 (0xc5f2000) bytes, process size 955035648 (0x38ecb000) bytes at UTC 2016.07.19 08:39:15.111
+\# Memory report: peak usage 207593472 (0xc5fa000) bytes, process size 955052032 (0x38ecf000) bytes
