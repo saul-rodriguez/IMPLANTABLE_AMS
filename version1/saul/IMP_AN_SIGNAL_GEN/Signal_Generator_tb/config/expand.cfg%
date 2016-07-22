@@ -1,4 +1,4 @@
-//Revision 40
+//Revision 44
 config Signal_Generator_tb;
 design IMP_AN_SIGNAL_GEN.Signal_Generator_tb:schematic;
 liblist IMP_AN_SIGNAL_GEN;
@@ -7,20 +7,20 @@ viewlist spectre, schematic, functional, symbol;
 stoplist spectre, symbol;
 
 
-cell IMP_AN_SIGNAL_GEN.Signal_Generator binding :av_analog_extracted;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier_2 binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_2 binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_bias binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic;
+cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :schematic;
+
+cell IMP_DIG_SIGGEN.DacCtrl binding :functional;
+cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
+
+cell IMP_DAC.RDAC32 binding :schematic;
 
 cell CORELIB.INVX1 binding :cmos_sch;
 
-cell IMP_DAC.RDAC32 binding :av_analog_extracted;
-
-cell IMP_DIG_SIGGEN.stimulus_block binding :verilogams;
-cell IMP_DIG_SIGGEN.DacCtrl binding :functional;
-
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier binding :schematic;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB binding :schematic;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_bias binding :av_analog_extracted;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_CMFB_2 binding :av_analog_extracted;
-cell IMP_AN_SIGNAL_GEN_GM.Signal_Generator_Amplifier_2 binding :av_analog_extracted;
+cell IMP_AN_SIGNAL_GEN.Signal_Generator binding :av_analog_extracted;
 
 
 endconfig
