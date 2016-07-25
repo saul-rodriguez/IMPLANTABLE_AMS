@@ -1,0 +1,72 @@
+//Verilog-AMS HDL for "IMP_PLL_TOP", "PLL_top_2" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+`timescale 1ns / 1ps
+
+module PLL_top_2_BAK( Fout, Fref, Fsel, Resetn, bias_cp, bias_vco, vdda, vddd,
+vssa, vssd, vsub );
+
+  input vsub;
+  input bias_vco;
+  input bias_cp;
+  input Fref;
+  output reg Fout;
+  input vssd;
+  input vdda;
+  input vssa;
+  input vddd;
+  input  [3:0] Fsel;
+  input Resetn;
+
+parameter real cycle = 31.25; // 32 MHz --> 31.25 nS period
+
+
+reg vco_clk;
+
+  reg [14:0] count;
+
+initial begin
+	vco_clk = 0;
+end
+
+always #(cycle/2) vco_clk = ~vco_clk;
+	
+
+always @(posedge vco_clk, negedge Resetn)
+begin
+	if (Resetn == 0) begin
+		count <= 0;
+	end else begin
+		count <= count + 1;
+	end	
+end
+
+always @(Fsel,count,vco_clk)
+begin
+	case (Fsel)
+ 		4'b0000: Fout <= vco_clk;
+        4'b0001: Fout <= count[0];
+        4'b0010: Fout <= count[1];
+        4'b0011: Fout <= count[2];
+        4'b0100: Fout <= count[3];
+        4'b0101: Fout <= count[4];
+        4'b0110: Fout <= count[5];
+        4'b0111: Fout <= count[6];
+        4'b1000: Fout <= count[7];
+        4'b1001: Fout <= count[8];
+        4'b1010: Fout <= count[9];
+        4'b1011: Fout <= count[10];
+        4'b1100: Fout <= count[11];
+        4'b1101: Fout <= count[12];
+        4'b1110: Fout <= count[13];
+        4'b1111: Fout <= count[14];
+        default: Fout <= Fref;
+	endcase
+end
+
+
+
+
+
+endmodule
